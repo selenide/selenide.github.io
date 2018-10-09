@@ -12,18 +12,18 @@ bundle exec jekyll serve --watch --trace
 
 
 ### Tagging selenide
-git tag -a v4.11.2 -m "released selenide 4.11.2"
+git tag -a v5.0.0 -m "released selenide 5.0.0"
 git tag    (lists all tags)
 git push origin --tags
 
 
 ### Publishing javadoc
 selenide> ./gradlew clean javadoc
-selenide> mkdir ../selenide-web/javadoc/4.11.2/
-selenide> cp -r build/docs/javadoc/* ../selenide-web/javadoc/4.11.2/
+selenide> mkdir ../selenide-web/javadoc/5.0.0/
+selenide> cp -r build/docs/javadoc/* ../selenide-web/javadoc/5.0.0/
 selenide> rm -fr ../selenide-web/javadoc/current/*
 selenide> cp -r build/docs/javadoc/* ../selenide-web/javadoc/current/
-selenide-web> git add javadoc/4.11.2
+selenide-web> git add javadoc/5.0.0
 selenide-web> git add javadoc/current
 
 
