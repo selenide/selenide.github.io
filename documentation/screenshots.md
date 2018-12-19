@@ -23,7 +23,8 @@ By default Selenide puts screenshots to folder `build/reports/tests`.
 ### Can I tell Selenide to put screenshots to a specific folder?
 
 Yes. 
-You can use property `-Dselenide.reports=test-result/reports` to set any directory to store screenshots to.
+You can use property `-Dselenide.reportsFolder=test-result/reports` to set any directory to store screenshots to.
+For v4.x use `-Dselenide.reports=test-result/reports`
 
 Another option is to set this folder directly from your code:
 
