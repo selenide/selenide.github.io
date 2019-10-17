@@ -9,7 +9,7 @@
 </ul>
 
 <div class="news">
-  <div class="news-line"><a href="/2019/10/16/selenide-5.4.0">Selenide 5.4.0: Statics have won</a></div>
+  <div class="news-line"><a href="/2019/10/16/selenide-5.4.0">Selenide <del>5.4.0</del> 5.4.1: Statics have won</a></div>
 </div>
 
 <h3 style="display:none">Blog</h3>
