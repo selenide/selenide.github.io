@@ -9,7 +9,7 @@
 </ul>
 
 <div class="news">
-  <div class="news-line"><a href="/2019/12/01/advent-calendar-main-algorithm/">Selenide Advent Calendar: the Main Algorithm</a></div>
+  <div class="news-line"><a href="/2019/12/02/advent-calendar-how-to-abuse-selenide/">Selenide Advent Calendar: <br/>How to abuse Selenide</a></div>
 </div>
 
 <h3 style="display:none">Blog</h3>
