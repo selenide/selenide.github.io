@@ -75,7 +75,7 @@ Now your check will be fast because it calls WebDriver method only once. And bro
 
 ```java
 @Test {
-  assertEquals(1, sizeOf(".offer:visible"));
+  assertEquals(1, sizeOf("#books .book:visible"));
 }
 ```
 
