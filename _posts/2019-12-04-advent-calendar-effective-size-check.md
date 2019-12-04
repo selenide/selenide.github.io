@@ -60,7 +60,7 @@ The problem is that there is no CSS selector `:visible`. It doesn't exist. Only 
 
 Who saves us? Of course, JavaScript!
 
-You can create a helper method which finds a number of visible element (with a help of JavaScript and JQuery):
+You can create a helper method which finds a number of elements (with a help of JavaScript and JQuery):
 
 ```java
 private int sizeOf(String cssSelector) {
