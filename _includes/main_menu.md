@@ -9,7 +9,7 @@
 </ul>
 
 <div class="news">
-  <div class="news-line"><a href="/2019/12/04/advent-calendar-effective-size-check/">Selenide Advent Calendar: <br/>How to check size effectively?</a></div>
+  <div class="news-line"><a href="/2019/12/06/advent-calendar-visualize-click/">Selenide Advent Calendar: <br/>How to visualize click</a></div>
 </div>
 
 <h3 style="display:none">Blog</h3>
