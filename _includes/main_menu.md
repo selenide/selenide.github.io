@@ -9,7 +9,7 @@
 </ul>
 
 <div class="news">
-  <div class="news-line"><a href="/2019/12/06/advent-calendar-visualize-click/">Selenide Advent Calendar: <br/>How to visualize click</a></div>
+  <div class="news-line"><a href="/2019/12/07/advent-calendar-csrf-protection/">Selenide Advent Calendar: <br/>How to test CSRF protection</a></div>
 </div>
 
 <h3 style="display:none">Blog</h3>
