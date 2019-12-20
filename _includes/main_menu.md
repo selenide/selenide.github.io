@@ -9,7 +9,7 @@
 </ul>
 
 <div class="news">
-    <div class="news-line"><a href="/2019/12/18/advent-calendar-network-logs-with-proxy/">Selenide Advent Calendar: <br/>How to get network data with proxy</a></div>
+    <div class="news-line"><a href="/2019/12/20/advent-calendar-big-wait-theory/">Selenide Advent Calendar: <br/>Big "wait" theory</a></div>
 </div>
 
 <h3 style="display:none">Blog</h3>
