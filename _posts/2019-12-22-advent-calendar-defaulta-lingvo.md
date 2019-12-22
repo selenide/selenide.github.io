@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "De"
-description: "Defaŭlta lingvo"
+title: "Defaŭlta lingvo"
+description: "How to define the default language"
 category:
 header-text: "Selenide Advent Calendar<br/>Day 22"
 tags: []
