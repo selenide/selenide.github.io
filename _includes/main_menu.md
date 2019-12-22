@@ -9,7 +9,7 @@
 </ul>
 
 <div class="news">
-    <div class="news-line"><a href="/2019/12/22/advent-calendar-defaulta-lingva/">Selenide Advent Calendar: <br/>Defaŭlta lingvo</a></div>
+    <div class="news-line"><a href="/2019/12/22/advent-calendar-defaulta-lingvo/">Selenide Advent Calendar: <br/>Defaŭlta lingvo</a></div>
 </div>
 
 <h3 style="display:none">Blog</h3>
