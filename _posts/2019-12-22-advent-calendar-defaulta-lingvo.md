@@ -21,7 +21,7 @@ If the application decides about the language based on user location, it can be 
 
 ## Solution
 
-So if you have a test which is supposed to run with language that differs from the default language of your browser, you have folowing options. Let's imagine you are writing the tests for _German_ Locale.
+So if you have a test which is supposed to run with language that differs from the default language of your browser, you have following options. Let's imagine you are writing the tests for _German_ Locale.
 
 - Change the default language of you operational system. Poor you. Now the most of the programs will be showing in German. _**Ordnung muss sein!**_
 - Take your browser and setup it to be German the preferable languge. Save away the profile. Google and experiment a lot about loading custom browser profile before starting your tests. Don't forget to remove German from the top of preferred languages or otherwise, you know already, _**Ordnung....***_
