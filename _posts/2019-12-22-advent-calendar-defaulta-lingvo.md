@@ -16,16 +16,16 @@ You may have noticed that some web appications or sites change their language de
 
 ## Problem
 In case you have international developers in your team all writing and running some tests on different computer, you also may have noticed that the very same tests is failing or passing because the applications was displayed in different languages on different machines.
+
 If the application decides about the language based on user location, it can be difficult to write stable tests running everywhere. But if it is just "preferred browser language of the user", then your task is much easier.
 
 ## Solution
 
-So if you have a test which is supposed to run with language that differs from the default language of your browser, you have folowing options:
-Let's imagine you are writing the tests for German Locale.
+So if you have a test which is supposed to run with language that differs from the default language of your browser, you have folowing options. Let's imagine you are writing the tests for _German_ Locale.
 
-1. Change the default language of you operational system. Poor you. Now the most of the programs will be showing in German. Ordnung muss sein!
-2. Take your browser and setup it to be German the preferable languge. Save away the profile. Google and experiment a lot about loading custom browser profile before starting your tests. Don't forget to remove German from the top of preferred languages or otherwise, you know already, Ordnung....
-3. Just make use of Chrome preference "intl.accept_languages" and set it to "de" (for German).
+- Change the default language of you operational system. Poor you. Now the most of the programs will be showing in German. _**Ordnung muss sein!**_
+- Take your browser and setup it to be German the preferable languge. Save away the profile. Google and experiment a lot about loading custom browser profile before starting your tests. Don't forget to remove German from the top of preferred languages or otherwise, you know already, _**Ordnung....***_
+- Just make use of Chrome preference "intl.accept_languages" and set it to "de" (for German).
 
 Of course you can very easily do it in Selenide.
 Setup the system variable `chromeoptions.prefs=intl.accept_langugages=de`
@@ -61,6 +61,8 @@ likewise for gradle in `gradle.properties` (you additionally need a line or two 
 systemProp.chromeoptions.prefs=intl.accept_languages=de
 ```
 
+### Command-line
+
 You can then override the setting running `mvn test` or `gradle test` defining another value in the command line `-Dchromeoptions.prefs=intl.accept_languages=ru`
 
 
@@ -73,6 +75,6 @@ open("http://wikipedia.org");
 $("[data-jsl10n=slogan]").shouldHave(exactText("Die freie Enzyklopädie"));
 ```
 
-I wish you all Fröhliche Weihnachten and Guten Rutsch! 
+I wish you all _**Fröhliche Weihnachten**_ and _**Guten Rutsch**_! 
 
-Alexei Vinogradov
+**Alexei Vinogradov**
