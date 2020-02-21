@@ -24,15 +24,15 @@ If the application decides about the language based on user location, it can be 
 So if you have a test which is supposed to run with language that differs from the default language of your browser, you have following options. Let's imagine you are writing the tests for _German_ Locale.
 
 - Change the default language of you operational system. Poor you. Now the most of the programs will be showing in German. _**Ordnung muss sein!**_
-- Take your browser and setup it to be German the preferable languge. Save away the profile. Google and experiment a lot about loading custom browser profile before starting your tests. Don't forget to remove German from the top of preferred languages or otherwise, you know already, _**Ordnung....**_
+- Take your browser and setup it to be German the preferable language. Save away the profile. Google and experiment a lot about loading custom browser profile before starting your tests. Don't forget to remove German from the top of preferred languages or otherwise, you know already, _**Ordnung....**_
 - Just make use of Chrome preference "intl.accept_languages" and set it to "de" (for German).
 
 Of course you can very easily do it in Selenide.
-Setup the system variable `chromeoptions.prefs=intl.accept_langugages=de`
+Setup the system variable `chromeoptions.prefs=intl.accept_languages=de`
 
 You can do it either in code:
 ```java
-System.setProperty("chromeoptions.prefs","intl.accept_langugages=de");
+System.setProperty("chromeoptions.prefs","intl.accept_languages=de");
 ```
 or even better in configuration file of Maven or Gradle
 
@@ -47,7 +47,7 @@ maven `pom.xml`
         <configuration>
           <systemPropertyVariables>
             ...
-            <chromeoptions.prefs>intl.accept_langugages=de</chromeoptions.prefs>
+            <chromeoptions.prefs>intl.accept_languages=de</chromeoptions.prefs>
           </systemPropertyVariables>
         </configuration>
     </plugin>
