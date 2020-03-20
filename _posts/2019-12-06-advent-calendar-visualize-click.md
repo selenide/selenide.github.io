@@ -56,6 +56,8 @@ It will help you to detect cases where a wrong element got the click.
 
 You might need to adjust this code to your needs: it depends on your application, framework, design etc.
 
+Here you can see one example of possible solutions: [Highlighter](https://github.com/selenide-examples/gmail/blob/master/test/org/selenide/examples/gmail/Highlighter.java).
+
 ## What's now?
 
 If you have flaky test (as all of us), you can start from this step.  
