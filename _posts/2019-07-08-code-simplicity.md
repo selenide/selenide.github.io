@@ -8,7 +8,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-Let's talk about simplicity of code
+Let's talk about simplicity of code.  
 Probably all of you are agree that simple code is a good code.
 The problem is that we all understand "simplicity" differently.
 
@@ -92,13 +92,13 @@ public class SeleniumPageObject {
 ```
 
 You probably know that [comments in code are not needed](https://asolntsev.github.io/en/2010/05/02/javadoc/), 
-and why [`@FindBy` doesn't make things better](https://asolntsev.github.io/en/2016/07/09/true-page-object/) etc.
+and why [`@FindBy` doesn't make things better](https://asolntsev.github.io/ru/2016/07/09/true-page-object/) etc.
  
 Just compare these two code snippets.    
 
 ### The simple code
 
-I managed to convert the code about to Selenide:
+I managed to convert the code above to Selenide:
 
 ```java
 import com.codeborne.selenide.SelenideElement;
