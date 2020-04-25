@@ -45,7 +45,7 @@ Here is a full <a href="/javadoc/current" target="_blank">Selenide javadoc</a>.
 Just for reference, these are Selenide classes you will probably need for work:
 
 <h3>com.codeborne.selenide.Selenide
-  <a target="_blank" href="https://github.com/codeborne/selenide/blob/master/src/main/java/com/codeborne/selenide/Selenide.java">[src]</a>
+  <a target="_blank" href="https://github.com/codeborne/selenide/blob/master/statics/src/main/java/com/codeborne/selenide/Selenide.java">[src]</a>
   <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selenide.html">[javadoc]</a>
 </h3>
 
@@ -297,7 +297,7 @@ Collection conditions are used in the `shouldBe`/`shouldHave` constructs for the
 Look for more details in [Selenide gitbook](https://selenide.gitbooks.io/user-guide/content/en/selenide-api/collection-condition.html)
 
 <h3>com.codeborne.selenide.WebDriverRunner
-  <a target="_blank" href="https://github.com/codeborne/selenide/blob/master/src/main/java/com/codeborne/selenide/WebDriverRunner.java">[src]</a>
+  <a target="_blank" href="https://github.com/codeborne/selenide/blob/master/statics/src/main/java/com/codeborne/selenide/WebDriverRunner.java">[src]</a>
   <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/WebDriverRunner.html">[javadoc]</a>
 </h3>
 
@@ -314,7 +314,7 @@ This class defines some browser management methods:
 Look for more details in [Selenide gitbook](https://selenide.gitbooks.io/user-guide/content/en/selenide-api/webdriver-runner.html)
 
 <h3>com.codeborne.selenide.Configuration
-  <a target="_blank" href="https://github.com/codeborne/selenide/blob/master/src/main/java/com/codeborne/selenide/Configuration.java">[src]</a>
+  <a target="_blank" href="https://github.com/codeborne/selenide/blob/master/statics/src/main/java/com/codeborne/selenide/Configuration.java">[src]</a>
   <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Configuration.html">[javadoc]</a>
 </h3>
 
