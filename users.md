@@ -190,7 +190,7 @@ header-text:
     
     <hr class="divider"/>
     
-    <a href="http://dpi.solutions/" target="_blank">
+    <a href="https://dpi.solutions/" target="_blank">
       <img src="{{ BASE_PATH }}/images/dpi-solutions-logo.png" style="width: 150px;" alt="DPI solutions"/>
     </a>
     <br/>
@@ -201,13 +201,13 @@ header-text:
     
     <hr class="divider"/>
     
-    <a href="http://www.citadele.lv/" target="_blank">
+    <a href="https://www.citadele.lv/" target="_blank">
       <img src="{{ BASE_PATH }}/images/citadele-banka.png" style="width: 150px;" alt="Bank Citadele"/>
     </a>
     <br/>
     
     <div class="text-right">
-      <a href="http://www.citadele.lv/" target="_blank">Bank Citadele</a> – latvian bank, partner of American Express® in Baltic countries
+      <a href="https://www.citadele.lv/" target="_blank">Bank Citadele</a> – latvian bank, partner of American Express® in Baltic countries
     </div>
     
     <hr class="divider"/>
@@ -282,7 +282,7 @@ header-text:
       <img src="{{ BASE_PATH }}/images/bspb_logo.jpg" alt="Bank Saint Petersburg"/>
     </a>
     
-    <div>In <a href="http://markswebb.ru/e-finance/mobile-banking-rank-2012/" target="_blank">TOP-3</a> of best internet-banks in Russia</div>
+    <div>In <a href="https://markswebb.ru/report/mobile-banking-rank-2012/#ratings-sites" target="_blank">TOP-3</a> of best internet-banks in Russia</div>
     
     <hr class="divider"/>
     
