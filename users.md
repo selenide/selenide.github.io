@@ -15,6 +15,30 @@ header-text:
 
 <div class="wrapper-content">
   <section>
+
+    <a href="https://www.mastercard.us/" target="_blank">
+      <img src="{{ BASE_PATH }}/images/logo-mastercard.svg" style="width: 160px;" alt="MasterCard"/>
+    </a>
+    <br/>
+    
+    <div class="text-right">
+      <a href="https://www.mastercard.us/" target="_blank">Mastercard</a> is a leading global payments & technology 
+      company that connects consumers, businesses, merchants, issuers & governments around the world.
+    </div>
+    
+    <hr class="divider"/>
+    
+    <a href="https://maxilect.com/" target="_blank">
+      <img src="{{ BASE_PATH }}/images/logo-maxilect.svg" style="width: 200px;" alt="Maxilect"/>
+    </a>
+    <br/>
+    
+    <div class="text-right">
+      <a href="https://maxilect.com/" target="_blank">Maxilect</a> - Custom software development company (Ad Tech, Blockchain, ML, AI) - Maxilect
+    </div>
+    
+    <hr class="divider"/>
+
     <a href="https://bcs.ru/" target="_blank">
       <img src="{{ BASE_PATH }}/images/bcs-logo.jpeg" style="width: 200px;" alt="BCS"/>
     </a>
