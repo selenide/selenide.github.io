@@ -20,7 +20,7 @@ took a microphone and started asking criticizing questions. After a few answers 
 
 I just smiled.
 
-Only a few days later I catched up why he was basically wrong.
+Only a few days later I caught up why he was basically wrong.
 
 No, I am not going to say that we find good bugs.
 

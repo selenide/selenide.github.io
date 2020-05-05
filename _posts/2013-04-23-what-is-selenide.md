@@ -70,7 +70,7 @@ public void clearCache() {
 
 Ajax is PITA (pain in the ass) for UI Testers.
 
-Nowdays most of applications use Ajax. When testing web application that uses Ajax, you need to invent code that waits for something. Wait until
+Nowadays most of the applications use Ajax. When testing web application that uses Ajax, you need to invent code that waits for something. Wait until
 button gets green, wait until div gets required text, or wait until error message disappears. You can find tons of web pages suggesting tricks how to
 make Selenium wait something.
 
@@ -85,7 +85,7 @@ Enjoy code samples:
 ```java
 @Test
 public void pageUsingAjax() {
-  $("#username").shouldBe(visible);   // waits until elemens appears
+  $("#username").shouldBe(visible);   // waits until elements appears
   $("#username").shouldHave(text("Hello, Johny!")); // waits until elements gets text "Hello, Johny!"
   $("#login-button").shouldHave(cssClass("green-button")); // waits until button gets green
   $("#login-button").shouldBe(disabled); // waits until button gets disabled
@@ -146,9 +146,9 @@ We have been using Selenium in different projects.
 And we discovered that every time we need to write the same code in order to start browser, close browser,
 take screenshots and so one.
 You can find a huge amount of topics ala "How to do this and that in Selenium" with a huge
-amount of code that you need to copy-pase into your project.
+amount of code that you need to copy-paste into your project.
 
-We asked ourself: why should UI Testing be so tedious?
+We asked yourself: why should UI Testing be so tedious?
 We decided to extract our repeating code into a separate open-source library.
 That's how [Selenide](https://selenide.org) was born.
 

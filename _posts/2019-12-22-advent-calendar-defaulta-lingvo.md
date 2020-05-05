@@ -10,9 +10,9 @@ tags: []
 
 # Defaŭlta lingvo
 
-The name of todays topic is Esperanto and traslates as "default language".
+The name of today's topic is Esperanto and translates as "default language".
 
-You may have noticed that some web appications or sites change their language depending on either your browser languange setting or on your location.
+You may have noticed that some web applications or sites change their language depending on either your browser language setting or on your location.
 
 ## Problem
 In case you have international developers in your team all writing and running some tests on different computer, you also may have noticed that the very same tests is failing or passing because the applications was displayed in different languages on different machines.
@@ -56,7 +56,7 @@ maven `pom.xml`
 
 ### Gradle
 
-likewise for gradle in `gradle.properties` (you additionally need a line or two in `build.gradle` to get this parameter transfered in to the test task in gradle)
+likewise for gradle in `gradle.properties` (you additionally need a line or two in `build.gradle` to get this parameter transferred in to the test task in gradle)
 ```properties
 systemProp.chromeoptions.prefs=intl.accept_languages=de
 ```

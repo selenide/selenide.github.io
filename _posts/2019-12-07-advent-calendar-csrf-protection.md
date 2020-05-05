@@ -118,7 +118,7 @@ will still send the original request, and the normal flow of your test will not 
   private void sendHackedPostRequest(HttpRequest httpRequest, HttpMessageContents contents) throws IOException, InterruptedException {
     // You need to tune this line. 
     // The request format (including name of parameter "authenticityToken") may depend on your application.
-    // Note that the request can contain several "authenticityToken" parameters (immediatelly throw an error if they are different).
+    // Note that the request can contain several "authenticityToken" parameters (immediately throw an error if they are different).
     // If the request contains a submitted form, especially with uploaded files, you need to modify "authenticityToken" a little bit differently. 
     String hackedBody = contents.getTextContents()
         .replace("authenticityToken=1234567890").to("authenticityToken=hack-me-if-you-can");

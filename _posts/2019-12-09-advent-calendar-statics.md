@@ -136,7 +136,7 @@ private static final SelenideDriver = new ThreadLocalSelenideDriver();
 
 Now this "static" `SelenideDriver` is a singleton. It always exists. It's never closed. All static `SelenideElement` 
  variables created with it will live forever. But it also doesn't hold fields `WebDriver` and `SelenideProxyServer`.
-  It fetches them from `WebDriverRunner`'s threadlocals every time. 
+  It fetches them from `WebDriverRunner`'s ThreadLocals every time. 
 
   
   
@@ -149,7 +149,7 @@ I never recommended to use. How could someone decide to use it? How this magic h
  
 ## What's now
 
-We returns the possibility to declare yout `SelenideElement`s in static fields. 
+We returned the possibility to declare your `SelenideElement`s in static fields. 
   
 But please do not abuse it.   
 
