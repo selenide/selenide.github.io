@@ -70,14 +70,14 @@ Yes, Selenide supports Selenium Grid. Just add property `-Dselenide.remote=http:
 >How can I tell Selenide use browser with my custom profile?
 
 You can also provide Selenide an instance of webdriver that you configured according to your needs.
-Go to [Wiki](https://github.com/codeborne/selenide/wiki/How-Selenide-creates-WebDriver) for details.
+Go to [Wiki](https://github.com/selenide/selenide/wiki/How-Selenide-creates-WebDriver) for details.
 
 ## Build scripts
 
 >Can I run Selenide tests on CI (continuous integration) server?
 
 Yes.
-Please look at [Wiki page](https://github.com/codeborne/selenide/wiki/Build-script/) for examples of build script.
+Please look at [Wiki page](https://github.com/selenide/selenide/wiki/Build-script/) for examples of build script.
 
 ## Screenshots
 
@@ -102,11 +102,11 @@ You can use Selenium WebDriver API for switching between browser windows.
 
 > Can I access source code of Selenide?
 
-Sure. Source code of Selenide is published [at github](https://github.com/codeborne/selenide/).
+Sure. Source code of Selenide is published [at github](https://github.com/selenide/selenide/).
 
 > Can I modify Selenide?
 
-Sure! It's open-source. You can either create Pull Request or [Feature Request](https://github.com/codeborne/selenide/issues).
+Sure! It's open-source. You can either create Pull Request or [Feature Request](https://github.com/selenide/selenide/issues).
 
 ## License
 
@@ -114,7 +114,7 @@ Sure! It's open-source. You can either create Pull Request or [Feature Request](
 
 > Does Selenide license allow me to share source code of tests with my customer?
 
-Selenide - __free__ __open-source__ product distributed with [MIT license](https://github.com/codeborne/selenide/blob/master/LICENSE).
+Selenide - __free__ __open-source__ product distributed with [MIT license](https://github.com/selenide/selenide/blob/master/LICENSE).
 Shortly said, it means that you can do anything with it.
 
 > Wouldn't you make Selenide paid at some moment?
