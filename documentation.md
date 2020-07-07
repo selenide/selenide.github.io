@@ -45,17 +45,17 @@ Here is a full <a href="/javadoc/current" target="_blank">Selenide javadoc</a>.
 Just for reference, these are Selenide classes you will probably need for work:
 
 <h3>com.codeborne.selenide.Selenide
-  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/statics/src/main/java/com/selenide/selenide/Selenide.java">[src]</a>
-  <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/selenide/selenide/Selenide.html">[javadoc]</a>
+  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/statics/src/main/java/com/codeborne/selenide/Selenide.java">[src]</a>
+  <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selenide.html">[javadoc]</a>
 </h3>
 
 The core of the library. Main methods are `open`, `$` and `$$` (import static com.codeborne.selenide.Selenide.* for readability):
 <ul>
-  <li><a href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/Selenide.html#open(java.lang.String)">open(String URL)</a> opens the browser (if yet not opened) and loads the URL</li>
-  <li><a href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/Selenide.html#$(java.lang.String)">$(String cssSelector)</a>   – returns object of the SelenideElement class that represents first element found by CSS selector on the page.</li>
-  <li><a href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/Selenide.html#$(org.openqa.selenium.By)">$(By)</a> – returns "first SelenideElement" by the locator of the By class.</li>
-  <li><a href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/Selenide.html#$$(java.lang.String)">$$(String cssSelector)</a>   – returns object of type ElementsCollection that represents collection of all elements found by a CSS selector. </li>
-  <li><a href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/Selenide.html#$$(org.openqa.selenium.By)">$$(By)</a>   – returns "collection of elements" by the locator of By type.</li>
+  <li><a href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/Selenide.html#open(java.lang.String)">open(String URL)</a> opens the browser (if yet not opened) and loads the URL</li>
+  <li><a href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/Selenide.html#$(java.lang.String)">$(String cssSelector)</a>   – returns object of the SelenideElement class that represents first element found by CSS selector on the page.</li>
+  <li><a href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/Selenide.html#$(org.openqa.selenium.By)">$(By)</a> – returns "first SelenideElement" by the locator of the By class.</li>
+  <li><a href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/Selenide.html#$$(java.lang.String)">$$(String cssSelector)</a>   – returns object of type ElementsCollection that represents collection of all elements found by a CSS selector. </li>
+  <li><a href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/Selenide.html#$$(org.openqa.selenium.By)">$$(By)</a>   – returns "collection of elements" by the locator of By type.</li>
 </ul>
 
 Usually, when you get a SelenideElement object by the Dollar `$` command, you can perform some action on it:
@@ -84,15 +84,15 @@ Don't be shy to search for more methods inside the Selenide class that can suit 
 
 Here are just a few examples:
 
-<a href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/Selenide.html#sleep(long)">sleep()</a>,
-<a href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/Selenide.html#refresh()">refresh()</a> and
-<a href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/Selenide.html#title()">title()</a>, <a href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/Selenide.html#executeJavaScript()">executeJavaScript(String jsCode, Object... arguments)</a>.
+<a href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/Selenide.html#sleep(long)">sleep()</a>,
+<a href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/Selenide.html#refresh()">refresh()</a> and
+<a href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/Selenide.html#title()">title()</a>, <a href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/Selenide.html#executeJavaScript()">executeJavaScript(String jsCode, Object... arguments)</a>.
 
 Look for more details in [Selenide gitbook](https://selenide.gitbooks.io/user-guide/content/en/selenide-api/selenide.html).
 
 <h3>com.codeborne.selenide.SelenideElement
-  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/src/main/java/com/selenide/selenide/SelenideElement.java">[src]</a>
-  <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/selenide/selenide/SelenideElement.html">[javadoc]</a>
+  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/src/main/java/com/codeborne/selenide/SelenideElement.java">[src]</a>
+  <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/SelenideElement.html">[javadoc]</a>
 </h3>
 
 The `SelenideElement` class describes an element found on the page. The object of this class can be acquired e.g. by the `$` command. The following useful methods are defined in the class.
@@ -186,8 +186,8 @@ Other useful methods
 Look for more details in [Selenide gitbook](https://selenide.gitbooks.io/user-guide/content/en/selenide-api/selenide-element.html)
 
 <h3>com.codeborne.selenide.Condition
-  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/src/main/java/com/selenide/selenide/Condition.java">[src]</a>
-  <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/selenide/selenide/Condition.html">[javadoc]</a>
+  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/src/main/java/com/codeborne/selenide/Condition.java">[src]</a>
+  <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Condition.html">[javadoc]</a>
 </h3>
 
 Conditions are used in `should` / `shouldNot` / `waitUntil` / `waitWhile` constructs. We recommend to import corresponding conditions statically to receive all the advantages of readable code:
@@ -217,18 +217,18 @@ Conditions are used in `should` / `shouldNot` / `waitUntil` / `waitWhile` constr
 Look for more details in [Selenide gitbook](https://selenide.gitbooks.io/user-guide/content/en/selenide-api/condition.html)
 
 <h3>com.codeborne.selenide.Selectors
-  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/src/main/java/com/selenide/selenide/Selectors.java">[src]</a>
-  <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/selenide/selenide/Selectors.html">[javadoc]</a>
+  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/src/main/java/com/codeborne/selenide/Selectors.java">[src]</a>
+  <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selectors.html">[javadoc]</a>
 </h3>
 
 The class contains some `By` selectors to locate elements by text or attributes (that may be missed in standard Selenium WebDriver API):
 
-*   <a href="{{ BASE_PATH }}/javadoc/current/com/selenide/selenide/Selectors.html#byText(java.lang.String)">byText</a>     - search element by exact text
-*   <a href="{{ BASE_PATH }}/javadoc/current/com/selenide/selenide/Selectors.html#withText(java.lang.String)">withText</a>   - search element by contained text (substring)
-*   <a href="{{ BASE_PATH }}/javadoc/current/com/selenide/selenide/Selectors.html#by(java.lang.String, java.lang.String)">by(attributeName, attributeValue)</a>    - search by attribute's name and value
-*   <a href="{{ BASE_PATH }}/javadoc/current/com/selenide/selenide/Selectors.html#byTitle(java.lang.String)">byTitle</a>   - search by attribute "title"
-*   <a href="{{ BASE_PATH }}/javadoc/current/com/selenide/selenide/Selectors.html#byValue(java.lang.String)">byValue</a>   - search by attribute "value"
-*   <a href="{{ BASE_PATH }}/javadoc/current/com/selenide/selenide/Selectors.html#byXpath(java.lang.String)">Xpath</a>
+*   <a href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selectors.html#byText(java.lang.String)">byText</a>     - search element by exact text
+*   <a href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selectors.html#withText(java.lang.String)">withText</a>   - search element by contained text (substring)
+*   <a href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selectors.html#by(java.lang.String, java.lang.String)">by(attributeName, attributeValue)</a>    - search by attribute's name and value
+*   <a href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selectors.html#byTitle(java.lang.String)">byTitle</a>   - search by attribute "title"
+*   <a href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selectors.html#byValue(java.lang.String)">byValue</a>   - search by attribute "value"
+*   <a href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selectors.html#byXpath(java.lang.String)">Xpath</a>
 * etc.
 
 ```java
@@ -243,8 +243,8 @@ Look for more details in [Selenide gitbook](https://selenide.gitbooks.io/user-gu
  
 
 <h3>com.codeborne.selenide.ElementsCollection
-  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/src/main/java/com/selenide/selenide/ElementsCollection.java">[src]</a>
-  <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/selenide/selenide/ElementsCollection.html">[javadoc]</a>
+  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/src/main/java/com/codeborne/selenide/ElementsCollection.java">[src]</a>
+  <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/ElementsCollection.html">[javadoc]</a>
 </h3>
 
 This is the class that describes a collection of elements on the page, found by the locator. Usually the object of the ElementsCollection class can be acquired by the `$$` method. The class contains rather useful methods.
@@ -253,8 +253,8 @@ This is the class that describes a collection of elements on the page, found by 
 Assertions
 </h4>
 
-*   <a href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/ElementsCollection.html#shouldBe(com.codeborne.selenide.CollectionCondition)">shouldBe</a>     - e.g. `$$(".errors").shouldBe(empty)`
-*   <a href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/ElementsCollection.html#shouldHave(com.codeborne.selenide.CollectionCondition)">shouldHave</a>     - e.g. `$$("#mytable tbody tr").shouldHave(size(2))`
+*   <a href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/ElementsCollection.html#shouldBe(com.codeborne.selenide.CollectionCondition)">shouldBe</a>     - e.g. `$$(".errors").shouldBe(empty)`
+*   <a href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/ElementsCollection.html#shouldHave(com.codeborne.selenide.CollectionCondition)">shouldHave</a>     - e.g. `$$("#mytable tbody tr").shouldHave(size(2))`
 
 Assertions also play role of explicit waits. They **wait** for condition (e.g. `size(2)`, `empty`, `texts("a", "b", "c"))` to be satisfied until timeout reached (the value of `Configuration.collectionsTimeout` that is set to 6000 ms by default).
 
@@ -270,16 +270,16 @@ Methods to get statuses and attributes of elements collection
 Methods-selectors of specific collection elements
 </h4>
 
-*   <a href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/ElementsCollection.html#filterBy(com.codeborne.selenide.Condition)">filterBy(Condition)</a> – returns collection (as ElementsCollection) with only those original collection elements that satisfies the condition, e.g. `$$("#multirowTable tr").filterBy(text("Norris"))`
-*   <a href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/ElementsCollection.html#excludeWith(com.codeborne.selenide.Condition)">excludeWith(Condition)</a>     – e.g. `$$("#multirowTable tr").excludeWith(text("Chuck"))`
-*   <a href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/ElementsCollection.html#get(int)">get(int)</a> - returns nth element (as `SelenideElement`); 
-*   <a href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/ElementsCollection.html#findBy(com.codeborne.selenide.Condition)">findBy(Condition)</a> - returns the first collection element (as `SelenideElement`) that satisfied the condition.
+*   <a href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/ElementsCollection.html#filterBy(com.codeborne.selenide.Condition)">filterBy(Condition)</a> – returns collection (as ElementsCollection) with only those original collection elements that satisfies the condition, e.g. `$$("#multirowTable tr").filterBy(text("Norris"))`
+*   <a href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/ElementsCollection.html#excludeWith(com.codeborne.selenide.Condition)">excludeWith(Condition)</a>     – e.g. `$$("#multirowTable tr").excludeWith(text("Chuck"))`
+*   <a href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/ElementsCollection.html#get(int)">get(int)</a> - returns nth element (as `SelenideElement`); 
+*   <a href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/ElementsCollection.html#findBy(com.codeborne.selenide.Condition)">findBy(Condition)</a> - returns the first collection element (as `SelenideElement`) that satisfied the condition.
 
 Look for more details in [Selenide gitbook](https://selenide.gitbooks.io/user-guide/content/en/selenide-api/elements-collection.html)
 
 <h3>com.codeborne.selenide.CollectionCondition
-  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/src/main/java/com/selenide/selenide/CollectionCondition.java">[src]</a>
-  <a target="_blank" href="{{BASE_PATH}}/javadoc/current/com/selenide/selenide/CollectionCondition.html">[javadoc]</a>
+  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/src/main/java/com/codeborne/selenide/CollectionCondition.java">[src]</a>
+  <a target="_blank" href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/CollectionCondition.html">[javadoc]</a>
 </h3>
 
 Collection conditions are used in the `shouldBe`/`shouldHave` constructs for the object of `ElementsCollection` class. It is recommended to import needed conditions statically in order to achive all advantages of the readable code.
@@ -297,8 +297,8 @@ Collection conditions are used in the `shouldBe`/`shouldHave` constructs for the
 Look for more details in [Selenide gitbook](https://selenide.gitbooks.io/user-guide/content/en/selenide-api/collection-condition.html)
 
 <h3>com.codeborne.selenide.WebDriverRunner
-  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/statics/src/main/java/com/selenide/selenide/WebDriverRunner.java">[src]</a>
-  <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/selenide/selenide/WebDriverRunner.html">[javadoc]</a>
+  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/statics/src/main/java/com/codeborne/selenide/WebDriverRunner.java">[src]</a>
+  <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/WebDriverRunner.html">[javadoc]</a>
 </h3>
 
 This class defines some browser management methods:
@@ -314,8 +314,8 @@ This class defines some browser management methods:
 Look for more details in [Selenide gitbook](https://selenide.gitbooks.io/user-guide/content/en/selenide-api/webdriver-runner.html)
 
 <h3>com.codeborne.selenide.Configuration
-  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/statics/src/main/java/com/selenide/selenide/Configuration.java">[src]</a>
-  <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/selenide/selenide/Configuration.html">[javadoc]</a>
+  <a target="_blank" href="https://github.com/selenide/selenide/blob/master/statics/src/main/java/com/codeborne/selenide/Configuration.java">[src]</a>
+  <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Configuration.html">[javadoc]</a>
 </h3>
 
 This class contains different configuration options to configure execution of Selenide-based tests, e.g.:
