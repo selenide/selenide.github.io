@@ -103,7 +103,7 @@ That's easy! If you are using JUnit, just add this line to your base test class:
 ```
 
 This line will cause Selenide to automatically take screenshot after every failed test.
-For your convenience, Selenide creates even 2 files: .PNG и .HTML.
+For your convenience, Selenide creates even 2 files: .PNG and .HTML.
 
 If you want to shot all tests (not only failed), you can use this line:
 
@@ -186,7 +186,7 @@ So for UI Tests:
 *   Selenide = Selenium + JUnit
 *   Selenide = Selenium + TestNG
 *   Selenide = Selenium + ScalaTest
-*   Selenide = Selenium + что угодно
+*   Selenide = Selenium + whatever
 
 Enjoy the open-source chemistry!
 

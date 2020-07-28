@@ -56,7 +56,7 @@ void shouldBeVisible() {
       return ok;
     }
     catch (Exception e) {
-      sleep(100 мс)
+      sleep(100 ms)
     }
   } while (less than N seconds);
   throw new ElementShouldBeVisible("Expected: foo, actually: bar");  // and take a screenshot
