@@ -36,7 +36,7 @@ P.S. I personally don't value BDD really much. I think it's a nice idea, but it 
 <br/>
 <br/>
 
-Обновляйтесь!
+Let's upgrade!
 
 [Andrei Solntsev](http://asolntsev.github.io/)
 
