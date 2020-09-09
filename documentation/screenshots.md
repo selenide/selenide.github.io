@@ -127,4 +127,4 @@ import static com.codeborne.selenide.Selenide.screenshot;
 screenshot("my_file_name");
 ```
 
-Selenide will create two files: `my_file_name.png` и `my_file_name.html`
+Selenide will create two files: `my_file_name.png` & `my_file_name.html`
