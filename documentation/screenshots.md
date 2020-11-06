@@ -35,8 +35,16 @@ Configuration.reportsFolder = "test-result/reports";
 
 ## JUnit and TestNG support
 
-For JUnit and TestNG, there is a special support for taking screenshots also on successful tests.
+For JUnit and TestNG, there is a special support for taking screenshots also on successful tests.  
 
+Let me remind: normally you don't need to setup screenshots in most cases because Selenide automatically takes 
+a screenshot when some of its checks like `$.shouldBe(..)` fails.  
+
+But if you want to also automatically take screenshots
+1. in case of successful tests, or
+2. if some of non-Selenide check fails (like `assertEquals` or `assertThat`),
+
+then you can do it by adding couple of lines. See below. 
 
 ### For JUnit 4:
 
@@ -53,9 +61,7 @@ public class MyTest {
 }
 ```
 
-Actually it's rudiment. You don't need it, because Selenide does it automatically.
-
-But if you wish to automatically take screenshot of every test (even succeeded), use the following command:
+To take screenshot of every test (even succeeded), use the following command:
 
 ```java
 @Rule
@@ -94,7 +100,7 @@ How to use in Java (with customization):
 ```java
   public class MyTest {
     @RegisterExtension
-    static ScreenShooterExtension screenshotEmAll = new ScreenShooterExtension(true);
+    static ScreenShooterExtension screenshotEmAll = new ScreenShooterExtension(true).to("target/screenshots");
   }
 ```
 
@@ -113,7 +119,7 @@ How to use in Kotlin (with customization):
     companion object {
       @JvmField
       @RegisterExtension
-      val screenshotEmAll: ScreenShooterExtension = ScreenShooterExtension(true);
+      val screenshotEmAll: ScreenShooterExtension = ScreenShooterExtension(true).to("target/screenshots");
     }
   }
 ```
@@ -124,7 +130,15 @@ Additionally, you can take screenshot at any moment with a single line of code:
 ```java
 import static com.codeborne.selenide.Selenide.screenshot;
 
-screenshot("my_file_name");
+String pngFileName = screenshot("my_file_name");
 ```
 
 Selenide will create two files: `my_file_name.png` & `my_file_name.html`
+
+Later we also added a method that can return a screenshot in a desired format (`BASE64`, `BYTES` or `FILE`):
+
+```java
+String screenshotAsBase64 = Selenide.screenshot(OutputType.BASE64);
+byte[] decoded = Base64.getDecoder().decode(screenshotAsBase64);
+```
+
