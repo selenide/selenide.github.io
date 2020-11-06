@@ -2,6 +2,7 @@
   <div>Docs</div>
   <div>✓ <a href="/documentation.html">API</a></div>
   <div>✓ <a href="/documentation/screenshots.html">Screenshots</a></div>
+  <div>✓ <a href="/documentation/reports.html">Reports</a></div>
   <div>✓ <a href="/documentation/selenide-vs-selenium.html">Selenide vs Selenium</a></div>
 
   <br/>
