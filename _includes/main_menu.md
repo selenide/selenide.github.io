@@ -9,7 +9,7 @@
 </ul>
 
 <div class="news">
-  <div class="news-line"><a href="/2020/09/26/selenide-5.15.0/">Released Selenide 5.15.0</a></div>
+  <div class="news-line"><a href="/2020/11/17/why-proxy-does-not-work-in-selenoid/">Why proxy does not work in Selenoid?</a></div>
 </div>
 
 <h3 style="display:none">Blog</h3>
