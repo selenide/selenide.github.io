@@ -80,10 +80,13 @@
 <li><a href="com/codeborne/selenide/files/package-tree.html">com.codeborne.selenide.files</a>, </li>
 <li><a href="com/codeborne/selenide/impl/package-tree.html">com.codeborne.selenide.impl</a>, </li>
 <li><a href="com/codeborne/selenide/impl/windows/package-tree.html">com.codeborne.selenide.impl.windows</a>, </li>
+<li><a href="com/codeborne/selenide/junit/package-tree.html">com.codeborne.selenide.junit</a>, </li>
 <li><a href="com/codeborne/selenide/junit5/package-tree.html">com.codeborne.selenide.junit5</a>, </li>
 <li><a href="com/codeborne/selenide/logevents/package-tree.html">com.codeborne.selenide.logevents</a>, </li>
 <li><a href="com/codeborne/selenide/proxy/package-tree.html">com.codeborne.selenide.proxy</a>, </li>
 <li><a href="com/codeborne/selenide/selector/package-tree.html">com.codeborne.selenide.selector</a>, </li>
+<li><a href="com/codeborne/selenide/testng/package-tree.html">com.codeborne.selenide.testng</a>, </li>
+<li><a href="com/codeborne/selenide/testng/annotations/package-tree.html">com.codeborne.selenide.testng.annotations</a>, </li>
 <li><a href="com/codeborne/selenide/webdriver/package-tree.html">com.codeborne.selenide.webdriver</a></li>
 </ul>
 </div>
@@ -92,6 +95,11 @@
 <ul>
 <li type="circle">java.lang.Object
 <ul>
+<li type="circle">&lt;any&gt;
+<ul>
+<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideWait.html" title="class in com.codeborne.selenide"><span class="typeNameLink">SelenideWait</span></a></li>
+</ul>
+</li>
 <li type="circle">java.util.AbstractCollection&lt;E&gt; (implements java.util.Collection&lt;E&gt;)
 <ul>
 <li type="circle">java.util.AbstractList&lt;E&gt; (implements java.util.List&lt;E&gt;)
@@ -119,22 +127,27 @@
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/Append.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">Append</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/Arguments.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">Arguments</span></a></li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/As.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">As</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
-<li type="circle">com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/AuthenticationFilter.html" title="class in com.codeborne.selenide.proxy"><span class="typeNameLink">AuthenticationFilter</span></a> (implements com.browserup.bup.filters.RequestFilter)</li>
+<li type="circle">com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/AuthenticationFilter.html" title="class in com.codeborne.selenide.proxy"><span class="typeNameLink">AuthenticationFilter</span></a></li>
 <li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide"><span class="typeNameLink">Browser</span></a></li>
 <li type="circle">com.codeborne.selenide.drivercommands.<a href="com/codeborne/selenide/drivercommands/BrowserHealthChecker.html" title="class in com.codeborne.selenide.drivercommands"><span class="typeNameLink">BrowserHealthChecker</span></a></li>
-<li type="circle">org.openqa.selenium.By
+<li type="circle">com.codeborne.selenide.junit5.<a href="com/codeborne/selenide/junit5/BrowserStrategyExtension.html" title="class in com.codeborne.selenide.junit5"><span class="typeNameLink">BrowserStrategyExtension</span></a></li>
+<li type="circle">By
 <ul>
-<li type="circle">org.openqa.selenium.By.ByXPath (implements java.io.Serializable)
-<ul>
-<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/Selectors.ByText.html" title="class in com.codeborne.selenide"><span class="typeNameLink">Selectors.ByText</span></a></li>
-<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/Selectors.WithText.html" title="class in com.codeborne.selenide"><span class="typeNameLink">Selectors.WithText</span></a></li>
-</ul>
-</li>
 <li type="circle">com.codeborne.selenide.selector.<a href="com/codeborne/selenide/selector/ByShadow.ByShadowCss.html" title="class in com.codeborne.selenide.selector"><span class="typeNameLink">ByShadow.ByShadowCss</span></a> (implements java.io.Serializable)</li>
 </ul>
 </li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/BySelectorCollection.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">BySelectorCollection</span></a> (implements com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/CollectionSource.html" title="interface in com.codeborne.selenide.impl">CollectionSource</a>)</li>
 <li type="circle">com.codeborne.selenide.selector.<a href="com/codeborne/selenide/selector/ByShadow.html" title="class in com.codeborne.selenide.selector"><span class="typeNameLink">ByShadow</span></a></li>
+<li type="circle">By.ByXPath
+<ul>
+<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/Selectors.ByText.html" title="class in com.codeborne.selenide"><span class="typeNameLink">Selectors.ByText</span></a></li>
+</ul>
+</li>
+<li type="circle">By.ByXPath
+<ul>
+<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/Selectors.WithText.html" title="class in com.codeborne.selenide"><span class="typeNameLink">Selectors.WithText</span></a></li>
+</ul>
+</li>
 <li type="circle">com.codeborne.selenide.webdriver.<a href="com/codeborne/selenide/webdriver/CdpClient.html" title="class in com.codeborne.selenide.webdriver"><span class="typeNameLink">CdpClient</span></a></li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/CiReportUrl.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">CiReportUrl</span></a></li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/Cleanup.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">Cleanup</span></a></li>
@@ -205,6 +218,7 @@
 <li type="circle">com.codeborne.selenide.conditions.<a href="com/codeborne/selenide/conditions/Visible.html" title="class in com.codeborne.selenide.conditions"><span class="typeNameLink">Visible</span></a></li>
 </ul>
 </li>
+<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/Configuration.html" title="class in com.codeborne.selenide"><span class="typeNameLink">Configuration</span></a></li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/ContextClick.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">ContextClick</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.drivercommands.<a href="com/codeborne/selenide/drivercommands/CreateDriverCommand.html" title="class in com.codeborne.selenide.drivercommands"><span class="typeNameLink">CreateDriverCommand</span></a></li>
 <li type="circle">com.codeborne.selenide.drivercommands.<a href="com/codeborne/selenide/drivercommands/CreateDriverCommand.Result.html" title="class in com.codeborne.selenide.drivercommands"><span class="typeNameLink">CreateDriverCommand.Result</span></a></li>
@@ -234,7 +248,37 @@
 <li type="circle">com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/EventsCollector.html" title="class in com.codeborne.selenide.logevents"><span class="typeNameLink">EventsCollector</span></a> (implements com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/LogEventListener.html" title="interface in com.codeborne.selenide.logevents">LogEventListener</a>)</li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/Execute.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">Execute</span></a>&lt;ReturnType&gt; (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/Exists.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">Exists</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
-<li type="circle">com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/FileDownloadFilter.html" title="class in com.codeborne.selenide.proxy"><span class="typeNameLink">FileDownloadFilter</span></a> (implements com.browserup.bup.filters.ResponseFilter)</li>
+<li type="circle">ExitCodeListener
+<ul>
+<li type="circle">com.codeborne.selenide.testng.<a href="com/codeborne/selenide/testng/BrowserPerTest.html" title="class in com.codeborne.selenide.testng"><span class="typeNameLink">BrowserPerTest</span></a></li>
+</ul>
+</li>
+<li type="circle">ExitCodeListener
+<ul>
+<li type="circle">com.codeborne.selenide.testng.<a href="com/codeborne/selenide/testng/BrowserPerClass.html" title="class in com.codeborne.selenide.testng"><span class="typeNameLink">BrowserPerClass</span></a></li>
+</ul>
+</li>
+<li type="circle">ExitCodeListener
+<ul>
+<li type="circle">com.codeborne.selenide.testng.<a href="com/codeborne/selenide/testng/SoftAsserts.html" title="class in com.codeborne.selenide.testng"><span class="typeNameLink">SoftAsserts</span></a></li>
+</ul>
+</li>
+<li type="circle">ExitCodeListener
+<ul>
+<li type="circle">com.codeborne.selenide.testng.<a href="com/codeborne/selenide/testng/ScreenShooter.html" title="class in com.codeborne.selenide.testng"><span class="typeNameLink">ScreenShooter</span></a></li>
+</ul>
+</li>
+<li type="circle">ExternalResource
+<ul>
+<li type="circle">com.codeborne.selenide.junit.<a href="com/codeborne/selenide/junit/BrowserStrategy.html" title="class in com.codeborne.selenide.junit"><span class="typeNameLink">BrowserStrategy</span></a></li>
+</ul>
+</li>
+<li type="circle">ExternalResource
+<ul>
+<li type="circle">com.codeborne.selenide.junit.<a href="com/codeborne/selenide/junit/SoftAsserts.html" title="class in com.codeborne.selenide.junit"><span class="typeNameLink">SoftAsserts</span></a></li>
+</ul>
+</li>
+<li type="circle">com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/FileDownloadFilter.html" title="class in com.codeborne.selenide.proxy"><span class="typeNameLink">FileDownloadFilter</span></a></li>
 <li type="circle">com.codeborne.selenide.files.<a href="com/codeborne/selenide/files/FileFilters.html" title="class in com.codeborne.selenide.files"><span class="typeNameLink">FileFilters</span></a></li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/FileHelper.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">FileHelper</span></a></li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/FileNamer.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">FileNamer</span></a></li>
@@ -243,12 +287,7 @@
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/FindAll.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">FindAll</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/FindAllByXpath.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">FindAllByXpath</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/FindByXpath.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">FindByXpath</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
-<li type="circle">org.openqa.selenium.support.ui.FluentWait&lt;T&gt; (implements org.openqa.selenium.support.ui.Wait&lt;F&gt;)
-<ul>
-<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideWait.html" title="class in com.codeborne.selenide"><span class="typeNameLink">SelenideWait</span></a></li>
-</ul>
-</li>
-<li type="circle">com.codeborne.selenide.impl.windows.<a href="com/codeborne/selenide/impl/windows/FrameByIdOrName.html" title="class in com.codeborne.selenide.impl.windows"><span class="typeNameLink">FrameByIdOrName</span></a> (implements org.openqa.selenium.support.ui.ExpectedCondition&lt;T&gt;)</li>
+<li type="circle">com.codeborne.selenide.impl.windows.<a href="com/codeborne/selenide/impl/windows/FrameByIdOrName.html" title="class in com.codeborne.selenide.impl.windows"><span class="typeNameLink">FrameByIdOrName</span></a></li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/GetAttribute.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">GetAttribute</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/GetClosest.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">GetClosest</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/GetCssValue.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">GetCssValue</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
@@ -270,6 +309,7 @@
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/GetText.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">GetText</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/GetValue.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">GetValue</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/GetWrappedElement.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">GetWrappedElement</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
+<li type="circle">com.codeborne.selenide.testng.<a href="com/codeborne/selenide/testng/GlobalTextReport.html" title="class in com.codeborne.selenide.testng"><span class="typeNameLink">GlobalTextReport</span></a></li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/HeadOfCollection.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">HeadOfCollection</span></a> (implements com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/CollectionSource.html" title="interface in com.codeborne.selenide.impl">CollectionSource</a>)</li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/Hover.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">Hover</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/Html.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">Html</span></a></li>
@@ -281,7 +321,7 @@
 <li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/LocalStorage.html" title="class in com.codeborne.selenide"><span class="typeNameLink">LocalStorage</span></a></li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/Matches.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">Matches</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/Modal.html" title="class in com.codeborne.selenide"><span class="typeNameLink">Modal</span></a></li>
-<li type="circle">org.openqa.selenium.MutableCapabilities (implements java.io.Serializable)
+<li type="circle">MutableCapabilities
 <ul>
 <li type="circle">com.codeborne.selenide.webdriver.<a href="com/codeborne/selenide/webdriver/MergeableCapabilities.html" title="class in com.codeborne.selenide.webdriver"><span class="typeNameLink">MergeableCapabilities</span></a></li>
 </ul>
@@ -293,10 +333,12 @@
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/PressTab.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">PressTab</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/Randomizer.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">Randomizer</span></a></li>
 <li type="circle">com.codeborne.selenide.webdriver.<a href="com/codeborne/selenide/webdriver/RemoteDriverFactory.html" title="class in com.codeborne.selenide.webdriver"><span class="typeNameLink">RemoteDriverFactory</span></a></li>
-<li type="circle">com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/RequestSizeWatchdog.html" title="class in com.codeborne.selenide.proxy"><span class="typeNameLink">RequestSizeWatchdog</span></a> (implements com.browserup.bup.filters.RequestFilter)</li>
-<li type="circle">com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/ResponseSizeWatchdog.html" title="class in com.codeborne.selenide.proxy"><span class="typeNameLink">ResponseSizeWatchdog</span></a> (implements com.browserup.bup.filters.ResponseFilter)</li>
+<li type="circle">com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/RequestSizeWatchdog.html" title="class in com.codeborne.selenide.proxy"><span class="typeNameLink">RequestSizeWatchdog</span></a></li>
+<li type="circle">com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/ResponseSizeWatchdog.html" title="class in com.codeborne.selenide.proxy"><span class="typeNameLink">ResponseSizeWatchdog</span></a></li>
+<li type="circle">com.codeborne.selenide.junit5.<a href="com/codeborne/selenide/junit5/ScreenShooterExtension.html" title="class in com.codeborne.selenide.junit5"><span class="typeNameLink">ScreenShooterExtension</span></a></li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/Screenshot.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">Screenshot</span></a></li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/ScreenShotLaboratory.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">ScreenShotLaboratory</span></a></li>
+<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/Screenshots.html" title="class in com.codeborne.selenide"><span class="typeNameLink">Screenshots</span></a></li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/ScrollIntoView.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">ScrollIntoView</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/ScrollTo.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">ScrollTo</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/SelectOptionByTextOrIndex.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">SelectOptionByTextOrIndex</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
@@ -304,8 +346,13 @@
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/SelectOptionContainingText.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">SelectOptionContainingText</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/Selectors.html" title="class in com.codeborne.selenide"><span class="typeNameLink">Selectors</span></a></li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/SelectRadio.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">SelectRadio</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
+<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/Selenide.html" title="class in com.codeborne.selenide"><span class="typeNameLink">Selenide</span></a></li>
 <li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideConfig.html" title="class in com.codeborne.selenide"><span class="typeNameLink">SelenideConfig</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>)</li>
-<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideDriver.html" title="class in com.codeborne.selenide"><span class="typeNameLink">SelenideDriver</span></a></li>
+<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideDriver.html" title="class in com.codeborne.selenide"><span class="typeNameLink">SelenideDriver</span></a>
+<ul>
+<li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/ThreadLocalSelenideDriver.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">ThreadLocalSelenideDriver</span></a></li>
+</ul>
+</li>
 <li type="circle">com.codeborne.selenide.drivercommands.<a href="com/codeborne/selenide/drivercommands/SelenideDriverFinalCleanupThread.html" title="class in com.codeborne.selenide.drivercommands"><span class="typeNameLink">SelenideDriverFinalCleanupThread</span></a> (implements java.lang.Runnable)</li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/SelenideElementDescriber.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">SelenideElementDescriber</span></a> (implements com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/ElementDescriber.html" title="interface in com.codeborne.selenide.impl">ElementDescriber</a>)</li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/SelenideElementIterator.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">SelenideElementIterator</span></a> (implements java.util.Iterator&lt;E&gt;)
@@ -317,7 +364,7 @@
 <li type="circle">com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/SelenideLogger.html" title="class in com.codeborne.selenide.logevents"><span class="typeNameLink">SelenideLogger</span></a></li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/SelenidePageFactory.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">SelenidePageFactory</span></a></li>
 <li type="circle">com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy"><span class="typeNameLink">SelenideProxyServer</span></a></li>
-<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideTargetLocator.html" title="class in com.codeborne.selenide"><span class="typeNameLink">SelenideTargetLocator</span></a> (implements org.openqa.selenium.WebDriver.TargetLocator)</li>
+<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideTargetLocator.html" title="class in com.codeborne.selenide"><span class="typeNameLink">SelenideTargetLocator</span></a></li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/SetSelected.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">SetSelected</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/SetValue.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">SetValue</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/Should.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">Should</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)
@@ -335,12 +382,25 @@
 </ul>
 </li>
 <li type="circle">com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/SimpleReport.html" title="class in com.codeborne.selenide.logevents"><span class="typeNameLink">SimpleReport</span></a></li>
-<li type="circle">com.codeborne.selenide.junit5.<a href="com/codeborne/selenide/junit5/SoftAssertsExtension.html" title="class in com.codeborne.selenide.junit5"><span class="typeNameLink">SoftAssertsExtension</span></a> (implements org.junit.jupiter.api.extension.AfterEachCallback, org.junit.jupiter.api.extension.BeforeEachCallback)</li>
+<li type="circle">com.codeborne.selenide.junit5.<a href="com/codeborne/selenide/junit5/SoftAssertsExtension.html" title="class in com.codeborne.selenide.junit5"><span class="typeNameLink">SoftAssertsExtension</span></a></li>
+<li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/StaticConfig.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">StaticConfig</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>)</li>
+<li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/StaticDriver.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">StaticDriver</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>)</li>
 <li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/Stopwatch.html" title="class in com.codeborne.selenide"><span class="typeNameLink">Stopwatch</span></a></li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/TailOfCollection.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">TailOfCollection</span></a> (implements com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/CollectionSource.html" title="interface in com.codeborne.selenide.impl">CollectionSource</a>)</li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/TakeScreenshot.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">TakeScreenshot</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
 <li type="circle">com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/TakeScreenshotAsImage.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">TakeScreenshotAsImage</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a>&lt;T&gt;)</li>
-<li type="circle">com.codeborne.selenide.junit5.<a href="com/codeborne/selenide/junit5/TextReportExtension.html" title="class in com.codeborne.selenide.junit5"><span class="typeNameLink">TextReportExtension</span></a> (implements org.junit.jupiter.api.extension.AfterAllCallback, org.junit.jupiter.api.extension.AfterEachCallback, org.junit.jupiter.api.extension.BeforeEachCallback)</li>
+<li type="circle">TestWatcher
+<ul>
+<li type="circle">com.codeborne.selenide.junit.<a href="com/codeborne/selenide/junit/TextReport.html" title="class in com.codeborne.selenide.junit"><span class="typeNameLink">TextReport</span></a></li>
+</ul>
+</li>
+<li type="circle">TestWatcher
+<ul>
+<li type="circle">com.codeborne.selenide.junit.<a href="com/codeborne/selenide/junit/ScreenShooter.html" title="class in com.codeborne.selenide.junit"><span class="typeNameLink">ScreenShooter</span></a></li>
+</ul>
+</li>
+<li type="circle">com.codeborne.selenide.testng.<a href="com/codeborne/selenide/testng/TextReport.html" title="class in com.codeborne.selenide.testng"><span class="typeNameLink">TextReport</span></a></li>
+<li type="circle">com.codeborne.selenide.junit5.<a href="com/codeborne/selenide/junit5/TextReportExtension.html" title="class in com.codeborne.selenide.junit5"><span class="typeNameLink">TextReportExtension</span></a></li>
 <li type="circle">java.lang.Throwable (implements java.io.Serializable)
 <ul>
 <li type="circle">java.lang.Error
@@ -390,6 +450,8 @@
 <li type="circle">com.codeborne.selenide.webdriver.<a href="com/codeborne/selenide/webdriver/WebDriverFactory.html" title="class in com.codeborne.selenide.webdriver"><span class="typeNameLink">WebDriverFactory</span></a></li>
 <li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/WebDriverLogs.html" title="class in com.codeborne.selenide"><span class="typeNameLink">WebDriverLogs</span></a></li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/WebdriverPhotographer.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">WebdriverPhotographer</span></a> (implements com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/Photographer.html" title="interface in com.codeborne.selenide.impl">Photographer</a>)</li>
+<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/WebDriverRunner.html" title="class in com.codeborne.selenide"><span class="typeNameLink">WebDriverRunner</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Browsers.html" title="interface in com.codeborne.selenide">Browsers</a>)</li>
+<li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/WebDriverThreadLocalContainer.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">WebDriverThreadLocalContainer</span></a> (implements com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/WebDriverContainer.html" title="interface in com.codeborne.selenide.impl">WebDriverContainer</a>)</li>
 <li type="circle">com.codeborne.selenide.drivercommands.<a href="com/codeborne/selenide/drivercommands/WebDriverWrapper.html" title="class in com.codeborne.selenide.drivercommands"><span class="typeNameLink">WebDriverWrapper</span></a> (implements com.codeborne.selenide.<a href="com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>)</li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/WebElementsCollectionWrapper.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">WebElementsCollectionWrapper</span></a> (implements com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/CollectionSource.html" title="interface in com.codeborne.selenide.impl">CollectionSource</a>)</li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/WebElementSelector.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">WebElementSelector</span></a></li>
@@ -403,8 +465,8 @@
 </ul>
 </li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/WebPageSourceExtractor.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">WebPageSourceExtractor</span></a> (implements com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/PageSourceExtractor.html" title="interface in com.codeborne.selenide.impl">PageSourceExtractor</a>)</li>
-<li type="circle">com.codeborne.selenide.impl.windows.<a href="com/codeborne/selenide/impl/windows/WindowByIndex.html" title="class in com.codeborne.selenide.impl.windows"><span class="typeNameLink">WindowByIndex</span></a> (implements org.openqa.selenium.support.ui.ExpectedCondition&lt;T&gt;)</li>
-<li type="circle">com.codeborne.selenide.impl.windows.<a href="com/codeborne/selenide/impl/windows/WindowByNameOrHandle.html" title="class in com.codeborne.selenide.impl.windows"><span class="typeNameLink">WindowByNameOrHandle</span></a> (implements org.openqa.selenium.support.ui.ExpectedCondition&lt;T&gt;)</li>
+<li type="circle">com.codeborne.selenide.impl.windows.<a href="com/codeborne/selenide/impl/windows/WindowByIndex.html" title="class in com.codeborne.selenide.impl.windows"><span class="typeNameLink">WindowByIndex</span></a></li>
+<li type="circle">com.codeborne.selenide.impl.windows.<a href="com/codeborne/selenide/impl/windows/WindowByNameOrHandle.html" title="class in com.codeborne.selenide.impl.windows"><span class="typeNameLink">WindowByNameOrHandle</span></a></li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/WindowsCloser.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">WindowsCloser</span></a></li>
 </ul>
 </li>
@@ -418,54 +480,22 @@
 <li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide"><span class="typeNameLink">Driver</span></a></li>
 <li type="circle">com.codeborne.selenide.webdriver.<a href="com/codeborne/selenide/webdriver/DriverFactory.html" title="interface in com.codeborne.selenide.webdriver"><span class="typeNameLink">DriverFactory</span></a></li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/ElementDescriber.html" title="interface in com.codeborne.selenide.impl"><span class="typeNameLink">ElementDescriber</span></a></li>
-<li type="circle">org.openqa.selenium.interactions.Locatable
-<ul>
-<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide"><span class="typeNameLink">SelenideElement</span></a> (also extends org.openqa.selenium.TakesScreenshot, org.openqa.selenium.WebElement, org.openqa.selenium.WrapsDriver, org.openqa.selenium.internal.WrapsElement)</li>
-</ul>
-</li>
 <li type="circle">com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/LogEvent.html" title="interface in com.codeborne.selenide.logevents"><span class="typeNameLink">LogEvent</span></a></li>
 <li type="circle">com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/LogEventListener.html" title="interface in com.codeborne.selenide.logevents"><span class="typeNameLink">LogEventListener</span></a></li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/PageSourceExtractor.html" title="interface in com.codeborne.selenide.impl"><span class="typeNameLink">PageSourceExtractor</span></a></li>
 <li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/Photographer.html" title="interface in com.codeborne.selenide.impl"><span class="typeNameLink">Photographer</span></a></li>
-<li type="circle">org.openqa.selenium.SearchContext
-<ul>
-<li type="circle">org.openqa.selenium.WebElement (also extends org.openqa.selenium.TakesScreenshot)
-<ul>
-<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide"><span class="typeNameLink">SelenideElement</span></a> (also extends org.openqa.selenium.interactions.Locatable, org.openqa.selenium.TakesScreenshot, org.openqa.selenium.WrapsDriver, org.openqa.selenium.internal.WrapsElement)</li>
-</ul>
-</li>
-</ul>
-</li>
+<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide"><span class="typeNameLink">SelenideElement</span></a></li>
 <li type="circle">java.io.Serializable
 <ul>
 <li type="circle">com.codeborne.selenide.files.<a href="com/codeborne/selenide/files/FileFilter.html" title="interface in com.codeborne.selenide.files"><span class="typeNameLink">FileFilter</span></a></li>
 </ul>
 </li>
-<li type="circle">org.openqa.selenium.TakesScreenshot
-<ul>
-<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide"><span class="typeNameLink">SelenideElement</span></a> (also extends org.openqa.selenium.interactions.Locatable, org.openqa.selenium.WebElement, org.openqa.selenium.WrapsDriver, org.openqa.selenium.internal.WrapsElement)</li>
-<li type="circle">org.openqa.selenium.WebElement (also extends org.openqa.selenium.SearchContext)
-<ul>
-<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide"><span class="typeNameLink">SelenideElement</span></a> (also extends org.openqa.selenium.interactions.Locatable, org.openqa.selenium.TakesScreenshot, org.openqa.selenium.WrapsDriver, org.openqa.selenium.internal.WrapsElement)</li>
-</ul>
-</li>
-</ul>
-</li>
+<li type="circle">com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/WebDriverContainer.html" title="interface in com.codeborne.selenide.impl"><span class="typeNameLink">WebDriverContainer</span></a></li>
 <li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/WebDriverProvider.html" title="interface in com.codeborne.selenide"><span class="typeNameLink">WebDriverProvider</span></a></li>
-<li type="circle">org.openqa.selenium.WrapsDriver
-<ul>
-<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide"><span class="typeNameLink">SelenideElement</span></a> (also extends org.openqa.selenium.interactions.Locatable, org.openqa.selenium.TakesScreenshot, org.openqa.selenium.WebElement, org.openqa.selenium.internal.WrapsElement)</li>
 </ul>
-</li>
-<li type="circle">org.openqa.selenium.WrapsElement
+<h2 title="Annotation Type Hierarchy">Annotation Type Hierarchy</h2>
 <ul>
-<li type="circle">org.openqa.selenium.internal.WrapsElement
-<ul>
-<li type="circle">com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide"><span class="typeNameLink">SelenideElement</span></a> (also extends org.openqa.selenium.interactions.Locatable, org.openqa.selenium.TakesScreenshot, org.openqa.selenium.WebElement, org.openqa.selenium.WrapsDriver)</li>
-</ul>
-</li>
-</ul>
-</li>
+<li type="circle">com.codeborne.selenide.testng.annotations.<a href="com/codeborne/selenide/testng/annotations/Report.html" title="annotation in com.codeborne.selenide.testng.annotations"><span class="typeNameLink">Report</span></a> (implements java.lang.annotation.Annotation)</li>
 </ul>
 <h2 title="Enum Hierarchy">Enum Hierarchy</h2>
 <ul>

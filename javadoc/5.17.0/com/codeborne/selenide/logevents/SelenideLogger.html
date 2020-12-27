@@ -107,8 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public class <span class="typeNameLabel">SelenideLogger</span>
+<pre>public class <span class="typeNameLabel">SelenideLogger</span>
 extends java.lang.Object</pre>
 <div class="block">Logs Selenide test steps and notifies all registered LogEventListener about it</div>
 </li>
@@ -288,12 +287,9 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>beginStep</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../../com/codeborne/selenide/logevents/SelenideLog.html" title="class in com.codeborne.selenide.logevents">SelenideLog</a>&nbsp;beginStep(java.lang.String&nbsp;source,
-                                                                java.lang.String&nbsp;methodName,
-                                                                @Nullable
-                                                                java.lang.Object...&nbsp;args)</pre>
+<pre>public static&nbsp;<a href="../../../../com/codeborne/selenide/logevents/SelenideLog.html" title="class in com.codeborne.selenide.logevents">SelenideLog</a>&nbsp;beginStep(java.lang.String&nbsp;source,
+                                    java.lang.String&nbsp;methodName,
+                                    java.lang.Object...&nbsp;args)</pre>
 </li>
 </ul>
 <a name="beginStep-java.lang.String-java.lang.String-">
@@ -302,10 +298,8 @@ public static&nbsp;<a href="../../../../com/codeborne/selenide/logevents/Selenid
 <ul class="blockList">
 <li class="blockList">
 <h4>beginStep</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../../com/codeborne/selenide/logevents/SelenideLog.html" title="class in com.codeborne.selenide.logevents">SelenideLog</a>&nbsp;beginStep(java.lang.String&nbsp;source,
-                                                                java.lang.String&nbsp;subject)</pre>
+<pre>public static&nbsp;<a href="../../../../com/codeborne/selenide/logevents/SelenideLog.html" title="class in com.codeborne.selenide.logevents">SelenideLog</a>&nbsp;beginStep(java.lang.String&nbsp;source,
+                                    java.lang.String&nbsp;subject)</pre>
 </li>
 </ul>
 <a name="commitStep-com.codeborne.selenide.logevents.SelenideLog-java.lang.Throwable-">
@@ -334,8 +328,7 @@ public static&nbsp;<a href="../../../../com/codeborne/selenide/logevents/Selenid
 <ul class="blockList">
 <li class="blockList">
 <h4>removeListener</h4>
-<pre>@Nullable
-public static&nbsp;&lt;T extends <a href="../../../../com/codeborne/selenide/logevents/LogEventListener.html" title="interface in com.codeborne.selenide.logevents">LogEventListener</a>&gt;&nbsp;T&nbsp;removeListener(java.lang.String&nbsp;name)</pre>
+<pre>public static&nbsp;&lt;T extends <a href="../../../../com/codeborne/selenide/logevents/LogEventListener.html" title="interface in com.codeborne.selenide.logevents">LogEventListener</a>&gt;&nbsp;T&nbsp;removeListener(java.lang.String&nbsp;name)</pre>
 <div class="block">Remove listener (from the current thread).</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>

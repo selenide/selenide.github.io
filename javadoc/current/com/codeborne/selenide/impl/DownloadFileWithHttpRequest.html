@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -107,8 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public class <span class="typeNameLabel">DownloadFileWithHttpRequest</span>
+<pre>public class <span class="typeNameLabel">DownloadFileWithHttpRequest</span>
 extends java.lang.Object</pre>
 </li>
 </ul>
@@ -166,24 +165,24 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#addHttpHeaders-com.codeborne.selenide.Driver-org.apache.hc.client5.http.classic.methods.HttpGet-">addHttpHeaders</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-              org.apache.hc.client5.http.classic.methods.HttpGet&nbsp;httpGet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#addHttpHeaders-com.codeborne.selenide.Driver-HttpGet-">addHttpHeaders</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+              HttpGet&nbsp;httpGet)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#configureHttpGet-org.apache.hc.client5.http.classic.methods.HttpGet-long-">configureHttpGet</a></span>(org.apache.hc.client5.http.classic.methods.HttpGet&nbsp;httpGet,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#configureHttpGet-HttpGet-long-">configureHttpGet</a></span>(HttpGet&nbsp;httpGet,
                 long&nbsp;timeout)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>protected org.apache.hc.client5.http.impl.classic.CloseableHttpClient</code></td>
+<td class="colFirst"><code>protected CloseableHttpClient</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#createDefaultHttpClient--">createDefaultHttpClient</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>protected org.apache.hc.core5.http.protocol.HttpContext</code></td>
+<td class="colFirst"><code>protected HttpContext</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#createHttpContext-com.codeborne.selenide.Driver-">createHttpContext</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>protected org.apache.hc.client5.http.impl.classic.CloseableHttpClient</code></td>
+<td class="colFirst"><code>protected CloseableHttpClient</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#createTrustingHttpClient--">createTrustingHttpClient</a></span>()</code>
 <div class="block">configure HttpClient to ignore self-signed certs
    as described here: http://literatejava.com/networks/ignore-ssl-certificate-errors-apache-httpclient-4-4/</div>
@@ -191,39 +190,25 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.io.File</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#download-com.codeborne.selenide.Driver-java.lang.String-long-com.codeborne.selenide.files.FileFilter-">download</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-        java.lang.String&nbsp;relativeOrAbsoluteUrl,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#download-com.codeborne.selenide.Driver-WebElement-long-com.codeborne.selenide.files.FileFilter-">download</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+        WebElement&nbsp;element,
         long&nbsp;timeout,
         <a href="../../../../com/codeborne/selenide/files/FileFilter.html" title="interface in com.codeborne.selenide.files">FileFilter</a>&nbsp;fileFilter)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>java.io.File</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#download-com.codeborne.selenide.Driver-java.net.URI-long-com.codeborne.selenide.files.FileFilter-">download</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-        java.net.URI&nbsp;url,
-        long&nbsp;timeout,
-        <a href="../../../../com/codeborne/selenide/files/FileFilter.html" title="interface in com.codeborne.selenide.files">FileFilter</a>&nbsp;fileFilter)</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>java.io.File</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#download-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-long-com.codeborne.selenide.files.FileFilter-">download</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-        org.openqa.selenium.WebElement&nbsp;element,
-        long&nbsp;timeout,
-        <a href="../../../../com/codeborne/selenide/files/FileFilter.html" title="interface in com.codeborne.selenide.files">FileFilter</a>&nbsp;fileFilter)</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>protected org.apache.hc.client5.http.impl.classic.CloseableHttpResponse</code></td>
+<td class="colFirst"><code>protected CloseableHttpResponse</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#executeHttpRequest-com.codeborne.selenide.Driver-java.lang.String-long-">executeHttpRequest</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
                   java.lang.String&nbsp;fileToDownloadLocation,
                   long&nbsp;timeout)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#getFileName-java.lang.String-org.apache.hc.core5.http.HttpResponse-">getFileName</a></span>(java.lang.String&nbsp;fileToDownloadLocation,
-           org.apache.hc.core5.http.HttpResponse&nbsp;response)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#getFileName-java.lang.String-HttpResponse-">getFileName</a></span>(java.lang.String&nbsp;fileToDownloadLocation,
+           HttpResponse&nbsp;response)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#saveContentToFile-org.apache.hc.client5.http.impl.classic.CloseableHttpResponse-java.io.File-">saveContentToFile</a></span>(org.apache.hc.client5.http.impl.classic.CloseableHttpResponse&nbsp;response,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#saveContentToFile-CloseableHttpResponse-java.io.File-">saveContentToFile</a></span>(CloseableHttpResponse&nbsp;response,
                  java.io.File&nbsp;downloadedFile)</code>&nbsp;</td>
 </tr>
 </table>
@@ -282,57 +267,17 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="download-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-long-com.codeborne.selenide.files.FileFilter-">
+<a name="download-com.codeborne.selenide.Driver-WebElement-long-com.codeborne.selenide.files.FileFilter-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>download</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.io.File&nbsp;download(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                                                         org.openqa.selenium.WebElement&nbsp;element,
-                                                         long&nbsp;timeout,
-                                                         <a href="../../../../com/codeborne/selenide/files/FileFilter.html" title="interface in com.codeborne.selenide.files">FileFilter</a>&nbsp;fileFilter)
-                                                  throws java.io.IOException</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
-</dl>
-</li>
-</ul>
-<a name="download-com.codeborne.selenide.Driver-java.net.URI-long-com.codeborne.selenide.files.FileFilter-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>download</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.io.File&nbsp;download(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                                                         java.net.URI&nbsp;url,
-                                                         long&nbsp;timeout,
-                                                         <a href="../../../../com/codeborne/selenide/files/FileFilter.html" title="interface in com.codeborne.selenide.files">FileFilter</a>&nbsp;fileFilter)
-                                                  throws java.io.IOException</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
-</dl>
-</li>
-</ul>
-<a name="download-com.codeborne.selenide.Driver-java.lang.String-long-com.codeborne.selenide.files.FileFilter-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>download</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.io.File&nbsp;download(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                                                         java.lang.String&nbsp;relativeOrAbsoluteUrl,
-                                                         long&nbsp;timeout,
-                                                         <a href="../../../../com/codeborne/selenide/files/FileFilter.html" title="interface in com.codeborne.selenide.files">FileFilter</a>&nbsp;fileFilter)
-                                                  throws java.io.IOException</pre>
+<pre>public&nbsp;java.io.File&nbsp;download(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                             WebElement&nbsp;element,
+                             long&nbsp;timeout,
+                             <a href="../../../../com/codeborne/selenide/files/FileFilter.html" title="interface in com.codeborne.selenide.files">FileFilter</a>&nbsp;fileFilter)
+                      throws java.io.IOException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
@@ -345,25 +290,23 @@ public&nbsp;java.io.File&nbsp;download(<a href="../../../../com/codeborne/seleni
 <ul class="blockList">
 <li class="blockList">
 <h4>executeHttpRequest</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;org.apache.hc.client5.http.impl.classic.CloseableHttpResponse&nbsp;executeHttpRequest(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                                                                                                                       java.lang.String&nbsp;fileToDownloadLocation,
-                                                                                                                       long&nbsp;timeout)
-                                                                                                                throws java.io.IOException</pre>
+<pre>protected&nbsp;CloseableHttpResponse&nbsp;executeHttpRequest(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                                                   java.lang.String&nbsp;fileToDownloadLocation,
+                                                   long&nbsp;timeout)
+                                            throws java.io.IOException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>
-<a name="configureHttpGet-org.apache.hc.client5.http.classic.methods.HttpGet-long-">
+<a name="configureHttpGet-HttpGet-long-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>configureHttpGet</h4>
-<pre>protected&nbsp;void&nbsp;configureHttpGet(org.apache.hc.client5.http.classic.methods.HttpGet&nbsp;httpGet,
+<pre>protected&nbsp;void&nbsp;configureHttpGet(HttpGet&nbsp;httpGet,
                                 long&nbsp;timeout)</pre>
 </li>
 </ul>
@@ -373,9 +316,7 @@ protected&nbsp;org.apache.hc.client5.http.impl.classic.CloseableHttpResponse&nbs
 <ul class="blockList">
 <li class="blockList">
 <h4>createDefaultHttpClient</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;org.apache.hc.client5.http.impl.classic.CloseableHttpClient&nbsp;createDefaultHttpClient()</pre>
+<pre>protected&nbsp;CloseableHttpClient&nbsp;createDefaultHttpClient()</pre>
 </li>
 </ul>
 <a name="createTrustingHttpClient--">
@@ -384,10 +325,8 @@ protected&nbsp;org.apache.hc.client5.http.impl.classic.CloseableHttpClient&nbsp;
 <ul class="blockList">
 <li class="blockList">
 <h4>createTrustingHttpClient</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;org.apache.hc.client5.http.impl.classic.CloseableHttpClient&nbsp;createTrustingHttpClient()
-                                                                                                                    throws java.io.IOException</pre>
+<pre>protected&nbsp;CloseableHttpClient&nbsp;createTrustingHttpClient()
+                                                throws java.io.IOException</pre>
 <div class="block">configure HttpClient to ignore self-signed certs
    as described here: http://literatejava.com/networks/ignore-ssl-certificate-errors-apache-httpclient-4-4/</div>
 <dl>
@@ -402,40 +341,36 @@ protected&nbsp;org.apache.hc.client5.http.impl.classic.CloseableHttpClient&nbsp;
 <ul class="blockList">
 <li class="blockList">
 <h4>createHttpContext</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;org.apache.hc.core5.http.protocol.HttpContext&nbsp;createHttpContext(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver)</pre>
+<pre>protected&nbsp;HttpContext&nbsp;createHttpContext(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver)</pre>
 </li>
 </ul>
-<a name="addHttpHeaders-com.codeborne.selenide.Driver-org.apache.hc.client5.http.classic.methods.HttpGet-">
+<a name="addHttpHeaders-com.codeborne.selenide.Driver-HttpGet-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addHttpHeaders</h4>
 <pre>protected&nbsp;void&nbsp;addHttpHeaders(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                              org.apache.hc.client5.http.classic.methods.HttpGet&nbsp;httpGet)</pre>
+                              HttpGet&nbsp;httpGet)</pre>
 </li>
 </ul>
-<a name="getFileName-java.lang.String-org.apache.hc.core5.http.HttpResponse-">
+<a name="getFileName-java.lang.String-HttpResponse-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getFileName</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;java.lang.String&nbsp;getFileName(java.lang.String&nbsp;fileToDownloadLocation,
-                                                                   org.apache.hc.core5.http.HttpResponse&nbsp;response)</pre>
+<pre>protected&nbsp;java.lang.String&nbsp;getFileName(java.lang.String&nbsp;fileToDownloadLocation,
+                                       HttpResponse&nbsp;response)</pre>
 </li>
 </ul>
-<a name="saveContentToFile-org.apache.hc.client5.http.impl.classic.CloseableHttpResponse-java.io.File-">
+<a name="saveContentToFile-CloseableHttpResponse-java.io.File-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>saveContentToFile</h4>
-<pre>protected&nbsp;void&nbsp;saveContentToFile(org.apache.hc.client5.http.impl.classic.CloseableHttpResponse&nbsp;response,
+<pre>protected&nbsp;void&nbsp;saveContentToFile(CloseableHttpResponse&nbsp;response,
                                  java.io.File&nbsp;downloadedFile)
                           throws java.io.IOException</pre>
 <dl>

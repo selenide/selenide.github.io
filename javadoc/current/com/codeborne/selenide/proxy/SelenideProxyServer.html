@@ -107,8 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public class <span class="typeNameLabel">SelenideProxyServer</span>
+<pre>public class <span class="typeNameLabel">SelenideProxyServer</span>
 extends java.lang.Object</pre>
 <div class="block">Selenide own proxy server to intercept server responses
 
@@ -133,18 +132,18 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#SelenideProxyServer-com.codeborne.selenide.Config-org.openqa.selenium.Proxy-">SelenideProxyServer</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                   org.openqa.selenium.Proxy&nbsp;outsideProxy)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#SelenideProxyServer-com.codeborne.selenide.Config-Proxy-">SelenideProxyServer</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                   Proxy&nbsp;outsideProxy)</code>
 <div class="block">Create server
  Note that server is not started nor activated yet.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#SelenideProxyServer-com.codeborne.selenide.Config-org.openqa.selenium.Proxy-com.codeborne.selenide.proxy.InetAddressResolver-com.browserup.bup.BrowserUpProxy-">SelenideProxyServer</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                   org.openqa.selenium.Proxy&nbsp;outsideProxy,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#SelenideProxyServer-com.codeborne.selenide.Config-Proxy-com.codeborne.selenide.proxy.InetAddressResolver-BrowserUpProxy-">SelenideProxyServer</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                   Proxy&nbsp;outsideProxy,
                    <a href="../../../../com/codeborne/selenide/proxy/InetAddressResolver.html" title="class in com.codeborne.selenide.proxy">InetAddressResolver</a>&nbsp;inetAddressResolver,
-                   com.browserup.bup.BrowserUpProxy&nbsp;proxy)</code>&nbsp;</td>
+                   BrowserUpProxy&nbsp;proxy)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -163,26 +162,26 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#addRequestFilter-java.lang.String-com.browserup.bup.filters.RequestFilter-">addRequestFilter</a></span>(java.lang.String&nbsp;name,
-                com.browserup.bup.filters.RequestFilter&nbsp;requestFilter)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#addRequestFilter-java.lang.String-RequestFilter-">addRequestFilter</a></span>(java.lang.String&nbsp;name,
+                RequestFilter&nbsp;requestFilter)</code>
 <div class="block">Add a custom request filter which allows to track/modify all requests from browser to server</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#addResponseFilter-java.lang.String-com.browserup.bup.filters.ResponseFilter-">addResponseFilter</a></span>(java.lang.String&nbsp;name,
-                 com.browserup.bup.filters.ResponseFilter&nbsp;responseFilter)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#addResponseFilter-java.lang.String-ResponseFilter-">addResponseFilter</a></span>(java.lang.String&nbsp;name,
+                 ResponseFilter&nbsp;responseFilter)</code>
 <div class="block">Add a custom response filter which allows to track/modify all server responses to browser</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>org.openqa.selenium.Proxy</code></td>
+<td class="colFirst"><code>Proxy</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#createSeleniumProxy--">createSeleniumProxy</a></span>()</code>
 <div class="block">Converts this proxy to a "selenium" proxy that can be used by webdriver</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>com.browserup.bup.BrowserUpProxy</code></td>
+<td class="colFirst"><code>BrowserUpProxy</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#getProxy--">getProxy</a></span>()</code>
 <div class="block">Method return current instance of browser up proxy</div>
 </td>
@@ -192,13 +191,13 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#isStarted--">isStarted</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>&lt;T extends com.browserup.bup.filters.RequestFilter&gt;<br>T</code></td>
+<td class="colFirst"><code>&lt;T extends RequestFilter&gt;<br>T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#requestFilter-java.lang.String-">requestFilter</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Get request filter by name</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>&lt;T extends com.browserup.bup.filters.ResponseFilter&gt;<br>T</code></td>
+<td class="colFirst"><code>&lt;T extends ResponseFilter&gt;<br>T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#responseFilter-java.lang.String-">responseFilter</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Get response filter by name
 
@@ -245,15 +244,14 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SelenideProxyServer-com.codeborne.selenide.Config-org.openqa.selenium.Proxy-">
+<a name="SelenideProxyServer-com.codeborne.selenide.Config-Proxy-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SelenideProxyServer</h4>
 <pre>public&nbsp;SelenideProxyServer(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                           @Nullable
-                           org.openqa.selenium.Proxy&nbsp;outsideProxy)</pre>
+                           Proxy&nbsp;outsideProxy)</pre>
 <div class="block">Create server
  Note that server is not started nor activated yet.</div>
 <dl>
@@ -262,17 +260,16 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a name="SelenideProxyServer-com.codeborne.selenide.Config-org.openqa.selenium.Proxy-com.codeborne.selenide.proxy.InetAddressResolver-com.browserup.bup.BrowserUpProxy-">
+<a name="SelenideProxyServer-com.codeborne.selenide.Config-Proxy-com.codeborne.selenide.proxy.InetAddressResolver-BrowserUpProxy-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SelenideProxyServer</h4>
 <pre>protected&nbsp;SelenideProxyServer(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                              @Nullable
-                              org.openqa.selenium.Proxy&nbsp;outsideProxy,
+                              Proxy&nbsp;outsideProxy,
                               <a href="../../../../com/codeborne/selenide/proxy/InetAddressResolver.html" title="class in com.codeborne.selenide.proxy">InetAddressResolver</a>&nbsp;inetAddressResolver,
-                              com.browserup.bup.BrowserUpProxy&nbsp;proxy)</pre>
+                              BrowserUpProxy&nbsp;proxy)</pre>
 </li>
 </ul>
 </li>
@@ -301,18 +298,17 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isStarted</h4>
-<pre>@CheckReturnValue
-public&nbsp;boolean&nbsp;isStarted()</pre>
+<pre>public&nbsp;boolean&nbsp;isStarted()</pre>
 </li>
 </ul>
-<a name="addRequestFilter-java.lang.String-com.browserup.bup.filters.RequestFilter-">
+<a name="addRequestFilter-java.lang.String-RequestFilter-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addRequestFilter</h4>
 <pre>public&nbsp;void&nbsp;addRequestFilter(java.lang.String&nbsp;name,
-                             com.browserup.bup.filters.RequestFilter&nbsp;requestFilter)</pre>
+                             RequestFilter&nbsp;requestFilter)</pre>
 <div class="block">Add a custom request filter which allows to track/modify all requests from browser to server</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -321,14 +317,14 @@ public&nbsp;boolean&nbsp;isStarted()</pre>
 </dl>
 </li>
 </ul>
-<a name="addResponseFilter-java.lang.String-com.browserup.bup.filters.ResponseFilter-">
+<a name="addResponseFilter-java.lang.String-ResponseFilter-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addResponseFilter</h4>
 <pre>public&nbsp;void&nbsp;addResponseFilter(java.lang.String&nbsp;name,
-                              com.browserup.bup.filters.ResponseFilter&nbsp;responseFilter)</pre>
+                              ResponseFilter&nbsp;responseFilter)</pre>
 <div class="block">Add a custom response filter which allows to track/modify all server responses to browser</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -343,9 +339,7 @@ public&nbsp;boolean&nbsp;isStarted()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>createSeleniumProxy</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;org.openqa.selenium.Proxy&nbsp;createSeleniumProxy()</pre>
+<pre>public&nbsp;Proxy&nbsp;createSeleniumProxy()</pre>
 <div class="block">Converts this proxy to a "selenium" proxy that can be used by webdriver</div>
 </li>
 </ul>
@@ -365,9 +359,7 @@ public&nbsp;org.openqa.selenium.Proxy&nbsp;createSeleniumProxy()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getProxy</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;com.browserup.bup.BrowserUpProxy&nbsp;getProxy()</pre>
+<pre>public&nbsp;BrowserUpProxy&nbsp;getProxy()</pre>
 <div class="block">Method return current instance of browser up proxy</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -381,9 +373,7 @@ public&nbsp;com.browserup.bup.BrowserUpProxy&nbsp;getProxy()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.lang.String&nbsp;toString()</pre>
+<pre>public&nbsp;java.lang.String&nbsp;toString()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
@@ -396,9 +386,7 @@ public&nbsp;java.lang.String&nbsp;toString()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>requestFilter</h4>
-<pre>@CheckReturnValue
- @Nullable
-public&nbsp;&lt;T extends com.browserup.bup.filters.RequestFilter&gt;&nbsp;T&nbsp;requestFilter(java.lang.String&nbsp;name)</pre>
+<pre>public&nbsp;&lt;T extends RequestFilter&gt;&nbsp;T&nbsp;requestFilter(java.lang.String&nbsp;name)</pre>
 <div class="block">Get request filter by name</div>
 </li>
 </ul>
@@ -408,9 +396,7 @@ public&nbsp;&lt;T extends com.browserup.bup.filters.RequestFilter&gt;&nbsp;T&nbs
 <ul class="blockListLast">
 <li class="blockList">
 <h4>responseFilter</h4>
-<pre>@CheckReturnValue
- @Nullable
-public&nbsp;&lt;T extends com.browserup.bup.filters.ResponseFilter&gt;&nbsp;T&nbsp;responseFilter(java.lang.String&nbsp;name)</pre>
+<pre>public&nbsp;&lt;T extends ResponseFilter&gt;&nbsp;T&nbsp;responseFilter(java.lang.String&nbsp;name)</pre>
 <div class="block">Get response filter by name
 
  By default, the only one filter "download" is available.</div>

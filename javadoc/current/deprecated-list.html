@@ -112,13 +112,78 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colOne"><a href="com/codeborne/selenide/Selenide.html#Z:Z:D-WebElement-By-">com.codeborne.selenide.Selenide.$(WebElement, By)</a>
+<div class="block"><span class="deprecationComment">please use $(parent).$(By) which is the same
+ (method will not be removed until 4.x or later)</span></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="com/codeborne/selenide/Selenide.html#Z:Z:D-WebElement-By-int-">com.codeborne.selenide.Selenide.$(WebElement, By, int)</a>
+<div class="block"><span class="deprecationComment">please use $(parent).$(By, int) which is the same
+ (method will not be removed until 4.x or later)</span></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="com/codeborne/selenide/Selenide.html#Z:Z:D-WebElement-java.lang.String-">com.codeborne.selenide.Selenide.$(WebElement, String)</a>
+<div class="block"><span class="deprecationComment">please use $(parent).$(String) which is the same
+ (method will not be removed until 4.x or later)</span></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="com/codeborne/selenide/Selenide.html#Z:Z:D-WebElement-java.lang.String-int-">com.codeborne.selenide.Selenide.$(WebElement, String, int)</a>
+<div class="block"><span class="deprecationComment">please use $(parent).$(String, int) which is the same
+ (method will not be removed until 4.x or later)</span></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="com/codeborne/selenide/Selenide.html#Z:Z:D:D-WebElement-By-">com.codeborne.selenide.Selenide.$$(WebElement, By)</a>
+<div class="block"><span class="deprecationComment">please use $(parent).$$(By) which is the same
+ (method will not be removed until 4.x or later)</span></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="com/codeborne/selenide/Selenide.html#Z:Z:D:D-WebElement-java.lang.String-">com.codeborne.selenide.Selenide.$$(WebElement, String)</a>
+<div class="block"><span class="deprecationComment">please use $(parent).$$(String) which is the same
+ (method will not be removed until 4.x or later)</span></div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><a href="com/codeborne/selenide/SelenideElement.html#click-int-int-">com.codeborne.selenide.SelenideElement.click(int, int)</a>
 <div class="block"><span class="deprecationComment">use <a href="com/codeborne/selenide/SelenideElement.html#click-com.codeborne.selenide.ClickOptions-"><code>SelenideElement.click(ClickOptions)</code></a> with offsets</span></div>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><a href="com/codeborne/selenide/Selenide.html#close--">com.codeborne.selenide.Selenide.close()</a>
+<div class="block"><span class="deprecationComment">Use either <a href="com/codeborne/selenide/Selenide.html#closeWindow--"><code>Selenide.closeWindow()</code></a> or <a href="com/codeborne/selenide/Selenide.html#closeWebDriver--"><code>Selenide.closeWebDriver()</code></a></span></div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><a href="com/codeborne/selenide/impl/ScreenShotLaboratory.html#formatScreenShotPath-com.codeborne.selenide.Driver-">com.codeborne.selenide.impl.ScreenShotLaboratory.formatScreenShotPath(Driver)</a>
 <div class="block"><span class="deprecationComment">Use method <a href="com/codeborne/selenide/impl/ScreenShotLaboratory.html#takeScreenshot-com.codeborne.selenide.Driver-"><code>ScreenShotLaboratory.takeScreenshot(Driver)</code></a> which returns Screenshot instead of String</span></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="com/codeborne/selenide/Selenide.html#getElement-By-">com.codeborne.selenide.Selenide.getElement(By)</a>
+<div class="block"><span class="deprecationComment">please use element(criteria) which is the same
+ (method will not be removed until 4.x or later)
+ Locates the first element matching given criteria
+ ATTENTION! This method doesn't start any search yet!</span></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="com/codeborne/selenide/Selenide.html#getElement-By-int-">com.codeborne.selenide.Selenide.getElement(By, int)</a>
+<div class="block"><span class="deprecationComment">please use element(criteria, index) which is the same
+ (method will not be removed until 4.x or later)
+ Locates the Nth element matching given criteria
+ ATTENTION! This method doesn't start any search yet!</span></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="com/codeborne/selenide/Selenide.html#getElements-By-">com.codeborne.selenide.Selenide.getElements(By)</a>
+<div class="block"><span class="deprecationComment">please use elements(criteria) which is the same
+ (method will not be removed until 4.x or later)
+ Locates all elements matching given CSS selector
+ ATTENTION! This method doesn't start any search yet!</span></div>
 </td>
 </tr>
 <tr class="altColor">
@@ -143,21 +208,26 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><a href="com/codeborne/selenide/Screenshots.html#takeScreenShot-java.lang.String-">com.codeborne.selenide.Screenshots.takeScreenShot(String)</a>
+<div class="block"><span class="deprecationComment">Use either <a href="com/codeborne/selenide/Selenide.html#screenshot-java.lang.String-"><code>Selenide.screenshot(java.lang.String)</code></a> or <a href="com/codeborne/selenide/SelenideDriver.html#screenshot-java.lang.String-"><code>SelenideDriver.screenshot(java.lang.String)</code></a></span></div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><a href="com/codeborne/selenide/SelenideElement.html#waitUntil-com.codeborne.selenide.Condition-long-">com.codeborne.selenide.SelenideElement.waitUntil(Condition, long)</a>
 <div class="block"><span class="deprecationComment">use <a href="com/codeborne/selenide/SelenideElement.html#shouldBe-com.codeborne.selenide.Condition-java.time.Duration-"><code>SelenideElement.shouldBe(Condition, Duration)</code></a> or @deprecated use <a href="com/codeborne/selenide/SelenideElement.html#shouldHave-com.codeborne.selenide.Condition-java.time.Duration-"><code>SelenideElement.shouldHave(Condition, Duration)</code></a></span></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="com/codeborne/selenide/SelenideElement.html#waitUntil-com.codeborne.selenide.Condition-long-long-">com.codeborne.selenide.SelenideElement.waitUntil(Condition, long, long)</a>
 <div class="block"><span class="deprecationComment">use <a href="com/codeborne/selenide/SelenideElement.html#shouldBe-com.codeborne.selenide.Condition-java.time.Duration-"><code>SelenideElement.shouldBe(Condition, Duration)</code></a> or @deprecated use <a href="com/codeborne/selenide/SelenideElement.html#shouldHave-com.codeborne.selenide.Condition-java.time.Duration-"><code>SelenideElement.shouldHave(Condition, Duration)</code></a></span></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="com/codeborne/selenide/SelenideElement.html#waitWhile-com.codeborne.selenide.Condition-long-">com.codeborne.selenide.SelenideElement.waitWhile(Condition, long)</a>
 <div class="block"><span class="deprecationComment">use <a href="com/codeborne/selenide/SelenideElement.html#shouldBe-com.codeborne.selenide.Condition-java.time.Duration-"><code>SelenideElement.shouldBe(Condition, Duration)</code></a> or @deprecated use <a href="com/codeborne/selenide/SelenideElement.html#shouldHave-com.codeborne.selenide.Condition-java.time.Duration-"><code>SelenideElement.shouldHave(Condition, Duration)</code></a></span></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><a href="com/codeborne/selenide/SelenideElement.html#waitWhile-com.codeborne.selenide.Condition-long-long-">com.codeborne.selenide.SelenideElement.waitWhile(Condition, long, long)</a>
 <div class="block"><span class="deprecationComment">use <a href="com/codeborne/selenide/SelenideElement.html#shouldBe-com.codeborne.selenide.Condition-java.time.Duration-"><code>SelenideElement.shouldBe(Condition, Duration)</code></a> or @deprecated use <a href="com/codeborne/selenide/SelenideElement.html#shouldHave-com.codeborne.selenide.Condition-java.time.Duration-"><code>SelenideElement.shouldHave(Condition, Duration)</code></a></span></div>
 </td>

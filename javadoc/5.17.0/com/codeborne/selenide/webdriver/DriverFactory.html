@@ -123,17 +123,17 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>org.openqa.selenium.WebDriver</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.html#create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">create</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+<td class="colFirst"><code>WebDriver</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.html#create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-java.io.File-">create</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
       <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
-      org.openqa.selenium.Proxy&nbsp;proxy,
+      Proxy&nbsp;proxy,
       java.io.File&nbsp;browserDownloadsFolder)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>org.openqa.selenium.MutableCapabilities</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.html#createCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">createCapabilities</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+<td class="colFirst"><code>MutableCapabilities</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.html#createCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-java.io.File-">createCapabilities</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
                   <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
-                  org.openqa.selenium.Proxy&nbsp;proxy,
+                  Proxy&nbsp;proxy,
                   java.io.File&nbsp;browserDownloadsFolder)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -164,35 +164,28 @@ var activeTableTab = "activeTableTab";
 <pre>void&nbsp;setupWebdriverBinary()</pre>
 </li>
 </ul>
-<a name="createCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">
+<a name="createCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-java.io.File-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>createCapabilities</h4>
-<pre>@CheckReturnValue
- @Nonnull
-org.openqa.selenium.MutableCapabilities&nbsp;createCapabilities(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                                                                                       <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
-                                                                                       @Nullable
-                                                                                       org.openqa.selenium.Proxy&nbsp;proxy,
-                                                                                       @Nullable
-                                                                                       java.io.File&nbsp;browserDownloadsFolder)</pre>
+<pre>MutableCapabilities&nbsp;createCapabilities(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                                       <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
+                                       Proxy&nbsp;proxy,
+                                       java.io.File&nbsp;browserDownloadsFolder)</pre>
 </li>
 </ul>
-<a name="create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">
+<a name="create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-java.io.File-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>create</h4>
-<pre>@CheckReturnValue
- @Nonnull
-org.openqa.selenium.WebDriver&nbsp;create(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                                                                 <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
-                                                                 @Nullable
-                                                                 org.openqa.selenium.Proxy&nbsp;proxy,
-                                                                 java.io.File&nbsp;browserDownloadsFolder)</pre>
+<pre>WebDriver&nbsp;create(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                 <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
+                 Proxy&nbsp;proxy,
+                 java.io.File&nbsp;browserDownloadsFolder)</pre>
 </li>
 </ul>
 </li>

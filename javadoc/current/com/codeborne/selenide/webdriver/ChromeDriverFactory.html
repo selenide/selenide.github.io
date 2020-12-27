@@ -116,8 +116,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public class <span class="typeNameLabel">ChromeDriverFactory</span>
+<pre>public class <span class="typeNameLabel">ChromeDriverFactory</span>
 extends <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html" title="class in com.codeborne.selenide.webdriver">AbstractDriverFactory</a></pre>
 </li>
 </ul>
@@ -155,21 +154,21 @@ extends <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFact
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected org.openqa.selenium.chrome.ChromeDriverService</code></td>
+<td class="colFirst"><code>protected ChromeDriverService</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/ChromeDriverFactory.html#buildService-com.codeborne.selenide.Config-">buildService</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>org.openqa.selenium.WebDriver</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/ChromeDriverFactory.html#create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">create</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+<td class="colFirst"><code>WebDriver</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/ChromeDriverFactory.html#create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-java.io.File-">create</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
       <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
-      org.openqa.selenium.Proxy&nbsp;proxy,
+      Proxy&nbsp;proxy,
       java.io.File&nbsp;browserDownloadsFolder)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>org.openqa.selenium.MutableCapabilities</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/ChromeDriverFactory.html#createCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">createCapabilities</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+<td class="colFirst"><code>MutableCapabilities</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/ChromeDriverFactory.html#createCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-java.io.File-">createCapabilities</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
                   <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
-                  org.openqa.selenium.Proxy&nbsp;proxy,
+                  Proxy&nbsp;proxy,
                   java.io.File&nbsp;browserDownloadsFolder)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -183,7 +182,7 @@ extends <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFact
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/ChromeDriverFactory.html#excludeSwitches-org.openqa.selenium.Capabilities-">excludeSwitches</a></span>(org.openqa.selenium.Capabilities&nbsp;capabilities)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/ChromeDriverFactory.html#excludeSwitches-Capabilities-">excludeSwitches</a></span>(Capabilities&nbsp;capabilities)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>protected java.util.Map&lt;java.lang.String,java.lang.Object&gt;</code></td>
@@ -203,7 +202,7 @@ extends <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFact
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.codeborne.selenide.webdriver.<a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html" title="class in com.codeborne.selenide.webdriver">AbstractDriverFactory</a></h3>
-<code><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#convertStringToNearestObjectType-java.lang.String-">convertStringToNearestObjectType</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#createCommonCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-">createCommonCapabilities</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isBoolean-java.lang.String-">isBoolean</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isInteger-java.lang.String-">isInteger</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isSystemPropertyNotSet-java.lang.String-">isSystemPropertyNotSet</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#majorVersion-java.lang.String-">majorVersion</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#transferCapabilitiesFromSystemProperties-org.openqa.selenium.remote.DesiredCapabilities-">transferCapabilitiesFromSystemProperties</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#webdriverLog-com.codeborne.selenide.Config-">webdriverLog</a></code></li>
+<code><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#convertStringToNearestObjectType-java.lang.String-">convertStringToNearestObjectType</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#createCommonCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-">createCommonCapabilities</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isBoolean-java.lang.String-">isBoolean</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isInteger-java.lang.String-">isInteger</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isSystemPropertyNotSet-java.lang.String-">isSystemPropertyNotSet</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#majorVersion-java.lang.String-">majorVersion</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#transferCapabilitiesFromSystemProperties-DesiredCapabilities-">transferCapabilitiesFromSystemProperties</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#webdriverLog-com.codeborne.selenide.Config-">webdriverLog</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -252,19 +251,16 @@ extends <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFact
 <pre>public&nbsp;void&nbsp;setupWebdriverBinary()</pre>
 </li>
 </ul>
-<a name="create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">
+<a name="create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-java.io.File-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;org.openqa.selenium.WebDriver&nbsp;create(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                                                                        <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
-                                                                        @Nullable
-                                                                        org.openqa.selenium.Proxy&nbsp;proxy,
-                                                                        java.io.File&nbsp;browserDownloadsFolder)</pre>
+<pre>public&nbsp;WebDriver&nbsp;create(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                        <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
+                        Proxy&nbsp;proxy,
+                        java.io.File&nbsp;browserDownloadsFolder)</pre>
 </li>
 </ul>
 <a name="buildService-com.codeborne.selenide.Config-">
@@ -273,25 +269,19 @@ public&nbsp;org.openqa.selenium.WebDriver&nbsp;create(<a href="../../../../com/c
 <ul class="blockList">
 <li class="blockList">
 <h4>buildService</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;org.openqa.selenium.chrome.ChromeDriverService&nbsp;buildService(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config)</pre>
+<pre>protected&nbsp;ChromeDriverService&nbsp;buildService(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config)</pre>
 </li>
 </ul>
-<a name="createCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">
+<a name="createCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-java.io.File-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>createCapabilities</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;org.openqa.selenium.MutableCapabilities&nbsp;createCapabilities(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                                                                                              <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
-                                                                                              @Nullable
-                                                                                              org.openqa.selenium.Proxy&nbsp;proxy,
-                                                                                              @Nullable
-                                                                                              java.io.File&nbsp;browserDownloadsFolder)</pre>
+<pre>public&nbsp;MutableCapabilities&nbsp;createCapabilities(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                                              <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
+                                              Proxy&nbsp;proxy,
+                                              java.io.File&nbsp;browserDownloadsFolder)</pre>
 </li>
 </ul>
 <a name="createChromeArguments-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-">
@@ -300,10 +290,8 @@ public&nbsp;org.openqa.selenium.MutableCapabilities&nbsp;createCapabilities(<a h
 <ul class="blockList">
 <li class="blockList">
 <h4>createChromeArguments</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;java.util.List&lt;java.lang.String&gt;&nbsp;createChromeArguments(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                                                                                             <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser)</pre>
+<pre>protected&nbsp;java.util.List&lt;java.lang.String&gt;&nbsp;createChromeArguments(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                                                                 <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser)</pre>
 </li>
 </ul>
 <a name="createHeadlessArguments-com.codeborne.selenide.Config-">
@@ -312,20 +300,16 @@ protected&nbsp;java.util.List&lt;java.lang.String&gt;&nbsp;createChromeArguments
 <ul class="blockList">
 <li class="blockList">
 <h4>createHeadlessArguments</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;java.util.List&lt;java.lang.String&gt;&nbsp;createHeadlessArguments(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config)</pre>
+<pre>protected&nbsp;java.util.List&lt;java.lang.String&gt;&nbsp;createHeadlessArguments(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config)</pre>
 </li>
 </ul>
-<a name="excludeSwitches-org.openqa.selenium.Capabilities-">
+<a name="excludeSwitches-Capabilities-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>excludeSwitches</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;java.lang.String[]&nbsp;excludeSwitches(org.openqa.selenium.Capabilities&nbsp;capabilities)</pre>
+<pre>protected&nbsp;java.lang.String[]&nbsp;excludeSwitches(Capabilities&nbsp;capabilities)</pre>
 </li>
 </ul>
 <a name="mobileEmulation--">
@@ -334,9 +318,7 @@ protected&nbsp;java.lang.String[]&nbsp;excludeSwitches(org.openqa.selenium.Capab
 <ul class="blockList">
 <li class="blockList">
 <h4>mobileEmulation</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&nbsp;mobileEmulation()</pre>
+<pre>protected&nbsp;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&nbsp;mobileEmulation()</pre>
 </li>
 </ul>
 <a name="prefs-java.io.File-">
@@ -345,10 +327,7 @@ protected&nbsp;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&nbsp;mobil
 <ul class="blockListLast">
 <li class="blockList">
 <h4>prefs</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&nbsp;prefs(@Nullable
-                                                                                             java.io.File&nbsp;browserDownloadsFolder)</pre>
+<pre>protected&nbsp;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&nbsp;prefs(java.io.File&nbsp;browserDownloadsFolder)</pre>
 </li>
 </ul>
 </li>

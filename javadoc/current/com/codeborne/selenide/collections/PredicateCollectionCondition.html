@@ -112,7 +112,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>java.util.function.Predicate&lt;java.util.List&lt;org.openqa.selenium.WebElement&gt;&gt;</dd>
+<dd>java.util.function.Predicate&lt;java.util.List&lt;WebElement&gt;&gt;</dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -120,8 +120,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public abstract class <span class="typeNameLabel">PredicateCollectionCondition</span>
+<pre>public abstract class <span class="typeNameLabel">PredicateCollectionCondition</span>
 extends <a href="../../../../com/codeborne/selenide/CollectionCondition.html" title="class in com.codeborne.selenide">CollectionCondition</a></pre>
 </li>
 </ul>
@@ -150,7 +149,7 @@ extends <a href="../../../../com/codeborne/selenide/CollectionCondition.html" ti
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/collections/PredicateCollectionCondition.html#matcher">matcher</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected java.util.function.Predicate&lt;org.openqa.selenium.WebElement&gt;</code></td>
+<td class="colFirst"><code>protected java.util.function.Predicate&lt;WebElement&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/collections/PredicateCollectionCondition.html#predicate">predicate</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -179,7 +178,7 @@ extends <a href="../../../../com/codeborne/selenide/CollectionCondition.html" ti
 <td class="colFirst"><code>protected </code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/collections/PredicateCollectionCondition.html#PredicateCollectionCondition-java.lang.String-java.lang.String-java.util.function.Predicate-">PredicateCollectionCondition</a></span>(java.lang.String&nbsp;matcher,
                             java.lang.String&nbsp;description,
-                            java.util.function.Predicate&lt;org.openqa.selenium.WebElement&gt;&nbsp;predicate)</code>&nbsp;</td>
+                            java.util.function.Predicate&lt;WebElement&gt;&nbsp;predicate)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -203,7 +202,7 @@ extends <a href="../../../../com/codeborne/selenide/CollectionCondition.html" ti
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/collections/PredicateCollectionCondition.html#fail-com.codeborne.selenide.impl.CollectionSource-java.util.List-java.lang.Exception-long-">fail</a></span>(<a href="../../../../com/codeborne/selenide/impl/CollectionSource.html" title="interface in com.codeborne.selenide.impl">CollectionSource</a>&nbsp;collection,
-    java.util.List&lt;org.openqa.selenium.WebElement&gt;&nbsp;elements,
+    java.util.List&lt;WebElement&gt;&nbsp;elements,
     java.lang.Exception&nbsp;lastError,
     long&nbsp;timeoutMs)</code>&nbsp;</td>
 </tr>
@@ -271,7 +270,7 @@ extends <a href="../../../../com/codeborne/selenide/CollectionCondition.html" ti
 <ul class="blockListLast">
 <li class="blockList">
 <h4>predicate</h4>
-<pre>protected final&nbsp;java.util.function.Predicate&lt;org.openqa.selenium.WebElement&gt; predicate</pre>
+<pre>protected final&nbsp;java.util.function.Predicate&lt;WebElement&gt; predicate</pre>
 </li>
 </ul>
 </li>
@@ -290,7 +289,7 @@ extends <a href="../../../../com/codeborne/selenide/CollectionCondition.html" ti
 <h4>PredicateCollectionCondition</h4>
 <pre>protected&nbsp;PredicateCollectionCondition(java.lang.String&nbsp;matcher,
                                        java.lang.String&nbsp;description,
-                                       java.util.function.Predicate&lt;org.openqa.selenium.WebElement&gt;&nbsp;predicate)</pre>
+                                       java.util.function.Predicate&lt;WebElement&gt;&nbsp;predicate)</pre>
 </li>
 </ul>
 </li>
@@ -308,9 +307,7 @@ extends <a href="../../../../com/codeborne/selenide/CollectionCondition.html" ti
 <li class="blockList">
 <h4>fail</h4>
 <pre>public&nbsp;void&nbsp;fail(<a href="../../../../com/codeborne/selenide/impl/CollectionSource.html" title="interface in com.codeborne.selenide.impl">CollectionSource</a>&nbsp;collection,
-                 @Nullable
-                 java.util.List&lt;org.openqa.selenium.WebElement&gt;&nbsp;elements,
-                 @Nullable
+                 java.util.List&lt;WebElement&gt;&nbsp;elements,
                  java.lang.Exception&nbsp;lastError,
                  long&nbsp;timeoutMs)</pre>
 <dl>

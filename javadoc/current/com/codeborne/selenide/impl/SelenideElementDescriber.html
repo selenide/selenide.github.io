@@ -111,8 +111,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public class <span class="typeNameLabel">SelenideElementDescriber</span>
+<pre>public class <span class="typeNameLabel">SelenideElementDescriber</span>
 extends java.lang.Object
 implements <a href="../../../../com/codeborne/selenide/impl/ElementDescriber.html" title="interface in com.codeborne.selenide.impl">ElementDescriber</a></pre>
 </li>
@@ -152,17 +151,17 @@ implements <a href="../../../../com/codeborne/selenide/impl/ElementDescriber.htm
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/SelenideElementDescriber.html#briefly-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-">briefly</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-       org.openqa.selenium.WebElement&nbsp;element)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/SelenideElementDescriber.html#briefly-com.codeborne.selenide.Driver-WebElement-">briefly</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+       WebElement&nbsp;element)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/SelenideElementDescriber.html#fully-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-">fully</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-     org.openqa.selenium.WebElement&nbsp;element)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/SelenideElementDescriber.html#fully-com.codeborne.selenide.Driver-WebElement-">fully</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+     WebElement&nbsp;element)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/SelenideElementDescriber.html#selector-org.openqa.selenium.By-">selector</a></span>(org.openqa.selenium.By&nbsp;selector)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/SelenideElementDescriber.html#selector-By-">selector</a></span>(By&nbsp;selector)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -203,52 +202,44 @@ implements <a href="../../../../com/codeborne/selenide/impl/ElementDescriber.htm
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="fully-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-">
+<a name="fully-com.codeborne.selenide.Driver-WebElement-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>fully</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.lang.String&nbsp;fully(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                                                          @Nullable
-                                                          org.openqa.selenium.WebElement&nbsp;element)</pre>
+<pre>public&nbsp;java.lang.String&nbsp;fully(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                              WebElement&nbsp;element)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../com/codeborne/selenide/impl/ElementDescriber.html#fully-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-">fully</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/codeborne/selenide/impl/ElementDescriber.html" title="interface in com.codeborne.selenide.impl">ElementDescriber</a></code></dd>
+<dd><code><a href="../../../../com/codeborne/selenide/impl/ElementDescriber.html#fully-com.codeborne.selenide.Driver-WebElement-">fully</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/codeborne/selenide/impl/ElementDescriber.html" title="interface in com.codeborne.selenide.impl">ElementDescriber</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="briefly-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-">
+<a name="briefly-com.codeborne.selenide.Driver-WebElement-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>briefly</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.lang.String&nbsp;briefly(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                                                            @Nonnull
-                                                            org.openqa.selenium.WebElement&nbsp;element)</pre>
+<pre>public&nbsp;java.lang.String&nbsp;briefly(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                                WebElement&nbsp;element)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../com/codeborne/selenide/impl/ElementDescriber.html#briefly-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-">briefly</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/codeborne/selenide/impl/ElementDescriber.html" title="interface in com.codeborne.selenide.impl">ElementDescriber</a></code></dd>
+<dd><code><a href="../../../../com/codeborne/selenide/impl/ElementDescriber.html#briefly-com.codeborne.selenide.Driver-WebElement-">briefly</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/codeborne/selenide/impl/ElementDescriber.html" title="interface in com.codeborne.selenide.impl">ElementDescriber</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="selector-org.openqa.selenium.By-">
+<a name="selector-By-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>selector</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.lang.String&nbsp;selector(org.openqa.selenium.By&nbsp;selector)</pre>
+<pre>public&nbsp;java.lang.String&nbsp;selector(By&nbsp;selector)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../com/codeborne/selenide/impl/ElementDescriber.html#selector-org.openqa.selenium.By-">selector</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/codeborne/selenide/impl/ElementDescriber.html" title="interface in com.codeborne.selenide.impl">ElementDescriber</a></code></dd>
+<dd><code><a href="../../../../com/codeborne/selenide/impl/ElementDescriber.html#selector-By-">selector</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/codeborne/selenide/impl/ElementDescriber.html" title="interface in com.codeborne.selenide.impl">ElementDescriber</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -107,8 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public class <span class="typeNameLabel">WebElementSelector</span>
+<pre>public class <span class="typeNameLabel">WebElementSelector</span>
 extends java.lang.Object</pre>
 <div class="block">Thanks to http://selenium.polteq.com/en/injecting-the-sizzle-css-selector-library/</div>
 </li>
@@ -171,26 +170,26 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebElementSelector.html#checkThatXPathNotStartingFromSlash-org.openqa.selenium.SearchContext-org.openqa.selenium.By-">checkThatXPathNotStartingFromSlash</a></span>(org.openqa.selenium.SearchContext&nbsp;context,
-                                  org.openqa.selenium.By&nbsp;selector)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebElementSelector.html#checkThatXPathNotStartingFromSlash-SearchContext-By-">checkThatXPathNotStartingFromSlash</a></span>(SearchContext&nbsp;context,
+                                  By&nbsp;selector)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected java.util.List&lt;org.openqa.selenium.WebElement&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebElementSelector.html#evaluateSizzleSelector-com.codeborne.selenide.Driver-org.openqa.selenium.SearchContext-org.openqa.selenium.By.ByCssSelector-">evaluateSizzleSelector</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                      org.openqa.selenium.SearchContext&nbsp;context,
-                      org.openqa.selenium.By.ByCssSelector&nbsp;sizzleCssSelector)</code>&nbsp;</td>
+<td class="colFirst"><code>protected java.util.List&lt;WebElement&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebElementSelector.html#evaluateSizzleSelector-com.codeborne.selenide.Driver-SearchContext-ByCssSelector-">evaluateSizzleSelector</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                      SearchContext&nbsp;context,
+                      ByCssSelector&nbsp;sizzleCssSelector)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>org.openqa.selenium.WebElement</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebElementSelector.html#findElement-com.codeborne.selenide.Driver-org.openqa.selenium.SearchContext-org.openqa.selenium.By-">findElement</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-           org.openqa.selenium.SearchContext&nbsp;context,
-           org.openqa.selenium.By&nbsp;selector)</code>&nbsp;</td>
+<td class="colFirst"><code>WebElement</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebElementSelector.html#findElement-com.codeborne.selenide.Driver-SearchContext-By-">findElement</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+           SearchContext&nbsp;context,
+           By&nbsp;selector)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>java.util.List&lt;org.openqa.selenium.WebElement&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebElementSelector.html#findElements-com.codeborne.selenide.Driver-org.openqa.selenium.SearchContext-org.openqa.selenium.By-">findElements</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-            org.openqa.selenium.SearchContext&nbsp;context,
-            org.openqa.selenium.By&nbsp;selector)</code>&nbsp;</td>
+<td class="colFirst"><code>java.util.List&lt;WebElement&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebElementSelector.html#findElements-com.codeborne.selenide.Driver-SearchContext-By-">findElements</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+            SearchContext&nbsp;context,
+            By&nbsp;selector)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
@@ -269,53 +268,47 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="findElement-com.codeborne.selenide.Driver-org.openqa.selenium.SearchContext-org.openqa.selenium.By-">
+<a name="findElement-com.codeborne.selenide.Driver-SearchContext-By-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>findElement</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;org.openqa.selenium.WebElement&nbsp;findElement(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                                                                              org.openqa.selenium.SearchContext&nbsp;context,
-                                                                              org.openqa.selenium.By&nbsp;selector)</pre>
+<pre>public&nbsp;WebElement&nbsp;findElement(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                              SearchContext&nbsp;context,
+                              By&nbsp;selector)</pre>
 </li>
 </ul>
-<a name="findElements-com.codeborne.selenide.Driver-org.openqa.selenium.SearchContext-org.openqa.selenium.By-">
+<a name="findElements-com.codeborne.selenide.Driver-SearchContext-By-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>findElements</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.util.List&lt;org.openqa.selenium.WebElement&gt;&nbsp;findElements(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                                                                                               org.openqa.selenium.SearchContext&nbsp;context,
-                                                                                               org.openqa.selenium.By&nbsp;selector)</pre>
+<pre>public&nbsp;java.util.List&lt;WebElement&gt;&nbsp;findElements(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                                               SearchContext&nbsp;context,
+                                               By&nbsp;selector)</pre>
 </li>
 </ul>
-<a name="checkThatXPathNotStartingFromSlash-org.openqa.selenium.SearchContext-org.openqa.selenium.By-">
+<a name="checkThatXPathNotStartingFromSlash-SearchContext-By-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>checkThatXPathNotStartingFromSlash</h4>
-<pre>protected&nbsp;void&nbsp;checkThatXPathNotStartingFromSlash(org.openqa.selenium.SearchContext&nbsp;context,
-                                                  org.openqa.selenium.By&nbsp;selector)</pre>
+<pre>protected&nbsp;void&nbsp;checkThatXPathNotStartingFromSlash(SearchContext&nbsp;context,
+                                                  By&nbsp;selector)</pre>
 </li>
 </ul>
-<a name="evaluateSizzleSelector-com.codeborne.selenide.Driver-org.openqa.selenium.SearchContext-org.openqa.selenium.By.ByCssSelector-">
+<a name="evaluateSizzleSelector-com.codeborne.selenide.Driver-SearchContext-ByCssSelector-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>evaluateSizzleSelector</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;java.util.List&lt;org.openqa.selenium.WebElement&gt;&nbsp;evaluateSizzleSelector(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                                                                                                            org.openqa.selenium.SearchContext&nbsp;context,
-                                                                                                            org.openqa.selenium.By.ByCssSelector&nbsp;sizzleCssSelector)</pre>
+<pre>protected&nbsp;java.util.List&lt;WebElement&gt;&nbsp;evaluateSizzleSelector(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                                                            SearchContext&nbsp;context,
+                                                            ByCssSelector&nbsp;sizzleCssSelector)</pre>
 </li>
 </ul>
 <a name="injectSizzleIfNeeded-com.codeborne.selenide.Driver-">

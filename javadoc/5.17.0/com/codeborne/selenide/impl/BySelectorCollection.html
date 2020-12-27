@@ -111,8 +111,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public class <span class="typeNameLabel">BySelectorCollection</span>
+<pre>public class <span class="typeNameLabel">BySelectorCollection</span>
 extends java.lang.Object
 implements <a href="../../../../com/codeborne/selenide/impl/CollectionSource.html" title="interface in com.codeborne.selenide.impl">CollectionSource</a></pre>
 </li>
@@ -133,13 +132,13 @@ implements <a href="../../../../com/codeborne/selenide/impl/CollectionSource.htm
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/BySelectorCollection.html#BySelectorCollection-com.codeborne.selenide.Driver-org.openqa.selenium.By-">BySelectorCollection</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                    org.openqa.selenium.By&nbsp;selector)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/BySelectorCollection.html#BySelectorCollection-com.codeborne.selenide.Driver-By-">BySelectorCollection</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                    By&nbsp;selector)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/BySelectorCollection.html#BySelectorCollection-com.codeborne.selenide.Driver-org.openqa.selenium.SearchContext-org.openqa.selenium.By-">BySelectorCollection</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                    org.openqa.selenium.SearchContext&nbsp;parent,
-                    org.openqa.selenium.By&nbsp;selector)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/BySelectorCollection.html#BySelectorCollection-com.codeborne.selenide.Driver-SearchContext-By-">BySelectorCollection</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                    SearchContext&nbsp;parent,
+                    By&nbsp;selector)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -165,13 +164,13 @@ implements <a href="../../../../com/codeborne/selenide/impl/CollectionSource.htm
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/BySelectorCollection.html#driver--">driver</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>org.openqa.selenium.WebElement</code></td>
+<td class="colFirst"><code>WebElement</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/BySelectorCollection.html#getElement-int-">getElement</a></span>(int&nbsp;index)</code>
 <div class="block">get Nth element of this collection</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>java.util.List&lt;org.openqa.selenium.WebElement&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;WebElement&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/BySelectorCollection.html#getElements--">getElements</a></span>()</code>
 <div class="block">get elements of this collection (probably cached).</div>
 </td>
@@ -198,26 +197,25 @@ implements <a href="../../../../com/codeborne/selenide/impl/CollectionSource.htm
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BySelectorCollection-com.codeborne.selenide.Driver-org.openqa.selenium.By-">
+<a name="BySelectorCollection-com.codeborne.selenide.Driver-By-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>BySelectorCollection</h4>
 <pre>public&nbsp;BySelectorCollection(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                            org.openqa.selenium.By&nbsp;selector)</pre>
+                            By&nbsp;selector)</pre>
 </li>
 </ul>
-<a name="BySelectorCollection-com.codeborne.selenide.Driver-org.openqa.selenium.SearchContext-org.openqa.selenium.By-">
+<a name="BySelectorCollection-com.codeborne.selenide.Driver-SearchContext-By-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BySelectorCollection</h4>
 <pre>public&nbsp;BySelectorCollection(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                            @Nullable
-                            org.openqa.selenium.SearchContext&nbsp;parent,
-                            org.openqa.selenium.By&nbsp;selector)</pre>
+                            SearchContext&nbsp;parent,
+                            By&nbsp;selector)</pre>
 </li>
 </ul>
 </li>
@@ -234,9 +232,7 @@ implements <a href="../../../../com/codeborne/selenide/impl/CollectionSource.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>getElements</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.util.List&lt;org.openqa.selenium.WebElement&gt;&nbsp;getElements()</pre>
+<pre>public&nbsp;java.util.List&lt;WebElement&gt;&nbsp;getElements()</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/codeborne/selenide/impl/CollectionSource.html#getElements--">CollectionSource</a></code></span></div>
 <div class="block">get elements of this collection (probably cached).</div>
 <dl>
@@ -251,9 +247,7 @@ public&nbsp;java.util.List&lt;org.openqa.selenium.WebElement&gt;&nbsp;getElement
 <ul class="blockList">
 <li class="blockList">
 <h4>getElement</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;org.openqa.selenium.WebElement&nbsp;getElement(int&nbsp;index)</pre>
+<pre>public&nbsp;WebElement&nbsp;getElement(int&nbsp;index)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/codeborne/selenide/impl/CollectionSource.html#getElement-int-">CollectionSource</a></code></span></div>
 <div class="block">get Nth element of this collection</div>
 <dl>
@@ -268,9 +262,7 @@ public&nbsp;org.openqa.selenium.WebElement&nbsp;getElement(int&nbsp;index)</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>description</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.lang.String&nbsp;description()</pre>
+<pre>public&nbsp;java.lang.String&nbsp;description()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/codeborne/selenide/impl/CollectionSource.html#description--">description</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/codeborne/selenide/impl/CollectionSource.html" title="interface in com.codeborne.selenide.impl">CollectionSource</a></code></dd>
@@ -283,9 +275,7 @@ public&nbsp;java.lang.String&nbsp;description()</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>driver</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver()</pre>
+<pre>public&nbsp;<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/codeborne/selenide/impl/CollectionSource.html#driver--">driver</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/codeborne/selenide/impl/CollectionSource.html" title="interface in com.codeborne.selenide.impl">CollectionSource</a></code></dd>

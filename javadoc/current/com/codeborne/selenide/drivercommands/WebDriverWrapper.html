@@ -111,8 +111,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public class <span class="typeNameLabel">WebDriverWrapper</span>
+<pre>public class <span class="typeNameLabel">WebDriverWrapper</span>
 extends java.lang.Object
 implements <a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a></pre>
 <div class="block">A `Driver` implementation which uses given webdriver [and proxy].
@@ -136,8 +135,8 @@ implements <a href="../../../../com/codeborne/selenide/Driver.html" title="inter
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/drivercommands/WebDriverWrapper.html#WebDriverWrapper-com.codeborne.selenide.Config-org.openqa.selenium.WebDriver-com.codeborne.selenide.proxy.SelenideProxyServer-com.codeborne.selenide.DownloadsFolder-">WebDriverWrapper</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                org.openqa.selenium.WebDriver&nbsp;webDriver,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/drivercommands/WebDriverWrapper.html#WebDriverWrapper-com.codeborne.selenide.Config-WebDriver-com.codeborne.selenide.proxy.SelenideProxyServer-com.codeborne.selenide.DownloadsFolder-">WebDriverWrapper</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                WebDriver&nbsp;webDriver,
                 <a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a>&nbsp;selenideProxy,
                 <a href="../../../../com/codeborne/selenide/DownloadsFolder.html" title="class in com.codeborne.selenide">DownloadsFolder</a>&nbsp;browserDownloadsFolder)</code>&nbsp;</td>
 </tr>
@@ -175,7 +174,7 @@ implements <a href="../../../../com/codeborne/selenide/Driver.html" title="inter
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/drivercommands/WebDriverWrapper.html#config--">config</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>org.openqa.selenium.WebDriver</code></td>
+<td class="colFirst"><code>WebDriver</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/drivercommands/WebDriverWrapper.html#getAndCheckWebDriver--">getAndCheckWebDriver</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -183,7 +182,7 @@ implements <a href="../../../../com/codeborne/selenide/Driver.html" title="inter
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/drivercommands/WebDriverWrapper.html#getProxy--">getProxy</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>org.openqa.selenium.WebDriver</code></td>
+<td class="colFirst"><code>WebDriver</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/drivercommands/WebDriverWrapper.html#getWebDriver--">getWebDriver</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -219,15 +218,14 @@ implements <a href="../../../../com/codeborne/selenide/Driver.html" title="inter
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="WebDriverWrapper-com.codeborne.selenide.Config-org.openqa.selenium.WebDriver-com.codeborne.selenide.proxy.SelenideProxyServer-com.codeborne.selenide.DownloadsFolder-">
+<a name="WebDriverWrapper-com.codeborne.selenide.Config-WebDriver-com.codeborne.selenide.proxy.SelenideProxyServer-com.codeborne.selenide.DownloadsFolder-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>WebDriverWrapper</h4>
 <pre>public&nbsp;WebDriverWrapper(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                        org.openqa.selenium.WebDriver&nbsp;webDriver,
-                        @Nullable
+                        WebDriver&nbsp;webDriver,
                         <a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a>&nbsp;selenideProxy,
                         <a href="../../../../com/codeborne/selenide/DownloadsFolder.html" title="class in com.codeborne.selenide">DownloadsFolder</a>&nbsp;browserDownloadsFolder)</pre>
 </li>
@@ -246,8 +244,7 @@ implements <a href="../../../../com/codeborne/selenide/Driver.html" title="inter
 <ul class="blockList">
 <li class="blockList">
 <h4>config</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config()</pre>
+<pre>public&nbsp;<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/codeborne/selenide/Driver.html#config--">config</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a></code></dd>
@@ -260,8 +257,7 @@ public&nbsp;<a href="../../../../com/codeborne/selenide/Config.html" title="inte
 <ul class="blockList">
 <li class="blockList">
 <h4>browser</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser()</pre>
+<pre>public&nbsp;<a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/codeborne/selenide/Driver.html#browser--">browser</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a></code></dd>
@@ -287,8 +283,7 @@ public&nbsp;<a href="../../../../com/codeborne/selenide/Browser.html" title="cla
 <ul class="blockList">
 <li class="blockList">
 <h4>getWebDriver</h4>
-<pre>@Nonnull
-public&nbsp;org.openqa.selenium.WebDriver&nbsp;getWebDriver()</pre>
+<pre>public&nbsp;WebDriver&nbsp;getWebDriver()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/codeborne/selenide/Driver.html#getWebDriver--">getWebDriver</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a></code></dd>
@@ -301,8 +296,7 @@ public&nbsp;org.openqa.selenium.WebDriver&nbsp;getWebDriver()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getProxy</h4>
-<pre>@Nullable
-public&nbsp;<a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a>&nbsp;getProxy()</pre>
+<pre>public&nbsp;<a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a>&nbsp;getProxy()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/codeborne/selenide/Driver.html#getProxy--">getProxy</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a></code></dd>
@@ -315,8 +309,7 @@ public&nbsp;<a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServe
 <ul class="blockList">
 <li class="blockList">
 <h4>getAndCheckWebDriver</h4>
-<pre>@Nullable
-public&nbsp;org.openqa.selenium.WebDriver&nbsp;getAndCheckWebDriver()</pre>
+<pre>public&nbsp;WebDriver&nbsp;getAndCheckWebDriver()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/codeborne/selenide/Driver.html#getAndCheckWebDriver--">getAndCheckWebDriver</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a></code></dd>

@@ -105,16 +105,10 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd>com.browserup.bup.filters.ResponseFilter</dd>
-</dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public class <span class="typeNameLabel">FileDownloadFilter</span>
-extends java.lang.Object
-implements com.browserup.bup.filters.ResponseFilter</pre>
+<pre>public class <span class="typeNameLabel">FileDownloadFilter</span>
+extends java.lang.Object</pre>
 </li>
 </ul>
 </div>
@@ -168,9 +162,9 @@ implements com.browserup.bup.filters.ResponseFilter</pre>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/FileDownloadFilter.html#filterResponse-io.netty.handler.codec.http.HttpResponse-com.browserup.bup.util.HttpMessageContents-com.browserup.bup.util.HttpMessageInfo-">filterResponse</a></span>(io.netty.handler.codec.http.HttpResponse&nbsp;response,
-              com.browserup.bup.util.HttpMessageContents&nbsp;contents,
-              com.browserup.bup.util.HttpMessageInfo&nbsp;messageInfo)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/FileDownloadFilter.html#filterResponse-HttpResponse-HttpMessageContents-HttpMessageInfo-">filterResponse</a></span>(HttpResponse&nbsp;response,
+              HttpMessageContents&nbsp;contents,
+              HttpMessageInfo&nbsp;messageInfo)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -250,19 +244,15 @@ implements com.browserup.bup.filters.ResponseFilter</pre>
  Starting from this moment, it will not record any responses.</div>
 </li>
 </ul>
-<a name="filterResponse-io.netty.handler.codec.http.HttpResponse-com.browserup.bup.util.HttpMessageContents-com.browserup.bup.util.HttpMessageInfo-">
+<a name="filterResponse-HttpResponse-HttpMessageContents-HttpMessageInfo-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>filterResponse</h4>
-<pre>public&nbsp;void&nbsp;filterResponse(io.netty.handler.codec.http.HttpResponse&nbsp;response,
-                           com.browserup.bup.util.HttpMessageContents&nbsp;contents,
-                           com.browserup.bup.util.HttpMessageInfo&nbsp;messageInfo)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>filterResponse</code>&nbsp;in interface&nbsp;<code>com.browserup.bup.filters.ResponseFilter</code></dd>
-</dl>
+<pre>public&nbsp;void&nbsp;filterResponse(HttpResponse&nbsp;response,
+                           HttpMessageContents&nbsp;contents,
+                           HttpMessageInfo&nbsp;messageInfo)</pre>
 </li>
 </ul>
 <a name="downloads--">
@@ -271,9 +261,7 @@ implements com.browserup.bup.filters.ResponseFilter</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>downloads</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../../com/codeborne/selenide/impl/Downloads.html" title="class in com.codeborne.selenide.impl">Downloads</a>&nbsp;downloads()</pre>
+<pre>public&nbsp;<a href="../../../../com/codeborne/selenide/impl/Downloads.html" title="class in com.codeborne.selenide.impl">Downloads</a>&nbsp;downloads()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>list of all downloaded files since activation.</dd>
@@ -286,9 +274,7 @@ public&nbsp;<a href="../../../../com/codeborne/selenide/impl/Downloads.html" tit
 <ul class="blockListLast">
 <li class="blockList">
 <h4>responsesAsString</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.lang.String&nbsp;responsesAsString()</pre>
+<pre>public&nbsp;java.lang.String&nbsp;responsesAsString()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>all intercepted http response (as a string) - it can be useful for debugging</dd>

@@ -69,6 +69,10 @@
 <!-- ========= END OF TOP NAVBAR ========= -->
 <div class="header">
 <h1 title="Package" class="title">Package&nbsp;com.codeborne.selenide</h1>
+<div class="docSummary">
+<div class="block">Public API of Selenide</div>
+</div>
+<p>See:&nbsp;<a href="#package.description">Description</a></p>
 </div>
 <div class="contentContainer">
 <ul class="blockList">
@@ -148,31 +152,43 @@
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="../../../com/codeborne/selenide/Configuration.html" title="class in com.codeborne.selenide">Configuration</a></td>
+<td class="colLast">
+<div class="block">Configuration settings for Selenide default browser
+ <br>
+ This class is designed so that every setting can be set either via system property or programmatically.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../com/codeborne/selenide/Credentials.html" title="class in com.codeborne.selenide">Credentials</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../com/codeborne/selenide/DownloadOptions.html" title="class in com.codeborne.selenide">DownloadOptions</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../com/codeborne/selenide/DownloadsFolder.html" title="class in com.codeborne.selenide">DownloadsFolder</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../com/codeborne/selenide/ElementsContainer.html" title="class in com.codeborne.selenide">ElementsContainer</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../com/codeborne/selenide/LocalStorage.html" title="class in com.codeborne.selenide">LocalStorage</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../com/codeborne/selenide/Modal.html" title="class in com.codeborne.selenide">Modal</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/codeborne/selenide/Screenshots.html" title="class in com.codeborne.selenide">Screenshots</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -188,34 +204,46 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="../../../com/codeborne/selenide/Selenide.html" title="class in com.codeborne.selenide">Selenide</a></td>
+<td class="colLast">
+<div class="block">The main starting point of Selenide.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../com/codeborne/selenide/SelenideConfig.html" title="class in com.codeborne.selenide">SelenideConfig</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../com/codeborne/selenide/SelenideDriver.html" title="class in com.codeborne.selenide">SelenideDriver</a></td>
 <td class="colLast">
 <div class="block">"Selenide driver" is a container for WebDriver + proxy server + settings</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../com/codeborne/selenide/SelenideTargetLocator.html" title="class in com.codeborne.selenide">SelenideTargetLocator</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../com/codeborne/selenide/SelenideWait.html" title="class in com.codeborne.selenide">SelenideWait</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../com/codeborne/selenide/SharedDownloadsFolder.html" title="class in com.codeborne.selenide">SharedDownloadsFolder</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../com/codeborne/selenide/Stopwatch.html" title="class in com.codeborne.selenide">Stopwatch</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../com/codeborne/selenide/WebDriverLogs.html" title="class in com.codeborne.selenide">WebDriverLogs</a></td>
 <td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../com/codeborne/selenide/WebDriverRunner.html" title="class in com.codeborne.selenide">WebDriverRunner</a></td>
+<td class="colLast">
+<div class="block">A static facade for accessing WebDriver instance for current threads</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -256,6 +284,23 @@
 </table>
 </li>
 </ul>
+<a name="package.description">
+<!--   -->
+</a>
+<h2 title="Package com.codeborne.selenide Description">Package com.codeborne.selenide Description</h2>
+<div class="block">Public API of Selenide
+
+ <p>
+ The most important class is <a href="../../../com/codeborne/selenide/Selenide.html" title="class in com.codeborne.selenide"><code>Selenide</code></a>
+ </p>
+
+ <p>
+ You can start from this class: <code>import static com.codeborne.selenide.Selenide.*;</code>
+ </p>
+
+ <p>
+ Other classes will come automatically with a help of your IDE.
+ </p></div>
 </div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
 <div class="bottomNav"><a name="navbar.bottom">

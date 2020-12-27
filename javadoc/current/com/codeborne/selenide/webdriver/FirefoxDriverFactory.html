@@ -120,8 +120,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public class <span class="typeNameLabel">FirefoxDriverFactory</span>
+<pre>public class <span class="typeNameLabel">FirefoxDriverFactory</span>
 extends <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html" title="class in com.codeborne.selenide.webdriver">AbstractDriverFactory</a></pre>
 </li>
 </ul>
@@ -163,21 +162,21 @@ extends <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFact
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#collectFirefoxProfileFromSystemProperties--">collectFirefoxProfileFromSystemProperties</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>org.openqa.selenium.WebDriver</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">create</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+<td class="colFirst"><code>WebDriver</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-java.io.File-">create</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
       <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
-      org.openqa.selenium.Proxy&nbsp;proxy,
+      Proxy&nbsp;proxy,
       java.io.File&nbsp;browserDownloadsFolder)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>org.openqa.selenium.firefox.FirefoxOptions</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#createCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">createCapabilities</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+<td class="colFirst"><code>FirefoxOptions</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#createCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-java.io.File-">createCapabilities</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
                   <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
-                  org.openqa.selenium.Proxy&nbsp;proxy,
+                  Proxy&nbsp;proxy,
                   java.io.File&nbsp;browserDownloadsFolder)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>protected org.openqa.selenium.firefox.GeckoDriverService</code></td>
+<td class="colFirst"><code>protected GeckoDriverService</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#createDriverService-com.codeborne.selenide.Config-">createDriverService</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
@@ -186,23 +185,23 @@ extends <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFact
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#setCapability-org.openqa.selenium.firefox.FirefoxProfile-java.lang.String-java.lang.String-">setCapability</a></span>(org.openqa.selenium.firefox.FirefoxProfile&nbsp;profile,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#setCapability-FirefoxProfile-java.lang.String-java.lang.String-">setCapability</a></span>(FirefoxProfile&nbsp;profile,
              java.lang.String&nbsp;capability,
              java.lang.String&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#setupBrowserBinary-com.codeborne.selenide.Config-org.openqa.selenium.firefox.FirefoxOptions-">setupBrowserBinary</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                  org.openqa.selenium.firefox.FirefoxOptions&nbsp;firefoxOptions)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#setupBrowserBinary-com.codeborne.selenide.Config-FirefoxOptions-">setupBrowserBinary</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                  FirefoxOptions&nbsp;firefoxOptions)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#setupDownloadsFolder-org.openqa.selenium.firefox.FirefoxOptions-java.io.File-">setupDownloadsFolder</a></span>(org.openqa.selenium.firefox.FirefoxOptions&nbsp;firefoxOptions,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#setupDownloadsFolder-FirefoxOptions-java.io.File-">setupDownloadsFolder</a></span>(FirefoxOptions&nbsp;firefoxOptions,
                     java.io.File&nbsp;browserDownloadsFolder)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#setupPreferences-org.openqa.selenium.firefox.FirefoxOptions-">setupPreferences</a></span>(org.openqa.selenium.firefox.FirefoxOptions&nbsp;firefoxOptions)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#setupPreferences-FirefoxOptions-">setupPreferences</a></span>(FirefoxOptions&nbsp;firefoxOptions)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -210,7 +209,7 @@ extends <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFact
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#transferFirefoxProfileFromSystemProperties-org.openqa.selenium.firefox.FirefoxOptions-java.util.Map-">transferFirefoxProfileFromSystemProperties</a></span>(org.openqa.selenium.firefox.FirefoxOptions&nbsp;firefoxOptions,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#transferFirefoxProfileFromSystemProperties-FirefoxOptions-java.util.Map-">transferFirefoxProfileFromSystemProperties</a></span>(FirefoxOptions&nbsp;firefoxOptions,
                                           java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;ffProfile)</code>&nbsp;</td>
 </tr>
 </table>
@@ -219,7 +218,7 @@ extends <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFact
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.codeborne.selenide.webdriver.<a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html" title="class in com.codeborne.selenide.webdriver">AbstractDriverFactory</a></h3>
-<code><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#convertStringToNearestObjectType-java.lang.String-">convertStringToNearestObjectType</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#createCommonCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-">createCommonCapabilities</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isBoolean-java.lang.String-">isBoolean</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isInteger-java.lang.String-">isInteger</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isSystemPropertyNotSet-java.lang.String-">isSystemPropertyNotSet</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#majorVersion-java.lang.String-">majorVersion</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#transferCapabilitiesFromSystemProperties-org.openqa.selenium.remote.DesiredCapabilities-">transferCapabilitiesFromSystemProperties</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#webdriverLog-com.codeborne.selenide.Config-">webdriverLog</a></code></li>
+<code><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#convertStringToNearestObjectType-java.lang.String-">convertStringToNearestObjectType</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#createCommonCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-">createCommonCapabilities</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isBoolean-java.lang.String-">isBoolean</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isInteger-java.lang.String-">isInteger</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isSystemPropertyNotSet-java.lang.String-">isSystemPropertyNotSet</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#majorVersion-java.lang.String-">majorVersion</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#transferCapabilitiesFromSystemProperties-DesiredCapabilities-">transferCapabilitiesFromSystemProperties</a>, <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#webdriverLog-com.codeborne.selenide.Config-">webdriverLog</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -268,19 +267,16 @@ extends <a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFact
 <pre>public&nbsp;void&nbsp;setupWebdriverBinary()</pre>
 </li>
 </ul>
-<a name="create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">
+<a name="create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-java.io.File-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>create</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;org.openqa.selenium.WebDriver&nbsp;create(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                                                                        <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
-                                                                        @Nullable
-                                                                        org.openqa.selenium.Proxy&nbsp;proxy,
-                                                                        java.io.File&nbsp;browserDownloadsFolder)</pre>
+<pre>public&nbsp;WebDriver&nbsp;create(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                        <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
+                        Proxy&nbsp;proxy,
+                        java.io.File&nbsp;browserDownloadsFolder)</pre>
 </li>
 </ul>
 <a name="createDriverService-com.codeborne.selenide.Config-">
@@ -289,54 +285,47 @@ public&nbsp;org.openqa.selenium.WebDriver&nbsp;create(<a href="../../../../com/c
 <ul class="blockList">
 <li class="blockList">
 <h4>createDriverService</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;org.openqa.selenium.firefox.GeckoDriverService&nbsp;createDriverService(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config)</pre>
+<pre>protected&nbsp;GeckoDriverService&nbsp;createDriverService(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config)</pre>
 </li>
 </ul>
-<a name="createCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">
+<a name="createCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-java.io.File-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>createCapabilities</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;org.openqa.selenium.firefox.FirefoxOptions&nbsp;createCapabilities(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                                                                                                 <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
-                                                                                                 @Nullable
-                                                                                                 org.openqa.selenium.Proxy&nbsp;proxy,
-                                                                                                 @Nullable
-                                                                                                 java.io.File&nbsp;browserDownloadsFolder)</pre>
+<pre>public&nbsp;FirefoxOptions&nbsp;createCapabilities(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                                         <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
+                                         Proxy&nbsp;proxy,
+                                         java.io.File&nbsp;browserDownloadsFolder)</pre>
 </li>
 </ul>
-<a name="setupBrowserBinary-com.codeborne.selenide.Config-org.openqa.selenium.firefox.FirefoxOptions-">
+<a name="setupBrowserBinary-com.codeborne.selenide.Config-FirefoxOptions-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setupBrowserBinary</h4>
 <pre>protected&nbsp;void&nbsp;setupBrowserBinary(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                                  org.openqa.selenium.firefox.FirefoxOptions&nbsp;firefoxOptions)</pre>
+                                  FirefoxOptions&nbsp;firefoxOptions)</pre>
 </li>
 </ul>
-<a name="setupPreferences-org.openqa.selenium.firefox.FirefoxOptions-">
+<a name="setupPreferences-FirefoxOptions-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setupPreferences</h4>
-<pre>protected&nbsp;void&nbsp;setupPreferences(org.openqa.selenium.firefox.FirefoxOptions&nbsp;firefoxOptions)</pre>
+<pre>protected&nbsp;void&nbsp;setupPreferences(FirefoxOptions&nbsp;firefoxOptions)</pre>
 </li>
 </ul>
-<a name="setupDownloadsFolder-org.openqa.selenium.firefox.FirefoxOptions-java.io.File-">
+<a name="setupDownloadsFolder-FirefoxOptions-java.io.File-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setupDownloadsFolder</h4>
-<pre>protected&nbsp;void&nbsp;setupDownloadsFolder(org.openqa.selenium.firefox.FirefoxOptions&nbsp;firefoxOptions,
-                                    @Nullable
+<pre>protected&nbsp;void&nbsp;setupDownloadsFolder(FirefoxOptions&nbsp;firefoxOptions,
                                     java.io.File&nbsp;browserDownloadsFolder)</pre>
 </li>
 </ul>
@@ -346,9 +335,7 @@ public&nbsp;org.openqa.selenium.firefox.FirefoxOptions&nbsp;createCapabilities(<
 <ul class="blockList">
 <li class="blockList">
 <h4>popularContentTypes</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;java.lang.String&nbsp;popularContentTypes()</pre>
+<pre>protected&nbsp;java.lang.String&nbsp;popularContentTypes()</pre>
 </li>
 </ul>
 <a name="collectFirefoxProfileFromSystemProperties--">
@@ -357,28 +344,26 @@ protected&nbsp;java.lang.String&nbsp;popularContentTypes()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>collectFirefoxProfileFromSystemProperties</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;collectFirefoxProfileFromSystemProperties()</pre>
+<pre>protected&nbsp;java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;collectFirefoxProfileFromSystemProperties()</pre>
 </li>
 </ul>
-<a name="transferFirefoxProfileFromSystemProperties-org.openqa.selenium.firefox.FirefoxOptions-java.util.Map-">
+<a name="transferFirefoxProfileFromSystemProperties-FirefoxOptions-java.util.Map-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>transferFirefoxProfileFromSystemProperties</h4>
-<pre>protected&nbsp;void&nbsp;transferFirefoxProfileFromSystemProperties(org.openqa.selenium.firefox.FirefoxOptions&nbsp;firefoxOptions,
+<pre>protected&nbsp;void&nbsp;transferFirefoxProfileFromSystemProperties(FirefoxOptions&nbsp;firefoxOptions,
                                                           java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;ffProfile)</pre>
 </li>
 </ul>
-<a name="setCapability-org.openqa.selenium.firefox.FirefoxProfile-java.lang.String-java.lang.String-">
+<a name="setCapability-FirefoxProfile-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setCapability</h4>
-<pre>protected&nbsp;void&nbsp;setCapability(org.openqa.selenium.firefox.FirefoxProfile&nbsp;profile,
+<pre>protected&nbsp;void&nbsp;setCapability(FirefoxProfile&nbsp;profile,
                              java.lang.String&nbsp;capability,
                              java.lang.String&nbsp;value)</pre>
 </li>

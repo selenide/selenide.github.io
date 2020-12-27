@@ -111,8 +111,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public abstract class <span class="typeNameLabel">Condition</span>
+<pre>public abstract class <span class="typeNameLabel">Condition</span>
 extends java.lang.Object</pre>
 <div class="block">Conditions to match web elements: checks for visibility, text etc.</div>
 </li>
@@ -265,8 +264,8 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/Condition.html#actualValue-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-">actualValue</a></span>(<a href="../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-           org.openqa.selenium.WebElement&nbsp;element)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/Condition.html#actualValue-com.codeborne.selenide.Driver-WebElement-">actualValue</a></span>(<a href="../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+           WebElement&nbsp;element)</code>
 <div class="block">If element didn't match the condition, returns the actual value of element.</div>
 </td>
 </tr>
@@ -279,8 +278,8 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>abstract boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/Condition.html#apply-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-">apply</a></span>(<a href="../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-     org.openqa.selenium.WebElement&nbsp;element)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/Condition.html#apply-com.codeborne.selenide.Driver-WebElement-">apply</a></span>(<a href="../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+     WebElement&nbsp;element)</code>
 <div class="block">Check if given element matches this condition.</div>
 </td>
 </tr>
@@ -384,7 +383,7 @@ extends java.lang.Object</pre>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/Condition.html#match-java.lang.String-java.util.function.Predicate-">match</a></span>(java.lang.String&nbsp;description,
-     java.util.function.Predicate&lt;org.openqa.selenium.WebElement&gt;&nbsp;predicate)</code>
+     java.util.function.Predicate&lt;WebElement&gt;&nbsp;predicate)</code>
 <div class="block">Checks if element matches the given predicate.</div>
 </td>
 </tr>
@@ -653,7 +652,7 @@ public static final&nbsp;<a href="../../../com/codeborne/selenide/Condition.html
 <div class="block">Checks that element is not disabled</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>WebElement.isEnabled()</code></dd>
+<dd><code>WebElement#isEnabled()</code></dd>
 </dl>
 </li>
 </ul>
@@ -667,7 +666,7 @@ public static final&nbsp;<a href="../../../com/codeborne/selenide/Condition.html
 <div class="block">Checks that element is disabled</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>WebElement.isEnabled()</code></dd>
+<dd><code>WebElement#isEnabled()</code></dd>
 </dl>
 </li>
 </ul>
@@ -681,7 +680,7 @@ public static final&nbsp;<a href="../../../com/codeborne/selenide/Condition.html
 <div class="block">Checks that element is selected (inputs like drop-downs etc.)</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>WebElement.isSelected()</code></dd>
+<dd><code>WebElement#isSelected()</code></dd>
 </dl>
 </li>
 </ul>
@@ -695,7 +694,7 @@ public static final&nbsp;<a href="../../../com/codeborne/selenide/Condition.html
 <div class="block">Checks that checkbox is checked</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>WebElement.isSelected()</code></dd>
+<dd><code>WebElement#isSelected()</code></dd>
 </dl>
 </li>
 </ul>
@@ -740,9 +739,7 @@ public static final&nbsp;<a href="../../../com/codeborne/selenide/Condition.html
 <ul class="blockList">
 <li class="blockList">
 <h4>attribute</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;attribute(java.lang.String&nbsp;attributeName)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;attribute(java.lang.String&nbsp;attributeName)</pre>
 <div class="block">Check if element has given attribute (with any value)
 
  <p>Sample: <code>$("#mydiv").shouldHave(attribute("fileId"));</code></p></div>
@@ -760,10 +757,8 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>attribute</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;attribute(java.lang.String&nbsp;attributeName,
-                                                              java.lang.String&nbsp;expectedAttributeValue)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;attribute(java.lang.String&nbsp;attributeName,
+                                  java.lang.String&nbsp;expectedAttributeValue)</pre>
 <div class="block"><p>Sample: <code>$("#mydiv").shouldHave(attribute("fileId", "12345"));</code></p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -778,10 +773,8 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>attributeMatching</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;attributeMatching(java.lang.String&nbsp;attributeName,
-                                                                      java.lang.String&nbsp;attributeRegex)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;attributeMatching(java.lang.String&nbsp;attributeName,
+                                          java.lang.String&nbsp;attributeRegex)</pre>
 <div class="block">Assert that given element's attribute matches given regular expression
 
  <p>Sample: <code>$("h1").should(attributeMatching("fileId", ".*12345.*"))</code></p></div>
@@ -798,9 +791,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>href</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;href(java.lang.String&nbsp;href)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;href(java.lang.String&nbsp;href)</pre>
 <div class="block"><p>Sample: <code>$("#mydiv").shouldHave(href("/one/two/three.pdf"));</code></p>
 
  It looks similar to `$.shouldHave(attribute("href", href))`, but
@@ -817,9 +808,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>value</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;value(java.lang.String&nbsp;expectedValue)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;value(java.lang.String&nbsp;expectedValue)</pre>
 <div class="block">Assert that element contains given "value" attribute as substring
  NB! Ignores difference in non-visible characters like spaces, non-breakable spaces, tabs, newlines  etc.
 
@@ -836,11 +825,9 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>pseudo</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;pseudo(java.lang.String&nbsp;pseudoElementName,
-                                                           java.lang.String&nbsp;propertyName,
-                                                           java.lang.String&nbsp;expectedValue)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;pseudo(java.lang.String&nbsp;pseudoElementName,
+                               java.lang.String&nbsp;propertyName,
+                               java.lang.String&nbsp;expectedValue)</pre>
 <div class="block">Check that element has given the property value of the pseudo-element
  <p>Sample: <code>$("input").shouldHave(pseudo(":first-letter", "color", "#ff0000"));</code></p></div>
 <dl>
@@ -858,10 +845,8 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>pseudo</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;pseudo(java.lang.String&nbsp;pseudoElementName,
-                                                           java.lang.String&nbsp;expectedValue)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;pseudo(java.lang.String&nbsp;pseudoElementName,
+                               java.lang.String&nbsp;expectedValue)</pre>
 <div class="block">Check that element has given the "content" property of the pseudo-element
  <p>Sample: <code>$("input").shouldHave(pseudo(":before", "Hello"));</code></p></div>
 <dl>
@@ -877,9 +862,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>exactValue</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;exactValue(java.lang.String&nbsp;value)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;exactValue(java.lang.String&nbsp;value)</pre>
 <div class="block"><p>Sample: <code>$("#input").shouldHave(exactValue("John"));</code></p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -893,9 +876,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>name</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;name(java.lang.String&nbsp;name)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;name(java.lang.String&nbsp;name)</pre>
 <div class="block">Asserts the name attribute of the element to be exact string
  <p>Sample: <code>$("#input").shouldHave(name("username"))</code></p></div>
 <dl>
@@ -910,9 +891,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>type</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;type(java.lang.String&nbsp;type)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;type(java.lang.String&nbsp;type)</pre>
 <div class="block">Asserts the type attribute of the element to be exact string
  <p>Sample: <code>$("#input").shouldHave(type("checkbox"))</code></p></div>
 <dl>
@@ -927,9 +906,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>id</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;id(java.lang.String&nbsp;id)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;id(java.lang.String&nbsp;id)</pre>
 <div class="block"><p>Sample: <code>$("#input").shouldHave(id("myForm"))</code></p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -944,8 +921,6 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <li class="blockList">
 <h4>matchesText</h4>
 <pre>@Deprecated
- @CheckReturnValue
- @Nonnull
 public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;matchesText(java.lang.String&nbsp;text)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <a href="../../../com/codeborne/selenide/Condition.html#matchText-java.lang.String-"><code>matchText(String)</code></a></span></div>
 <div class="block">The same as matchText()
@@ -962,9 +937,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>matchText</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;matchText(java.lang.String&nbsp;regex)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;matchText(java.lang.String&nbsp;regex)</pre>
 <div class="block">Assert that given element's text matches given regular expression
 
  <p>Sample: <code>$("h1").should(matchText("Hello\s*John"))</code></p></div>
@@ -980,9 +953,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>text</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;text(java.lang.String&nbsp;text)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;text(java.lang.String&nbsp;text)</pre>
 <div class="block"><p>
  Assert that element contains given text as a substring.
  </p>
@@ -1006,9 +977,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>selectedText</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;selectedText(java.lang.String&nbsp;expectedText)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;selectedText(java.lang.String&nbsp;expectedText)</pre>
 <div class="block">Checks on a element that exactly given text is selected (=marked with mouse/keyboard)
 
  <p>Sample: <code>$("input").shouldHave(selectedText("Text"))</code></p>
@@ -1026,9 +995,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>textCaseSensitive</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;textCaseSensitive(java.lang.String&nbsp;text)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;textCaseSensitive(java.lang.String&nbsp;text)</pre>
 <div class="block">Assert that element contains given text as a case sensitive substring
 
  <p>Sample: <code>$("h1").shouldHave(textCaseSensitive("Hello\s*John"))</code></p>
@@ -1046,9 +1013,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>exactText</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;exactText(java.lang.String&nbsp;text)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;exactText(java.lang.String&nbsp;text)</pre>
 <div class="block">Assert that element has exactly (case insensitive) given text
  <p>Sample: <code>$("h1").shouldHave(exactText("Hello"))</code></p>
 
@@ -1066,9 +1031,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>ownText</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;ownText(java.lang.String&nbsp;text)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;ownText(java.lang.String&nbsp;text)</pre>
 <div class="block">Assert that element contains given text (without checking child elements).
  <p>Sample: <code>$("h1").shouldHave(ownText("Hello"))</code></p>
 
@@ -1086,9 +1049,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>exactOwnText</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;exactOwnText(java.lang.String&nbsp;text)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;exactOwnText(java.lang.String&nbsp;text)</pre>
 <div class="block">Assert that element has given text (without checking child elements).
  <p>Sample: <code>$("h1").shouldHave(ownText("Hello"))</code></p>
 
@@ -1106,9 +1067,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>exactTextCaseSensitive</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;exactTextCaseSensitive(java.lang.String&nbsp;text)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;exactTextCaseSensitive(java.lang.String&nbsp;text)</pre>
 <div class="block">Assert that element has exactly the given text
  <p>Sample: <code>$("h1").shouldHave(exactTextCaseSensitive("Hello"))</code></p>
 
@@ -1125,9 +1084,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>cssClass</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;cssClass(java.lang.String&nbsp;cssClass)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;cssClass(java.lang.String&nbsp;cssClass)</pre>
 <div class="block">Asserts that element has the given class. Element may other classes too.
  <p>Sample: <code>$("input").shouldHave(cssClass("active"));</code></p></div>
 </li>
@@ -1138,15 +1095,12 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>cssValue</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;cssValue(java.lang.String&nbsp;propertyName,
-                                                             @Nullable
-                                                             java.lang.String&nbsp;expectedValue)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;cssValue(java.lang.String&nbsp;propertyName,
+                                 java.lang.String&nbsp;expectedValue)</pre>
 <div class="block">Checks if css property (style) applies for the element.
  Both explicit and computed properties are supported.
  <p>
- Note that if css property is missing <code>WebElement.getCssValue(java.lang.String)</code> return empty string.
+ Note that if css property is missing <code>WebElement#getCssValue</code> return empty string.
  In this case you should assert against empty string.
  <p>
  Sample:
@@ -1161,7 +1115,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <dd><code>propertyName</code> - the css property (style) name  of the element</dd>
 <dd><code>expectedValue</code> - expected value of css property</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>WebElement.getCssValue(java.lang.String)</code></dd>
+<dd><code>WebElement#getCssValue</code></dd>
 </dl>
 </li>
 </ul>
@@ -1171,10 +1125,8 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>match</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;match(java.lang.String&nbsp;description,
-                                                          java.util.function.Predicate&lt;org.openqa.selenium.WebElement&gt;&nbsp;predicate)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;match(java.lang.String&nbsp;description,
+                              java.util.function.Predicate&lt;WebElement&gt;&nbsp;predicate)</pre>
 <div class="block">Checks if element matches the given predicate.
 
  <p>Sample: <code>$("input").should(match("empty value attribute", el -&gt; el.getAttribute("value").isEmpty()));</code></p></div>
@@ -1191,9 +1143,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>not</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;not(<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;condition)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;not(<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;condition)</pre>
 <div class="block">Negate given condition.
  <p>
  Used for methods like $.shouldNot(exist), $.shouldNotBe(visible)
@@ -1207,8 +1157,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>negate</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;negate()</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;negate()</pre>
 </li>
 </ul>
 <a name="and-java.lang.String-com.codeborne.selenide.Condition...-">
@@ -1217,10 +1166,8 @@ public&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="clas
 <ul class="blockList">
 <li class="blockList">
 <h4>and</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;and(java.lang.String&nbsp;name,
-                                                        <a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>...&nbsp;conditions)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;and(java.lang.String&nbsp;name,
+                            <a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>...&nbsp;conditions)</pre>
 <div class="block">Check if element matches ALL given conditions.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1237,10 +1184,8 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>or</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;or(java.lang.String&nbsp;name,
-                                                       <a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>...&nbsp;conditions)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;or(java.lang.String&nbsp;name,
+                           <a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>...&nbsp;conditions)</pre>
 <div class="block">Check if element matches ANY of given conditions.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1257,9 +1202,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>be</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;be(<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;delegate)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;be(<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;delegate)</pre>
 <div class="block">Used to form human-readable condition expression
  Example element.should(be(visible),have(text("abc"))</div>
 <dl>
@@ -1276,9 +1219,7 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>have</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;have(<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;delegate)</pre>
+<pre>public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;have(<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;delegate)</pre>
 <div class="block">Used to form human-readable condition expression
  Example element.should(be(visible),have(text("abc"))</div>
 <dl>
@@ -1289,14 +1230,14 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 </dl>
 </li>
 </ul>
-<a name="apply-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-">
+<a name="apply-com.codeborne.selenide.Driver-WebElement-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>apply</h4>
 <pre>public abstract&nbsp;boolean&nbsp;apply(<a href="../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                              org.openqa.selenium.WebElement&nbsp;element)</pre>
+                              WebElement&nbsp;element)</pre>
 <div class="block">Check if given element matches this condition.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1315,15 +1256,14 @@ public static&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" titl
 <pre>public&nbsp;boolean&nbsp;applyNull()</pre>
 </li>
 </ul>
-<a name="actualValue-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-">
+<a name="actualValue-com.codeborne.selenide.Driver-WebElement-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>actualValue</h4>
-<pre>@Nullable
-public&nbsp;java.lang.String&nbsp;actualValue(<a href="../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                                              org.openqa.selenium.WebElement&nbsp;element)</pre>
+<pre>public&nbsp;java.lang.String&nbsp;actualValue(<a href="../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                                    WebElement&nbsp;element)</pre>
 <div class="block">If element didn't match the condition, returns the actual value of element.
  Used in error reporting.
  Optional. Makes sense only if you need to add some additional important info to error message.</div>
@@ -1342,9 +1282,7 @@ public&nbsp;java.lang.String&nbsp;actualValue(<a href="../../../com/codeborne/se
 <ul class="blockList">
 <li class="blockList">
 <h4>because</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;because(java.lang.String&nbsp;message)</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;because(java.lang.String&nbsp;message)</pre>
 <div class="block">Should be used for explaining the reason of condition</div>
 </li>
 </ul>

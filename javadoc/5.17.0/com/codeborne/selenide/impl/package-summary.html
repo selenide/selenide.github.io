@@ -100,6 +100,10 @@
 <td class="colFirst"><a href="../../../../com/codeborne/selenide/impl/Photographer.html" title="interface in com.codeborne.selenide.impl">Photographer</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../com/codeborne/selenide/impl/WebDriverContainer.html" title="interface in com.codeborne.selenide.impl">WebDriverContainer</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -238,11 +242,40 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="../../../../com/codeborne/selenide/impl/StaticConfig.html" title="class in com.codeborne.selenide.impl">StaticConfig</a></td>
+<td class="colLast">
+<div class="block">A non-static facade for static fields in <a href="../../../../com/codeborne/selenide/Configuration.html" title="class in com.codeborne.selenide"><code>Configuration</code></a>
+
+ It was created only to keep backward compatibility in Selenide 5.0.0: every time when somebody modifies, say,
+ <a href="../../../../com/codeborne/selenide/Configuration.html#timeout"><code>Configuration.timeout</code></a>, it will immediately reflect in <a href="../../../../com/codeborne/selenide/impl/StaticConfig.html#timeout--"><code>StaticConfig.timeout()</code></a>
+
+ This class should not be normally used in end user's code.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../com/codeborne/selenide/impl/StaticDriver.html" title="class in com.codeborne.selenide.impl">StaticDriver</a></td>
+<td class="colLast">
+<div class="block">A `Driver` implementation which uses thread-local
+ webdriver and proxy from `WebDriverRunner`.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../com/codeborne/selenide/impl/TailOfCollection.html" title="class in com.codeborne.selenide.impl">TailOfCollection</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="../../../../com/codeborne/selenide/impl/ThreadLocalSelenideDriver.html" title="class in com.codeborne.selenide.impl">ThreadLocalSelenideDriver</a></td>
+<td class="colLast">
+<div class="block">A `SelenideDriver` implementation which uses thread-local
+ webdriver and proxy from `WebDriverRunner`.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../com/codeborne/selenide/impl/WebdriverPhotographer.html" title="class in com.codeborne.selenide.impl">WebdriverPhotographer</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../com/codeborne/selenide/impl/WebDriverThreadLocalContainer.html" title="class in com.codeborne.selenide.impl">WebDriverThreadLocalContainer</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">

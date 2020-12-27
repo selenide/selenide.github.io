@@ -72,7 +72,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.classes.inherited.from.class.org.openqa.selenium.By">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -98,7 +98,7 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li>org.openqa.selenium.By</li>
+<li>By</li>
 <li>
 <ul class="inheritance">
 <li>com.codeborne.selenide.selector.ByShadow.ByShadowCss</li>
@@ -120,9 +120,8 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public static class <span class="typeNameLabel">ByShadow.ByShadowCss</span>
-extends org.openqa.selenium.By
+<pre>public static class <span class="typeNameLabel">ByShadow.ByShadowCss</span>
+extends By
 implements java.io.Serializable</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -134,21 +133,6 @@ implements java.io.Serializable</pre>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="nested.class.summary">
-<!--   -->
-</a>
-<h3>Nested Class Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a name="nested.classes.inherited.from.class.org.openqa.selenium.By">
-<!--   -->
-</a>
-<h3>Nested classes/interfaces inherited from class&nbsp;org.openqa.selenium.By</h3>
-<code>org.openqa.selenium.By.ByClassName, org.openqa.selenium.By.ByCssSelector, org.openqa.selenium.By.ById, org.openqa.selenium.By.ByLinkText, org.openqa.selenium.By.ByName, org.openqa.selenium.By.ByPartialLinkText, org.openqa.selenium.By.ByTagName, org.openqa.selenium.By.ByXPath</code></li>
-</ul>
-</li>
-</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -162,12 +146,12 @@ implements java.io.Serializable</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>org.openqa.selenium.WebElement</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/selector/ByShadow.ByShadowCss.html#findElement-org.openqa.selenium.SearchContext-">findElement</a></span>(org.openqa.selenium.SearchContext&nbsp;context)</code>&nbsp;</td>
+<td class="colFirst"><code>WebElement</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/selector/ByShadow.ByShadowCss.html#findElement-SearchContext-">findElement</a></span>(SearchContext&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.util.List&lt;org.openqa.selenium.WebElement&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/selector/ByShadow.ByShadowCss.html#findElements-org.openqa.selenium.SearchContext-">findElements</a></span>(org.openqa.selenium.SearchContext&nbsp;context)</code>&nbsp;</td>
+<td class="colFirst"><code>java.util.List&lt;WebElement&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/selector/ByShadow.ByShadowCss.html#findElements-SearchContext-">findElements</a></span>(SearchContext&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -175,18 +159,11 @@ implements java.io.Serializable</pre>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.org.openqa.selenium.By">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;org.openqa.selenium.By</h3>
-<code>className, cssSelector, equals, hashCode, id, linkText, name, partialLinkText, tagName, xpath</code></li>
-</ul>
-<ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</code></li>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -202,34 +179,22 @@ implements java.io.Serializable</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="findElement-org.openqa.selenium.SearchContext-">
+<a name="findElement-SearchContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>findElement</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;org.openqa.selenium.WebElement&nbsp;findElement(org.openqa.selenium.SearchContext&nbsp;context)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>findElement</code>&nbsp;in class&nbsp;<code>org.openqa.selenium.By</code></dd>
-</dl>
+<pre>public&nbsp;WebElement&nbsp;findElement(SearchContext&nbsp;context)</pre>
 </li>
 </ul>
-<a name="findElements-org.openqa.selenium.SearchContext-">
+<a name="findElements-SearchContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>findElements</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.util.List&lt;org.openqa.selenium.WebElement&gt;&nbsp;findElements(org.openqa.selenium.SearchContext&nbsp;context)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>findElements</code>&nbsp;in class&nbsp;<code>org.openqa.selenium.By</code></dd>
-</dl>
+<pre>public&nbsp;java.util.List&lt;WebElement&gt;&nbsp;findElements(SearchContext&nbsp;context)</pre>
 </li>
 </ul>
 <a name="toString--">
@@ -238,13 +203,7 @@ public&nbsp;java.util.List&lt;org.openqa.selenium.WebElement&gt;&nbsp;findElemen
 <ul class="blockListLast">
 <li class="blockList">
 <h4>toString</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.lang.String&nbsp;toString()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>toString</code>&nbsp;in class&nbsp;<code>org.openqa.selenium.By</code></dd>
-</dl>
+<pre>public&nbsp;java.lang.String&nbsp;toString()</pre>
 </li>
 </ul>
 </li>
@@ -299,7 +258,7 @@ public&nbsp;java.lang.String&nbsp;toString()</pre>
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.classes.inherited.from.class.org.openqa.selenium.By">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

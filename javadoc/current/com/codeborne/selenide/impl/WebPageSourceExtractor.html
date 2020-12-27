@@ -111,8 +111,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public class <span class="typeNameLabel">WebPageSourceExtractor</span>
+<pre>public class <span class="typeNameLabel">WebPageSourceExtractor</span>
 extends java.lang.Object
 implements <a href="../../../../com/codeborne/selenide/impl/PageSourceExtractor.html" title="interface in com.codeborne.selenide.impl">PageSourceExtractor</a></pre>
 </li>
@@ -157,8 +156,8 @@ implements <a href="../../../../com/codeborne/selenide/impl/PageSourceExtractor.
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.io.File</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebPageSourceExtractor.html#extract-com.codeborne.selenide.Config-org.openqa.selenium.WebDriver-java.lang.String-">extract</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-       org.openqa.selenium.WebDriver&nbsp;driver,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebPageSourceExtractor.html#extract-com.codeborne.selenide.Config-WebDriver-java.lang.String-">extract</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+       WebDriver&nbsp;driver,
        java.lang.String&nbsp;fileName)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -210,20 +209,18 @@ implements <a href="../../../../com/codeborne/selenide/impl/PageSourceExtractor.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="extract-com.codeborne.selenide.Config-org.openqa.selenium.WebDriver-java.lang.String-">
+<a name="extract-com.codeborne.selenide.Config-WebDriver-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>extract</h4>
-<pre>@Nonnull
- @CheckReturnValue
-public&nbsp;java.io.File&nbsp;extract(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                                                        org.openqa.selenium.WebDriver&nbsp;driver,
-                                                        java.lang.String&nbsp;fileName)</pre>
+<pre>public&nbsp;java.io.File&nbsp;extract(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                            WebDriver&nbsp;driver,
+                            java.lang.String&nbsp;fileName)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../com/codeborne/selenide/impl/PageSourceExtractor.html#extract-com.codeborne.selenide.Config-org.openqa.selenium.WebDriver-java.lang.String-">extract</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/codeborne/selenide/impl/PageSourceExtractor.html" title="interface in com.codeborne.selenide.impl">PageSourceExtractor</a></code></dd>
+<dd><code><a href="../../../../com/codeborne/selenide/impl/PageSourceExtractor.html#extract-com.codeborne.selenide.Config-WebDriver-java.lang.String-">extract</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/codeborne/selenide/impl/PageSourceExtractor.html" title="interface in com.codeborne.selenide.impl">PageSourceExtractor</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -233,9 +230,8 @@ public&nbsp;java.io.File&nbsp;extract(<a href="../../../../com/codeborne/selenid
 <ul class="blockList">
 <li class="blockList">
 <h4>createFile</h4>
-<pre>@Nonnull
-protected&nbsp;java.io.File&nbsp;createFile(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                                           java.lang.String&nbsp;fileName)</pre>
+<pre>protected&nbsp;java.io.File&nbsp;createFile(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                                  java.lang.String&nbsp;fileName)</pre>
 </li>
 </ul>
 <a name="writeToFile-java.lang.String-java.io.File-">

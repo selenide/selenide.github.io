@@ -111,8 +111,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public abstract class <span class="typeNameLabel">WebElementSource</span>
+<pre>public abstract class <span class="typeNameLabel">WebElementSource</span>
 extends java.lang.Object</pre>
 </li>
 </ul>
@@ -169,7 +168,7 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>org.openqa.selenium.WebElement</code></td>
+<td class="colFirst"><code>WebElement</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebElementSource.html#checkCondition-java.lang.String-com.codeborne.selenide.Condition-boolean-">checkCondition</a></span>(java.lang.String&nbsp;prefix,
               <a href="../../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;condition,
               boolean&nbsp;invert)</code>&nbsp;</td>
@@ -194,11 +193,11 @@ extends java.lang.Object</pre>
     int&nbsp;index)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>java.util.List&lt;org.openqa.selenium.WebElement&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;WebElement&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebElementSource.html#findAll--">findAll</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>org.openqa.selenium.WebElement</code></td>
+<td class="colFirst"><code>WebElement</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebElementSource.html#findAndAssertElementIsInteractable--">findAndAssertElementIsInteractable</a></span>()</code>
 <div class="block">Asserts that returned element can be interacted with.</div>
 </td>
@@ -208,11 +207,11 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebElementSource.html#getSearchCriteria--">getSearchCriteria</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>static org.openqa.selenium.By</code></td>
+<td class="colFirst"><code>static By</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebElementSource.html#getSelector-java.lang.Object-">getSelector</a></span>(java.lang.Object&nbsp;arg)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>abstract org.openqa.selenium.WebElement</code></td>
+<td class="colFirst"><code>abstract WebElement</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/WebElementSource.html#getWebElement--">getWebElement</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
@@ -251,8 +250,7 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>alias</h4>
-<pre>@Nullable
-protected&nbsp;java.lang.String alias</pre>
+<pre>protected&nbsp;java.lang.String alias</pre>
 </li>
 </ul>
 </li>
@@ -286,9 +284,7 @@ protected&nbsp;java.lang.String alias</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>driver</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public abstract&nbsp;<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver()</pre>
+<pre>public abstract&nbsp;<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver()</pre>
 </li>
 </ul>
 <a name="getWebElement--">
@@ -297,9 +293,7 @@ public abstract&nbsp;<a href="../../../../com/codeborne/selenide/Driver.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>getWebElement</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public abstract&nbsp;org.openqa.selenium.WebElement&nbsp;getWebElement()</pre>
+<pre>public abstract&nbsp;WebElement&nbsp;getWebElement()</pre>
 </li>
 </ul>
 <a name="getSearchCriteria--">
@@ -308,9 +302,7 @@ public abstract&nbsp;org.openqa.selenium.WebElement&nbsp;getWebElement()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getSearchCriteria</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public abstract&nbsp;java.lang.String&nbsp;getSearchCriteria()</pre>
+<pre>public abstract&nbsp;java.lang.String&nbsp;getSearchCriteria()</pre>
 </li>
 </ul>
 <a name="setAlias-java.lang.String-">
@@ -328,9 +320,7 @@ public abstract&nbsp;java.lang.String&nbsp;getSearchCriteria()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>description</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.lang.String&nbsp;description()</pre>
+<pre>public&nbsp;java.lang.String&nbsp;description()</pre>
 </li>
 </ul>
 <a name="toString--">
@@ -339,9 +329,7 @@ public&nbsp;java.lang.String&nbsp;description()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.lang.String&nbsp;toString()</pre>
+<pre>public&nbsp;java.lang.String&nbsp;toString()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
@@ -354,11 +342,9 @@ public&nbsp;java.lang.String&nbsp;toString()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>find</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;find(<a href="../../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;proxy,
-                                                        java.lang.Object&nbsp;arg,
-                                                        int&nbsp;index)</pre>
+<pre>public&nbsp;<a href="../../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;find(<a href="../../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;proxy,
+                            java.lang.Object&nbsp;arg,
+                            int&nbsp;index)</pre>
 </li>
 </ul>
 <a name="findAll--">
@@ -367,10 +353,8 @@ public&nbsp;<a href="../../../../com/codeborne/selenide/SelenideElement.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>findAll</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.util.List&lt;org.openqa.selenium.WebElement&gt;&nbsp;findAll()
-                                                                                   throws java.lang.IndexOutOfBoundsException</pre>
+<pre>public&nbsp;java.util.List&lt;WebElement&gt;&nbsp;findAll()
+                                   throws java.lang.IndexOutOfBoundsException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IndexOutOfBoundsException</code></dd>
@@ -383,10 +367,8 @@ public&nbsp;java.util.List&lt;org.openqa.selenium.WebElement&gt;&nbsp;findAll()
 <ul class="blockList">
 <li class="blockList">
 <h4>createElementNotFoundError</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../../com/codeborne/selenide/ex/ElementNotFound.html" title="class in com.codeborne.selenide.ex">ElementNotFound</a>&nbsp;createElementNotFoundError(<a href="../../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;condition,
-                                                                              java.lang.Throwable&nbsp;lastError)</pre>
+<pre>public&nbsp;<a href="../../../../com/codeborne/selenide/ex/ElementNotFound.html" title="class in com.codeborne.selenide.ex">ElementNotFound</a>&nbsp;createElementNotFoundError(<a href="../../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;condition,
+                                                  java.lang.Throwable&nbsp;lastError)</pre>
 </li>
 </ul>
 <a name="getSelector-java.lang.Object-">
@@ -395,9 +377,7 @@ public&nbsp;<a href="../../../../com/codeborne/selenide/ex/ElementNotFound.html"
 <ul class="blockList">
 <li class="blockList">
 <h4>getSelector</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;org.openqa.selenium.By&nbsp;getSelector(java.lang.Object&nbsp;arg)</pre>
+<pre>public static&nbsp;By&nbsp;getSelector(java.lang.Object&nbsp;arg)</pre>
 </li>
 </ul>
 <a name="checkCondition-java.lang.String-com.codeborne.selenide.Condition-boolean-">
@@ -406,10 +386,9 @@ public static&nbsp;org.openqa.selenium.By&nbsp;getSelector(java.lang.Object&nbsp
 <ul class="blockList">
 <li class="blockList">
 <h4>checkCondition</h4>
-<pre>@Nullable
-public&nbsp;org.openqa.selenium.WebElement&nbsp;checkCondition(java.lang.String&nbsp;prefix,
-                                                               <a href="../../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;condition,
-                                                               boolean&nbsp;invert)</pre>
+<pre>public&nbsp;WebElement&nbsp;checkCondition(java.lang.String&nbsp;prefix,
+                                 <a href="../../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;condition,
+                                 boolean&nbsp;invert)</pre>
 </li>
 </ul>
 <a name="findAndAssertElementIsInteractable--">
@@ -418,9 +397,7 @@ public&nbsp;org.openqa.selenium.WebElement&nbsp;checkCondition(java.lang.String&
 <ul class="blockListLast">
 <li class="blockList">
 <h4>findAndAssertElementIsInteractable</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;org.openqa.selenium.WebElement&nbsp;findAndAssertElementIsInteractable()</pre>
+<pre>public&nbsp;WebElement&nbsp;findAndAssertElementIsInteractable()</pre>
 <div class="block">Asserts that returned element can be interacted with.
 
  Elements which are transparent (opacity:0) are considered to be invisible, but interactable.

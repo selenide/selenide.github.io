@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -98,7 +98,7 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li>org.openqa.selenium.MutableCapabilities</li>
+<li>MutableCapabilities</li>
 <li>
 <ul class="inheritance">
 <li>com.codeborne.selenide.webdriver.MergeableCapabilities</li>
@@ -110,20 +110,12 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd>java.io.Serializable, org.openqa.selenium.Capabilities</dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">MergeableCapabilities</span>
-extends org.openqa.selenium.MutableCapabilities</pre>
+extends MutableCapabilities</pre>
 <div class="block">A subclass of MutableCapabilities which has fixed `merge` method:
  it can properly merge all these ChromeOptions etc. with their Maps inside of Maps.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../serialized-form.html#com.codeborne.selenide.webdriver.MergeableCapabilities">Serialized Form</a></dd>
-</dl>
 </li>
 </ul>
 </div>
@@ -142,8 +134,8 @@ extends org.openqa.selenium.MutableCapabilities</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/MergeableCapabilities.html#MergeableCapabilities-org.openqa.selenium.Capabilities-org.openqa.selenium.Capabilities-">MergeableCapabilities</a></span>(org.openqa.selenium.Capabilities&nbsp;base,
-                     org.openqa.selenium.Capabilities&nbsp;extraCapabilities)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/MergeableCapabilities.html#MergeableCapabilities-Capabilities-Capabilities-">MergeableCapabilities</a></span>(Capabilities&nbsp;base,
+                     Capabilities&nbsp;extraCapabilities)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -161,35 +153,17 @@ extends org.openqa.selenium.MutableCapabilities</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/MergeableCapabilities.html#amendHashCode--">amendHashCode</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/MergeableCapabilities.html#setCapability-java.lang.String-java.lang.Object-">setCapability</a></span>(java.lang.String&nbsp;key,
              java.lang.Object&nbsp;value)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.org.openqa.selenium.MutableCapabilities">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;org.openqa.selenium.MutableCapabilities</h3>
-<code>merge, setCapability, setCapability, setCapability</code></li>
-</ul>
-<ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.org.openqa.selenium.Capabilities">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;org.openqa.selenium.Capabilities</h3>
-<code>getBrowserName, getVersion, is, isJavascriptEnabled</code></li>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -205,14 +179,14 @@ extends org.openqa.selenium.MutableCapabilities</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MergeableCapabilities-org.openqa.selenium.Capabilities-org.openqa.selenium.Capabilities-">
+<a name="MergeableCapabilities-Capabilities-Capabilities-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MergeableCapabilities</h4>
-<pre>public&nbsp;MergeableCapabilities(org.openqa.selenium.Capabilities&nbsp;base,
-                             org.openqa.selenium.Capabilities&nbsp;extraCapabilities)</pre>
+<pre>public&nbsp;MergeableCapabilities(Capabilities&nbsp;base,
+                             Capabilities&nbsp;extraCapabilities)</pre>
 </li>
 </ul>
 </li>
@@ -226,24 +200,11 @@ extends org.openqa.selenium.MutableCapabilities</pre>
 <a name="setCapability-java.lang.String-java.lang.Object-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>setCapability</h4>
 <pre>public&nbsp;void&nbsp;setCapability(java.lang.String&nbsp;key,
                           java.lang.Object&nbsp;value)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>setCapability</code>&nbsp;in class&nbsp;<code>org.openqa.selenium.MutableCapabilities</code></dd>
-</dl>
-</li>
-</ul>
-<a name="amendHashCode--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>amendHashCode</h4>
-<pre>protected&nbsp;int&nbsp;amendHashCode()</pre>
 </li>
 </ul>
 </li>

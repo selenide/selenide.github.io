@@ -112,8 +112,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public class <span class="typeNameLabel">CollectionElementByCondition</span>
+<pre>public class <span class="typeNameLabel">CollectionElementByCondition</span>
 extends <a href="../../../../com/codeborne/selenide/impl/WebElementSource.html" title="class in com.codeborne.selenide.impl">WebElementSource</a></pre>
 </li>
 </ul>
@@ -157,7 +156,7 @@ extends <a href="../../../../com/codeborne/selenide/impl/WebElementSource.html" 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/CollectionElementByCondition.html#getSearchCriteria--">getSearchCriteria</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>org.openqa.selenium.WebElement</code></td>
+<td class="colFirst"><code>WebElement</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/impl/CollectionElementByCondition.html#getWebElement--">getWebElement</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -200,10 +199,8 @@ extends <a href="../../../../com/codeborne/selenide/impl/WebElementSource.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>wrap</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;<a href="../../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;wrap(<a href="../../../../com/codeborne/selenide/impl/CollectionSource.html" title="interface in com.codeborne.selenide.impl">CollectionSource</a>&nbsp;collection,
-                                                               <a href="../../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;condition)</pre>
+<pre>public static&nbsp;<a href="../../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;wrap(<a href="../../../../com/codeborne/selenide/impl/CollectionSource.html" title="interface in com.codeborne.selenide.impl">CollectionSource</a>&nbsp;collection,
+                                   <a href="../../../../com/codeborne/selenide/Condition.html" title="class in com.codeborne.selenide">Condition</a>&nbsp;condition)</pre>
 </li>
 </ul>
 <a name="driver--">
@@ -212,9 +209,7 @@ public static&nbsp;<a href="../../../../com/codeborne/selenide/SelenideElement.h
 <ul class="blockList">
 <li class="blockList">
 <h4>driver</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver()</pre>
+<pre>public&nbsp;<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/codeborne/selenide/impl/WebElementSource.html#driver--">driver</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/codeborne/selenide/impl/WebElementSource.html" title="class in com.codeborne.selenide.impl">WebElementSource</a></code></dd>
@@ -227,9 +222,7 @@ public&nbsp;<a href="../../../../com/codeborne/selenide/Driver.html" title="inte
 <ul class="blockList">
 <li class="blockList">
 <h4>getWebElement</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;org.openqa.selenium.WebElement&nbsp;getWebElement()</pre>
+<pre>public&nbsp;WebElement&nbsp;getWebElement()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/codeborne/selenide/impl/WebElementSource.html#getWebElement--">getWebElement</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/codeborne/selenide/impl/WebElementSource.html" title="class in com.codeborne.selenide.impl">WebElementSource</a></code></dd>
@@ -242,9 +235,7 @@ public&nbsp;org.openqa.selenium.WebElement&nbsp;getWebElement()</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getSearchCriteria</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.lang.String&nbsp;getSearchCriteria()</pre>
+<pre>public&nbsp;java.lang.String&nbsp;getSearchCriteria()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/codeborne/selenide/impl/WebElementSource.html#getSearchCriteria--">getSearchCriteria</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/codeborne/selenide/impl/WebElementSource.html" title="class in com.codeborne.selenide.impl">WebElementSource</a></code></dd>

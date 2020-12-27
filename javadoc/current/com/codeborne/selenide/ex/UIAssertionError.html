@@ -130,8 +130,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public class <span class="typeNameLabel">UIAssertionError</span>
+<pre>public class <span class="typeNameLabel">UIAssertionError</span>
 extends java.lang.AssertionError</pre>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -226,8 +225,8 @@ extends java.lang.AssertionError</pre>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>static java.lang.Throwable</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/ex/UIAssertionError.html#wrap-com.codeborne.selenide.Driver-org.openqa.selenium.WebDriverException-long-">wrap</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-    org.openqa.selenium.WebDriverException&nbsp;error,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/ex/UIAssertionError.html#wrap-com.codeborne.selenide.Driver-WebDriverException-long-">wrap</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+    WebDriverException&nbsp;error,
     long&nbsp;timeoutMs)</code>&nbsp;</td>
 </tr>
 </table>
@@ -294,7 +293,6 @@ extends java.lang.AssertionError</pre>
 <h4>UIAssertionError</h4>
 <pre>protected&nbsp;UIAssertionError(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
                            java.lang.String&nbsp;message,
-                           @Nullable
                            java.lang.Throwable&nbsp;cause)</pre>
 </li>
 </ul>
@@ -312,8 +310,7 @@ extends java.lang.AssertionError</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getMessage</h4>
-<pre>@CheckReturnValue
-public final&nbsp;java.lang.String&nbsp;getMessage()</pre>
+<pre>public final&nbsp;java.lang.String&nbsp;getMessage()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>getMessage</code>&nbsp;in class&nbsp;<code>java.lang.Throwable</code></dd>
@@ -326,8 +323,7 @@ public final&nbsp;java.lang.String&nbsp;getMessage()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>toString</h4>
-<pre>@CheckReturnValue
-public final&nbsp;java.lang.String&nbsp;toString()</pre>
+<pre>public final&nbsp;java.lang.String&nbsp;toString()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Throwable</code></dd>
@@ -340,8 +336,7 @@ public final&nbsp;java.lang.String&nbsp;toString()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>uiDetails</h4>
-<pre>@CheckReturnValue
-protected&nbsp;java.lang.String&nbsp;uiDetails()</pre>
+<pre>protected&nbsp;java.lang.String&nbsp;uiDetails()</pre>
 </li>
 </ul>
 <a name="getScreenshot--">
@@ -350,8 +345,7 @@ protected&nbsp;java.lang.String&nbsp;uiDetails()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getScreenshot</h4>
-<pre>@CheckReturnValue
-public&nbsp;<a href="../../../../com/codeborne/selenide/impl/Screenshot.html" title="class in com.codeborne.selenide.impl">Screenshot</a>&nbsp;getScreenshot()</pre>
+<pre>public&nbsp;<a href="../../../../com/codeborne/selenide/impl/Screenshot.html" title="class in com.codeborne.selenide.impl">Screenshot</a>&nbsp;getScreenshot()</pre>
 <div class="block">Get path to screenshot taken after failed test</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -365,22 +359,20 @@ public&nbsp;<a href="../../../../com/codeborne/selenide/impl/Screenshot.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>wrap</h4>
-<pre>@CheckReturnValue
-public static&nbsp;java.lang.Error&nbsp;wrap(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                                                     java.lang.Error&nbsp;error,
-                                                     long&nbsp;timeoutMs)</pre>
+<pre>public static&nbsp;java.lang.Error&nbsp;wrap(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                                   java.lang.Error&nbsp;error,
+                                   long&nbsp;timeoutMs)</pre>
 </li>
 </ul>
-<a name="wrap-com.codeborne.selenide.Driver-org.openqa.selenium.WebDriverException-long-">
+<a name="wrap-com.codeborne.selenide.Driver-WebDriverException-long-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>wrap</h4>
-<pre>@CheckReturnValue
-public static&nbsp;java.lang.Throwable&nbsp;wrap(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                                                         org.openqa.selenium.WebDriverException&nbsp;error,
-                                                         long&nbsp;timeoutMs)</pre>
+<pre>public static&nbsp;java.lang.Throwable&nbsp;wrap(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                                       WebDriverException&nbsp;error,
+                                       long&nbsp;timeoutMs)</pre>
 </li>
 </ul>
 </li>

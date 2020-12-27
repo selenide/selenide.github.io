@@ -115,8 +115,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public abstract class <span class="typeNameLabel">AbstractDriverFactory</span>
+<pre>public abstract class <span class="typeNameLabel">AbstractDriverFactory</span>
 extends java.lang.Object
 implements <a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.html" title="interface in com.codeborne.selenide.webdriver">DriverFactory</a></pre>
 </li>
@@ -161,10 +160,10 @@ implements <a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.h
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected org.openqa.selenium.MutableCapabilities</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#createCommonCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-">createCommonCapabilities</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+<td class="colFirst"><code>protected MutableCapabilities</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#createCommonCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-">createCommonCapabilities</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
                         <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
-                        org.openqa.selenium.Proxy&nbsp;proxy)</code>&nbsp;</td>
+                        Proxy&nbsp;proxy)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
@@ -184,7 +183,7 @@ implements <a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.h
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#transferCapabilitiesFromSystemProperties-org.openqa.selenium.remote.DesiredCapabilities-">transferCapabilitiesFromSystemProperties</a></span>(org.openqa.selenium.remote.DesiredCapabilities&nbsp;currentBrowserCapabilities)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#transferCapabilitiesFromSystemProperties-DesiredCapabilities-">transferCapabilitiesFromSystemProperties</a></span>(DesiredCapabilities&nbsp;currentBrowserCapabilities)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected java.io.File</code></td>
@@ -203,7 +202,7 @@ implements <a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.h
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;com.codeborne.selenide.webdriver.<a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.html" title="interface in com.codeborne.selenide.webdriver">DriverFactory</a></h3>
-<code><a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.html#create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">create</a>, <a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.html#createCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">createCapabilities</a>, <a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.html#setupWebdriverBinary--">setupWebdriverBinary</a></code></li>
+<code><a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.html#create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-java.io.File-">create</a>, <a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.html#createCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-java.io.File-">createCapabilities</a>, <a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.html#setupWebdriverBinary--">setupWebdriverBinary</a></code></li>
 </ul>
 </li>
 </ul>
@@ -242,32 +241,27 @@ implements <a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.h
 <ul class="blockList">
 <li class="blockList">
 <h4>webdriverLog</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;java.io.File&nbsp;webdriverLog(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config)</pre>
+<pre>protected&nbsp;java.io.File&nbsp;webdriverLog(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config)</pre>
 </li>
 </ul>
-<a name="createCommonCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-">
+<a name="createCommonCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-Proxy-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>createCommonCapabilities</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;org.openqa.selenium.MutableCapabilities&nbsp;createCommonCapabilities(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                                                                                                       <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
-                                                                                                       @Nullable
-                                                                                                       org.openqa.selenium.Proxy&nbsp;proxy)</pre>
+<pre>protected&nbsp;MutableCapabilities&nbsp;createCommonCapabilities(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                                                       <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
+                                                       Proxy&nbsp;proxy)</pre>
 </li>
 </ul>
-<a name="transferCapabilitiesFromSystemProperties-org.openqa.selenium.remote.DesiredCapabilities-">
+<a name="transferCapabilitiesFromSystemProperties-DesiredCapabilities-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>transferCapabilitiesFromSystemProperties</h4>
-<pre>protected&nbsp;void&nbsp;transferCapabilitiesFromSystemProperties(org.openqa.selenium.remote.DesiredCapabilities&nbsp;currentBrowserCapabilities)</pre>
+<pre>protected&nbsp;void&nbsp;transferCapabilitiesFromSystemProperties(DesiredCapabilities&nbsp;currentBrowserCapabilities)</pre>
 </li>
 </ul>
 <a name="convertStringToNearestObjectType-java.lang.String-">
@@ -276,9 +270,7 @@ protected&nbsp;org.openqa.selenium.MutableCapabilities&nbsp;createCommonCapabili
 <ul class="blockList">
 <li class="blockList">
 <h4>convertStringToNearestObjectType</h4>
-<pre>@CheckReturnValue
- @Nonnull
-protected&nbsp;java.lang.Object&nbsp;convertStringToNearestObjectType(java.lang.String&nbsp;value)</pre>
+<pre>protected&nbsp;java.lang.Object&nbsp;convertStringToNearestObjectType(java.lang.String&nbsp;value)</pre>
 <div class="block">Converts String to Boolean\Integer or returns original String.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -294,8 +286,7 @@ protected&nbsp;java.lang.Object&nbsp;convertStringToNearestObjectType(java.lang.
 <ul class="blockList">
 <li class="blockList">
 <h4>isInteger</h4>
-<pre>@CheckReturnValue
-protected&nbsp;boolean&nbsp;isInteger(java.lang.String&nbsp;value)</pre>
+<pre>protected&nbsp;boolean&nbsp;isInteger(java.lang.String&nbsp;value)</pre>
 </li>
 </ul>
 <a name="isBoolean-java.lang.String-">
@@ -304,8 +295,7 @@ protected&nbsp;boolean&nbsp;isInteger(java.lang.String&nbsp;value)</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isBoolean</h4>
-<pre>@CheckReturnValue
-protected&nbsp;boolean&nbsp;isBoolean(java.lang.String&nbsp;value)</pre>
+<pre>protected&nbsp;boolean&nbsp;isBoolean(java.lang.String&nbsp;value)</pre>
 </li>
 </ul>
 <a name="isSystemPropertyNotSet-java.lang.String-">
@@ -314,8 +304,7 @@ protected&nbsp;boolean&nbsp;isBoolean(java.lang.String&nbsp;value)</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isSystemPropertyNotSet</h4>
-<pre>@CheckReturnValue
-protected&nbsp;boolean&nbsp;isSystemPropertyNotSet(java.lang.String&nbsp;key)</pre>
+<pre>protected&nbsp;boolean&nbsp;isSystemPropertyNotSet(java.lang.String&nbsp;key)</pre>
 </li>
 </ul>
 <a name="majorVersion-java.lang.String-">
@@ -324,9 +313,7 @@ protected&nbsp;boolean&nbsp;isSystemPropertyNotSet(java.lang.String&nbsp;key)</p
 <ul class="blockListLast">
 <li class="blockList">
 <h4>majorVersion</h4>
-<pre>@CheckReturnValue
-protected&nbsp;int&nbsp;majorVersion(@Nullable
-                                             java.lang.String&nbsp;browserVersion)</pre>
+<pre>protected&nbsp;int&nbsp;majorVersion(java.lang.String&nbsp;browserVersion)</pre>
 </li>
 </ul>
 </li>

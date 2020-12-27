@@ -107,8 +107,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public class <span class="typeNameLabel">ByShadow</span>
+<pre>public class <span class="typeNameLabel">ByShadow</span>
 extends java.lang.Object</pre>
 </li>
 </ul>
@@ -165,7 +164,7 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static org.openqa.selenium.By</code></td>
+<td class="colFirst"><code>static By</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/selector/ByShadow.html#cssSelector-java.lang.String-java.lang.String-java.lang.String...-">cssSelector</a></span>(java.lang.String&nbsp;target,
            java.lang.String&nbsp;shadowHost,
            java.lang.String...&nbsp;innerShadowHosts)</code>
@@ -217,11 +216,9 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>cssSelector</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public static&nbsp;org.openqa.selenium.By&nbsp;cssSelector(java.lang.String&nbsp;target,
-                                                                             java.lang.String&nbsp;shadowHost,
-                                                                             java.lang.String...&nbsp;innerShadowHosts)</pre>
+<pre>public static&nbsp;By&nbsp;cssSelector(java.lang.String&nbsp;target,
+                             java.lang.String&nbsp;shadowHost,
+                             java.lang.String...&nbsp;innerShadowHosts)</pre>
 <div class="block">Find target elements inside shadow-root that attached to shadow-host.
  <br/> Supports inner shadow-hosts.
 

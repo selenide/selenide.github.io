@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -105,10 +105,13 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../com/codeborne/selenide/impl/ThreadLocalSelenideDriver.html" title="class in com.codeborne.selenide.impl">ThreadLocalSelenideDriver</a></dd>
+</dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
-public class <span class="typeNameLabel">SelenideDriver</span>
+<pre>public class <span class="typeNameLabel">SelenideDriver</span>
 extends java.lang.Object</pre>
 <div class="block">"Selenide driver" is a container for WebDriver + proxy server + settings</div>
 </li>
@@ -137,16 +140,16 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#SelenideDriver-com.codeborne.selenide.Config-java.util.List-">SelenideDriver</a></span>(<a href="../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-              java.util.List&lt;org.openqa.selenium.support.events.WebDriverEventListener&gt;&nbsp;listeners)</code>&nbsp;</td>
+              java.util.List&lt;WebDriverEventListener&gt;&nbsp;listeners)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#SelenideDriver-com.codeborne.selenide.Config-org.openqa.selenium.WebDriver-com.codeborne.selenide.proxy.SelenideProxyServer-">SelenideDriver</a></span>(<a href="../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-              org.openqa.selenium.WebDriver&nbsp;webDriver,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#SelenideDriver-com.codeborne.selenide.Config-WebDriver-com.codeborne.selenide.proxy.SelenideProxyServer-">SelenideDriver</a></span>(<a href="../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+              WebDriver&nbsp;webDriver,
               <a href="../../../com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a>&nbsp;selenideProxy)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#SelenideDriver-com.codeborne.selenide.Config-org.openqa.selenium.WebDriver-com.codeborne.selenide.proxy.SelenideProxyServer-com.codeborne.selenide.DownloadsFolder-">SelenideDriver</a></span>(<a href="../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-              org.openqa.selenium.WebDriver&nbsp;webDriver,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#SelenideDriver-com.codeborne.selenide.Config-WebDriver-com.codeborne.selenide.proxy.SelenideProxyServer-com.codeborne.selenide.DownloadsFolder-">SelenideDriver</a></span>(<a href="../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+              WebDriver&nbsp;webDriver,
               <a href="../../../com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a>&nbsp;selenideProxy,
               <a href="../../../com/codeborne/selenide/DownloadsFolder.html" title="class in com.codeborne.selenide">DownloadsFolder</a>&nbsp;browserDownloadsFolder)</code>&nbsp;</td>
 </tr>
@@ -167,202 +170,189 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:D-org.openqa.selenium.By-">$</a></span>(org.openqa.selenium.By&nbsp;seleniumSelector)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:D-By-">$</a></span>(By&nbsp;seleniumSelector)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:D-org.openqa.selenium.By-int-">$</a></span>(org.openqa.selenium.By&nbsp;seleniumSelector,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:D-By-int-">$</a></span>(By&nbsp;seleniumSelector,
  int&nbsp;index)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:D-java.lang.String-">$</a></span>(java.lang.String&nbsp;cssSelector)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:D-WebElement-">$</a></span>(WebElement&nbsp;webElement)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:D-java.lang.String-int-">$</a></span>(java.lang.String&nbsp;cssSelector,
- int&nbsp;index)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:D:D-By-">$$</a></span>(By&nbsp;criteria)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:D-org.openqa.selenium.WebElement-">$</a></span>(org.openqa.selenium.WebElement&nbsp;webElement)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:D:D-java.util.Collection-">$$</a></span>(java.util.Collection&lt;? extends WebElement&gt;&nbsp;elements)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:D:D-org.openqa.selenium.By-">$$</a></span>(org.openqa.selenium.By&nbsp;criteria)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:D:D-java.lang.String-">$$</a></span>(java.lang.String&nbsp;cssSelector)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:D:D-java.util.Collection-">$$</a></span>(java.util.Collection&lt;? extends org.openqa.selenium.WebElement&gt;&nbsp;elements)</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:D:D-java.lang.String-">$$</a></span>(java.lang.String&nbsp;cssSelector)</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:D:Dx-java.lang.String-">$$x</a></span>(java.lang.String&nbsp;xpathExpression)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Z:Z:Dx-java.lang.String-">$x</a></span>(java.lang.String&nbsp;xpathExpression)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#atBottom--">atBottom</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#back--">back</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#browser--">browser</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#clearBrowserLocalStorage--">clearBrowserLocalStorage</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#clearCookies--">clearCookies</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#close--">close</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#config--">config</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.io.File</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#download-java.lang.String-">download</a></span>(java.lang.String&nbsp;url)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.io.File</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#download-java.lang.String-long-">download</a></span>(java.lang.String&nbsp;url,
         long&nbsp;timeoutMs)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.io.File</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#download-java.net.URI-">download</a></span>(java.net.URI&nbsp;url)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.io.File</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#download-java.net.URI-long-">download</a></span>(java.net.URI&nbsp;url,
         long&nbsp;timeoutMs)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#driver--">driver</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#executeAsyncJavaScript-java.lang.String-java.lang.Object...-">executeAsyncJavaScript</a></span>(java.lang.String&nbsp;jsCode,
                       java.lang.Object...&nbsp;arguments)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#executeJavaScript-java.lang.String-java.lang.Object...-">executeJavaScript</a></span>(java.lang.String&nbsp;jsCode,
                  java.lang.Object...&nbsp;arguments)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#find-org.openqa.selenium.By-">find</a></span>(org.openqa.selenium.By&nbsp;criteria)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#find-By-">find</a></span>(By&nbsp;criteria)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#find-org.openqa.selenium.By-int-">find</a></span>(org.openqa.selenium.By&nbsp;criteria,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#find-By-int-">find</a></span>(By&nbsp;criteria,
     int&nbsp;index)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#find-java.lang.String-">find</a></span>(java.lang.String&nbsp;cssSelector)</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#findAll-org.openqa.selenium.By-">findAll</a></span>(org.openqa.selenium.By&nbsp;seleniumSelector)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#findAll-By-">findAll</a></span>(By&nbsp;seleniumSelector)</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
-<td class="colFirst"><code><a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#findAll-java.lang.String-">findAll</a></span>(java.lang.String&nbsp;cssSelector)</code>&nbsp;</td>
-</tr>
-<tr id="i29" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#forward--">forward</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
-<td class="colFirst"><code>org.openqa.selenium.WebDriver</code></td>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>WebDriver</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#getAndCheckWebDriver--">getAndCheckWebDriver</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#getCurrentFrameUrl--">getCurrentFrameUrl</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
-<td class="colFirst"><code>org.openqa.selenium.WebElement</code></td>
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code>WebElement</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#getFocusedElement--">getFocusedElement</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/LocalStorage.html" title="class in com.codeborne.selenide">LocalStorage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#getLocalStorage--">getLocalStorage</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#getProxy--">getProxy</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#getSelectedRadio-org.openqa.selenium.By-">getSelectedRadio</a></span>(org.openqa.selenium.By&nbsp;radioField)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#getSelectedRadio-By-">getSelectedRadio</a></span>(By&nbsp;radioField)</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#getUserAgent--">getUserAgent</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
-<td class="colFirst"><code>org.openqa.selenium.WebDriver</code></td>
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>WebDriver</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#getWebDriver--">getWebDriver</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/WebDriverLogs.html" title="class in com.codeborne.selenide">WebDriverLogs</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#getWebDriverLogs--">getWebDriverLogs</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#hasWebDriverStarted--">hasWebDriverStarted</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/Modal.html" title="class in com.codeborne.selenide">Modal</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#modal--">modal</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#open--">open</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#open-java.lang.String-">open</a></span>(java.lang.String&nbsp;relativeOrAbsoluteUrl)</code>&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#open-java.lang.String-com.codeborne.selenide.AuthenticationType-com.codeborne.selenide.Credentials-">open</a></span>(java.lang.String&nbsp;relativeOrAbsoluteUrl,
     <a href="../../../com/codeborne/selenide/AuthenticationType.html" title="enum in com.codeborne.selenide">AuthenticationType</a>&nbsp;authenticationType,
     <a href="../../../com/codeborne/selenide/Credentials.html" title="class in com.codeborne.selenide">Credentials</a>&nbsp;credentials)</code>&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>&lt;PageObjectClass&gt;<br>PageObjectClass</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#open-java.lang.String-java.lang.Class-">open</a></span>(java.lang.String&nbsp;relativeOrAbsoluteUrl,
     java.lang.Class&lt;PageObjectClass&gt;&nbsp;pageObjectClassClass)</code>&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#open-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">open</a></span>(java.lang.String&nbsp;relativeOrAbsoluteUrl,
     java.lang.String&nbsp;domain,
     java.lang.String&nbsp;login,
     java.lang.String&nbsp;password)</code>&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>&lt;PageObjectClass&gt;<br>PageObjectClass</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#open-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.Class-">open</a></span>(java.lang.String&nbsp;relativeOrAbsoluteUrl,
     java.lang.String&nbsp;domain,
@@ -370,23 +360,23 @@ extends java.lang.Object</pre>
     java.lang.String&nbsp;password,
     java.lang.Class&lt;PageObjectClass&gt;&nbsp;pageObjectClassClass)</code>&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#open-java.net.URL-">open</a></span>(java.net.URL&nbsp;absoluteUrl)</code>&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>&lt;PageObjectClass&gt;<br>PageObjectClass</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#open-java.net.URL-java.lang.Class-">open</a></span>(java.net.URL&nbsp;absoluteUrl,
     java.lang.Class&lt;PageObjectClass&gt;&nbsp;pageObjectClassClass)</code>&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#open-java.net.URL-java.lang.String-java.lang.String-java.lang.String-">open</a></span>(java.net.URL&nbsp;absoluteUrl,
     java.lang.String&nbsp;domain,
     java.lang.String&nbsp;login,
     java.lang.String&nbsp;password)</code>&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>&lt;PageObjectClass&gt;<br>PageObjectClass</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#open-java.net.URL-java.lang.String-java.lang.String-java.lang.String-java.lang.Class-">open</a></span>(java.net.URL&nbsp;absoluteUrl,
     java.lang.String&nbsp;domain,
@@ -394,55 +384,55 @@ extends java.lang.Object</pre>
     java.lang.String&nbsp;password,
     java.lang.Class&lt;PageObjectClass&gt;&nbsp;pageObjectClassClass)</code>&nbsp;</td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>&lt;PageObjectClass&gt;<br>PageObjectClass</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#page-java.lang.Class-">page</a></span>(java.lang.Class&lt;PageObjectClass&gt;&nbsp;pageObjectClass)</code>&nbsp;</td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>&lt;PageObjectClass,T extends PageObjectClass&gt;<br>PageObjectClass</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#page-T-">page</a></span>(T&nbsp;pageObject)</code>&nbsp;</td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#refresh--">refresh</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#screenshot-org.openqa.selenium.OutputType-">screenshot</a></span>(org.openqa.selenium.OutputType&lt;T&gt;&nbsp;outputType)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#screenshot--">screenshot</a></span>(&lt;any&gt;&nbsp;outputType)</code>
 <div class="block">Take a screenshot of the current page</div>
 </td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#screenshot-java.lang.String-">screenshot</a></span>(java.lang.String&nbsp;fileName)</code>
 <div class="block">Take a screenshot of the current page</div>
 </td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#source--">source</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/SelenideTargetLocator.html" title="class in com.codeborne.selenide">SelenideTargetLocator</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#switchTo--">switchTo</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#title--">title</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#updateHash-java.lang.String-">updateHash</a></span>(java.lang.String&nbsp;hash)</code>&nbsp;</td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#url--">url</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code><a href="../../../com/codeborne/selenide/SelenideWait.html" title="class in com.codeborne.selenide">SelenideWait</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#Wait--">Wait</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/SelenideDriver.html#zoom-double-">zoom</a></span>(double&nbsp;factor)</code>&nbsp;</td>
 </tr>
@@ -484,7 +474,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>SelenideDriver</h4>
 <pre>public&nbsp;SelenideDriver(<a href="../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                      java.util.List&lt;org.openqa.selenium.support.events.WebDriverEventListener&gt;&nbsp;listeners)</pre>
+                      java.util.List&lt;WebDriverEventListener&gt;&nbsp;listeners)</pre>
 </li>
 </ul>
 <a name="SelenideDriver-com.codeborne.selenide.Config-com.codeborne.selenide.Driver-">
@@ -497,27 +487,25 @@ extends java.lang.Object</pre>
                       <a href="../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver)</pre>
 </li>
 </ul>
-<a name="SelenideDriver-com.codeborne.selenide.Config-org.openqa.selenium.WebDriver-com.codeborne.selenide.proxy.SelenideProxyServer-">
+<a name="SelenideDriver-com.codeborne.selenide.Config-WebDriver-com.codeborne.selenide.proxy.SelenideProxyServer-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>SelenideDriver</h4>
 <pre>public&nbsp;SelenideDriver(<a href="../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                      org.openqa.selenium.WebDriver&nbsp;webDriver,
-                      @Nullable
+                      WebDriver&nbsp;webDriver,
                       <a href="../../../com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a>&nbsp;selenideProxy)</pre>
 </li>
 </ul>
-<a name="SelenideDriver-com.codeborne.selenide.Config-org.openqa.selenium.WebDriver-com.codeborne.selenide.proxy.SelenideProxyServer-com.codeborne.selenide.DownloadsFolder-">
+<a name="SelenideDriver-com.codeborne.selenide.Config-WebDriver-com.codeborne.selenide.proxy.SelenideProxyServer-com.codeborne.selenide.DownloadsFolder-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SelenideDriver</h4>
 <pre>public&nbsp;SelenideDriver(<a href="../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
-                      org.openqa.selenium.WebDriver&nbsp;webDriver,
-                      @Nullable
+                      WebDriver&nbsp;webDriver,
                       <a href="../../../com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a>&nbsp;selenideProxy,
                       <a href="../../../com/codeborne/selenide/DownloadsFolder.html" title="class in com.codeborne.selenide">DownloadsFolder</a>&nbsp;browserDownloadsFolder)</pre>
 </li>
@@ -536,9 +524,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>config</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config()</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config()</pre>
 </li>
 </ul>
 <a name="driver--">
@@ -547,9 +533,7 @@ public&nbsp;<a href="../../../com/codeborne/selenide/Config.html" title="interfa
 <ul class="blockList">
 <li class="blockList">
 <h4>driver</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver()</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver()</pre>
 </li>
 </ul>
 <a name="open--">
@@ -620,10 +604,8 @@ public&nbsp;<a href="../../../com/codeborne/selenide/Driver.html" title="interfa
 <ul class="blockList">
 <li class="blockList">
 <h4>open</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;&lt;PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;open(java.lang.String&nbsp;relativeOrAbsoluteUrl,
-                                                                          java.lang.Class&lt;PageObjectClass&gt;&nbsp;pageObjectClassClass)</pre>
+<pre>public&nbsp;&lt;PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;open(java.lang.String&nbsp;relativeOrAbsoluteUrl,
+                                              java.lang.Class&lt;PageObjectClass&gt;&nbsp;pageObjectClassClass)</pre>
 </li>
 </ul>
 <a name="open-java.net.URL-java.lang.Class-">
@@ -632,10 +614,8 @@ public&nbsp;&lt;PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;open(java.lang.Str
 <ul class="blockList">
 <li class="blockList">
 <h4>open</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;&lt;PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;open(java.net.URL&nbsp;absoluteUrl,
-                                                                          java.lang.Class&lt;PageObjectClass&gt;&nbsp;pageObjectClassClass)</pre>
+<pre>public&nbsp;&lt;PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;open(java.net.URL&nbsp;absoluteUrl,
+                                              java.lang.Class&lt;PageObjectClass&gt;&nbsp;pageObjectClassClass)</pre>
 </li>
 </ul>
 <a name="open-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.Class-">
@@ -644,13 +624,11 @@ public&nbsp;&lt;PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;open(java.net.URL&
 <ul class="blockList">
 <li class="blockList">
 <h4>open</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;&lt;PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;open(java.lang.String&nbsp;relativeOrAbsoluteUrl,
-                                                                          java.lang.String&nbsp;domain,
-                                                                          java.lang.String&nbsp;login,
-                                                                          java.lang.String&nbsp;password,
-                                                                          java.lang.Class&lt;PageObjectClass&gt;&nbsp;pageObjectClassClass)</pre>
+<pre>public&nbsp;&lt;PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;open(java.lang.String&nbsp;relativeOrAbsoluteUrl,
+                                              java.lang.String&nbsp;domain,
+                                              java.lang.String&nbsp;login,
+                                              java.lang.String&nbsp;password,
+                                              java.lang.Class&lt;PageObjectClass&gt;&nbsp;pageObjectClassClass)</pre>
 </li>
 </ul>
 <a name="open-java.net.URL-java.lang.String-java.lang.String-java.lang.String-java.lang.Class-">
@@ -659,13 +637,11 @@ public&nbsp;&lt;PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;open(java.lang.Str
 <ul class="blockList">
 <li class="blockList">
 <h4>open</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;&lt;PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;open(java.net.URL&nbsp;absoluteUrl,
-                                                                          java.lang.String&nbsp;domain,
-                                                                          java.lang.String&nbsp;login,
-                                                                          java.lang.String&nbsp;password,
-                                                                          java.lang.Class&lt;PageObjectClass&gt;&nbsp;pageObjectClassClass)</pre>
+<pre>public&nbsp;&lt;PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;open(java.net.URL&nbsp;absoluteUrl,
+                                              java.lang.String&nbsp;domain,
+                                              java.lang.String&nbsp;login,
+                                              java.lang.String&nbsp;password,
+                                              java.lang.Class&lt;PageObjectClass&gt;&nbsp;pageObjectClassClass)</pre>
 </li>
 </ul>
 <a name="page-java.lang.Class-">
@@ -674,9 +650,7 @@ public&nbsp;&lt;PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;open(java.net.URL&
 <ul class="blockList">
 <li class="blockList">
 <h4>page</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;&lt;PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;page(java.lang.Class&lt;PageObjectClass&gt;&nbsp;pageObjectClass)</pre>
+<pre>public&nbsp;&lt;PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;page(java.lang.Class&lt;PageObjectClass&gt;&nbsp;pageObjectClass)</pre>
 </li>
 </ul>
 <a name="page-java.lang.Object-">
@@ -687,9 +661,7 @@ public&nbsp;&lt;PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;page(java.lang.Cla
 <ul class="blockList">
 <li class="blockList">
 <h4>page</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;&lt;PageObjectClass,T extends PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;page(T&nbsp;pageObject)</pre>
+<pre>public&nbsp;&lt;PageObjectClass,T extends PageObjectClass&gt;&nbsp;PageObjectClass&nbsp;page(T&nbsp;pageObject)</pre>
 </li>
 </ul>
 <a name="refresh--">
@@ -734,9 +706,7 @@ public&nbsp;&lt;PageObjectClass,T extends PageObjectClass&gt;&nbsp;PageObjectCla
 <ul class="blockList">
 <li class="blockList">
 <h4>browser</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser()</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser()</pre>
 </li>
 </ul>
 <a name="getProxy--">
@@ -745,9 +715,7 @@ public&nbsp;<a href="../../../com/codeborne/selenide/Browser.html" title="class 
 <ul class="blockList">
 <li class="blockList">
 <h4>getProxy</h4>
-<pre>@CheckReturnValue
- @Nullable
-public&nbsp;<a href="../../../com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a>&nbsp;getProxy()</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a>&nbsp;getProxy()</pre>
 </li>
 </ul>
 <a name="hasWebDriverStarted--">
@@ -765,9 +733,7 @@ public&nbsp;<a href="../../../com/codeborne/selenide/proxy/SelenideProxyServer.h
 <ul class="blockList">
 <li class="blockList">
 <h4>getWebDriver</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;org.openqa.selenium.WebDriver&nbsp;getWebDriver()</pre>
+<pre>public&nbsp;WebDriver&nbsp;getWebDriver()</pre>
 </li>
 </ul>
 <a name="getAndCheckWebDriver--">
@@ -776,9 +742,7 @@ public&nbsp;org.openqa.selenium.WebDriver&nbsp;getWebDriver()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAndCheckWebDriver</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;org.openqa.selenium.WebDriver&nbsp;getAndCheckWebDriver()</pre>
+<pre>public&nbsp;WebDriver&nbsp;getAndCheckWebDriver()</pre>
 </li>
 </ul>
 <a name="clearCookies--">
@@ -825,9 +789,7 @@ public&nbsp;org.openqa.selenium.WebDriver&nbsp;getAndCheckWebDriver()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getFocusedElement</h4>
-<pre>@CheckReturnValue
- @Nullable
-public&nbsp;org.openqa.selenium.WebElement&nbsp;getFocusedElement()</pre>
+<pre>public&nbsp;WebElement&nbsp;getFocusedElement()</pre>
 </li>
 </ul>
 <a name="Wait--">
@@ -836,9 +798,7 @@ public&nbsp;org.openqa.selenium.WebElement&nbsp;getFocusedElement()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>Wait</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/SelenideWait.html" title="class in com.codeborne.selenide">SelenideWait</a>&nbsp;Wait()</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/SelenideWait.html" title="class in com.codeborne.selenide">SelenideWait</a>&nbsp;Wait()</pre>
 </li>
 </ul>
 <a name="zoom-double-">
@@ -856,30 +816,16 @@ public&nbsp;<a href="../../../com/codeborne/selenide/SelenideWait.html" title="c
 <ul class="blockList">
 <li class="blockList">
 <h4>title</h4>
-<pre>@Nullable
-public&nbsp;java.lang.String&nbsp;title()</pre>
+<pre>public&nbsp;java.lang.String&nbsp;title()</pre>
 </li>
 </ul>
-<a name="Z:Z:D-org.openqa.selenium.WebElement-">
+<a name="Z:Z:D-WebElement-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>$</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;$(org.openqa.selenium.WebElement&nbsp;webElement)</pre>
-</li>
-</ul>
-<a name="Z:Z:D-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>$</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;$(java.lang.String&nbsp;cssSelector)</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;$(WebElement&nbsp;webElement)</pre>
 </li>
 </ul>
 <a name="find-java.lang.String-">
@@ -888,9 +834,7 @@ public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title
 <ul class="blockList">
 <li class="blockList">
 <h4>find</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;find(java.lang.String&nbsp;cssSelector)</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;find(java.lang.String&nbsp;cssSelector)</pre>
 </li>
 </ul>
 <a name="Z:Z:Dx-java.lang.String-">
@@ -899,67 +843,45 @@ public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title
 <ul class="blockList">
 <li class="blockList">
 <h4>$x</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;$x(java.lang.String&nbsp;xpathExpression)</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;$x(java.lang.String&nbsp;xpathExpression)</pre>
 </li>
 </ul>
-<a name="Z:Z:D-org.openqa.selenium.By-">
+<a name="Z:Z:D-By-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>$</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;$(org.openqa.selenium.By&nbsp;seleniumSelector)</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;$(By&nbsp;seleniumSelector)</pre>
 </li>
 </ul>
-<a name="Z:Z:D-org.openqa.selenium.By-int-">
+<a name="Z:Z:D-By-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>$</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;$(org.openqa.selenium.By&nbsp;seleniumSelector,
-                                                     int&nbsp;index)</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;$(By&nbsp;seleniumSelector,
+                         int&nbsp;index)</pre>
 </li>
 </ul>
-<a name="Z:Z:D-java.lang.String-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>$</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;$(java.lang.String&nbsp;cssSelector,
-                                                     int&nbsp;index)</pre>
-</li>
-</ul>
-<a name="find-org.openqa.selenium.By-">
+<a name="find-By-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>find</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;find(org.openqa.selenium.By&nbsp;criteria)</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;find(By&nbsp;criteria)</pre>
 </li>
 </ul>
-<a name="find-org.openqa.selenium.By-int-">
+<a name="find-By-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>find</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;find(org.openqa.selenium.By&nbsp;criteria,
-                                                        int&nbsp;index)</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;find(By&nbsp;criteria,
+                            int&nbsp;index)</pre>
 </li>
 </ul>
 <a name="Z:Z:D:D-java.util.Collection-">
@@ -968,9 +890,7 @@ public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title
 <ul class="blockList">
 <li class="blockList">
 <h4>$$</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a>&nbsp;$$(java.util.Collection&lt;? extends org.openqa.selenium.WebElement&gt;&nbsp;elements)</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a>&nbsp;$$(java.util.Collection&lt;? extends WebElement&gt;&nbsp;elements)</pre>
 </li>
 </ul>
 <a name="Z:Z:D:D-java.lang.String-">
@@ -979,9 +899,7 @@ public&nbsp;<a href="../../../com/codeborne/selenide/ElementsCollection.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>$$</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a>&nbsp;$$(java.lang.String&nbsp;cssSelector)</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a>&nbsp;$$(java.lang.String&nbsp;cssSelector)</pre>
 </li>
 </ul>
 <a name="Z:Z:D:Dx-java.lang.String-">
@@ -990,53 +908,34 @@ public&nbsp;<a href="../../../com/codeborne/selenide/ElementsCollection.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>$$x</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a>&nbsp;$$x(java.lang.String&nbsp;xpathExpression)</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a>&nbsp;$$x(java.lang.String&nbsp;xpathExpression)</pre>
 </li>
 </ul>
-<a name="findAll-org.openqa.selenium.By-">
+<a name="findAll-By-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>findAll</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a>&nbsp;findAll(org.openqa.selenium.By&nbsp;seleniumSelector)</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a>&nbsp;findAll(By&nbsp;seleniumSelector)</pre>
 </li>
 </ul>
-<a name="findAll-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>findAll</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a>&nbsp;findAll(java.lang.String&nbsp;cssSelector)</pre>
-</li>
-</ul>
-<a name="Z:Z:D:D-org.openqa.selenium.By-">
+<a name="Z:Z:D:D-By-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>$$</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a>&nbsp;$$(org.openqa.selenium.By&nbsp;criteria)</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a>&nbsp;$$(By&nbsp;criteria)</pre>
 </li>
 </ul>
-<a name="getSelectedRadio-org.openqa.selenium.By-">
+<a name="getSelectedRadio-By-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getSelectedRadio</h4>
-<pre>@CheckReturnValue
- @Nullable
-public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;getSelectedRadio(org.openqa.selenium.By&nbsp;radioField)</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;getSelectedRadio(By&nbsp;radioField)</pre>
 </li>
 </ul>
 <a name="modal--">
@@ -1045,9 +944,7 @@ public&nbsp;<a href="../../../com/codeborne/selenide/SelenideElement.html" title
 <ul class="blockList">
 <li class="blockList">
 <h4>modal</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/Modal.html" title="class in com.codeborne.selenide">Modal</a>&nbsp;modal()</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/Modal.html" title="class in com.codeborne.selenide">Modal</a>&nbsp;modal()</pre>
 </li>
 </ul>
 <a name="getWebDriverLogs--">
@@ -1056,9 +953,7 @@ public&nbsp;<a href="../../../com/codeborne/selenide/Modal.html" title="class in
 <ul class="blockList">
 <li class="blockList">
 <h4>getWebDriverLogs</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/WebDriverLogs.html" title="class in com.codeborne.selenide">WebDriverLogs</a>&nbsp;getWebDriverLogs()</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/WebDriverLogs.html" title="class in com.codeborne.selenide">WebDriverLogs</a>&nbsp;getWebDriverLogs()</pre>
 </li>
 </ul>
 <a name="clearBrowserLocalStorage--">
@@ -1085,8 +980,7 @@ public&nbsp;<a href="../../../com/codeborne/selenide/WebDriverLogs.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>switchTo</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/SelenideTargetLocator.html" title="class in com.codeborne.selenide">SelenideTargetLocator</a>&nbsp;switchTo()</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/SelenideTargetLocator.html" title="class in com.codeborne.selenide">SelenideTargetLocator</a>&nbsp;switchTo()</pre>
 </li>
 </ul>
 <a name="url--">
@@ -1095,9 +989,7 @@ public&nbsp;<a href="../../../com/codeborne/selenide/SelenideTargetLocator.html"
 <ul class="blockList">
 <li class="blockList">
 <h4>url</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.lang.String&nbsp;url()</pre>
+<pre>public&nbsp;java.lang.String&nbsp;url()</pre>
 </li>
 </ul>
 <a name="source--">
@@ -1106,9 +998,7 @@ public&nbsp;java.lang.String&nbsp;url()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>source</h4>
-<pre>@CheckReturnValue
- @Nullable
-public&nbsp;java.lang.String&nbsp;source()</pre>
+<pre>public&nbsp;java.lang.String&nbsp;source()</pre>
 </li>
 </ul>
 <a name="getCurrentFrameUrl--">
@@ -1117,9 +1007,7 @@ public&nbsp;java.lang.String&nbsp;source()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getCurrentFrameUrl</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.lang.String&nbsp;getCurrentFrameUrl()</pre>
+<pre>public&nbsp;java.lang.String&nbsp;getCurrentFrameUrl()</pre>
 </li>
 </ul>
 <a name="getUserAgent--">
@@ -1128,9 +1016,7 @@ public&nbsp;java.lang.String&nbsp;getCurrentFrameUrl()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getUserAgent</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;java.lang.String&nbsp;getUserAgent()</pre>
+<pre>public&nbsp;java.lang.String&nbsp;getUserAgent()</pre>
 </li>
 </ul>
 <a name="screenshot-java.lang.String-">
@@ -1139,9 +1025,7 @@ public&nbsp;java.lang.String&nbsp;getUserAgent()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>screenshot</h4>
-<pre>@CheckReturnValue
- @Nullable
-public&nbsp;java.lang.String&nbsp;screenshot(java.lang.String&nbsp;fileName)</pre>
+<pre>public&nbsp;java.lang.String&nbsp;screenshot(java.lang.String&nbsp;fileName)</pre>
 <div class="block">Take a screenshot of the current page</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1151,15 +1035,13 @@ public&nbsp;java.lang.String&nbsp;screenshot(java.lang.String&nbsp;fileName)</pr
 </dl>
 </li>
 </ul>
-<a name="screenshot-org.openqa.selenium.OutputType-">
+<a name="screenshot--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>screenshot</h4>
-<pre>@CheckReturnValue
- @Nullable
-public&nbsp;&lt;T&gt;&nbsp;T&nbsp;screenshot(org.openqa.selenium.OutputType&lt;T&gt;&nbsp;outputType)</pre>
+<pre>public&nbsp;&lt;T&gt;&nbsp;T&nbsp;screenshot(&lt;any&gt;&nbsp;outputType)</pre>
 <div class="block">Take a screenshot of the current page</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1175,10 +1057,9 @@ public&nbsp;&lt;T&gt;&nbsp;T&nbsp;screenshot(org.openqa.selenium.OutputType&lt;T
 <ul class="blockList">
 <li class="blockList">
 <h4>download</h4>
-<pre>@Nonnull
-public&nbsp;java.io.File&nbsp;download(java.lang.String&nbsp;url)
-                               throws java.io.IOException,
-                                      java.net.URISyntaxException</pre>
+<pre>public&nbsp;java.io.File&nbsp;download(java.lang.String&nbsp;url)
+                      throws java.io.IOException,
+                             java.net.URISyntaxException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
@@ -1192,11 +1073,10 @@ public&nbsp;java.io.File&nbsp;download(java.lang.String&nbsp;url)
 <ul class="blockList">
 <li class="blockList">
 <h4>download</h4>
-<pre>@Nonnull
-public&nbsp;java.io.File&nbsp;download(java.lang.String&nbsp;url,
-                                      long&nbsp;timeoutMs)
-                               throws java.io.IOException,
-                                      java.net.URISyntaxException</pre>
+<pre>public&nbsp;java.io.File&nbsp;download(java.lang.String&nbsp;url,
+                             long&nbsp;timeoutMs)
+                      throws java.io.IOException,
+                             java.net.URISyntaxException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
@@ -1210,9 +1090,8 @@ public&nbsp;java.io.File&nbsp;download(java.lang.String&nbsp;url,
 <ul class="blockList">
 <li class="blockList">
 <h4>download</h4>
-<pre>@Nonnull
-public&nbsp;java.io.File&nbsp;download(java.net.URI&nbsp;url)
-                               throws java.io.IOException</pre>
+<pre>public&nbsp;java.io.File&nbsp;download(java.net.URI&nbsp;url)
+                      throws java.io.IOException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
@@ -1225,10 +1104,9 @@ public&nbsp;java.io.File&nbsp;download(java.net.URI&nbsp;url)
 <ul class="blockList">
 <li class="blockList">
 <h4>download</h4>
-<pre>@Nonnull
-public&nbsp;java.io.File&nbsp;download(java.net.URI&nbsp;url,
-                                      long&nbsp;timeoutMs)
-                               throws java.io.IOException</pre>
+<pre>public&nbsp;java.io.File&nbsp;download(java.net.URI&nbsp;url,
+                             long&nbsp;timeoutMs)
+                      throws java.io.IOException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
@@ -1241,9 +1119,7 @@ public&nbsp;java.io.File&nbsp;download(java.net.URI&nbsp;url,
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getLocalStorage</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;<a href="../../../com/codeborne/selenide/LocalStorage.html" title="class in com.codeborne.selenide">LocalStorage</a>&nbsp;getLocalStorage()</pre>
+<pre>public&nbsp;<a href="../../../com/codeborne/selenide/LocalStorage.html" title="class in com.codeborne.selenide">LocalStorage</a>&nbsp;getLocalStorage()</pre>
 </li>
 </ul>
 </li>
