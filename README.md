@@ -19,11 +19,11 @@ git push origin --tags
 
 ### Publishing javadoc
 selenide> ./gradlew clean allprojectsJavadoc
-selenide> mkdir ../selenide-web/javadoc/5.0.0/
-selenide> cp -r build/docs/javadoc/* ../selenide-web/javadoc/5.0.0/
+selenide> mkdir ../selenide-web/javadoc/5.19.0/
+selenide> cp -r build/docs/javadoc-to-upload/* ../selenide-web/javadoc/5.19.0/
 selenide> rm -fr ../selenide-web/javadoc/current/*
-selenide> cp -r build/docs/javadoc/* ../selenide-web/javadoc/current/
-selenide-web> git add javadoc/5.0.0
+selenide> cp -r build/docs/javadoc-to-upload/* ../selenide-web/javadoc/current/
+selenide-web> git add javadoc/5.19.0
 selenide-web> git add javadoc/current
 
 
