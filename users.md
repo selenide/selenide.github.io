@@ -179,13 +179,13 @@ header-text:
     
     <hr class="divider"/>
     
-    <a href="http://qa3s.com/company/about" target="_blank">
+    <a href="https://softengi.com/expertise/software-testing/" target="_blank">
       <img src="{{ BASE_PATH }}/images/qa3s-logo.png" style="width: 150px;" alt="QA Service"/>
     </a>
     <br/>
     
     <div class="text-right">
-      Softengi <a href="http://qa3s.com/company/about" target="_blank">QA Service</a> is a part of Intecracy Group which unites IT companies in USA, EU, India, Indonesia, Ukraine,
+      Softengi <a href="https://softengi.com/expertise/software-testing/" target="_blank">QA Service</a> is a part of Intecracy Group which unites IT companies in USA, EU, India, Indonesia, Ukraine,
       Moldova, Azerbaijan, Georgia, Kazakhstan and Belarus. Our team has implemented hundreds of large and small
       projects for American and European customers.
     </div>
@@ -373,8 +373,8 @@ header-text:
     <div>
       YourKit, LLC is the creator of innovative and intelligent tools for profiling Java and .NET applications. 
       Take a look at YourKit's leading software products:
-      <a href="http://www.yourkit.com/java/profiler/index.jsp" target="_blank">YourKit Java Profiler</a> and 
-      <a href="http://www.yourkit.com/.net/profiler/index.jsp" target="_blank">YourKit .NET Profiler</a>.
+      <a href="https://www.yourkit.com/java/profiler/features/" target="_blank">YourKit Java Profiler</a> and 
+      <a href="https://www.yourkit.com/.net/profiler/features/" target="_blank">YourKit .NET Profiler</a>.
     </div>
     
     <div class="center">
