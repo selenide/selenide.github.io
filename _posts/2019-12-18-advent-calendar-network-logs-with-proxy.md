@@ -64,7 +64,7 @@ Everything that we dreamed about.
 
 There is only one possible problem. When you run tests and browsers on different machines, and the "tests" machine 
 is not accessible from the "browsers" machine, it's just technically impossible to use proxy server.  
-Thought I never understood why people make things that complex. 
+Though I never understood why people make things that complex. 
 
 People, just run tests and browsers on the same machine. Everything will get MUCH SIMPLER!    
 If you need to parallelize - just parallelize TESTS.  

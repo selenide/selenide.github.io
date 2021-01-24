@@ -37,7 +37,7 @@ Let's take a look under the hood!
 ### Settings
 
 Before test run we need to set longer timeout, because GMail element tend to load longer than 4 seconds (which is a
-default timeout in Selenide). Let's set 10 seconds. Thought at some conferences with slow WiFi even 10 was not
+default timeout in Selenide). Let's set 10 seconds. Though at some conferences with slow WiFi even 10 was not
 sufficient long. 
 
 ```java
