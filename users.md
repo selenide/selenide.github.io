@@ -54,11 +54,23 @@ header-text:
     <a href="https://amazinghiring.com/" target="_blank">
       <img src="{{ BASE_PATH }}/images/logo-amazinghiring.svg" style="width: 160px;" alt="AmazingHiring"/>
     </a>
+
     <br/>
 
     <div class="text-right">
       <a href="https://amazinghiring.com/" target="_blank">AmazingHiring</a> - 
             Web application for technical talents acquisition.
+    </div>
+
+    <hr class="divider"/>
+
+    <a href="https://quality-lab.ru/" target="_blank">
+      <img src="{{ BASE_PATH }}/images/logo-quality-lab.png" style="width: 160px; background-color: #65a5c0;" alt="Quality Lab"/>
+    </a>
+    <br/>
+
+    <div class="text-right">
+      <a href="https://quality-lab.ru/" target="_blank">Quality Lab</a> - Software development and testing
     </div>
 
     <hr class="divider"/>
