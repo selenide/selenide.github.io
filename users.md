@@ -16,6 +16,17 @@ header-text:
 <div class="wrapper-content">
   <section>
 
+    <a href="https://whimstay.com/" target="_blank">
+      <img src="{{ BASE_PATH }}/images/logo-whimstay.png" style="width: 160px;" alt="Whimstay"/>
+    </a>
+    <br/>
+
+    <div class="text-right">
+      <a href="https://whimstay.com/" target="_blank">Whimstay</a> - last-minute deals on vacation rentals, San-Francisco.
+    </div>
+
+    <hr class="divider"/>
+
     <a href="https://www.walletone.com/en/wallet/" target="_blank">
       <img src="{{ BASE_PATH }}/images/logo-walletone.png" style="width: 160px;" alt="Wallet One"/>
     </a>
