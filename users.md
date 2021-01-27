@@ -50,6 +50,18 @@ header-text:
     
     <hr class="divider"/>
   
+    <a href="https://www.severstal.com/eng/" target="_blank">
+      <img src="{{ BASE_PATH }}/images/logo-severstal.svg" style="width: 160px; background-color: #002f6c;" alt="Severstal'"/>
+    </a>
+    <br/>
+
+    <div class="text-right">
+      <a href="https://www.severstal.com/eng/" target="_blank">Severstal</a> - 
+            steel and steel-related mining company.
+    </div>
+
+    <hr class="divider"/>
+
     <a href="http://www.bellintegrator.ru/" target="_blank">
       <img src="{{ BASE_PATH }}/images/logo-bellintegrator.png" style="width: 160px;" alt="Bell Integrator"/>
     </a>
