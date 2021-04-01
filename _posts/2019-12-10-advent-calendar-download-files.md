@@ -48,7 +48,7 @@ so that it's convenient to have them all together.
 We can edit our download directory by changing default settings:
 
 ```java
-Configuration.reportsFolder = <desired location for downloaded files>;
+Configuration.downloadsFolder = <desired location for downloaded files>;
 ```
 
 ### BUT:
