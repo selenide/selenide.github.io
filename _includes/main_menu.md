@@ -9,7 +9,7 @@
 </ul>
 
 <div class="news">
-  <div class="news-line"><a href="/2021/06/08/selenide-5.22.0/">Released Selenide 5.22.0</a></div>
+  <div class="news-line"><a href="/2021/06/08/selenide-5.22.0/">Released Selenide 5.22.1</a></div>
   <div class="news-line"><i>an anniversary release</i></div>
 </div>
 

@@ -11,20 +11,19 @@ sudo gem install jekyll bundler
 bundle exec jekyll serve --watch --trace
 
 
-### Tagging selenide
-git tag -a v5.0.0 -m "released selenide 5.0.0"
-git tag    (lists all tags)
-git push origin --tags
-
-
-### Publishing javadoc
-selenide> ./gradlew clean allprojectsJavadoc
-selenide> mkdir ../selenide-web/javadoc/5.19.0/
-selenide> cp -r build/docs/javadoc-to-upload/* ../selenide-web/javadoc/5.19.0/
+### Release process
+selenide> git tag -a v5.23.0 -m "released selenide 5.23.0"
+selenide> git push origin --tags
+selenide> ./gradlew clean check
+selenide> ./gradlew publish
+selenide> mkdir ../selenide-web/javadoc/5.23.0/
+selenide> cp -r build/docs/javadoc-to-upload/* ../selenide-web/javadoc/5.23.0/
 selenide> rm -fr ../selenide-web/javadoc/current/*
 selenide> cp -r build/docs/javadoc-to-upload/* ../selenide-web/javadoc/current/
-selenide-web> git add javadoc/5.19.0
+selenide-web> git add javadoc/5.23.0
 selenide-web> git add javadoc/current
+selenide-web> git commit -m "publish javadoc for Selenide 5.23.0"
+selenide-web> git push
 
 
 
