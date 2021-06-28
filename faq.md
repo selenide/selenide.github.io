@@ -53,11 +53,23 @@ public void setUp() {
 
 Yes.
 Selenide can run tests with any browsers that has webdriver binding. The most popular browsers are supported from the box
-(chrome, firefox, ie, phantomjs, htmlunit, safari, opera). Others can be also used by passing webdriver class name.
+(chrome, firefox, edge, ie, safari, opera).
+Some less popular are also supported with a little configuration (phantomjs, htmlunit).
+See [Wiki](https://github.com/selenide/selenide/wiki/How-Selenide-creates-WebDriver).
+
+
+Other browsers can be also used by passing webdriver class name.
 
 <br/>
 E.g. to run tests with PhantomJS browser:
 ```-Dselenide.browser=phantomjs```
+
+<br/>
+
+>How can I tell Selenide use browser with my custom profile?
+
+You can also provide Selenide an instance of webdriver that you configured according to your needs.
+Go to [Wiki](https://github.com/selenide/selenide/wiki/How-Selenide-creates-WebDriver) for details.
 
 <br/>
 
@@ -67,10 +79,20 @@ Yes, Selenide supports Selenium Grid. Just add property `-Dselenide.remote=http:
 
 <br/>
 
->How can I tell Selenide use browser with my custom profile?
+>Can I use Selenide with Selenoid?
 
-You can also provide Selenide an instance of webdriver that you configured according to your needs.
-Go to [Wiki](https://github.com/selenide/selenide/wiki/How-Selenide-creates-WebDriver) for details.
+Yes, Selenide supports Selenoid. Just add property `-Dselenide.remote=http://localhost:5678/wd/hub` when running tests.  
+We also recommend using Selenide plugin [selenide-selenoid](https://github.com/selenide/selenide-selenoid).
+
+<br/>
+
+>Can I use Selenide for testing mobile applications?
+
+Yes, Selenide supports testing of mobile applications using Appium. 
+1. We also recommend using Selenide plugin [selenide-appium](https://github.com/selenide/selenide-appium).
+2. You can find working examples [on github](https://github.com/selenide-examples/selenide-appium)
+3. You can watch a presentation about [using Selenide for mobile](https://www.youtube.com/watch?v=Y04rU7qV7Vg)
+
 
 ## Build scripts
 
