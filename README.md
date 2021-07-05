@@ -15,7 +15,7 @@ bundle exec jekyll serve --watch --trace
 selenide> git tag -a v5.23.0 -m "released selenide 5.23.0"
 selenide> git push origin --tags
 selenide> ./gradlew clean check
-selenide> ./gradlew publish
+selenide> ./gradlew publish --no-parallel --info
 selenide> mkdir ../selenide-web/javadoc/5.23.0/
 selenide> cp -r build/docs/javadoc-to-upload/* ../selenide-web/javadoc/5.23.0/
 selenide> rm -fr ../selenide-web/javadoc/current/*
