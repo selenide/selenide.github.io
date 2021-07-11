@@ -132,11 +132,11 @@ $("input").shouldHave(exactText("Some text"));
 Assertions play role of explicit waits in Selenide. They **wait** for condition (`visible`, `enabled`, `text("some text")`) to be satisfied until timeout reached (the value of `Configuration.timeout` that is set to 4000 ms by default).
 You can use "should-methods" explicitly in order to wait the needed state of element before corresponding action, for example: `$("#submit").shouldBe(enabled).click();`
 
-There are also versions of "Selenide explicit waits" with ability to set timeout explicitly:
+You can also set the timeout explicitly:
 
-*  waitUntil(Condition, milliseconds)
-*  waitWhile(Condition, milliseconds)
-
+```java
+$("input").shouldBe(visible, Duration.ofSeconds(30));
+```
 
 <h4>
 Methods-actions on element
