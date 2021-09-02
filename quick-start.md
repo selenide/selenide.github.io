@@ -47,7 +47,7 @@ Add these lines to file build.gradle:
 
 ```groovy
 dependencies {
-  testCompile 'com.codeborne:selenide:{{site.SELENIDE_VERSION}}'
+  testImplementation 'com.codeborne:selenide:{{site.SELENIDE_VERSION}}'
 }
 ```
 
