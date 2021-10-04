@@ -126,9 +126,8 @@ header-text:
     <br/>
     
     <div class="text-right">
-      <a href="https://www.semrush.com/" target="_blank">SEMrush</a>  
-       is a leading digital marketing toolkit for SEO, PPC and content marketing professionals worldwide. 
-       It is included in the TOP-3 market marketing services of the world.
+      <a href="https://www.semrush.com/" target="_blank">Semrush</a>  
+       - leading online visibility management and content marketing SaaS Platform
     </div>
     
     <hr class="divider"/>
