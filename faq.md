@@ -61,8 +61,8 @@ See [Wiki](https://github.com/selenide/selenide/wiki/How-Selenide-creates-WebDri
 Other browsers can be also used by passing webdriver class name.
 
 <br/>
-E.g. to run tests with PhantomJS browser:
-```-Dselenide.browser=phantomjs```
+E.g. to run tests with Firefox browser:
+```-Dselenide.browser=firefox```
 
 <br/>
 
@@ -75,13 +75,13 @@ Go to [Wiki](https://github.com/selenide/selenide/wiki/How-Selenide-creates-WebD
 
 >Can I use Selenide with Selenium Grid?
 
-Yes, Selenide supports Selenium Grid. Just add property `-Dselenide.remote=http://localhost:5678/wd/hub` when running tests.
+Yes, Selenide supports Selenium Grid. Just add property `-Dselenide.remote=http://localhost:4444/wd/hub` when running tests.
 
 <br/>
 
 >Can I use Selenide with Selenoid?
 
-Yes, Selenide supports Selenoid. Just add property `-Dselenide.remote=http://localhost:5678/wd/hub` when running tests.  
+Yes, Selenide supports Selenoid. Just add property `-Dselenide.remote=http://localhost:4444/wd/hub` when running tests.  
 We also recommend using Selenide plugin [selenide-selenoid](https://github.com/selenide/selenide-selenoid).
 
 <br/>
@@ -144,7 +144,7 @@ Shortly said, it means that you can do anything with it.
 No. For sure. Selenide will always be free. 
 
 * Firstly, because we believe in Open Source. 
-* Secondly, because we don't believe we can earn lot of money this way. :)
+* Secondly, because we don't believe we can earn a lot of money this way. :)
 
 ## Nice to read
 
