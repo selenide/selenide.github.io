@@ -29,18 +29,6 @@ Add these lines to file pom.xml:
 </dependency>
 ```
 
-### For Ivy users:
-
-Add these lines to file ivy.xml:
-
-```xml
-<ivy-module>
-  <dependencies>
-    <dependency org="com.codeborne" name="selenide" rev="{{site.SELENIDE_VERSION}}"/>
-  </dependencies>
-</ivy-module>
-```
-
 ### For Gradle users:
 
 Add these lines to file build.gradle:

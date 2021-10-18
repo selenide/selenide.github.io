@@ -34,7 +34,7 @@ Just type: `$(selector).` - and IDE will suggest you all available options.
 
 <img src="{{ BASE_PATH }}/images/ide-just-start-typing.png" alt="Selenide API: Just start typing"/>
 
-Use the power of todays development environments instead of bothering with documentation!
+Use the power of today's development environments instead of bothering with documentation!
 
 <br/>
 
@@ -190,7 +190,7 @@ Look for more details in [Selenide gitbook](https://selenide.gitbooks.io/user-gu
   <a target="_blank" href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Condition.html">[javadoc]</a>
 </h3>
 
-Conditions are used in `should` / `shouldNot` / `waitUntil` / `waitWhile` constructs. We recommend to import corresponding conditions statically to receive all the advantages of readable code:
+Conditions are used in `should` / `shouldNot` constructs. We recommend to import corresponding conditions statically to receive all the advantages of readable code:
 
 *   visible / appear   // e.g. $("input").shouldBe(visible)
 *   present / exist    // // conditions to wait for element existence in DOM (it can be still hidden) 
@@ -282,7 +282,7 @@ Look for more details in [Selenide gitbook](https://selenide.gitbooks.io/user-gu
   <a target="_blank" href="{{BASE_PATH}}/javadoc/current/com/codeborne/selenide/CollectionCondition.html">[javadoc]</a>
 </h3>
 
-Collection conditions are used in the `shouldBe`/`shouldHave` constructs for the object of `ElementsCollection` class. It is recommended to import needed conditions statically in order to achive all advantages of the readable code.
+Collection conditions are used in the `shouldBe`/`shouldHave` constructs for the object of `ElementsCollection` class. It is recommended to import needed conditions statically in order to achieve all advantages of the readable code.
 
 *   `empty   // e.g. $$("#list li").shouldBe(empty)`
 *   `size(int)    // e.g. $$("#list li").shouldHave(size(10))`
@@ -320,8 +320,7 @@ Look for more details in [Selenide gitbook](https://selenide.gitbooks.io/user-gu
 
 This class contains different configuration options to configure execution of Selenide-based tests, e.g.:
 
-*  `timeout` - waiting timeout in milliseconds, that is used in explicit (`should`/`shouldNot`/`waitUntil`/`waitWhile`) and implicit waiting for `SelenideElement`; set to 4000 ms by default; can be changed for specific tests, e.g. `Configuration.timeout = 6000;`
-* `collectionsTimeout` - waiting timeout in milliseconds, that is used in explicit (`should`/`shouldNot`/`waitUntil`/`waitWhile`) and implicit waiting for `ElementsCollection`; set to 6000 ms by default; can be changed for specific tests, e.g. `Configuration.collectionsTimeout = 8000;`
+*  `timeout` - waiting timeout in milliseconds, that is used in explicit (`should`/`shouldNot`) and implicit waiting for `SelenideElement`; set to 4000 ms by default; can be changed for specific tests, e.g. `Configuration.timeout = 6000;`
 *  `browser` (e.g. `"chrome"`, `"ie"`, `"firefox"`)
 *  `baseUrl`
 *  `reportsFolder`
