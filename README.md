@@ -12,22 +12,14 @@ bundle exec jekyll serve --watch --trace
 
 
 ### Release process
-selenide> git tag -a v5.23.0 -m "released selenide 5.23.0"
-selenide> git push origin --tags
-selenide> ./gradlew clean check
-selenide> ./gradlew publish --no-parallel --info
-selenide> mkdir ../selenide-web/javadoc/5.23.0/
-selenide> cp -r build/docs/javadoc-to-upload/* ../selenide-web/javadoc/5.23.0/
-selenide> rm -fr ../selenide-web/javadoc/current/*
-selenide> cp -r build/docs/javadoc-to-upload/* ../selenide-web/javadoc/current/
-selenide-web> git add javadoc/5.23.0
-selenide-web> git add javadoc/current
-selenide-web> git commit -m "publish javadoc for Selenide 5.23.0"
-selenide-web> git push
+Just run script:
+selenide> ./release 6.1.0
 
-
-
-
+This script will:
+1. add tag "v${version}"
+2. build & run unit-tests
+3. publish selenide-*jar to oss.sonatype.org
+4. generate javadoc for site
 
 
 ### Ruby & Jekyll installation on Windows
