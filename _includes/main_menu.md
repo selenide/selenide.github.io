@@ -9,8 +9,8 @@
 </ul>
 
 <div class="news">
-  <div class="news-line"><a href="/2021/11/24/selenide-6.1.1/">Released Selenide 6.1.2</a></div>
-  <div class="news-line">Capabilitities</div>
+  <div class="news-line"><a href="https://github.com/selenide/selenide/milestone/140?closed=1">Released Selenide 6.2.0</a></div>
+  <div class="news-line">Soft asserts, hard iterators</div>
 </div>
 
 <h3 style="display:none">Blog</h3>
