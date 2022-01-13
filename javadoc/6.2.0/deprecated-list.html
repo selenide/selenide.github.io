@@ -71,12 +71,34 @@
 <h1 title="Deprecated API" class="title">Deprecated API</h1>
 <h2 title="Contents">Contents</h2>
 <ul>
+<li><a href="#class">Deprecated Classes</a></li>
 <li><a href="#field">Deprecated Fields</a></li>
 <li><a href="#method">Deprecated Methods</a></li>
 <li><a href="#constructor">Deprecated Constructors</a></li>
 </ul>
 </div>
-<div class="contentContainer"><a name="field">
+<div class="contentContainer"><a name="class">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<table class="deprecatedSummary" border="0" cellpadding="3" cellspacing="0" summary="Deprecated Classes table, listing deprecated classes, and an explanation">
+<caption><span>Deprecated Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colOne"><a href="com/codeborne/selenide/impl/SelenideElementListIterator.html" title="class in com.codeborne.selenide.impl">com.codeborne.selenide.impl.SelenideElementListIterator</a>
+<div class="block"><span class="deprecationComment">To be removed in following versions.
+ Used only by deprecated method <a href="com/codeborne/selenide/ElementsCollection.html#listIterator-int-"><code>ElementsCollection.listIterator(int)</code></a>.</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<a name="field">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -123,8 +145,38 @@
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><a href="com/codeborne/selenide/ElementsCollection.html#forEach-java.util.function.Consumer-">com.codeborne.selenide.ElementsCollection.forEach(Consumer&lt;? super SelenideElement&gt;)</a>
+<div class="block"><span class="deprecationComment">Use either <a href="com/codeborne/selenide/ElementsCollection.html#asFixedIterable--"><code>ElementsCollection.asFixedIterable()</code></a> or <a href="com/codeborne/selenide/ElementsCollection.html#asDynamicIterable--"><code>ElementsCollection.asDynamicIterable()</code></a> instead.</span></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="com/codeborne/selenide/ElementsCollection.html#iterator--">com.codeborne.selenide.ElementsCollection.iterator()</a>
+<div class="block"><span class="deprecationComment">use method <a href="com/codeborne/selenide/ElementsCollection.html#asFixedIterable--"><code>ElementsCollection.asFixedIterable()</code></a> or <a href="com/codeborne/selenide/ElementsCollection.html#asDynamicIterable--"><code>ElementsCollection.asDynamicIterable()</code></a> instead.</span></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="com/codeborne/selenide/ElementsCollection.html#listIterator-int-">com.codeborne.selenide.ElementsCollection.listIterator(int)</a>
+<div class="block"><span class="deprecationComment">use method <a href="com/codeborne/selenide/ElementsCollection.html#asFixedIterable--"><code>ElementsCollection.asFixedIterable()</code></a> or <a href="com/codeborne/selenide/ElementsCollection.html#asDynamicIterable--"><code>ElementsCollection.asDynamicIterable()</code></a> instead.</span></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="com/codeborne/selenide/ElementsCollection.html#parallelStream--">com.codeborne.selenide.ElementsCollection.parallelStream()</a>
+<div class="block"><span class="deprecationComment">Use either <a href="com/codeborne/selenide/ElementsCollection.html#asFixedIterable--"><code>ElementsCollection.asFixedIterable()</code></a> or <a href="com/codeborne/selenide/ElementsCollection.html#asDynamicIterable--"><code>ElementsCollection.asDynamicIterable()</code></a> instead.</span></div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><a href="com/codeborne/selenide/WebDriverRunner.html#removeListener-org.openqa.selenium.support.events.WebDriverEventListener-">com.codeborne.selenide.WebDriverRunner.removeListener(WebDriverEventListener)</a>
 <div class="block"><span class="deprecationComment">Use <a href="com/codeborne/selenide/WebDriverRunner.html#removeListener-org.openqa.selenium.support.events.WebDriverListener-"><code>WebDriverRunner.removeListener(WebDriverListener)</code></a> instead</span></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="com/codeborne/selenide/ElementsCollection.html#stream--">com.codeborne.selenide.ElementsCollection.stream()</a>
+<div class="block"><span class="deprecationComment">Use either <a href="com/codeborne/selenide/ElementsCollection.html#asFixedIterable--"><code>ElementsCollection.asFixedIterable()</code></a> or <a href="com/codeborne/selenide/ElementsCollection.html#asDynamicIterable--"><code>ElementsCollection.asDynamicIterable()</code></a> instead.</span></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="com/codeborne/selenide/ElementsCollection.html#toArray--">com.codeborne.selenide.ElementsCollection.toArray()</a>
+<div class="block"><span class="deprecationComment">use method <a href="com/codeborne/selenide/ElementsCollection.html#asFixedIterable--"><code>ElementsCollection.asFixedIterable()</code></a> or <a href="com/codeborne/selenide/ElementsCollection.html#asDynamicIterable--"><code>ElementsCollection.asDynamicIterable()</code></a> instead.</span></div>
 </td>
 </tr>
 </tbody>

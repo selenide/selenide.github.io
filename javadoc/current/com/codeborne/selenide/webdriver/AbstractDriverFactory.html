@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -171,30 +171,42 @@ implements <a href="../../../../com/codeborne/selenide/webdriver/DriverFactory.h
                         org.openqa.selenium.Proxy&nbsp;proxy)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isBoolean-java.lang.String-">isBoolean</a></span>(java.lang.String&nbsp;value)</code>&nbsp;</td>
+<td class="colFirst"><code>protected &lt;T extends org.openqa.selenium.MutableCapabilities&gt;<br>T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#createCommonCapabilities-T-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-">createCommonCapabilities</a></span>(T&nbsp;capabilities,
+                        <a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                        <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
+                        org.openqa.selenium.Proxy&nbsp;proxy)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isInteger-java.lang.String-">isInteger</a></span>(java.lang.String&nbsp;value)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isBoolean-java.lang.String-">isBoolean</a></span>(java.lang.String&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isSystemPropertyNotSet-java.lang.String-">isSystemPropertyNotSet</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isInteger-java.lang.String-">isInteger</a></span>(java.lang.String&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#isSystemPropertyNotSet-java.lang.String-">isSystemPropertyNotSet</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#majorVersion-java.lang.String-">majorVersion</a></span>(java.lang.String&nbsp;browserVersion)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#transferCapabilitiesFromSystemProperties-org.openqa.selenium.remote.DesiredCapabilities-">transferCapabilitiesFromSystemProperties</a></span>(org.openqa.selenium.remote.DesiredCapabilities&nbsp;currentBrowserCapabilities)</code>&nbsp;</td>
-</tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>protected &lt;T extends org.openqa.selenium.MutableCapabilities&gt;<br>T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#merge-T-org.openqa.selenium.MutableCapabilities-">merge</a></span>(T&nbsp;capabilities,
+     org.openqa.selenium.MutableCapabilities&nbsp;additionalCapabilities)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#transferCapabilitiesFromSystemProperties-org.openqa.selenium.MutableCapabilities-">transferCapabilitiesFromSystemProperties</a></span>(org.openqa.selenium.MutableCapabilities&nbsp;currentBrowserCapabilities)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>protected java.io.File</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#webdriverLog-com.codeborne.selenide.Config-">webdriverLog</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>protected &lt;DS extends org.openqa.selenium.remote.service.DriverService,B extends org.openqa.selenium.remote.service.DriverService.Builder&lt;DS,?&gt;&gt;<br>DS</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/webdriver/AbstractDriverFactory.html#withLog-com.codeborne.selenide.Config-B-">withLog</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
        B&nbsp;dsBuilder)</code>&nbsp;</td>
@@ -282,13 +294,44 @@ protected&nbsp;org.openqa.selenium.MutableCapabilities&nbsp;createCommonCapabili
                                                                                                        org.openqa.selenium.Proxy&nbsp;proxy)</pre>
 </li>
 </ul>
-<a name="transferCapabilitiesFromSystemProperties-org.openqa.selenium.remote.DesiredCapabilities-">
+<a name="createCommonCapabilities-org.openqa.selenium.MutableCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-">
+<!--   -->
+</a><a name="createCommonCapabilities-T-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createCommonCapabilities</h4>
+<pre>@CheckReturnValue
+ @Nonnull
+protected&nbsp;&lt;T extends org.openqa.selenium.MutableCapabilities&gt;&nbsp;T&nbsp;createCommonCapabilities(T&nbsp;capabilities,
+                                                                                                                     <a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config,
+                                                                                                                     <a href="../../../../com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a>&nbsp;browser,
+                                                                                                                     @Nullable
+                                                                                                                     org.openqa.selenium.Proxy&nbsp;proxy)</pre>
+</li>
+</ul>
+<a name="merge-org.openqa.selenium.MutableCapabilities-org.openqa.selenium.MutableCapabilities-">
+<!--   -->
+</a><a name="merge-T-org.openqa.selenium.MutableCapabilities-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>merge</h4>
+<pre>@CheckReturnValue
+ @Nonnull
+protected&nbsp;&lt;T extends org.openqa.selenium.MutableCapabilities&gt;&nbsp;T&nbsp;merge(T&nbsp;capabilities,
+                                                                                                  org.openqa.selenium.MutableCapabilities&nbsp;additionalCapabilities)</pre>
+</li>
+</ul>
+<a name="transferCapabilitiesFromSystemProperties-org.openqa.selenium.MutableCapabilities-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>transferCapabilitiesFromSystemProperties</h4>
-<pre>protected&nbsp;void&nbsp;transferCapabilitiesFromSystemProperties(org.openqa.selenium.remote.DesiredCapabilities&nbsp;currentBrowserCapabilities)</pre>
+<pre>protected&nbsp;void&nbsp;transferCapabilitiesFromSystemProperties(org.openqa.selenium.MutableCapabilities&nbsp;currentBrowserCapabilities)</pre>
 </li>
 </ul>
 <a name="convertStringToNearestObjectType-java.lang.String-">

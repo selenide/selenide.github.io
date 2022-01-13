@@ -170,11 +170,10 @@ extends <a href="../../../../com/codeborne/selenide/ex/UIAssertionError.html" ti
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/ex/MatcherError.html#MatcherError-java.lang.String-java.lang.String-java.lang.String-com.codeborne.selenide.impl.CollectionSource-java.util.List-java.lang.Exception-long-">MatcherError</a></span>(java.lang.String&nbsp;matcher,
-            java.lang.String&nbsp;predicateDescription,
-            java.lang.String&nbsp;explanation,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/ex/MatcherError.html#MatcherError-java.lang.String-java.lang.String-java.lang.String-com.codeborne.selenide.impl.CollectionSource-java.lang.Exception-long-">MatcherError</a></span>(java.lang.String&nbsp;explanation,
+            java.lang.String&nbsp;expected,
+            java.lang.String&nbsp;actual,
             <a href="../../../../com/codeborne/selenide/impl/CollectionSource.html" title="interface in com.codeborne.selenide.impl">CollectionSource</a>&nbsp;collection,
-            java.util.List&lt;org.openqa.selenium.WebElement&gt;&nbsp;actualElements,
             java.lang.Exception&nbsp;lastError,
             long&nbsp;timeoutMs)</code>&nbsp;</td>
 </tr>
@@ -229,18 +228,17 @@ extends <a href="../../../../com/codeborne/selenide/ex/UIAssertionError.html" ti
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MatcherError-java.lang.String-java.lang.String-java.lang.String-com.codeborne.selenide.impl.CollectionSource-java.util.List-java.lang.Exception-long-">
+<a name="MatcherError-java.lang.String-java.lang.String-java.lang.String-com.codeborne.selenide.impl.CollectionSource-java.lang.Exception-long-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MatcherError</h4>
-<pre>public&nbsp;MatcherError(java.lang.String&nbsp;matcher,
-                    java.lang.String&nbsp;predicateDescription,
-                    @Nullable
+<pre>public&nbsp;MatcherError(@Nullable
                     java.lang.String&nbsp;explanation,
+                    java.lang.String&nbsp;expected,
+                    java.lang.String&nbsp;actual,
                     <a href="../../../../com/codeborne/selenide/impl/CollectionSource.html" title="interface in com.codeborne.selenide.impl">CollectionSource</a>&nbsp;collection,
-                    java.util.List&lt;org.openqa.selenium.WebElement&gt;&nbsp;actualElements,
                     @Nullable
                     java.lang.Exception&nbsp;lastError,
                     long&nbsp;timeoutMs)</pre>

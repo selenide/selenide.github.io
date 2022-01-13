@@ -228,7 +228,9 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/Downloads.html#add-com.codeborne.selenide.files.DownloadedFile-">add(DownloadedFile)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/Downloads.html" title="class in com.codeborne.selenide.impl">Downloads</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/SelenideElementListIterator.html#add-com.codeborne.selenide.SelenideElement-">add(SelenideElement)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/SelenideElementListIterator.html" title="class in com.codeborne.selenide.impl">SelenideElementListIterator</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#addHttpHeaders-com.codeborne.selenide.Driver-org.apache.hc.client5.http.classic.methods.HttpGet-">addHttpHeaders(Driver, HttpGet)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html" title="class in com.codeborne.selenide.impl">DownloadFileWithHttpRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/WebDriverContainer.html#addListener-org.openqa.selenium.support.events.WebDriverEventListener-">addListener(WebDriverEventListener)</a></span> - Method in interface com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/WebDriverContainer.html" title="interface in com.codeborne.selenide.impl">WebDriverContainer</a></dt>
@@ -419,6 +421,14 @@
 
  Caution: you probably don't need this method.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/ElementsCollection.html#asDynamicIterable--">asDynamicIterable()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></dt>
+<dd>
+<div class="block">Returns a "dynamic" <code>Iterable</code> which reloads web elements during iteration.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/ElementsCollection.html#asFixedIterable--">asFixedIterable()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></dt>
+<dd>
+<div class="block">Returns a "static" <code>Iterable</code> which doesn't reload web elements during iteration.</div>
+</dd>
 <dt><a href="com/codeborne/selenide/AssertionMode.html" title="enum in com.codeborne.selenide"><span class="typeNameLink">AssertionMode</span></a> - Enum in <a href="com/codeborne/selenide/package-summary.html">com.codeborne.selenide</a></dt>
 <dd>
 <div class="block">Assertion modes available</div>
@@ -492,7 +502,7 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/Configuration.html#baseUrl">baseUrl</a></span> - Static variable in class com.codeborne.selenide.<a href="com/codeborne/selenide/Configuration.html" title="class in com.codeborne.selenide">Configuration</a></dt>
 <dd>
 <div class="block">Base url for open() function calls
- Can be configured either programmatically or by system property "-Dselenide.baseUrl=http://myhost".</div>
+ Can be configured either programmatically, via selenide.properties file or by system property "-Dselenide.baseUrl=http://myhost".</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/SelenideConfig.html#baseUrl--">baseUrl()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideConfig.html" title="class in com.codeborne.selenide">SelenideConfig</a></dt>
 <dd>&nbsp;</dd>
@@ -581,7 +591,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/SelenideConfig.html#browserCapabilities--">browserCapabilities()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideConfig.html" title="class in com.codeborne.selenide">SelenideConfig</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/SelenideConfig.html#browserCapabilities-org.openqa.selenium.remote.DesiredCapabilities-">browserCapabilities(DesiredCapabilities)</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideConfig.html" title="class in com.codeborne.selenide">SelenideConfig</a></dt>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/SelenideConfig.html#browserCapabilities-org.openqa.selenium.MutableCapabilities-">browserCapabilities(MutableCapabilities)</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideConfig.html" title="class in com.codeborne.selenide">SelenideConfig</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/BrowserDownloadsFolder.html" title="class in com.codeborne.selenide"><span class="typeNameLink">BrowserDownloadsFolder</span></a> - Class in <a href="com/codeborne/selenide/package-summary.html">com.codeborne.selenide</a></dt>
 <dd>
@@ -835,6 +845,12 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/logevents/SimpleReport.html#clean--">clean()</a></span> - Method in class com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/SimpleReport.html" title="class in com.codeborne.selenide.logevents">SimpleReport</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/logevents/ErrorsCollector.html#cleanAndGetAssertionError-java.lang.String-java.lang.Throwable-">cleanAndGetAssertionError(String, Throwable)</a></span> - Method in class com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/ErrorsCollector.html" title="class in com.codeborne.selenide.logevents">ErrorsCollector</a></dt>
+<dd>
+<div class="block">1.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/logevents/ErrorsCollector.html#cleanAndThrowAssertionError-java.lang.String-java.lang.Throwable-">cleanAndThrowAssertionError(String, Throwable)</a></span> - Method in class com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/ErrorsCollector.html" title="class in com.codeborne.selenide.logevents">ErrorsCollector</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/impl/Cleanup.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">Cleanup</span></a> - Class in <a href="com/codeborne/selenide/impl/package-summary.html">com.codeborne.selenide.impl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/Cleanup.html#Cleanup--">Cleanup()</a></span> - Constructor for class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/Cleanup.html" title="class in com.codeborne.selenide.impl">Cleanup</a></dt>
@@ -875,7 +891,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/commands/Click.html#click-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-">click(Driver, WebElement)</a></span> - Method in class com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/Click.html" title="class in com.codeborne.selenide.commands">Click</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/commands/Click.html#click-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-int-int-">click(Driver, WebElement, int, int)</a></span> - Method in class com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/Click.html" title="class in com.codeborne.selenide.commands">Click</a></dt>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/commands/Click.html#click-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-com.codeborne.selenide.ClickOptions-">click(Driver, WebElement, ClickOptions)</a></span> - Method in class com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/Click.html" title="class in com.codeborne.selenide.commands">Click</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/files/DownloadActions.html#click--">click()</a></span> - Static method in class com.codeborne.selenide.files.<a href="com/codeborne/selenide/files/DownloadActions.html" title="class in com.codeborne.selenide.files">DownloadActions</a></dt>
 <dd>&nbsp;</dd>
@@ -896,6 +912,8 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/ClickOptions.html#clickOption--">clickOption()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/ClickOptions.html" title="class in com.codeborne.selenide">ClickOptions</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/ClickOptions.html" title="class in com.codeborne.selenide"><span class="typeNameLink">ClickOptions</span></a> - Class in <a href="com/codeborne/selenide/package-summary.html">com.codeborne.selenide</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/commands/Click.html#clickViaJS-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-int-int-">clickViaJS(Driver, WebElement, int, int)</a></span> - Method in class com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/Click.html" title="class in com.codeborne.selenide.commands">Click</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/Config.html#clickViaJs--">clickViaJs()</a></span> - Method in interface com.codeborne.selenide.<a href="com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a></dt>
 <dd>&nbsp;</dd>
@@ -1012,7 +1030,9 @@
 <dt><a href="com/codeborne/selenide/drivercommands/package-summary.html">com.codeborne.selenide.drivercommands</a> - package com.codeborne.selenide.drivercommands</dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/ex/package-summary.html">com.codeborne.selenide.ex</a> - package com.codeborne.selenide.ex</dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Exceptions thrown by Selenide</div>
+</dd>
 <dt><a href="com/codeborne/selenide/files/package-summary.html">com.codeborne.selenide.files</a> - package com.codeborne.selenide.files</dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/impl/package-summary.html">com.codeborne.selenide.impl</a> - package com.codeborne.selenide.impl</dt>
@@ -1158,6 +1178,13 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/FileHelper.html#copyFile-java.io.InputStream-java.io.File-">copyFile(InputStream, File)</a></span> - Static method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/FileHelper.html" title="class in com.codeborne.selenide.impl">FileHelper</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/proxy/DefaultSelenideProxyServerFactory.html#create-com.codeborne.selenide.Config-org.openqa.selenium.Proxy-">create(Config, Proxy)</a></span> - Method in class com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/DefaultSelenideProxyServerFactory.html" title="class in com.codeborne.selenide.proxy">DefaultSelenideProxyServerFactory</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/proxy/SelenideProxyServerFactory.html#create-com.codeborne.selenide.Config-org.openqa.selenium.Proxy-">create(Config, Proxy)</a></span> - Method in interface com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/SelenideProxyServerFactory.html" title="interface in com.codeborne.selenide.proxy">SelenideProxyServerFactory</a></dt>
+<dd>
+<div class="block">Creates a <a href="com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy"><code>SelenideProxyServer</code></a>
+ Allows user to change settings of BrowserUpProxy before the proxy is started.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/webdriver/ChromeDriverFactory.html#create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">create(Config, Browser, Proxy, File)</a></span> - Method in class com.codeborne.selenide.webdriver.<a href="com/codeborne/selenide/webdriver/ChromeDriverFactory.html" title="class in com.codeborne.selenide.webdriver">ChromeDriverFactory</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/webdriver/DefaultDriverFactory.html#create-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-java.io.File-">create(Config, Browser, Proxy, File)</a></span> - Method in class com.codeborne.selenide.webdriver.<a href="com/codeborne/selenide/webdriver/DefaultDriverFactory.html" title="class in com.codeborne.selenide.webdriver">DefaultDriverFactory</a></dt>
@@ -1198,11 +1225,13 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/webdriver/AbstractDriverFactory.html#createCommonCapabilities-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-">createCommonCapabilities(Config, Browser, Proxy)</a></span> - Method in class com.codeborne.selenide.webdriver.<a href="com/codeborne/selenide/webdriver/AbstractDriverFactory.html" title="class in com.codeborne.selenide.webdriver">AbstractDriverFactory</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/webdriver/AbstractDriverFactory.html#createCommonCapabilities-T-com.codeborne.selenide.Config-com.codeborne.selenide.Browser-org.openqa.selenium.Proxy-">createCommonCapabilities(T, Config, Browser, Proxy)</a></span> - Method in class com.codeborne.selenide.webdriver.<a href="com/codeborne/selenide/webdriver/AbstractDriverFactory.html" title="class in com.codeborne.selenide.webdriver">AbstractDriverFactory</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#createDefaultHttpClient--">createDefaultHttpClient()</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html" title="class in com.codeborne.selenide.impl">DownloadFileWithHttpRequest</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/drivercommands/CreateDriverCommand.html#createDriver-com.codeborne.selenide.Config-com.codeborne.selenide.webdriver.WebDriverFactory-org.openqa.selenium.Proxy-java.util.List-java.util.List-">createDriver(Config, WebDriverFactory, Proxy, List&lt;WebDriverEventListener&gt;, List&lt;WebDriverListener&gt;)</a></span> - Method in class com.codeborne.selenide.drivercommands.<a href="com/codeborne/selenide/drivercommands/CreateDriverCommand.html" title="class in com.codeborne.selenide.drivercommands">CreateDriverCommand</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/WebDriverProvider.html#createDriver-org.openqa.selenium.remote.DesiredCapabilities-">createDriver(DesiredCapabilities)</a></span> - Method in interface com.codeborne.selenide.<a href="com/codeborne/selenide/WebDriverProvider.html" title="interface in com.codeborne.selenide">WebDriverProvider</a></dt>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/WebDriverProvider.html#createDriver-org.openqa.selenium.Capabilities-">createDriver(Capabilities)</a></span> - Method in interface com.codeborne.selenide.<a href="com/codeborne/selenide/WebDriverProvider.html" title="interface in com.codeborne.selenide">WebDriverProvider</a></dt>
 <dd>
 <div class="block">Create new <code>WebDriver</code> instance.</div>
 </dd>
@@ -1236,14 +1265,10 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#createHttpContext-com.codeborne.selenide.Driver-">createHttpContext(Driver)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html" title="class in com.codeborne.selenide.impl">DownloadFileWithHttpRequest</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/proxy/SelenideProxyServer.html#createSeleniumProxy--">createSeleniumProxy()</a></span> - Method in class com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a></dt>
-<dd>
-<div class="block">Converts this proxy to a "selenium" proxy that can be used by webdriver</div>
-</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html#createTrustingHttpClient--">createTrustingHttpClient()</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/DownloadFileWithHttpRequest.html" title="class in com.codeborne.selenide.impl">DownloadFileWithHttpRequest</a></dt>
 <dd>
 <div class="block">configure HttpClient to ignore self-signed certs
-   as described here: http://literatejava.com/networks/ignore-ssl-certificate-errors-apache-httpclient-4-4/</div>
+ as described here: http://literatejava.com/networks/ignore-ssl-certificate-errors-apache-httpclient-4-4/</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/webdriver/WebDriverFactory.html#createWebDriver-com.codeborne.selenide.Config-org.openqa.selenium.Proxy-java.io.File-">createWebDriver(Config, Proxy, File)</a></span> - Method in class com.codeborne.selenide.webdriver.<a href="com/codeborne/selenide/webdriver/WebDriverFactory.html" title="class in com.codeborne.selenide.webdriver">WebDriverFactory</a></dt>
 <dd>&nbsp;</dd>
@@ -1321,6 +1346,10 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/SelenidePageFactory.html#decorate-java.lang.ClassLoader-com.codeborne.selenide.Driver-com.codeborne.selenide.impl.WebElementSource-java.lang.reflect.Field-org.openqa.selenium.By-java.lang.reflect.Type:A-">decorate(ClassLoader, Driver, WebElementSource, Field, By, Type[])</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/SelenidePageFactory.html" title="class in com.codeborne.selenide.impl">SelenidePageFactory</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/commands/Click.html#defaultClick-org.openqa.selenium.WebElement-">defaultClick(WebElement)</a></span> - Method in class com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/Click.html" title="class in com.codeborne.selenide.commands">Click</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/commands/Click.html#defaultClick-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-int-int-">defaultClick(Driver, WebElement, int, int)</a></span> - Method in class com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/Click.html" title="class in com.codeborne.selenide.commands">Click</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/DefaultClipboard.html" title="class in com.codeborne.selenide"><span class="typeNameLink">DefaultClipboard</span></a> - Class in <a href="com/codeborne/selenide/package-summary.html">com.codeborne.selenide</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/DefaultClipboard.html#DefaultClipboard-com.codeborne.selenide.Driver-">DefaultClipboard(Driver)</a></span> - Constructor for class com.codeborne.selenide.<a href="com/codeborne/selenide/DefaultClipboard.html" title="class in com.codeborne.selenide">DefaultClipboard</a></dt>
@@ -1332,6 +1361,10 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/webdriver/DefaultDriverFactory.html#DefaultDriverFactory--">DefaultDriverFactory()</a></span> - Constructor for class com.codeborne.selenide.webdriver.<a href="com/codeborne/selenide/webdriver/DefaultDriverFactory.html" title="class in com.codeborne.selenide.webdriver">DefaultDriverFactory</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/SelenidePageFactory.html#defaultFieldDecorator-com.codeborne.selenide.Driver-com.codeborne.selenide.impl.WebElementSource-">defaultFieldDecorator(Driver, WebElementSource)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/SelenidePageFactory.html" title="class in com.codeborne.selenide.impl">SelenidePageFactory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/codeborne/selenide/proxy/DefaultSelenideProxyServerFactory.html" title="class in com.codeborne.selenide.proxy"><span class="typeNameLink">DefaultSelenideProxyServerFactory</span></a> - Class in <a href="com/codeborne/selenide/proxy/package-summary.html">com.codeborne.selenide.proxy</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/proxy/DefaultSelenideProxyServerFactory.html#DefaultSelenideProxyServerFactory--">DefaultSelenideProxyServerFactory()</a></span> - Constructor for class com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/DefaultSelenideProxyServerFactory.html" title="class in com.codeborne.selenide.proxy">DefaultSelenideProxyServerFactory</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/FileHelper.html#deleteFolderIfEmpty-java.io.File-">deleteFolderIfEmpty(File)</a></span> - Static method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/FileHelper.html" title="class in com.codeborne.selenide.impl">FileHelper</a></dt>
 <dd>&nbsp;</dd>
@@ -1663,7 +1696,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/ex/ElementIsNotClickableException.html" title="class in com.codeborne.selenide.ex"><span class="typeNameLink">ElementIsNotClickableException</span></a> - Error in <a href="com/codeborne/selenide/ex/package-summary.html">com.codeborne.selenide.ex</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/ex/ElementIsNotClickableException.html#ElementIsNotClickableException-java.lang.Throwable-">ElementIsNotClickableException(Throwable)</a></span> - Constructor for error com.codeborne.selenide.ex.<a href="com/codeborne/selenide/ex/ElementIsNotClickableException.html" title="class in com.codeborne.selenide.ex">ElementIsNotClickableException</a></dt>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/ex/ElementIsNotClickableException.html#ElementIsNotClickableException-java.lang.String-java.lang.Throwable-">ElementIsNotClickableException(String, Throwable)</a></span> - Constructor for error com.codeborne.selenide.ex.<a href="com/codeborne/selenide/ex/ElementIsNotClickableException.html" title="class in com.codeborne.selenide.ex">ElementIsNotClickableException</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/ex/ElementNotFound.html" title="class in com.codeborne.selenide.ex"><span class="typeNameLink">ElementNotFound</span></a> - Error in <a href="com/codeborne/selenide/ex/package-summary.html">com.codeborne.selenide.ex</a></dt>
 <dd>&nbsp;</dd>
@@ -1922,8 +1955,6 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/commands/GetSelectedValue.html#execute-com.codeborne.selenide.SelenideElement-com.codeborne.selenide.impl.WebElementSource-java.lang.Object:A-">execute(SelenideElement, WebElementSource, Object[])</a></span> - Method in class com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/GetSelectedValue.html" title="class in com.codeborne.selenide.commands">GetSelectedValue</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/commands/GetShadowRoot.html#execute-com.codeborne.selenide.SelenideElement-com.codeborne.selenide.impl.WebElementSource-java.lang.Object...-">execute(SelenideElement, WebElementSource, Object...)</a></span> - Method in class com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/GetShadowRoot.html" title="class in com.codeborne.selenide.commands">GetShadowRoot</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/commands/GetSibling.html#execute-com.codeborne.selenide.SelenideElement-com.codeborne.selenide.impl.WebElementSource-java.lang.Object:A-">execute(SelenideElement, WebElementSource, Object[])</a></span> - Method in class com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/GetSibling.html" title="class in com.codeborne.selenide.commands">GetSibling</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/commands/GetText.html#execute-com.codeborne.selenide.SelenideElement-com.codeborne.selenide.impl.WebElementSource-java.lang.Object:A-">execute(SelenideElement, WebElementSource, Object[])</a></span> - Method in class com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/GetText.html" title="class in com.codeborne.selenide.commands">GetText</a></dt>
@@ -1981,6 +2012,8 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/commands/Val.html#execute-com.codeborne.selenide.SelenideElement-com.codeborne.selenide.impl.WebElementSource-java.lang.Object:A-">execute(SelenideElement, WebElementSource, Object[])</a></span> - Method in class com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/Val.html" title="class in com.codeborne.selenide.commands">Val</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/JavaScript.html#execute-org.openqa.selenium.SearchContext-java.lang.Object...-">execute(SearchContext, Object...)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/JavaScript.html" title="class in com.codeborne.selenide.impl">JavaScript</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/JavaScript.html#execute-com.codeborne.selenide.Driver-java.lang.Object...-">execute(Driver, Object...)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/JavaScript.html" title="class in com.codeborne.selenide.impl">JavaScript</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/SelenideElement.html#execute-com.codeborne.selenide.Command-">execute(Command&lt;ReturnType&gt;)</a></span> - Method in interface com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a></dt>
 <dd>
@@ -2108,10 +2141,6 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/junit/ScreenShooter.html#failedTests--">failedTests()</a></span> - Static method in class com.codeborne.selenide.junit.<a href="com/codeborne/selenide/junit/ScreenShooter.html" title="class in com.codeborne.selenide.junit">ScreenShooter</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/logevents/ErrorsCollector.html#failIfErrors-java.lang.String-">failIfErrors(String)</a></span> - Method in class com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/ErrorsCollector.html" title="class in com.codeborne.selenide.logevents">ErrorsCollector</a></dt>
-<dd>
-<div class="block">1.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/Config.html#fastSetValue--">fastSetValue()</a></span> - Method in interface com.codeborne.selenide.<a href="com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/Configuration.html#fastSetValue">fastSetValue</a></span> - Static variable in class com.codeborne.selenide.<a href="com/codeborne/selenide/Configuration.html" title="class in com.codeborne.selenide">Configuration</a></dt>
@@ -2138,7 +2167,7 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/Configuration.html#fileDownload">fileDownload</a></span> - Static variable in class com.codeborne.selenide.<a href="com/codeborne/selenide/Configuration.html" title="class in com.codeborne.selenide">Configuration</a></dt>
 <dd>
 <div class="block">Defines if files are downloaded via direct HTTP or vie selenide embedded proxy server
- Can be configured either programmatically or by system property "-Dselenide.fileDownload=PROXY"
+ Can be configured either programmatically, via selenide.properties file or by system property "-Dselenide.fileDownload=PROXY"
  <br>
  Default: HTTPGET</div>
 </dd>
@@ -2264,6 +2293,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/commands/FindByXpath.html#FindByXpath--">FindByXpath()</a></span> - Constructor for class com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/FindByXpath.html" title="class in com.codeborne.selenide.commands">FindByXpath</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/commands/Click.html#findElement-com.codeborne.selenide.impl.WebElementSource-">findElement(WebElementSource)</a></span> - Method in class com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/Click.html" title="class in com.codeborne.selenide.commands">Click</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/WebElementSelector.html#findElement-com.codeborne.selenide.Driver-com.codeborne.selenide.impl.WebElementSource-org.openqa.selenium.By-int-">findElement(Driver, WebElementSource, By, int)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/WebElementSelector.html" title="class in com.codeborne.selenide.impl">WebElementSelector</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/WebElementSelector.html#findElement-com.codeborne.selenide.Driver-com.codeborne.selenide.impl.WebElementSource-org.openqa.selenium.By-">findElement(Driver, WebElementSource, By)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/WebElementSelector.html" title="class in com.codeborne.selenide.impl">WebElementSelector</a></dt>
@@ -2275,8 +2306,6 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/selector/ByShadow.ByShadowCss.html#findElements-org.openqa.selenium.SearchContext-">findElements(SearchContext)</a></span> - Method in class com.codeborne.selenide.selector.<a href="com/codeborne/selenide/selector/ByShadow.ByShadowCss.html" title="class in com.codeborne.selenide.selector">ByShadow.ByShadowCss</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/selector/ByTextCaseInsensitive.html#findElements-org.openqa.selenium.SearchContext-int-">findElements(SearchContext, int)</a></span> - Method in class com.codeborne.selenide.selector.<a href="com/codeborne/selenide/selector/ByTextCaseInsensitive.html" title="class in com.codeborne.selenide.selector">ByTextCaseInsensitive</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/selector/ShadowRoot.html#findElements-org.openqa.selenium.SearchContext-">findElements(SearchContext)</a></span> - Method in class com.codeborne.selenide.selector.<a href="com/codeborne/selenide/selector/ShadowRoot.html" title="class in com.codeborne.selenide.selector">ShadowRoot</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/selector/WithTextCaseInsensitive.html#findElements-org.openqa.selenium.SearchContext-int-">findElements(SearchContext, int)</a></span> - Method in class com.codeborne.selenide.selector.<a href="com/codeborne/selenide/selector/WithTextCaseInsensitive.html" title="class in com.codeborne.selenide.selector">WithTextCaseInsensitive</a></dt>
 <dd>&nbsp;</dd>
@@ -2329,6 +2358,12 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/DownloadsFolder.html#folder">folder</a></span> - Variable in class com.codeborne.selenide.<a href="com/codeborne/selenide/DownloadsFolder.html" title="class in com.codeborne.selenide">DownloadsFolder</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/ElementsCollection.html#forEach-java.util.function.Consumer-">forEach(Consumer&lt;? super SelenideElement&gt;)</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></dt>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="block"><span class="deprecationComment">Use either <a href="com/codeborne/selenide/ElementsCollection.html#asFixedIterable--"><code>ElementsCollection.asFixedIterable()</code></a> or <a href="com/codeborne/selenide/ElementsCollection.html#asDynamicIterable--"><code>ElementsCollection.asDynamicIterable()</code></a> instead.</span></div>
+</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/DurationFormat.html#format-java.time.Duration-">format(Duration)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/DurationFormat.html" title="class in com.codeborne.selenide.impl">DurationFormat</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/DurationFormat.html#format-long-">format(long)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/DurationFormat.html" title="class in com.codeborne.selenide.impl">DurationFormat</a></dt>
@@ -2689,6 +2724,10 @@
 <dd>
 <div class="block">Get selenide proxy.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/proxy/SelenideProxyServer.html#getSeleniumProxy--">getSeleniumProxy()</a></span> - Method in class com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a></dt>
+<dd>
+<div class="block">Returns a "selenium" proxy that can be used by webdriver.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/ElementsContainer.html#getSelf--">getSelf()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/ElementsContainer.html" title="class in com.codeborne.selenide">ElementsContainer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/Driver.html#getSessionId--">getSessionId()</a></span> - Method in interface com.codeborne.selenide.<a href="com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a></dt>
@@ -2696,10 +2735,6 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/SelenideDriver.html#getSessionId--">getSessionId()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideDriver.html" title="class in com.codeborne.selenide">SelenideDriver</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/SelenideDriver.html#getSessionStorage--">getSessionStorage()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideDriver.html" title="class in com.codeborne.selenide">SelenideDriver</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="com/codeborne/selenide/commands/GetShadowRoot.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">GetShadowRoot</span></a> - Class in <a href="com/codeborne/selenide/commands/package-summary.html">com.codeborne.selenide.commands</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/commands/GetShadowRoot.html#GetShadowRoot--">GetShadowRoot()</a></span> - Constructor for class com.codeborne.selenide.commands.<a href="com/codeborne/selenide/commands/GetShadowRoot.html" title="class in com.codeborne.selenide.commands">GetShadowRoot</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/commands/GetSibling.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">GetSibling</span></a> - Class in <a href="com/codeborne/selenide/commands/package-summary.html">com.codeborne.selenide.commands</a></dt>
 <dd>&nbsp;</dd>
@@ -2845,7 +2880,9 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/SelenideElementIterator.html#hasNext--">hasNext()</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/SelenideElementIterator.html" title="class in com.codeborne.selenide.impl">SelenideElementIterator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/SelenideElementListIterator.html#hasPrevious--">hasPrevious()</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/SelenideElementListIterator.html" title="class in com.codeborne.selenide.impl">SelenideElementListIterator</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/Driver.html#hasWebDriverStarted--">hasWebDriverStarted()</a></span> - Method in interface com.codeborne.selenide.<a href="com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/drivercommands/LazyDriver.html#hasWebDriverStarted--">hasWebDriverStarted()</a></span> - Method in class com.codeborne.selenide.drivercommands.<a href="com/codeborne/selenide/drivercommands/LazyDriver.html" title="class in com.codeborne.selenide.drivercommands">LazyDriver</a></dt>
@@ -2994,9 +3031,9 @@
 <dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/ex/InvalidStateException.html" title="class in com.codeborne.selenide.ex"><span class="typeNameLink">InvalidStateException</span></a> - Error in <a href="com/codeborne/selenide/ex/package-summary.html">com.codeborne.selenide.ex</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/ex/InvalidStateException.html#InvalidStateException-java.lang.Throwable-">InvalidStateException(Throwable)</a></span> - Constructor for error com.codeborne.selenide.ex.<a href="com/codeborne/selenide/ex/InvalidStateException.html" title="class in com.codeborne.selenide.ex">InvalidStateException</a></dt>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/ex/InvalidStateException.html#InvalidStateException-java.lang.String-java.lang.Throwable-">InvalidStateException(String, Throwable)</a></span> - Constructor for error com.codeborne.selenide.ex.<a href="com/codeborne/selenide/ex/InvalidStateException.html" title="class in com.codeborne.selenide.ex">InvalidStateException</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/ex/InvalidStateException.html#InvalidStateException-java.lang.String-">InvalidStateException(String)</a></span> - Constructor for error com.codeborne.selenide.ex.<a href="com/codeborne/selenide/ex/InvalidStateException.html" title="class in com.codeborne.selenide.ex">InvalidStateException</a></dt>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/ex/InvalidStateException.html#InvalidStateException-java.lang.String-java.lang.String-">InvalidStateException(String, String)</a></span> - Constructor for error com.codeborne.selenide.ex.<a href="com/codeborne/selenide/ex/InvalidStateException.html" title="class in com.codeborne.selenide.ex">InvalidStateException</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/SelenideElement.html#is-com.codeborne.selenide.Condition-">is(Condition)</a></span> - Method in interface com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a></dt>
 <dd>
@@ -3038,6 +3075,10 @@
 <div class="block">Is Selenide configured to use Microsoft EDGE browser</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/files/FileFilter.html#isEmpty--">isEmpty()</a></span> - Method in interface com.codeborne.selenide.files.<a href="com/codeborne/selenide/files/FileFilter.html" title="interface in com.codeborne.selenide.files">FileFilter</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/logevents/ErrorsCollector.html#isEnabled--">isEnabled()</a></span> - Method in class com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/ErrorsCollector.html" title="class in com.codeborne.selenide.logevents">ErrorsCollector</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/logevents/SoftAssertsErrorsCollector.html#isEnabled--">isEnabled()</a></span> - Method in class com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/SoftAssertsErrorsCollector.html" title="class in com.codeborne.selenide.logevents">SoftAssertsErrorsCollector</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/Browser.html#isFirefox--">isFirefox()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/Browser.html" title="class in com.codeborne.selenide">Browser</a></dt>
 <dd>&nbsp;</dd>
@@ -3129,7 +3170,9 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/ElementsCollection.html#iterator--">iterator()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></dt>
 <dd>
-<div class="block">Does not reload collection elements while iterating it.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="block"><span class="deprecationComment">use method <a href="com/codeborne/selenide/ElementsCollection.html#asFixedIterable--"><code>ElementsCollection.asFixedIterable()</code></a> or <a href="com/codeborne/selenide/ElementsCollection.html#asDynamicIterable--"><code>ElementsCollection.asDynamicIterable()</code></a> instead.</span></div>
+</div>
 </dd>
 </dl>
 <a name="I:J">
@@ -3179,7 +3222,9 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/ElementsCollection.html#listIterator-int-">listIterator(int)</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></dt>
 <dd>
-<div class="block">Does not reload collection elements while iterating it.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="block"><span class="deprecationComment">use method <a href="com/codeborne/selenide/ElementsCollection.html#asFixedIterable--"><code>ElementsCollection.asFixedIterable()</code></a> or <a href="com/codeborne/selenide/ElementsCollection.html#asDynamicIterable--"><code>ElementsCollection.asDynamicIterable()</code></a> instead.</span></div>
+</div>
 </dd>
 <dt><a href="com/codeborne/selenide/impl/Lists.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">Lists</span></a> - Class in <a href="com/codeborne/selenide/impl/package-summary.html">com.codeborne.selenide.impl</a></dt>
 <dd>&nbsp;</dd>
@@ -3263,7 +3308,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/ex/MatcherError.html" title="class in com.codeborne.selenide.ex"><span class="typeNameLink">MatcherError</span></a> - Error in <a href="com/codeborne/selenide/ex/package-summary.html">com.codeborne.selenide.ex</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/ex/MatcherError.html#MatcherError-java.lang.String-java.lang.String-java.lang.String-com.codeborne.selenide.impl.CollectionSource-java.util.List-java.lang.Exception-long-">MatcherError(String, String, String, CollectionSource, List&lt;WebElement&gt;, Exception, long)</a></span> - Constructor for error com.codeborne.selenide.ex.<a href="com/codeborne/selenide/ex/MatcherError.html" title="class in com.codeborne.selenide.ex">MatcherError</a></dt>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/ex/MatcherError.html#MatcherError-java.lang.String-java.lang.String-java.lang.String-com.codeborne.selenide.impl.CollectionSource-java.lang.Exception-long-">MatcherError(String, String, String, CollectionSource, Exception, long)</a></span> - Constructor for error com.codeborne.selenide.ex.<a href="com/codeborne/selenide/ex/MatcherError.html" title="class in com.codeborne.selenide.ex">MatcherError</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/commands/Matches.html" title="class in com.codeborne.selenide.commands"><span class="typeNameLink">Matches</span></a> - Class in <a href="com/codeborne/selenide/commands/package-summary.html">com.codeborne.selenide.commands</a></dt>
 <dd>&nbsp;</dd>
@@ -3280,6 +3325,8 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/conditions/MatchText.html#MatchText-java.lang.String-">MatchText(String)</a></span> - Constructor for class com.codeborne.selenide.conditions.<a href="com/codeborne/selenide/conditions/MatchText.html" title="class in com.codeborne.selenide.conditions">MatchText</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/conditions/ConditionHelpers.html#merge-T-T-T...-">merge(T, T, T...)</a></span> - Static method in class com.codeborne.selenide.conditions.<a href="com/codeborne/selenide/conditions/ConditionHelpers.html" title="class in com.codeborne.selenide.conditions">ConditionHelpers</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/webdriver/AbstractDriverFactory.html#merge-T-org.openqa.selenium.MutableCapabilities-">merge(T, MutableCapabilities)</a></span> - Method in class com.codeborne.selenide.webdriver.<a href="com/codeborne/selenide/webdriver/AbstractDriverFactory.html" title="class in com.codeborne.selenide.webdriver">AbstractDriverFactory</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/CollectionCondition.html#missingElementSatisfiesCondition--">missingElementSatisfiesCondition()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/CollectionCondition.html" title="class in com.codeborne.selenide">CollectionCondition</a></dt>
 <dd>&nbsp;</dd>
@@ -3382,7 +3429,9 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/SelenideElementIterator.html#next--">next()</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/SelenideElementIterator.html" title="class in com.codeborne.selenide.impl">SelenideElementIterator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/SelenideElementListIterator.html#nextIndex--">nextIndex()</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/SelenideElementListIterator.html" title="class in com.codeborne.selenide.impl">SelenideElementListIterator</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/Command.html#NO_ARGS">NO_ARGS</a></span> - Static variable in interface com.codeborne.selenide.<a href="com/codeborne/selenide/Command.html" title="interface in com.codeborne.selenide">Command</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/JavaScript.html#node-org.openqa.selenium.SearchContext-">node(SearchContext)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/JavaScript.html" title="class in com.codeborne.selenide.impl">JavaScript</a></dt>
@@ -3650,6 +3699,12 @@
 <dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/impl/PageSourceExtractor.html" title="interface in com.codeborne.selenide.impl"><span class="typeNameLink">PageSourceExtractor</span></a> - Interface in <a href="com/codeborne/selenide/impl/package-summary.html">com.codeborne.selenide.impl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/ElementsCollection.html#parallelStream--">parallelStream()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></dt>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="block"><span class="deprecationComment">Use either <a href="com/codeborne/selenide/ElementsCollection.html#asFixedIterable--"><code>ElementsCollection.asFixedIterable()</code></a> or <a href="com/codeborne/selenide/ElementsCollection.html#asDynamicIterable--"><code>ElementsCollection.asDynamicIterable()</code></a> instead.</span></div>
+</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/SelenideElement.html#parent--">parent()</a></span> - Method in interface com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a></dt>
 <dd>
 <div class="block">Get parent element of this element (lazy evaluation)
@@ -3677,7 +3732,7 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/Configuration.html#pollingInterval">pollingInterval</a></span> - Static variable in class com.codeborne.selenide.<a href="com/codeborne/selenide/Configuration.html" title="class in com.codeborne.selenide">Configuration</a></dt>
 <dd>
 <div class="block">Interval in milliseconds, when checking if a single element or collection elements are appeared
- Can be configured either programmatically or by system property "-Dselenide.pollingInterval=50"
+ Can be configured either programmatically, via selenide.properties file or by system property "-Dselenide.pollingInterval=50"
  <br>
  Default value: 200 (milliseconds)</div>
 </dd>
@@ -3732,9 +3787,13 @@
 <div class="block">Press TAB.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/SelenideElementListIterator.html#previous--">previous()</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/SelenideElementListIterator.html" title="class in com.codeborne.selenide.impl">SelenideElementListIterator</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/SelenideElementListIterator.html#previousIndex--">previousIndex()</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/SelenideElementListIterator.html" title="class in com.codeborne.selenide.impl">SelenideElementListIterator</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/WebPageSourceExtractor.html#printOnce-java.lang.String-java.lang.Throwable-">printOnce(String, Throwable)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/WebPageSourceExtractor.html" title="class in com.codeborne.selenide.impl">WebPageSourceExtractor</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/commands/ancestor/AncestorRuleEngine.html#process-java.lang.String-int-">process(String, int)</a></span> - Method in class com.codeborne.selenide.commands.ancestor.<a href="com/codeborne/selenide/commands/ancestor/AncestorRuleEngine.html" title="class in com.codeborne.selenide.commands.ancestor">AncestorRuleEngine</a></dt>
@@ -3929,9 +3988,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/proxy/SelenideProxyServer.html#responseFilter-java.lang.String-">responseFilter(String)</a></span> - Method in class com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a></dt>
 <dd>
-<div class="block">Get response filter by name
-
- By default, the only one filter "download" is available.</div>
+<div class="block">Get response filter by name</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/proxy/FileDownloadFilter.html#responsesAsString--">responsesAsString()</a></span> - Method in class com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/FileDownloadFilter.html" title="class in com.codeborne.selenide.proxy">FileDownloadFilter</a></dt>
 <dd>&nbsp;</dd>
@@ -4189,9 +4246,16 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/SelenideElementIterator.html#SelenideElementIterator-com.codeborne.selenide.impl.CollectionSource-">SelenideElementIterator(CollectionSource)</a></span> - Constructor for class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/SelenideElementIterator.html" title="class in com.codeborne.selenide.impl">SelenideElementIterator</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/impl/SelenideElementListIterator.html" title="class in com.codeborne.selenide.impl"><span class="typeNameLink">SelenideElementListIterator</span></a> - Class in <a href="com/codeborne/selenide/impl/package-summary.html">com.codeborne.selenide.impl</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="block"><span class="deprecationComment">To be removed in following versions.
+ Used only by deprecated method <a href="com/codeborne/selenide/ElementsCollection.html#listIterator-int-"><code>ElementsCollection.listIterator(int)</code></a>.</span></div>
+</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/SelenideElementListIterator.html#SelenideElementListIterator-com.codeborne.selenide.impl.CollectionSource-int-">SelenideElementListIterator(CollectionSource, int)</a></span> - Constructor for class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/SelenideElementListIterator.html" title="class in com.codeborne.selenide.impl">SelenideElementListIterator</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/logevents/SelenideLog.html" title="class in com.codeborne.selenide.logevents"><span class="typeNameLink">SelenideLog</span></a> - Class in <a href="com/codeborne/selenide/logevents/package-summary.html">com.codeborne.selenide.logevents</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/logevents/SelenideLog.html#SelenideLog-java.lang.String-java.lang.String-">SelenideLog(String, String)</a></span> - Constructor for class com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/SelenideLog.html" title="class in com.codeborne.selenide.logevents">SelenideLog</a></dt>
@@ -4212,9 +4276,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy"><span class="typeNameLink">SelenideProxyServer</span></a> - Class in <a href="com/codeborne/selenide/proxy/package-summary.html">com.codeborne.selenide.proxy</a></dt>
 <dd>
-<div class="block">Selenide own proxy server to intercept server responses
-
- It holds map of request and response filters by name.</div>
+<div class="block">Selenide own proxy server to intercept server responses</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/proxy/SelenideProxyServer.html#SelenideProxyServer-com.codeborne.selenide.Config-org.openqa.selenium.Proxy-">SelenideProxyServer(Config, Proxy)</a></span> - Constructor for class com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a></dt>
 <dd>
@@ -4223,6 +4285,11 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/proxy/SelenideProxyServer.html#SelenideProxyServer-com.codeborne.selenide.Config-org.openqa.selenium.Proxy-com.codeborne.selenide.proxy.InetAddressResolver-com.browserup.bup.BrowserUpProxy-">SelenideProxyServer(Config, Proxy, InetAddressResolver, BrowserUpProxy)</a></span> - Constructor for class com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/codeborne/selenide/proxy/SelenideProxyServerFactory.html" title="interface in com.codeborne.selenide.proxy"><span class="typeNameLink">SelenideProxyServerFactory</span></a> - Interface in <a href="com/codeborne/selenide/proxy/package-summary.html">com.codeborne.selenide.proxy</a></dt>
+<dd>
+<div class="block">
+ Interface for creating custom SelenideProxyServer in your tests</div>
+</dd>
 <dt><a href="com/codeborne/selenide/SelenideTargetLocator.html" title="class in com.codeborne.selenide"><span class="typeNameLink">SelenideTargetLocator</span></a> - Class in <a href="com/codeborne/selenide/package-summary.html">com.codeborne.selenide</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/SelenideTargetLocator.html#SelenideTargetLocator-com.codeborne.selenide.Driver-">SelenideTargetLocator(Driver)</a></span> - Constructor for class com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideTargetLocator.html" title="class in com.codeborne.selenide">SelenideTargetLocator</a></dt>
@@ -4248,7 +4315,9 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/SessionStorageConditions.html#SessionStorageConditions--">SessionStorageConditions()</a></span> - Constructor for class com.codeborne.selenide.<a href="com/codeborne/selenide/SessionStorageConditions.html" title="class in com.codeborne.selenide">SessionStorageConditions</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/SelenideElementListIterator.html#set-com.codeborne.selenide.SelenideElement-">set(SelenideElement)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/SelenideElementListIterator.html" title="class in com.codeborne.selenide.impl">SelenideElementListIterator</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/BySelectorCollection.html#setAlias-java.lang.String-">setAlias(String)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/BySelectorCollection.html" title="class in com.codeborne.selenide.impl">BySelectorCollection</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/CollectionSnapshot.html#setAlias-java.lang.String-">setAlias(String)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/CollectionSnapshot.html" title="class in com.codeborne.selenide.impl">CollectionSnapshot</a></dt>
@@ -4357,14 +4426,6 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/Selectors.html#shadowCss-java.lang.String-java.lang.String-java.lang.String...-">shadowCss(String, String, String...)</a></span> - Static method in class com.codeborne.selenide.<a href="com/codeborne/selenide/Selectors.html" title="class in com.codeborne.selenide">Selectors</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="com/codeborne/selenide/selector/ShadowRoot.html" title="class in com.codeborne.selenide.selector"><span class="typeNameLink">ShadowRoot</span></a> - Class in <a href="com/codeborne/selenide/selector/package-summary.html">com.codeborne.selenide.selector</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/selector/ShadowRoot.html#ShadowRoot--">ShadowRoot()</a></span> - Constructor for class com.codeborne.selenide.selector.<a href="com/codeborne/selenide/selector/ShadowRoot.html" title="class in com.codeborne.selenide.selector">ShadowRoot</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/SelenideElement.html#shadowRoot--">shadowRoot()</a></span> - Method in interface com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a></dt>
-<dd>
-<div class="block">Returns shadow root of this element</div>
-</dd>
 <dt><a href="com/codeborne/selenide/SharedDownloadsFolder.html" title="class in com.codeborne.selenide"><span class="typeNameLink">SharedDownloadsFolder</span></a> - Class in <a href="com/codeborne/selenide/package-summary.html">com.codeborne.selenide</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/SharedDownloadsFolder.html#SharedDownloadsFolder-java.lang.String-">SharedDownloadsFolder(String)</a></span> - Constructor for class com.codeborne.selenide.<a href="com/codeborne/selenide/SharedDownloadsFolder.html" title="class in com.codeborne.selenide">SharedDownloadsFolder</a></dt>
@@ -4572,6 +4633,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/testng/SoftAsserts.html#SoftAsserts--">SoftAsserts()</a></span> - Constructor for class com.codeborne.selenide.testng.<a href="com/codeborne/selenide/testng/SoftAsserts.html" title="class in com.codeborne.selenide.testng">SoftAsserts</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/codeborne/selenide/logevents/SoftAssertsErrorsCollector.html" title="class in com.codeborne.selenide.logevents"><span class="typeNameLink">SoftAssertsErrorsCollector</span></a> - Class in <a href="com/codeborne/selenide/logevents/package-summary.html">com.codeborne.selenide.logevents</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/logevents/SoftAssertsErrorsCollector.html#SoftAssertsErrorsCollector--">SoftAssertsErrorsCollector()</a></span> - Constructor for class com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/SoftAssertsErrorsCollector.html" title="class in com.codeborne.selenide.logevents">SoftAssertsErrorsCollector</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/codeborne/selenide/junit5/SoftAssertsExtension.html" title="class in com.codeborne.selenide.junit5"><span class="typeNameLink">SoftAssertsExtension</span></a> - Class in <a href="com/codeborne/selenide/junit5/package-summary.html">com.codeborne.selenide.junit5</a></dt>
 <dd>
 <div class="block">By using this extension selenide will collect all failed asserts
@@ -4589,9 +4654,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/proxy/SelenideProxyServer.html#start--">start()</a></span> - Method in class com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a></dt>
 <dd>
-<div class="block">Start the server
-
- It automatically adds one response filter "download" that can intercept downloaded files.</div>
+<div class="block">Start the server</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/ScreenShotLaboratory.html#startContext-java.lang.String-java.lang.String-">startContext(String, String)</a></span> - Method in class com.codeborne.selenide.impl.<a href="com/codeborne/selenide/impl/ScreenShotLaboratory.html" title="class in com.codeborne.selenide.impl">ScreenShotLaboratory</a></dt>
 <dd>&nbsp;</dd>
@@ -4607,6 +4670,12 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/Stopwatch.html#Stopwatch-long-">Stopwatch(long)</a></span> - Constructor for class com.codeborne.selenide.<a href="com/codeborne/selenide/Stopwatch.html" title="class in com.codeborne.selenide">Stopwatch</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/ElementsCollection.html#stream--">stream()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></dt>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="block"><span class="deprecationComment">Use either <a href="com/codeborne/selenide/ElementsCollection.html#asFixedIterable--"><code>ElementsCollection.asFixedIterable()</code></a> or <a href="com/codeborne/selenide/ElementsCollection.html#asDynamicIterable--"><code>ElementsCollection.asDynamicIterable()</code></a> instead.</span></div>
+</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/junit/ScreenShooter.html#succeeded-org.junit.runner.Description-">succeeded(Description)</a></span> - Method in class com.codeborne.selenide.junit.<a href="com/codeborne/selenide/junit/ScreenShooter.html" title="class in com.codeborne.selenide.junit">ScreenShooter</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/junit/TextReport.html#succeeded-org.junit.runner.Description-">succeeded(Description)</a></span> - Method in class com.codeborne.selenide.junit.<a href="com/codeborne/selenide/junit/TextReport.html" title="class in com.codeborne.selenide.junit">TextReport</a></dt>
@@ -4854,7 +4923,7 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/Configuration.html#timeout">timeout</a></span> - Static variable in class com.codeborne.selenide.<a href="com/codeborne/selenide/Configuration.html" title="class in com.codeborne.selenide">Configuration</a></dt>
 <dd>
 <div class="block">Timeout in milliseconds to fail the test, if conditions still not met
- Can be configured either programmatically or by system property "-Dselenide.timeout=10000"
+ Can be configured either programmatically, via selenide.properties file or by system property "-Dselenide.timeout=10000"
  <br>
  Default value: 4000 (milliseconds)</div>
 </dd>
@@ -4891,7 +4960,11 @@
 <div class="block">One-liner to configure Configuration.reportsFolder property.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/ElementsCollection.html#toArray--">toArray()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/ElementsCollection.html" title="class in com.codeborne.selenide">ElementsCollection</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="block"><span class="deprecationComment">use method <a href="com/codeborne/selenide/ElementsCollection.html#asFixedIterable--"><code>ElementsCollection.asFixedIterable()</code></a> or <a href="com/codeborne/selenide/ElementsCollection.html#asDynamicIterable--"><code>ElementsCollection.asDynamicIterable()</code></a> instead.</span></div>
+</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/DownloadsFolder.html#toFile--">toFile()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/DownloadsFolder.html" title="class in com.codeborne.selenide">DownloadsFolder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/CheckResult.html#toString--">toString()</a></span> - Method in class com.codeborne.selenide.<a href="com/codeborne/selenide/CheckResult.html" title="class in com.codeborne.selenide">CheckResult</a></dt>
@@ -4988,6 +5061,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/impl/windows/WindowByNameOrHandle.html#toString--">toString()</a></span> - Method in class com.codeborne.selenide.impl.windows.<a href="com/codeborne/selenide/impl/windows/WindowByNameOrHandle.html" title="class in com.codeborne.selenide.impl.windows">WindowByNameOrHandle</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/logevents/ErrorsCollector.html#toString--">toString()</a></span> - Method in class com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/ErrorsCollector.html" title="class in com.codeborne.selenide.logevents">ErrorsCollector</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/logevents/SelenideLog.html#toString--">toString()</a></span> - Method in class com.codeborne.selenide.logevents.<a href="com/codeborne/selenide/logevents/SelenideLog.html" title="class in com.codeborne.selenide.logevents">SelenideLog</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/proxy/SelenideProxyServer.html#toString--">toString()</a></span> - Method in class com.codeborne.selenide.proxy.<a href="com/codeborne/selenide/proxy/SelenideProxyServer.html" title="class in com.codeborne.selenide.proxy">SelenideProxyServer</a></dt>
@@ -4997,8 +5072,6 @@
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/selector/ByText.html#toString--">toString()</a></span> - Method in class com.codeborne.selenide.selector.<a href="com/codeborne/selenide/selector/ByText.html" title="class in com.codeborne.selenide.selector">ByText</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/selector/ByTextCaseInsensitive.html#toString--">toString()</a></span> - Method in class com.codeborne.selenide.selector.<a href="com/codeborne/selenide/selector/ByTextCaseInsensitive.html" title="class in com.codeborne.selenide.selector">ByTextCaseInsensitive</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/selector/ShadowRoot.html#toString--">toString()</a></span> - Method in class com.codeborne.selenide.selector.<a href="com/codeborne/selenide/selector/ShadowRoot.html" title="class in com.codeborne.selenide.selector">ShadowRoot</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/selector/WithText.html#toString--">toString()</a></span> - Method in class com.codeborne.selenide.selector.<a href="com/codeborne/selenide/selector/WithText.html" title="class in com.codeborne.selenide.selector">WithText</a></dt>
 <dd>&nbsp;</dd>
@@ -5014,7 +5087,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/SelenideElement.html#toWebElement--">toWebElement()</a></span> - Method in interface com.codeborne.selenide.<a href="com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/codeborne/selenide/webdriver/AbstractDriverFactory.html#transferCapabilitiesFromSystemProperties-org.openqa.selenium.remote.DesiredCapabilities-">transferCapabilitiesFromSystemProperties(DesiredCapabilities)</a></span> - Method in class com.codeborne.selenide.webdriver.<a href="com/codeborne/selenide/webdriver/AbstractDriverFactory.html" title="class in com.codeborne.selenide.webdriver">AbstractDriverFactory</a></dt>
+<dt><span class="memberNameLink"><a href="com/codeborne/selenide/webdriver/AbstractDriverFactory.html#transferCapabilitiesFromSystemProperties-org.openqa.selenium.MutableCapabilities-">transferCapabilitiesFromSystemProperties(MutableCapabilities)</a></span> - Method in class com.codeborne.selenide.webdriver.<a href="com/codeborne/selenide/webdriver/AbstractDriverFactory.html" title="class in com.codeborne.selenide.webdriver">AbstractDriverFactory</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/codeborne/selenide/webdriver/FirefoxDriverFactory.html#transferFirefoxProfileFromSystemProperties-org.openqa.selenium.firefox.FirefoxOptions-java.util.Map-">transferFirefoxProfileFromSystemProperties(FirefoxOptions, Map&lt;String, String&gt;)</a></span> - Method in class com.codeborne.selenide.webdriver.<a href="com/codeborne/selenide/webdriver/FirefoxDriverFactory.html" title="class in com.codeborne.selenide.webdriver">FirefoxDriverFactory</a></dt>
 <dd>&nbsp;</dd>
@@ -5290,7 +5363,7 @@ the order they are declared.</div>
 <dt><a href="com/codeborne/selenide/WebDriverProvider.html" title="interface in com.codeborne.selenide"><span class="typeNameLink">WebDriverProvider</span></a> - Interface in <a href="com/codeborne/selenide/package-summary.html">com.codeborne.selenide</a></dt>
 <dd>
 <div class="block">
- Interface for using custom WebDriver in your tests</div>
+  Interface for using custom WebDriver in your tests.</div>
 </dd>
 <dt><a href="com/codeborne/selenide/WebDriverRunner.html" title="class in com.codeborne.selenide"><span class="typeNameLink">WebDriverRunner</span></a> - Class in <a href="com/codeborne/selenide/package-summary.html">com.codeborne.selenide</a></dt>
 <dd>

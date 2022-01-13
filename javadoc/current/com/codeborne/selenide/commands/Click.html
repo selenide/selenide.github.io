@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -172,16 +172,37 @@ implements <a href="../../../../com/codeborne/selenide/Command.html" title="inte
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/commands/Click.html#click-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-int-int-">click</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-     org.openqa.selenium.WebElement&nbsp;element,
-     int&nbsp;offsetX,
-     int&nbsp;offsetY)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/commands/Click.html#click-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-com.codeborne.selenide.ClickOptions-">click</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+     org.openqa.selenium.WebElement&nbsp;webElement,
+     <a href="../../../../com/codeborne/selenide/ClickOptions.html" title="class in com.codeborne.selenide">ClickOptions</a>&nbsp;clickOptions)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/commands/Click.html#clickViaJS-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-int-int-">clickViaJS</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+          org.openqa.selenium.WebElement&nbsp;element,
+          int&nbsp;offsetX,
+          int&nbsp;offsetY)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/commands/Click.html#defaultClick-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-int-int-">defaultClick</a></span>(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+            org.openqa.selenium.WebElement&nbsp;element,
+            int&nbsp;offsetX,
+            int&nbsp;offsetY)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/commands/Click.html#defaultClick-org.openqa.selenium.WebElement-">defaultClick</a></span>(org.openqa.selenium.WebElement&nbsp;element)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/commands/Click.html#execute-com.codeborne.selenide.SelenideElement-com.codeborne.selenide.impl.WebElementSource-java.lang.Object:A-">execute</a></span>(<a href="../../../../com/codeborne/selenide/SelenideElement.html" title="interface in com.codeborne.selenide">SelenideElement</a>&nbsp;proxy,
        <a href="../../../../com/codeborne/selenide/impl/WebElementSource.html" title="class in com.codeborne.selenide.impl">WebElementSource</a>&nbsp;locator,
        java.lang.Object[]&nbsp;args)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>protected org.openqa.selenium.WebElement</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/commands/Click.html#findElement-com.codeborne.selenide.impl.WebElementSource-">findElement</a></span>(<a href="../../../../com/codeborne/selenide/impl/WebElementSource.html" title="class in com.codeborne.selenide.impl">WebElementSource</a>&nbsp;locator)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -239,6 +260,17 @@ public&nbsp;java.lang.Void&nbsp;execute(<a href="../../../../com/codeborne/selen
 </dl>
 </li>
 </ul>
+<a name="findElement-com.codeborne.selenide.impl.WebElementSource-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findElement</h4>
+<pre>@Nonnull
+ @CheckReturnValue
+protected&nbsp;org.openqa.selenium.WebElement&nbsp;findElement(<a href="../../../../com/codeborne/selenide/impl/WebElementSource.html" title="class in com.codeborne.selenide.impl">WebElementSource</a>&nbsp;locator)</pre>
+</li>
+</ul>
 <a name="click-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-">
 <!--   -->
 </a>
@@ -249,16 +281,48 @@ public&nbsp;java.lang.Void&nbsp;execute(<a href="../../../../com/codeborne/selen
                      org.openqa.selenium.WebElement&nbsp;element)</pre>
 </li>
 </ul>
-<a name="click-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-int-int-">
+<a name="click-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-com.codeborne.selenide.ClickOptions-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>click</h4>
+<pre>protected&nbsp;void&nbsp;click(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                     org.openqa.selenium.WebElement&nbsp;webElement,
+                     <a href="../../../../com/codeborne/selenide/ClickOptions.html" title="class in com.codeborne.selenide">ClickOptions</a>&nbsp;clickOptions)</pre>
+</li>
+</ul>
+<a name="defaultClick-org.openqa.selenium.WebElement-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>defaultClick</h4>
+<pre>protected&nbsp;void&nbsp;defaultClick(org.openqa.selenium.WebElement&nbsp;element)</pre>
+</li>
+</ul>
+<a name="defaultClick-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>defaultClick</h4>
+<pre>protected&nbsp;void&nbsp;defaultClick(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                            org.openqa.selenium.WebElement&nbsp;element,
+                            int&nbsp;offsetX,
+                            int&nbsp;offsetY)</pre>
+</li>
+</ul>
+<a name="clickViaJS-com.codeborne.selenide.Driver-org.openqa.selenium.WebElement-int-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>click</h4>
-<pre>protected&nbsp;void&nbsp;click(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
-                     org.openqa.selenium.WebElement&nbsp;element,
-                     int&nbsp;offsetX,
-                     int&nbsp;offsetY)</pre>
+<h4>clickViaJS</h4>
+<pre>protected&nbsp;void&nbsp;clickViaJS(<a href="../../../../com/codeborne/selenide/Driver.html" title="interface in com.codeborne.selenide">Driver</a>&nbsp;driver,
+                          org.openqa.selenium.WebElement&nbsp;element,
+                          int&nbsp;offsetX,
+                          int&nbsp;offsetY)</pre>
 </li>
 </ul>
 </li>

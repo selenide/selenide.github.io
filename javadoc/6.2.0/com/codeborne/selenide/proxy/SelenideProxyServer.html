@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/codeborne/selenide/proxy/ResponseSizeWatchdog.html" title="class in com.codeborne.selenide.proxy"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServerFactory.html" title="interface in com.codeborne.selenide.proxy"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/codeborne/selenide/proxy/SelenideProxyServer.html" target="_top">Frames</a></li>
@@ -111,7 +111,7 @@ var activeTableTab = "activeTableTab";
 public class <span class="typeNameLabel">SelenideProxyServer</span>
 extends java.lang.Object</pre>
 <div class="block">Selenide own proxy server to intercept server responses
-
+ <p>
  It holds map of request and response filters by name.</div>
 </li>
 </ul>
@@ -176,15 +176,15 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>org.openqa.selenium.Proxy</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#createSeleniumProxy--">createSeleniumProxy</a></span>()</code>
-<div class="block">Converts this proxy to a "selenium" proxy that can be used by webdriver</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>com.browserup.bup.BrowserUpProxy</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#getProxy--">getProxy</a></span>()</code>
 <div class="block">Method return current instance of browser up proxy</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>org.openqa.selenium.Proxy</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#getSeleniumProxy--">getSeleniumProxy</a></span>()</code>
+<div class="block">Returns a "selenium" proxy that can be used by webdriver.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -200,9 +200,7 @@ extends java.lang.Object</pre>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>&lt;T extends com.browserup.bup.filters.ResponseFilter&gt;<br>T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#responseFilter-java.lang.String-">responseFilter</a></span>(java.lang.String&nbsp;name)</code>
-<div class="block">Get response filter by name
-
- By default, the only one filter "download" is available.</div>
+<div class="block">Get response filter by name</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -214,9 +212,7 @@ extends java.lang.Object</pre>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServer.html#start--">start</a></span>()</code>
-<div class="block">Start the server
-
- It automatically adds one response filter "download" that can intercept downloaded files.</div>
+<div class="block">Start the server</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -283,6 +279,18 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getSeleniumProxy--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSeleniumProxy</h4>
+<pre>@Nullable
+public&nbsp;org.openqa.selenium.Proxy&nbsp;getSeleniumProxy()</pre>
+<div class="block">Returns a "selenium" proxy that can be used by webdriver.
+ Available after SelenideProxyServer.start() and SelenideProxyServer.createSeleniumProxy() call.</div>
+</li>
+</ul>
 <a name="start--">
 <!--   -->
 </a>
@@ -291,7 +299,7 @@ extends java.lang.Object</pre>
 <h4>start</h4>
 <pre>public&nbsp;void&nbsp;start()</pre>
 <div class="block">Start the server
-
+ <p>
  It automatically adds one response filter "download" that can intercept downloaded files.</div>
 </li>
 </ul>
@@ -335,18 +343,6 @@ public&nbsp;boolean&nbsp;isStarted()</pre>
 <dd><code>name</code> - unique name of filter</dd>
 <dd><code>responseFilter</code> - the filter</dd>
 </dl>
-</li>
-</ul>
-<a name="createSeleniumProxy--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>createSeleniumProxy</h4>
-<pre>@CheckReturnValue
- @Nonnull
-public&nbsp;org.openqa.selenium.Proxy&nbsp;createSeleniumProxy()</pre>
-<div class="block">Converts this proxy to a "selenium" proxy that can be used by webdriver</div>
 </li>
 </ul>
 <a name="shutdown--">
@@ -412,7 +408,7 @@ public&nbsp;&lt;T extends com.browserup.bup.filters.RequestFilter&gt;&nbsp;T&nbs
  @Nullable
 public&nbsp;&lt;T extends com.browserup.bup.filters.ResponseFilter&gt;&nbsp;T&nbsp;responseFilter(java.lang.String&nbsp;name)</pre>
 <div class="block">Get response filter by name
-
+ <p>
  By default, the only one filter "download" is available.</div>
 </li>
 </ul>
@@ -444,7 +440,7 @@ public&nbsp;&lt;T extends com.browserup.bup.filters.ResponseFilter&gt;&nbsp;T&nb
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/codeborne/selenide/proxy/ResponseSizeWatchdog.html" title="class in com.codeborne.selenide.proxy"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../../com/codeborne/selenide/proxy/SelenideProxyServerFactory.html" title="interface in com.codeborne.selenide.proxy"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/codeborne/selenide/proxy/SelenideProxyServer.html" target="_top">Frames</a></li>

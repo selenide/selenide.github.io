@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":9};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -109,6 +109,10 @@ var activeTableTab = "activeTableTab";
 <dt>All Implemented Interfaces:</dt>
 <dd><a href="../../../../com/codeborne/selenide/logevents/LogEventListener.html" title="interface in com.codeborne.selenide.logevents">LogEventListener</a></dd>
 </dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../com/codeborne/selenide/logevents/SoftAssertsErrorsCollector.html" title="class in com.codeborne.selenide.logevents">SoftAssertsErrorsCollector</a></dd>
+</dl>
 <hr>
 <br>
 <pre>@ParametersAreNonnullByDefault
@@ -178,12 +182,26 @@ implements <a href="../../../../com/codeborne/selenide/logevents/LogEventListene
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/logevents/ErrorsCollector.html#beforeEvent-com.codeborne.selenide.logevents.LogEvent-">beforeEvent</a></span>(<a href="../../../../com/codeborne/selenide/logevents/LogEvent.html" title="interface in com.codeborne.selenide.logevents">LogEvent</a>&nbsp;currentLog)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/logevents/ErrorsCollector.html#failIfErrors-java.lang.String-">failIfErrors</a></span>(java.lang.String&nbsp;testName)</code>
+<td class="colFirst"><code>java.lang.AssertionError</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/logevents/ErrorsCollector.html#cleanAndGetAssertionError-java.lang.String-java.lang.Throwable-">cleanAndGetAssertionError</a></span>(java.lang.String&nbsp;testName,
+                         java.lang.Throwable&nbsp;testFailure)</code>
 <div class="block">1.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/logevents/ErrorsCollector.html#cleanAndThrowAssertionError-java.lang.String-java.lang.Throwable-">cleanAndThrowAssertionError</a></span>(java.lang.String&nbsp;testName,
+                           java.lang.Throwable&nbsp;testFailure)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/logevents/ErrorsCollector.html#isEnabled--">isEnabled</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/logevents/ErrorsCollector.html#toString--">toString</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/codeborne/selenide/logevents/ErrorsCollector.html#validateAssertionMode-com.codeborne.selenide.Config-">validateAssertionMode</a></span>(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config)</code>&nbsp;</td>
 </tr>
@@ -193,7 +211,7 @@ implements <a href="../../../../com/codeborne/selenide/logevents/LogEventListene
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -247,6 +265,15 @@ implements <a href="../../../../com/codeborne/selenide/logevents/LogEventListene
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="isEnabled--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isEnabled</h4>
+<pre>protected&nbsp;boolean&nbsp;isEnabled()</pre>
+</li>
+</ul>
 <a name="afterEvent-com.codeborne.selenide.logevents.LogEvent-">
 <!--   -->
 </a>
@@ -273,28 +300,55 @@ implements <a href="../../../../com/codeborne/selenide/logevents/LogEventListene
 </dl>
 </li>
 </ul>
-<a name="failIfErrors-java.lang.String-">
+<a name="cleanAndGetAssertionError-java.lang.String-java.lang.Throwable-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>failIfErrors</h4>
-<pre>public&nbsp;void&nbsp;failIfErrors(java.lang.String&nbsp;testName)</pre>
+<h4>cleanAndGetAssertionError</h4>
+<pre>@Nullable
+public&nbsp;java.lang.AssertionError&nbsp;cleanAndGetAssertionError(java.lang.String&nbsp;testName,
+                                                                    @Nullable
+                                                                    java.lang.Throwable&nbsp;testFailure)</pre>
 <div class="block">1. Clears all collected errors, and
- 2. throws SoftAssertionError if there were some errors</div>
+ 2. returns SoftAssertionError if there were some errors</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>testName</code> - any string, usually name of current test</dd>
 </dl>
 </li>
 </ul>
+<a name="cleanAndThrowAssertionError-java.lang.String-java.lang.Throwable-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cleanAndThrowAssertionError</h4>
+<pre>public&nbsp;void&nbsp;cleanAndThrowAssertionError(java.lang.String&nbsp;testName,
+                                        @Nullable
+                                        java.lang.Throwable&nbsp;testFailure)</pre>
+</li>
+</ul>
 <a name="validateAssertionMode-com.codeborne.selenide.Config-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>validateAssertionMode</h4>
+<pre>public static&nbsp;void&nbsp;validateAssertionMode(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config)</pre>
+</li>
+</ul>
+<a name="toString--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>validateAssertionMode</h4>
-<pre>public static&nbsp;void&nbsp;validateAssertionMode(<a href="../../../../com/codeborne/selenide/Config.html" title="interface in com.codeborne.selenide">Config</a>&nbsp;config)</pre>
+<h4>toString</h4>
+<pre>public&nbsp;java.lang.String&nbsp;toString()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
 </li>
 </ul>
 </li>

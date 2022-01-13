@@ -102,17 +102,27 @@ var activeTableTab = "activeTableTab";
 <pre>@ParametersAreNonnullByDefault
 public interface <span class="typeNameLabel">WebDriverProvider</span></pre>
 <div class="block"><p>
- Interface for using custom WebDriver in your tests
+  Interface for using custom WebDriver in your tests.
+ </p>
+
+ <p>
+   See https://github.com/selenide/selenide/wiki/How-Selenide-creates-WebDriver for overview
  </p>
 
  <p>
  To customize <code>WebDriver</code> creation one can use any of the alternatives:
  <ul>
  <li>Call method <a href="../../../com/codeborne/selenide/WebDriverRunner.html#setWebDriver-org.openqa.selenium.WebDriver-"><code>WebDriverRunner.setWebDriver(WebDriver)</code></a> explicitly.
- <li>Extend <code>WebDriver</code> implementation, override <code>public XxxDriver(Capabilities desiredCapabilities)</code>
+ <li>Extend <a href="../../../com/codeborne/selenide/webdriver/DriverFactory.html" title="interface in com.codeborne.selenide.webdriver"><code>DriverFactory</code></a> implementation
+ <li>Extend <code>WebDriver</code> implementation, override <code>public XxxDriver(Capabilities capabilities)</code>
  constructor and pass this class name as <code>browser</code> system variable value.
  <li>Implement this very interface and pass the implementation class name as <code>browser</code> system variable value.
- </ul></div>
+ </ul>
+
+ <p>
+  Nowadays <a href="../../../com/codeborne/selenide/webdriver/DriverFactory.html" title="interface in com.codeborne.selenide.webdriver"><code>DriverFactory</code></a> is probably preferred to <a href="../../../com/codeborne/selenide/WebDriverProvider.html" title="interface in com.codeborne.selenide"><code>WebDriverProvider</code></a> because
+  the latter cannot use Selenide proxy and downloads folder. If you don't need them - it's fine to use <a href="../../../com/codeborne/selenide/WebDriverProvider.html" title="interface in com.codeborne.selenide"><code>WebDriverProvider</code></a> too.
+ </p></div>
 </li>
 </ul>
 </div>
@@ -133,7 +143,7 @@ public interface <span class="typeNameLabel">WebDriverProvider</span></pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>org.openqa.selenium.WebDriver</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/WebDriverProvider.html#createDriver-org.openqa.selenium.remote.DesiredCapabilities-">createDriver</a></span>(org.openqa.selenium.remote.DesiredCapabilities&nbsp;desiredCapabilities)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/codeborne/selenide/WebDriverProvider.html#createDriver-org.openqa.selenium.Capabilities-">createDriver</a></span>(org.openqa.selenium.Capabilities&nbsp;capabilities)</code>
 <div class="block">Create new <code>WebDriver</code> instance.</div>
 </td>
 </tr>
@@ -152,7 +162,7 @@ public interface <span class="typeNameLabel">WebDriverProvider</span></pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="createDriver-org.openqa.selenium.remote.DesiredCapabilities-">
+<a name="createDriver-org.openqa.selenium.Capabilities-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -160,14 +170,15 @@ public interface <span class="typeNameLabel">WebDriverProvider</span></pre>
 <h4>createDriver</h4>
 <pre>@CheckReturnValue
  @Nonnull
-org.openqa.selenium.WebDriver&nbsp;createDriver(org.openqa.selenium.remote.DesiredCapabilities&nbsp;desiredCapabilities)</pre>
+org.openqa.selenium.WebDriver&nbsp;createDriver(@Nonnull
+                                                                       org.openqa.selenium.Capabilities&nbsp;capabilities)</pre>
 <div class="block">Create new <code>WebDriver</code> instance. The instance will be bound to current thread, so there is no need to cache
  this instance in method implementation. Also don't cache the instance in static variable, as <a
  href="http://code.google.com/p/selenium/wiki/FrequentlyAskedQuestions#Q:_Is_WebDriver_thread-safe?">WebDriver
  instance is not thread-safe</a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>desiredCapabilities</code> - set of desired capabilities as suggested by Selenide framework; method implementation is
+<dd><code>capabilities</code> - set of desired capabilities as suggested by Selenide framework; method implementation is
  recommended to pass this variable to <code>WebDriver</code>, probably modifying it according to specific needs</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>new <code>WebDriver</code> instance</dd>
