@@ -94,6 +94,17 @@ header-text:
 
     <hr class="divider"/>
 
+    <a href="https://vk.com/" target="_blank">
+      <img src="{{ BASE_PATH }}/images/logo-vk.svg.png" style="width: 220px;" alt="VK Group"/>
+    </a>
+    <br/>
+
+    <div class="text-right">
+      <a href="https://vk.com/" target="_blank">VK Group</a> - a company behind VKontakte, Odnoklassniki, Delivery Club, CityMobil taxi, GeekBrains, Skillbox - more than 200 projects in total.
+    </div>
+
+    <hr class="divider"/>
+
     <a href="https://www.severstal.com/eng/" target="_blank">
       <img src="{{ BASE_PATH }}/images/logo-severstal.svg" style="width: 160px; background-color: #002f6c;" alt="Severstal'"/>
     </a>
