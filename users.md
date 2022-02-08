@@ -83,6 +83,17 @@ header-text:
 
     <hr class="divider"/>
 
+    <a href="https://magenta-technology.com/" target="_blank">
+      <img src="{{ BASE_PATH }}/images/logo-magenta.png" style="width: 160px;" alt="Magenta Technology"/>
+    </a>
+    <br/>
+
+    <div class="text-right">
+      <a href="https://magenta-technology.com/" target="_blank">Magenta Technology</a> - a revolutionary dispatch automation and fleet optimisation technology provider.
+    </div>
+
+    <hr class="divider"/>
+
     <a href="https://www.severstal.com/eng/" target="_blank">
       <img src="{{ BASE_PATH }}/images/logo-severstal.svg" style="width: 160px; background-color: #002f6c;" alt="Severstal'"/>
     </a>
