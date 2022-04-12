@@ -8,8 +8,12 @@ header-text: >
   <h4>Poor software <span class="bold">doesn't have</span> documentation.
   Brilliant software <span class="bold">doesn't need</span> documentation.</h4>
 
-  We are proud to claim that Selenide is so simple that you don't need to read tons of documentation.<br/>
-  The whole work with Selenide consists of three simple things!
+  <div>
+    We are proud to claim that Selenide is so simple that you don't need to read tons of documentation.
+  </div>
+  <div class="mt-1">
+    The whole work with Selenide consists of three simple things!
+  </div>
 ---
 {% include JB/setup %}
 
