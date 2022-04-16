@@ -42,6 +42,14 @@
     "description": "payment systems aggregator for online stores"
   },
   {
+    "name": "Iute credit",
+    "link": "https://iute.ee/en/what-is-iutecredit/",
+    "logo": "logo-iute-credit.png",
+    "logoWidth": "200px",
+    "description": "IuteCredit is a fintech company offering instalment loans in the Balkan countries and Moldova. Founded in 2008 in Estonia.",
+    "source": "https://www.linkedin.com/in/risto-porila/"
+  },
+  {
     "name": "Tinkoff Bank",
     "link": "https://www.tinkoff.ru/",
     "logo": "logo-tinkoff-bank.png",
