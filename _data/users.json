@@ -219,6 +219,14 @@
     "source": "https://www.linkedin.com/in/risto-porila/"
   },
   {
+    "name": "Swedbank",
+    "link": "https://www.swedbank.ee/about/careers/work/career",
+    "logo": "logo-swedbank.png",
+    "logoWidth": "240px",
+    "description": "the biggest bank in Estonia, Latvia and Lithuania.",
+    "source": "https://www.cvkeskus.ee/software-engineer-quality-assurance-origination-team-tallinnas-swedbank-as-774418"
+  },
+  {
     "name": "Bank Citadele",
     "link": "https://www.citadele.lv/",
     "logo": "citadele-banka.png",
