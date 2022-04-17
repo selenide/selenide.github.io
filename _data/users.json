@@ -287,6 +287,16 @@
     "description": "Ural bank of reconstruction and development"
   },
   {
+    "name": "Outlines Tech",
+    "link": "https://outlines.tech/",
+    "logo": "logo-outline-tech.jpeg",
+    "description": "solutions and software for the financial sector",
+    "tags": [
+      "russia",
+      "finance"
+    ]
+  },
+  {
     "name": "Tieto Eesti AS",
     "link": "https://www.tietoevry.com/ee",
     "logo": "tieto.png",
