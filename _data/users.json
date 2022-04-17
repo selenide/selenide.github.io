@@ -81,6 +81,17 @@
     ]
   },
   {
+    "name": "TBC",
+    "link": "https://www.tbcbank.ge/web/en/web/guest/personal-banking",
+    "logo": "logo-tbc-bank.png",
+    "description": "one of biggest banks of Georgia (Tbilisi)",
+    "source": "",
+    "tags": [
+      "georgia",
+      "finances"
+    ]
+  },
+  {
     "name": "MTS",
     "link": "https://moskva.mts.ru/personal",
     "logo": "logo-mts.png",
