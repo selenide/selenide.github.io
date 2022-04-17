@@ -11,14 +11,22 @@
     "link": "https://www.mastercard.us/",
     "logo": "logo-mastercard.svg",
     "logoWidth": "160px",
-    "description": "a leading global payments & technology company that connects consumers, businesses, merchants, issuers & governments around the world."
+    "description": "a leading global payments & technology company that connects consumers, businesses, merchants, issuers & governments around the world.",
+    "tags": [
+      "usa",
+      "finances"
+    ]
   },
   {
     "name": "IBM",
     "link": "https://www.ibm.com/ee-en",
     "logo": "ibm-logo.jpeg",
     "logoWidth": "140px",
-    "description": "a leading cloud platform and cognitive solutions company"
+    "description": "a leading cloud platform and cognitive solutions company",
+    "tags": [
+      "usa",
+      "it"
+    ]
   },
   {
     "name": "Google",
@@ -27,7 +35,8 @@
     "description": "an American multinational technology company that focuses on artificial intelligence, search engine, online advertising, cloud computing etc.",
     "source": "https://github.com/search?q=org%3Agoogle+selenide&type=code",
     "tags": [
-      "usa"
+      "usa",
+      "it"
     ]
   },
   {
@@ -35,14 +44,21 @@
     "link": "https://www.aledade.com",
     "logo": "logo-aledade.jpeg",
     "logoWidth": "140px",
-    "description": "Hospital & Health Care, Bethesda, Maryland."
+    "description": "Hospital & Health Care, Bethesda, Maryland.",
+    "tags": [
+      "usa",
+      "healthcare"
+    ]
   },
   {
     "name": "Whimstay",
     "link": "https://whimstay.com",
     "logo": "logo-whimstay.png",
     "logoWidth": "160px",
-    "description": "last-minute deals on vacation rentals, San-Francisco."
+    "description": "last-minute deals on vacation rentals, San-Francisco.",
+    "tags": [
+      "usa"
+    ]
   },
   {
     "name": "Alyce",
@@ -69,7 +85,11 @@
     "link": "https://www.walletone.com/en/wallet/",
     "logo": "logo-walletone.png",
     "logoWidth": "160px",
-    "description": "payment systems aggregator for online stores"
+    "description": "payment systems aggregator for online stores",
+    "tags": [
+      "usa",
+      "finances"
+    ]
   },
   {
     "name": "Unbiased",
@@ -79,7 +99,8 @@
     "description": "Internet Publishing (London)",
     "source": "https://www.linkedin.com/in/olga-alferova-66b17a15a/",
     "tags": [
-      "britain"
+      "britain",
+      "europe"
     ]
   },
   {
@@ -88,7 +109,11 @@
     "logo": "logo-iute-credit.png",
     "logoWidth": "200px",
     "description": "IuteCredit is a fintech company offering instalment loans in the Balkan countries and Moldova. Founded in 2008 in Estonia.",
-    "source": "https://www.linkedin.com/in/risto-porila/"
+    "source": "https://www.linkedin.com/in/risto-porila/",
+    "tags": [
+      "europe",
+      "finances"
+    ]
   },
   {
     "name": "Solid gate",
@@ -120,7 +145,8 @@
     "description": "one of the global leaders in Quality Assurance and Testing",
     "source": "https://www.g2.com/products/deviqa/reviews",
     "tags": [
-      "ukraine"
+      "ukraine",
+      "it"
     ]
   },
   {
@@ -131,6 +157,7 @@
     "source": "",
     "tags": [
       "georgia",
+      "europe",
       "finances"
     ]
   },
@@ -153,7 +180,8 @@
     "description": "support and development of sustainable CRM solutions Customers based on Microsoft Dynamics CRM product.",
     "source": "https://www.linkedin.com/in/sergei-tolmachev-21732a160/",
     "tags": [
-      "russia"
+      "russia",
+      "it"
     ]
   },
   {
@@ -161,7 +189,11 @@
     "link": "https://www.tinkoff.ru/",
     "logo": "logo-tinkoff-bank.png",
     "logoWidth": "160px",
-    "description": "the world's largest digital bank"
+    "description": "the world's largest digital bank",
+    "tags": [
+      "russia",
+      "finances"
+    ]
   },
   {
     "name": "T1 Cloud",
@@ -170,7 +202,8 @@
     "description": "Russian cloud provider",
     "source": "https://pub.recruitcoders.com/3tn7-injener-po-testirovaniu-qa/",
     "tags": [
-      "russia"
+      "russia",
+      "it"
     ]
   },
   {
@@ -178,154 +211,239 @@
     "link": "https://magenta-technology.ru/",
     "logo": "logo-magenta.png",
     "logoWidth": "160px",
-    "description": "a revolutionary dispatch automation and fleet optimisation technology provider."
+    "description": "a revolutionary dispatch automation and fleet optimisation technology provider.",
+    "tags": [
+      "russia",
+      "europe",
+      "logistics"
+    ]
   },
   {
     "name": "VK Group",
     "link": "https://vk.com/",
     "logo": "logo-vk.svg.png",
     "logoWidth": "220px",
-    "description": "a company behind VKontakte, Odnoklassniki, Delivery Club, CityMobil taxi, GeekBrains, Skillbox - more than 200 projects in total."
+    "description": "a company behind VKontakte, Odnoklassniki, Delivery Club, CityMobil taxi, GeekBrains, Skillbox - more than 200 projects in total.",
+    "tags": [
+      "russia"
+    ]
   },
   {
     "name": "Severstal",
     "link": "https://www.severstal.com/eng/",
     "logo": "logo-severstal.png",
     "logoWidth": "200px",
-    "description": "steel and steel-related mining company."
+    "description": "steel and steel-related mining company.",
+    "tags": [
+      "russia",
+      "resources"
+    ]
   },
   {
     "name": "Bell Integrator",
     "link": "https://www.bellintegrator.com/",
     "logo": "logo-bellintegrator.png",
     "logoWidth": "160px",
-    "description": "an international company specializing in consulting, technology services and outsourcing."
+    "description": "an international company specializing in consulting, technology services and outsourcing.",
+    "tags": [
+      "usa",
+      "europe",
+      "it"
+    ]
   },
   {
     "name": "AmazingHiring",
     "link": "https://amazinghiring.com",
     "logo": "logo-amazinghiring.svg",
     "logoWidth": "160px",
-    "description": "Web application for technical talents acquisition."
+    "description": "Web application for technical talents acquisition.",
+    "tags": [
+      "usa"
+    ]
   },
   {
     "name": "Quality Lab",
     "link": "https://vk.com/quality_lab",
     "logo": "logo-quality-lab.jpeg",
     "logoWidth": "120px",
-    "description": "Software development and testing"
+    "description": "Software development and testing",
+    "tags": [
+      "russia",
+      "it"
+    ]
   },
   {
     "name": "Maxilect",
     "link": "https://maxilect.ru/",
     "logo": "logo-maxilect.svg",
     "logoWidth": "200px",
-    "description": "Custom software development company (Ad Tech, Blockchain, ML, AI)."
+    "description": "Custom software development company (Ad Tech, Blockchain, ML, AI).",
+    "tags": [
+      "russia",
+      "it"
+    ]
   },
   {
     "name": "BCS",
     "link": "https://bcs.ru",
     "logo": "bcs-logo.jpeg",
     "logoWidth": "200px",
-    "description": "one of the leading trading companies in Russia"
+    "description": "one of the leading trading companies in Russia",
+    "tags": [
+      "russia",
+      "finances"
+    ]
   },
   {
     "name": "SEMrush",
     "link": "https://www.semrush.com",
     "logo": "semrush-logo.png",
     "logoWidth": "200px",
-    "description": "leading online visibility management and content marketing SaaS Platform"
+    "description": "leading online visibility management and content marketing SaaS Platform",
+    "tags": [
+      "russia"
+    ]
   },
   {
     "name": "Propeller Ads",
     "link": "https://propellerads.com/",
     "logo": "propeller-logo.png",
     "logoWidth": "200px",
-    "description": "offers monetization opportunities to website owners and advertising agencies while providing advertisers access to millions of targeted users from around the globe."
+    "description": "offers monetization opportunities to website owners and advertising agencies while providing advertisers access to millions of targeted users from around the globe.",
+    "tags": [
+      "russia"
+    ]
   },
   {
     "name": "UBS AG",
     "link": "https://www.ubs.com/global/en.html",
     "logo": "ubs-logo.png",
     "logoWidth": "200px",
-    "description": "a Swiss global financial services company, providing wealth management, asset management, and investment banking services worldwide."
+    "description": "a Swiss global financial services company, providing wealth management, asset management, and investment banking services worldwide.",
+    "tags": [
+      "europe",
+      "finances"
+    ]
   },
   {
     "name": "Alfa bank",
     "link": "https://alfabank.ru",
     "logo": "alfa-bank-logo.png",
     "logoWidth": "200px",
-    "description": "one of the biggest commercial banks in Russia. Created an open-source <a href=\"https://habr.com/ru/company/alfa/blog/350238/\">BDD library Akita</a> based on Selenide."
+    "description": "one of the biggest commercial banks in Russia. Created an open-source <a href=\"https://habr.com/ru/company/alfa/blog/350238/\">BDD library Akita</a> based on Selenide.",
+    "tags": [
+      "russia",
+      "finances"
+    ]
   },
   {
     "name": "Pipedrive",
     "link": "https://www.pipedrive.com/",
     "logo": "pipedrive-logo.svg",
     "logoWidth": "200px",
-    "description": "The leading sales management tool, one of the most successful Estonian startups. <br/>Pipedrive has more than 50 000 customers, including Amazon, SkyScanner and Vimeo."
+    "description": "The leading sales management tool, one of the most successful Estonian startups. <br/>Pipedrive has more than 50 000 customers, including Amazon, SkyScanner and Vimeo.",
+    "tags": [
+      "estonia",
+      "europe",
+      "usa"
+    ]
   },
   {
     "name": "Omniva",
     "link": "https://www.omniva.ee",
     "logo": "omniva-logo.png",
     "logoWidth": "100px",
-    "description": "is an international logistics company that transports goods and information. Omniva is the leader of e-commerce and plays an important role in advancing the economic life of Baltic States."
+    "description": "is an international logistics company that transports goods and information. Omniva is the leader of e-commerce and plays an important role in advancing the economic life of Baltic States.",
+    "tags": [
+      "estonia",
+      "logistics"
+    ]
   },
   {
     "name": "Pragmatic Coders",
     "link": "https://www.pragmaticcoders.com/",
     "logo": "pragmatic-coders.png",
     "logoWidth": "150px",
-    "description": "a leading software house in the e-commerce and fintech sector.<br>  Dedicated teams of highly qualified developers provide full spectrum of Python and Java development services.<br>  Agile way of thinking at Pragmatic Coders continuously helps startups to grow and corporates to implement innovations."
+    "description": "a leading software house in the e-commerce and fintech sector.<br>  Dedicated teams of highly qualified developers provide full spectrum of Python and Java development services.<br>  Agile way of thinking at Pragmatic Coders continuously helps startups to grow and corporates to implement innovations.",
+    "tags": [
+      "europe",
+      "it"
+    ]
   },
   {
     "name": "SportsTG",
     "link": "",
     "logo": "sportstg-logo.png",
     "logoWidth": "150px",
-    "description": "an Australian company, the leading provider of digital solutions to the sports industry."
+    "description": "an Australian company, the leading provider of digital solutions to the sports industry.",
+    "tags": [
+      "australia"
+    ]
   },
   {
     "name": "Infotech Group",
     "link": "https://infotech.group/",
     "logo": "logo-infotech-group.svg",
     "logoWidth": "150px",
-    "description": "a Russian software developing company which develops and creates automation and management systems for cities and enterprises."
+    "description": "a Russian software developing company which develops and creates automation and management systems for cities and enterprises.",
+    "tags": [
+      "russia",
+      "it"
+    ]
   },
   {
     "name": "Renaissance Capital",
     "link": "https://rencredit.ru",
     "logo": "rencredit-logo.png",
     "logoWidth": "150px",
-    "description": "one of TOP-100 largest banks in Russia <br/>which actively develops its own IT division."
+    "description": "one of TOP-100 largest banks in Russia <br/>which actively develops its own IT division.",
+    "tags": [
+      "russia",
+      "finances"
+    ]
   },
   {
     "name": "QA Service",
     "link": "https://softengi.com/expertise/software-testing/",
     "logo": "qa3s-logo.png",
     "logoWidth": "150px",
-    "description": "Softengi <a href=\"https://softengi.com/expertise/software-testing/\" target=\"_blank\">QA Service</a> is a part of Intecracy Group which unites IT companies in USA, EU, India, Indonesia, Ukraine, Moldova, Azerbaijan, Georgia, Kazakhstan and Belarus. Our team has implemented hundreds of large and small projects for American and European customers."
+    "description": "Softengi <a href=\"https://softengi.com/expertise/software-testing/\" target=\"_blank\">QA Service</a> is a part of Intecracy Group which unites IT companies in USA, EU, India, Indonesia, Ukraine, Moldova, Azerbaijan, Georgia, Kazakhstan and Belarus. Our team has implemented hundreds of large and small projects for American and European customers.",
+    "tags": [
+      "ukraine",
+      "it"
+    ]
   },
   {
     "name": "XSolve",
     "link": "https://www.xsolve.pl",
     "logo": "xsolve-logo.jpg",
     "logoWidth": "150px",
-    "description": "Agile Software House focused on PHP/Symfony/Java/Mobile (iOS-Android-Windows)"
+    "description": "Agile Software House focused on PHP/Symfony/Java/Mobile (iOS-Android-Windows)",
+    "tags": [
+      "europe",
+      "it"
+    ]
   },
   {
     "name": "Sportradar",
     "link": "https://www.sportradar.com",
     "logo": "sportradar-logo.jpeg",
     "logoWidth": "150px",
-    "description": "a global leader in understanding and leveraging the power of sports data"
+    "description": "a global leader in understanding and leveraging the power of sports data",
+    "tags": [
+      "europe"
+    ]
   },
   {
     "name": "DPI solutions",
     "link": "https://www.linkedin.com/company/dpi-solutions-ltd-/",
     "logo": "dpi-solutions-logo.png",
     "logoWidth": "150px",
-    "description": "High-quality software through multi-purpose IT consulting and professional trainings"
+    "description": "High-quality software through multi-purpose IT consulting and professional trainings",
+    "tags": [
+      "belarus",
+      "it"
+    ]
   },
   {
     "name": "Luminor group",
@@ -333,7 +451,12 @@
     "logo": "logo-luminor.svg",
     "logoWidth": "200px",
     "description": "the third-largest provider of financial services in the Baltics.",
-    "source": "https://www.linkedin.com/in/risto-porila/"
+    "source": "https://www.linkedin.com/in/risto-porila/",
+    "tags": [
+      "estonia",
+      "europe",
+      "finances"
+    ]
   },
   {
     "name": "Swedbank",
@@ -341,7 +464,12 @@
     "logo": "logo-swedbank.png",
     "logoWidth": "240px",
     "description": "the biggest bank in Estonia, Latvia and Lithuania.",
-    "source": "https://www.cvkeskus.ee/software-engineer-quality-assurance-origination-team-tallinnas-swedbank-as-774418"
+    "source": "https://www.cvkeskus.ee/software-engineer-quality-assurance-origination-team-tallinnas-swedbank-as-774418",
+    "tags": [
+      "estonia",
+      "europe",
+      "finances"
+    ]
   },
   {
     "name": "SEB bank",
@@ -352,7 +480,8 @@
     "source": "https://www.linkedin.com/jobs/view/3008104368/",
     "tags": [
       "estonia",
-      "finance"
+      "europe",
+      "finances"
     ]
   },
   {
@@ -360,28 +489,44 @@
     "link": "https://www.citadele.lv/",
     "logo": "citadele-banka.png",
     "logoWidth": "150px",
-    "description": "latvian bank, partner of American Express® in Baltic countries."
+    "description": "latvian bank, partner of American Express® in Baltic countries.",
+    "tags": [
+      "europe",
+      "finances"
+    ]
   },
   {
     "name": "Plumbr",
     "link": "https://plumbr.eu/",
     "logo": "plumbr-logo.jpeg",
     "logoWidth": "150px",
-    "description": "Java memory leak detection tool"
+    "description": "Java memory leak detection tool",
+    "tags": [
+      "estonia",
+      "it"
+    ]
   },
   {
     "name": "Gilbarco Autotank",
     "link": "",
     "logo": "gilbarco-autotank-logo.jpg",
     "logoWidth": "128px",
-    "description": "a management system for automatic fuel stations that is used by almost all stations in Estonia."
+    "description": "a management system for automatic fuel stations that is used by almost all stations in Estonia.",
+    "tags": [
+      "estonia",
+      "resources"
+    ]
   },
   {
     "name": "UBRR",
     "link": "https://www.ubrr.ru",
     "logo": "ubrr-logo.jpeg",
     "logoWidth": "150px",
-    "description": "Ural bank of reconstruction and development"
+    "description": "Ural bank of reconstruction and development",
+    "tags": [
+      "russia",
+      "finances"
+    ]
   },
   {
     "name": "Outlines Tech",
@@ -390,7 +535,7 @@
     "description": "solutions and software for the financial sector",
     "tags": [
       "russia",
-      "finance"
+      "finances"
     ]
   },
   {
@@ -398,51 +543,83 @@
     "link": "https://www.tietoevry.com/ee",
     "logo": "tieto.png",
     "logoWidth": "96px",
-    "description": "Tieto is the largest Nordic IT services company providing full life-cycle services for both private and public sectors. The company has global presence through its product development business and the delivery centers."
+    "description": "Tieto is the largest Nordic IT services company providing full life-cycle services for both private and public sectors. The company has global presence through its product development business and the delivery centers.",
+    "tags": [
+      "estonia",
+      "it"
+    ]
   },
   {
     "name": "Bellwood systems",
     "link": "https://hh.ru/employer/593183",
     "logo": "bellwood-logo.png",
     "logoWidth": "px",
-    "description": "a company providing scoring and underrating banking systems."
+    "description": "a company providing scoring and underrating banking systems.",
+    "tags": [
+      "russia",
+      "finances"
+    ]
   },
   {
     "name": "Zeroturnaround",
     "link": "https://zeroturnaround.com",
     "logo": "logo-zt.png",
-    "description": "the creator of world-wide known products JRebel and LiveRebel,<br/> Jolt Award nominees."
+    "description": "the creator of world-wide known products JRebel and LiveRebel,<br/> Jolt Award nominees.",
+    "tags": [
+      "estonia",
+      "it"
+    ]
   },
   {
     "name": "Bank Saint Petersburg",
     "link": "https://i.bspb.ru/home",
     "logo": "bspb_logo.jpg",
-    "description": "In <a href=\"https://markswebb.ru/report/mobile-banking-rank-2012/#ratings-sites\" target=\"_blank\">TOP-3</a> of best internet-banks in Russia."
+    "description": "In <a href=\"https://markswebb.ru/report/mobile-banking-rank-2012/#ratings-sites\" target=\"_blank\">TOP-3</a> of best internet-banks in Russia.",
+    "tags": [
+      "russia",
+      "finances"
+    ]
   },
   {
     "name": "Eesti Energia",
     "link": "https://www.energia.ee/ru/avaleht",
     "logo": "ee_logo.png",
-    "description": "Largest electricity provider in Estonia"
+    "description": "Largest electricity provider in Estonia",
+    "tags": [
+      "estonia",
+      "resources"
+    ]
   },
   {
     "name": "Proekspert",
     "link": "https://www.proekspert.ee/",
     "logo": "proekspert_logo.png",
     "logoWidth": "350px",
-    "description": "The leading industrial automation software developer in Estonia. <br/>We breathe life into hardware."
+    "description": "The leading industrial automation software developer in Estonia. <br/>We breathe life into hardware.",
+    "tags": [
+      "estonia",
+      "it"
+    ]
   },
   {
     "name": "Regio",
     "link": "https://www.regio.ee/",
     "logo": "regio-logo.jpg",
-    "description": "A premium provider of location-based solutions in the Eastern Hemisphere for telecom, transport and infrastructure sectors."
+    "description": "A premium provider of location-based solutions in the Eastern Hemisphere for telecom, transport and infrastructure sectors.",
+    "tags": [
+      "estonia",
+      "it"
+    ]
   },
   {
     "name": "Codeborne",
     "link": "https://codeborne.com/ru/",
     "logo": "codeborne-logo-small.png",
     "logoWidth": "240px",
-    "description": "the only software company in Estonia that uses TDD and other XP practices in everyday work.    Creators of open-source libraries <a href=\"https://ru.selenide.org\">Selenide</a>, <a href=\"https://github.com/codeborne/mobileid\" target=\"_blank\">MobileID</a> and others."
+    "description": "the only software company in Estonia that uses TDD and other XP practices in everyday work.    Creators of open-source libraries <a href=\"https://ru.selenide.org\">Selenide</a>, <a href=\"https://github.com/codeborne/mobileid\" target=\"_blank\">MobileID</a> and others.",
+    "tags": [
+      "estonia",
+      "it"
+    ]
   }
 ]
