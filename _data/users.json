@@ -576,6 +576,17 @@
     ]
   },
   {
+    "name": "RTLabs",
+    "link": "https://rtlabs.ru",
+    "logo": "logo-rt-labs.png",
+    "logoWidth": "180px",
+    "description": "gosuslugi.ru (e-government systems, biometric identification platform, etc.)",
+    "source": "https://career.habr.com/vacancies/1000100539",
+    "tags": [
+      "russia"
+    ]
+  },
+  {
     "name": "Tieto Eesti AS",
     "link": "https://www.tietoevry.com/ee",
     "logo": "tieto.png",
