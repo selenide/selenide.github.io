@@ -472,6 +472,20 @@
     ]
   },
   {
+    "name": "EPAM",
+    "link": "https://www.epam.com/",
+    "logo": "logo-epam.png",
+    "description": "American company from 1993. Enterprise Software Development, Design & Consulting.",
+    "source": "https://career.habr.com/leoscream",
+    "tags": [
+      "usa",
+      "belarus",
+      "russia",
+      "ukraine",
+      "it"
+    ]
+  },
+  {
     "name": "DPI solutions",
     "link": "https://www.linkedin.com/company/dpi-solutions-ltd-/",
     "logo": "dpi-solutions-logo.png",
