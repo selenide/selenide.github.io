@@ -162,6 +162,18 @@
     ]
   },
   {
+    "name": "MIR Plat.Form",
+    "link": "https://mir-platform.ru/",
+    "logo": "logo-mir-platform.svg",
+    "logoWidth": "180px",
+    "description": "Tools and services of the National System of Payment Cards MIR",
+    "source": "https://career.habr.com/vacancies/1000100343",
+    "tags": [
+      "russia",
+      "finances"
+    ]
+  },
+  {
     "name": "MTS",
     "link": "https://moskva.mts.ru/personal",
     "logo": "logo-mts.png",
