@@ -221,6 +221,18 @@
     ]
   },
   {
+    "name": "Bank «Otkritie»",
+    "link": "https://www.open.ru/",
+    "logo": "logo-bank-oktrytie.png",
+    "logoWidth": "220px",
+    "description": "in the TOP 10 biggest banks in Russia",
+    "source": "https://career.habr.com/vacancies/1000100441",
+    "tags": [
+      "russia",
+      "finances"
+    ]
+  },
+  {
     "name": "Gazprombank Investments",
     "link": "https://gazprombank.investments/",
     "logo": "logo-gazprombank-investments.png",
