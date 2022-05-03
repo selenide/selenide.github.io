@@ -470,7 +470,7 @@
   },
   {
     "name": "SportsTG",
-    "link": "",
+    "link": "https://mygameday.app",
     "logo": "sportstg-logo.png",
     "logoWidth": "150px",
     "description": "an Australian company, the leading provider of digital solutions to the sports industry.",
@@ -672,7 +672,7 @@
   },
   {
     "name": "Gilbarco Autotank",
-    "link": "",
+    "link": "https://www.gilbarco.com/eu/",
     "logo": "gilbarco-autotank-logo.jpg",
     "logoWidth": "128px",
     "description": "a management system for automatic fuel stations that is used by almost all stations in Estonia.",
