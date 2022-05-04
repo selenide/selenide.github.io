@@ -411,6 +411,20 @@
     ]
   },
   {
+    "name": "Tango Me",
+    "link": "https://www.tango.me/live/recommended",
+    "logo": "logo-tango-me.png",
+    "logoWidth": "120px",
+    "description": "Live-streaming platform for content creators. More than 400 millions users.",
+    "source": "https://career.habr.com/evgenii-popovich",
+    "tags": [
+      "global",
+      "russia",
+      "belarus",
+      "ukraine"
+    ]
+  },
+  {
     "name": "Quality Lab",
     "link": "https://vk.com/quality_lab",
     "logo": "logo-quality-lab.jpeg",
