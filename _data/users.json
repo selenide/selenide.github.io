@@ -353,6 +353,17 @@
     ]
   },
   {
+    "name": "Детский мир",
+    "link": "https://www.detmir.ru/",
+    "logo": "logo-detskij-mir.png",
+    "logoWidth": "180px",
+    "description": "Russian retailer for children",
+    "source": "https://career.habr.com/vacancies/1000073158",
+    "tags": [
+      "russia"
+    ]
+  },
+  {
     "name": "Severstal",
     "link": "https://www.severstal.com/eng/",
     "logo": "logo-severstal.png",
