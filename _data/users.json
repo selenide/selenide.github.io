@@ -251,6 +251,18 @@
     ]
   },
   {
+    "name": "Glonass mobile",
+    "link": "https://gmdp.ru/index.html",
+    "logo": "logo-glonass-mobile.png",
+    "logoWidth": "140px",
+    "description": "GLONASS Mobile Distribution Platform (GMDP)",
+    "source": "https://career.habr.com/alexseyprohin",
+    "tags": [
+      "russia",
+      "telecom"
+    ]
+  },
+  {
     "name": "IT Basis",
     "link": "http://it-basis.com/",
     "logo": "logo-it-basis.png",
@@ -469,6 +481,7 @@
     "logo": "alfa-bank-logo.png",
     "logoWidth": "200px",
     "description": "one of the biggest commercial banks in Russia. Created an open-source <a href=\"https://habr.com/ru/company/alfa/blog/350238/\">BDD library Akita</a> based on Selenide.",
+    "source": "https://career.habr.com/honorzor",
     "tags": [
       "russia",
       "finances"
