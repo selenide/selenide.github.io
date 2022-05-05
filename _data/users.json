@@ -215,6 +215,18 @@
     ]
   },
   {
+    "name": "Qiwi",
+    "link": "https://qiwi.com/",
+    "logo": "logo-qiwi.svg.png",
+    "logoWidth": "220px",
+    "description": "Leading Russian electronic wallet payment service",
+    "source": "https://career.habr.com/vacancies/1000098960",
+    "tags": [
+      "russia",
+      "finances"
+    ]
+  },
+  {
     "name": "GreenAtom",
     "link": "https://www.greenatom.ru/",
     "logo": "logo-green-atom.png",
