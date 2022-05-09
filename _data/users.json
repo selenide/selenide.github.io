@@ -412,6 +412,19 @@
     ]
   },
   {
+    "name": "Encoding.com",
+    "link": "https://www.encoding.com/",
+    "logo": "logo-encoding.com.png",
+    "logoWidth": "220px",
+    "description": "The world's largest video transcoding service in the cloud",
+    "source": "https://career.habr.com/tambolskiy",
+    "tags": [
+      "usa",
+      "global",
+      "russia"
+    ]
+  },
+  {
     "name": "PointPay",
     "link": "https://pointpay.io/",
     "logo": "logo-point-pay.png",
