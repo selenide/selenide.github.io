@@ -755,6 +755,18 @@
     ]
   },
   {
+    "name": "G-Plans",
+    "link": "https://g-plans.com/",
+    "logo": "logo-gplans.svg",
+    "logoWidth": "180px",
+    "description": "Health and nutrition products (San Diego, USA)",
+    "source": "https://career.habr.com/alekseyb137",
+    "tags": [
+      "usa",
+      "healthcare"
+    ]
+  },
+  {
     "name": "Newmax Technologies",
     "link": "https://career.habr.com/companies/newmax-url",
     "logo": "logo-newmax.jpeg",
