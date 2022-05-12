@@ -337,6 +337,18 @@
     ]
   },
   {
+    "name": "Raiffeisen bank",
+    "link": "https://www.raiffeisen.ru/",
+    "logo": "logo-raiffeisen-bank.svg.png",
+    "logoWidth": "180px",
+    "description": "Leading universal bank in Russia",
+    "source": "https://ru.joblum.com/job/regular-qa-automation-engineer/3285163",
+    "tags": [
+      "russia",
+      "finances"
+    ]
+  },
+  {
     "name": "Bank «Otkritie»",
     "link": "https://www.open.ru/",
     "logo": "logo-bank-oktrytie.png",
