@@ -416,6 +416,18 @@
     ]
   },
   {
+    "name": "Perekrestok",
+    "link": "https://career.habr.com/companies/perekrestok-ru",
+    "logo": "logo-perekrestok.png",
+    "logoWidth": "180px",
+    "description": "the largest Russian supermarket chain, online supermarket and delivery service.",
+    "source": "https://career.habr.com/leramt",
+    "tags": [
+      "russia",
+      "retail"
+    ]
+  },
+  {
     "name": "Severstal",
     "link": "https://www.severstal.com/eng/",
     "logo": "logo-severstal.png",
