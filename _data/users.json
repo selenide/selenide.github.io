@@ -277,6 +277,19 @@
     ]
   },
   {
+    "name": "Center for Financial Technologies (CFT)",
+    "link": "https://team.cft.ru/",
+    "logo": "logo-cft.png",
+    "logoWidth": "220px",
+    "description": "The largest IT company in the Russian financial market",
+    "source": "https://career.habr.com/masta54",
+    "tags": [
+      "it",
+      "finances",
+      "russia"
+    ]
+  },
+  {
     "name": "Rostelekom",
     "link": "https://rtkit.ru/",
     "logo": "logo-rostelekom.png",
