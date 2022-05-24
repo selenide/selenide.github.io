@@ -4,6 +4,9 @@ title: "Selenide: concise UI tests in Java"
 tagline:
 ---
 {% include JB/setup %}
+{% include donate %}
+<br/>
+<br/>
 
 <div class="short wiki">
   <div class="wrapper-color-content">
