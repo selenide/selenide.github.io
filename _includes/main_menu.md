@@ -18,7 +18,7 @@
   </div>
   
   <div class="news">
-    <div class="news-line news-title"><a href="https://github.com/selenide/selenide/milestone/152?closed=1">Released Selenide 6.6.0</a></div>
+    <div class="news-line news-title"><a href="/2022/06/08/selenide-6.6.0/">Released Selenide 6.6.0</a></div>
     <div class="news-line news-link"><i>Deshortcutification of $.clear</i></div>
   </div>
 </div>
