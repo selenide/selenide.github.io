@@ -197,7 +197,7 @@ Look for more details in [Selenide gitbook](https://selenide.gitbooks.io/user-gu
 Conditions are used in `should` / `shouldNot` constructs. We recommend to import corresponding conditions statically to receive all the advantages of readable code:
 
 *   visible / appear   // e.g. $("input").shouldBe(visible)
-*   present / exist    // // conditions to wait for element existence in DOM (it can be still hidden) 
+*   present / exist    // conditions to wait for element existence in DOM (it can be still hidden) 
 *   hidden / disappear // not(visible)
 *   readonly           // e.g. $("input").shouldBe(readonly)
 *   name               // e.g. $("input").shouldHave(name("fname"))
