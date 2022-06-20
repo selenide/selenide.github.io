@@ -18,7 +18,7 @@
   </div>
   
   <div class="news">
-    <div class="news-line news-title"><a href="/2022/06/12/selenide-6.6.3/">Released Selenide 6.6.3</a></div>
-    <div class="news-line news-link"><i>Released. Period.</i></div>
+    <div class="news-line news-title"><a href="/2022/06/20/selenide-6.6.4/">Released Selenide 6.6.4</a></div>
+    <div class="news-line news-link"><i>Quasi-release</i></div>
   </div>
 </div>
