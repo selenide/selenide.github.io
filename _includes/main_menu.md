@@ -18,7 +18,7 @@
   </div>
   
   <div class="news">
-    <div class="news-line news-title"><a href="/2022/08/04/selenide-6.7.0/">Released Selenide 6.7.0</a></div>
+    <div class="news-line news-title"><a href="/2022/08/04/selenide-6.7.0/">Released Selenide 6.7.1</a></div>
     <div class="news-line news-link">Full texts, full screenshots</div>
   </div>
 </div>
