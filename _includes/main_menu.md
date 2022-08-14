@@ -16,9 +16,9 @@
     <a href="{{ BASE_PATH }}/users.html">Users</a>
     <a href="{{ BASE_PATH }}/quotes.html">Quotes</a>
   </div>
-  
+
   <div class="news">
-    <div class="news-line news-title"><a href="/2022/08/04/selenide-6.7.0/">Released Selenide 6.7.1</a></div>
-    <div class="news-line news-link">Full texts, full screenshots</div>
+    <div class="news-line news-title"><a href="/2022/08/14/selenide-6.7.2/">Released Selenide 6.7.2</a></div>
+    <div class="news-line news-link">Memory leaks</div>
   </div>
 </div>
