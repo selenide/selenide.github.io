@@ -18,7 +18,7 @@
   </div>
 
   <div class="news">
-    <div class="news-line news-title"><a href="/2022/08/14/selenide-6.7.2/">Released Selenide 6.7.2</a></div>
-    <div class="news-line news-link">Memory leaks</div>
+    <div class="news-line news-title"><a href="/2022/08/22/selenide-puzzler/">Selenide puzzler</a></div>
+    <div class="news-line news-link">Logical AND or OR?</div>
   </div>
 </div>
