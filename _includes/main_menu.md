@@ -18,7 +18,7 @@
   </div>
 
   <div class="news">
-    <div class="news-line news-title"><a href="/2022/08/22/selenide-puzzler/">Selenide puzzler</a></div>
-    <div class="news-line news-link">Logical AND or OR?</div>
+    <div class="news-line news-title"><a href="/2022/08/27/selenide-6.7.3/">Released Selenide 6.7.3</a></div>
+    <div class="news-line news-link"><i>Je suis Ecosystem</i></div>
   </div>
 </div>
