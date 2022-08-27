@@ -173,8 +173,8 @@ Methods to get element statuses and attribute values
 *  `text()`        // returns "visible text on a page"
 *  `innerText()`   // returns "text of element in DOM"
 *  `getSelectedOption()`
-*  `getSelectedText()`
-*  `getSelectedValue()`
+*  `getSelectedOptionText()`
+*  `getSelectedOptionValue()`
 *  `isDisplayed()` //returns false, if element is hidden (invisible) or if element does not exist in DOM; otherwise - true
 *  `exists()` //returns true, if element exists in DOM, otherwise - false 
 
