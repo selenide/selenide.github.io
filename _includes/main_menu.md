@@ -18,7 +18,7 @@
   </div>
 
   <div class="news">
-    <div class="news-line news-title"><a href="/2022/08/27/selenide-6.7.3/">Released Selenide 6.7.3</a></div>
-    <div class="news-line news-link"><i>Je suis Ecosystem</i></div>
+    <div class="news-line news-title"><a href="/2022/09/05/selenide-6.7.4/">Released Selenide 6.7.4</a></div>
+    <div class="news-line news-link"><i>Open source is not a rubber bum</i></div>
   </div>
 </div>
