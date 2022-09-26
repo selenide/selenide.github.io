@@ -66,6 +66,23 @@ If you are writing a new project, use `WebDriverProvider`. SRP.
 
 <br/>
 
+# UPD {#driver-factory}
+Later in [Selenide 5.16.1](https://ru.selenide.org/2020/11/25/selenide-5.16.2/#selenide-5.16.2) we added one more option `DriverFactory`.
+Now it's the recommended way to create a customized webdriver.
+
+The idea is very similar to `WebDriverProvider`, but gives you more control over webdriver options. 
+You need to
+1. either implement interface `DriverFactory`,
+2. or create a subclass of [ChromeDriverFactory](https://github.com/selenide/selenide/blob/master/src/main/java/com/codeborne/selenide/webdriver/ChromeDriverFactory.java),
+   [FirefoxDriverFactory](https://github.com/selenide/selenide/blob/master/src/main/java/com/codeborne/selenide/webdriver/FirefoxDriverFactory.java)
+   or similar class (which exist in Selenide and implement interface `DriverFactory`) and override only needed methods. 
+   All methods in these classes are made small and declared protected. 
+
+You can find examples in [Selenide own tests](https://github.com/selenide/selenide/blob/master/statics/src/test/java/integration/ChromeProfileByFactoryTest.java).
+
+See also [blog post from Boris Bay](https://mbbaig.blog/selenide-webdriverfactory/).
+
+
 
 <br>
 [Andrei Solntsev](http://asolntsev.github.io/)
