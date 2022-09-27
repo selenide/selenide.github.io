@@ -18,7 +18,7 @@
   </div>
 
   <div class="news">
-    <div class="news-line news-title"><a href="/2022/09/24/selenide-6.8.0/">Released Selenide 6.8.0</a></div>
-    <div class="news-line news-link"><i>We will find you even in Shadow</i></div>
+    <div class="news-line news-title"><a href="/2022/09/27/selenide-6.8.1/">Released Selenide 6.8.1</a></div>
+    <div class="news-line news-link"><i>Oops, we shouldn't mobilize OpenTelemetry</i></div>
   </div>
 </div>
