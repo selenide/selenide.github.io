@@ -18,7 +18,7 @@
   </div>
 
   <div class="news">
-    <div class="news-line news-title">Released Selenide 6.10.0</div>
-    <div class="news-line news-link"><i>Faking results</i></div>
+    <div class="news-line news-title">Released Selenide 6.10.1</div>
+    <div class="news-line news-link"><i>Slow download</i></div>
   </div>
 </div>
