@@ -46,48 +46,6 @@ header-text:
 
 <div class="vspace"></div>
 
-<a name="thanks"></a>
-
-<div class="short feedback">
-  <div class="wrapper-color-content">
-    <h3>We say THANKS:</h3>
-  </div>
-</div>
-
-<div class="wrapper-content">
-  <section>
-
-    <h3>YourKit</h3>
-    
-    <div>YourKit is kindly supporting Selenide project with its full-featured Java Profiler.</div>
-    
-    <div>
-      YourKit, LLC is the creator of innovative and intelligent tools for profiling Java and .NET applications. 
-      Take a look at YourKit's leading software products:
-      <a href="https://www.yourkit.com/java/profiler/features/" target="_blank">YourKit Java Profiler</a> and 
-      <a href="https://www.yourkit.com/.net/profiler/features/" target="_blank">YourKit .NET Profiler</a>.
-    </div>
-    
-    <div class="center">
-      <br/>
-      <img src="{{BASE_PATH}}/images/yourkit.png" target="_blank" alt="YourKit" style="width: 150px;"/>
-    </div>
-
-    <h3>Selenium</h3>
-    
-    <div>And of course, the <a href="http://www.seleniumhq.org/" target="_blank">Selenium WebDriver</a>!</div>
-    
-    <div class="center">
-      <br/>
-      <img src="{{BASE_PATH}}/images/selenium-logo.png" alt="Selenium WebDriver" style="width: 150px;"/>
-    </div>
-
-  </section>
-</div>
-
-<div class="vspace"></div>
-
-
 <a name="contact"></a>
 
 <div class="short howto">

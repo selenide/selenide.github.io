@@ -109,7 +109,13 @@ show_news: true
 <a name="thanks"></a>
 <div class="short thanks">
   <h4>Many thanks to:</h4>
-  <a href="https://www.jetbrains.com/?from=selenide.org"><img src="{{BASE_PATH}}/images/jetbrains.svg" alt="JetBrains. Intellij IDEA - the best Java IDE on the Milky Way!"></a>
-  <img src="{{BASE_PATH}}/images/yourkit.png" alt="YourKit" style="width: 150px;"/>
-  <img src="https://www.browserstack.com/images/mail/browserstack-logo-footer.png" alt="BrowserStack"/>
+  <a href="https://www.jetbrains.com/?from=selenide.org">
+    <img src="{{BASE_PATH}}/images/jetbrains.svg" alt="JetBrains. Intellij IDEA - the best Java IDE on the Milky Way!">
+  </a>
+  <a href="https://www.browserstack.com" target="_blank">
+    <img src="https://www.browserstack.com/images/mail/browserstack-logo-footer.png" alt="BrowserStack"/>
+  </a>
+  <a href="http://www.seleniumhq.org/" target="_blank">
+    <img src="{{BASE_PATH}}/images/selenium-logo.png" alt="Selenium WebDriver"/>
+  </a>
 </div>
