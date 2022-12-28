@@ -2,6 +2,7 @@
 layout: default
 title: "Selenide: concise UI tests in Java"
 tagline:
+show_news: true
 ---
 {% include JB/setup %}
 {% include donate %}

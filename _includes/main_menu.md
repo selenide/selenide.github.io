@@ -17,8 +17,11 @@
     <a href="{{ BASE_PATH }}/quotes.html">Quotes</a>
   </div>
 
-  <div class="news">
-    <div class="news-line news-title"><a href="/2022/12/08/selenide-6.10.2/">Released Selenide 6.10.3</a></div>
-    <div class="news-line news-link"><i>Events and events, why bother</i></div>
-  </div>
+  {% if page.show_news %}
+    <div class="news">
+      <div class="news-line news-title"><a href="/2022/12/08/selenide-6.10.2/">Released Selenide 6.10.3</a></div>
+      <div class="news-line news-link"><i>Events and events, why bother</i></div>
+    </div>
+  {% endif %}
+
 </div>
