@@ -19,7 +19,7 @@
 
   {% if page.show_news %}
     <div class="news">
-      <div class="news-line news-title"><a href="/2023/02/24/selenide-6.12.0/">Released Selenide 6.12.0</a></div>
+      <div class="news-line news-title"><a href="/2023/02/24/selenide-6.12.0/">Released Selenide 6.12.2</a></div>
       <div class="news-line news-link">New headless mode</div>
     </div>
   {% endif %}
