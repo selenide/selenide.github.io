@@ -11,6 +11,12 @@ tags: []
 Good evening!  
 Today is December - and in this Selenide Advent calendar article we will take a look at the file download options in Selenide.
 
+**UPD**  
+This article describes only 2 methods for downloading a file: [`HTTPGET`](#HTTPGET) and [`PROXY`](#PROXY).
+Later [we developed a third method `FOLDER`](/2020/07/08/selenide-5.13.0/#new-file-download-mode-folder).
+Probably you need this method - if your link doesn't have `href` attribute, and you cannot enable proxy for some reason.
+
+<br>
 
 # How can I download some file in my test?
 
@@ -31,7 +37,7 @@ profile.setPreference("browser.download.manager.showAlertOnComplete", false);
 profile.setPreference("pdfjs.disabled", true);
 ```
 
-### In Selenide,
+### In Selenide, {#HTTPGET}
 this problem has been solved by adding `$.download()` method.
 
 When we want to download some file, we just have to perform:
@@ -51,19 +57,20 @@ We can edit our download directory by changing default settings:
 Configuration.downloadsFolder = <desired location for downloaded files>;
 ```
 
-### BUT:
+### BUT: {#PROXY}
 This way we will be able to download some file only when its element has "href" attribute.  
 
 What if my element does not have "href" attribute? For example, if file is generated as a result of form submission.
 
-In this case case we have to organize downloading of our files in a bit different way. First of all we have to change settings:
+In this case, we have to organize downloading of our files in a bit different way. First of all we have to change settings:
 
 ```java
 Configuration.proxyEnabled = true;
 Configuration.fileDownload = PROXY;
 ```
 
-After changing these settings, we are able to download files from all kinds of elements, we don’t need a "href" attribute anymore and we just have to use:
+After changing these settings, we are able to download files from all kinds of elements, 
+we don’t need a `href` attribute anymore - and we just have to use:
 
 ```java
 File report = element.download();
