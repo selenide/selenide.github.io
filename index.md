@@ -81,7 +81,9 @@ show_news: true
     <div>Where You can ask question or discuss any topic about Selenide in English:</div>
     <div class="highlights">
       <a href="mailto:selenide@googlegroups.com">Google group</a>
-      <a href="mailto:info@selenide.org">Email</a>
+      <a href="https://gitter.im/codeborne/selenide">Gitter</a>
+      <a href="https://twitter.com/selenide">Twitter</a>
+      <a href="https://t.me/selenide">Telegram</a>
     </div>
   
   </div>
