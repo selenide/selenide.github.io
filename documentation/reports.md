@@ -13,9 +13,11 @@ header-text: >
 
 {% include documentation-menu.md %}
 
-#### <a href="#yagni">&gt; YAGNI</a>
-#### <a href="#text-report">&gt; Text report</a>
-#### <a href="#allure-report">&gt; Allure report</a>
+<br>
+
+#### [&gt; YAGNI](#yagni)
+#### [&gt; Text report](#text-report)
+#### [&gt; Allure report](#allure-report)
 
 <a name="yagni"></a>
 ## YAGNI
@@ -63,7 +65,7 @@ It's a simple report built in Selenide which shows all steps that were performed
 
 It looks simple, but contains all the needed information.  
 To enable such a report, you need to 
-1. Setup slf4j in your project (slf4j is de-facto a standard logging tool in Java world).
+1. [Setup slf4j](https://github.com/selenide/selenide/wiki/slf4j) in your project (slf4j is de-facto a standard logging tool in Java world).
 2. Add extensions/rule/listener as shown below. 
 
 #### For JUnit 5:
@@ -109,11 +111,11 @@ QA engineers often want to generate "beautiful" reports. It's for managers, they
 I am rather skeptical about those reports. I think managers don't really read those reports. Think twice before you 
 spend your time on "beautifying" reports.   
 
-If you still insist, you can setup Allure. It's a popular open-source reporting library from [Qameta](Qameta Software) company.  
+If you still insist, you can setup Allure. It's a popular open-source reporting library from [Qameta Software](https://qameta.io/) company.  
 It has built-in integration with Selenide. And yes, its reports look really nice. :)
 
 You will need to
-1. Add dependency `io.qameta.allure:allure-selenide:2.13.6` (or higher) to your project.
+1. Add dependency `io.qameta.allure:allure-selenide:2.21.0` (or higher) to your project.
 2. Add a line in the beginning of your tests:
 
 ```java
@@ -135,6 +137,7 @@ See a sample project [Selenide+Allure](https://github.com/selenide-examples/sele
 <br/>
 <br/>
 
-P.S. But please, PLEASE don't take BDD for nice reports!
+P.S. But please, PLEASE don't take BDD for nice reports! BDD is not intended for reports. 
+BDD is a _development_ process. BDD will only create more problem for you if you only apply it technically, without changing the process. 
 
 <br/>
