@@ -229,7 +229,7 @@ The class contains some `By` selectors to locate elements by text or attributes 
 
 *   <a href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selectors.html#byText(java.lang.String)">byText</a>     - search element by exact text
 *   <a href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selectors.html#withText(java.lang.String)">withText</a>   - search element by contained text (substring)
-*   <a href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selectors.html#by(java.lang.String, java.lang.String)">by(attributeName, attributeValue)</a>    - search by attribute's name and value
+*   <a href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selectors.html#by(java.lang.String,java.lang.String)">by(attributeName, attributeValue)</a>    - search by attribute's name and value
 *   <a href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selectors.html#byTitle(java.lang.String)">byTitle</a>   - search by attribute "title"
 *   <a href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selectors.html#byValue(java.lang.String)">byValue</a>   - search by attribute "value"
 *   <a href="{{ BASE_PATH }}/javadoc/current/com/codeborne/selenide/Selectors.html#byXpath(java.lang.String)">Xpath</a>
