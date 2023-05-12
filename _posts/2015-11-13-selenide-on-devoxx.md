@@ -20,7 +20,7 @@ Here is video of my talk:
 
 And slides:
 <div class="wrapper-content center">
-<iframe src="https://docs.google.com/presentation/d/1qA_0wC2pV9IQZu3DoLwm8yGQ_9DlM1WdNzUYgAWFGiQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/1qA_0wC2pV9IQZu3DoLwm8yGQ_9DlM1WdNzUYgAWFGiQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="allowfullscreen" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
 <br/>
