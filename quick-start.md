@@ -77,7 +77,7 @@ We created [Selenide examples](https://github.com/selenide-examples) group on gi
 * for testing [Gmail](https://github.com/selenide-examples/gmail/tree/master/test/org/selenide/examples/gmail),
 * for testing [Google search](https://github.com/selenide-examples/google/blob/master/test/org/selenide/examples/google/selenide_page_object/GoogleTest.java).
 * for testing real [internet-bank](https://github.com/selenide-examples/selenide-allure-junit/blob/master/src/test/java/org/selenide/examples/InternetBankTest.java)
-* [Hangman game](https://github.com/selenide-examples/hangman/blob/master/test/uitest/selenide/HangmanSpec.java) - a reference open-source project that uses Selenide
+* [Hangman game](https://github.com/selenide-examples/hangman/blob/main/test/uitest/selenide/HangmanSpec.java) - a reference open-source project that uses Selenide
 
 etc.
 
