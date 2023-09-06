@@ -19,8 +19,7 @@
 
   {% if page.show_news %}
     <div class="news">
-      <div class="news-line news-title"><a href="/2023/08/24/selenide-6.17.2/">Released Selenide 6.17.2</a></div>
-      <div class="news-line news-link">Steep dive</div>
+      <div class="news-line news-title"><a href="https://github.com/selenide/selenide/milestone/190?closed=1">Released Selenide 6.18.0</a></div>
     </div>
   {% endif %}
 
