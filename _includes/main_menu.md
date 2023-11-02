@@ -19,7 +19,7 @@
 
   {% if page.show_news %}
     <div class="news">
-      <div class="news-line news-title"><a href="/2023/10/26/selenide-7.0.1/">Released Selenide 7.0.1</a></div>
+      <div class="news-line news-title"><a href="/2023/10/26/selenide-7.0.1/">Released Selenide 7.0.2</a></div>
       <div class="news-line news-link">Dude, where's my loop?</div>
     </div>
   {% endif %}
