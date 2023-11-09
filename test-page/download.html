@@ -7,17 +7,17 @@
 <body>
 <ul>
   <li>
-    <a href="download/hello-world.txt" download="hello-world.txt">hello-world.txt</a>
+    <a id="download-text" href="download/hello-world.txt" download="hello-world.txt">hello-world.txt</a>
   </li>
   <li>
-    <a href="download/hello-world.pdf" download="hello-world.pdf">hello-world.pdf</a>
+    <a id="download-pdf" href="download/hello-world.pdf" download="hello-world.pdf">hello-world.pdf</a>
   </li>
 </ul>
 
 <div style="margin: 20px; padding: 10px; background-color: #fafafa">
 <h4>Delay (ms):</h4>
 <div>
-   <input name="delay" type="number" value="2000">
+   <input id="delay" name="delay" type="number" value="2000">
 </div>
 <h4>Text for file:</h4>
 <div>
@@ -36,7 +36,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 <script>
   (function() {
-    function downloadFile() {
+    function downloadGeneratedFile() {
       const loreIpsum = document.getElementById('lore-ipsum').value;
       const a = window.document.createElement('a');
       a.href = window.URL.createObjectURL(new Blob([loreIpsum], {type: 'plain/text'}));
@@ -45,12 +45,37 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
       a.click();
       document.body.removeChild(a);
     }
+
+    function downloadFile(link) {
+      const a = window.document.createElement('a')
+      a.href = link.getAttribute('href')
+      a.download = link.getAttribute('download');
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+    
+    function delayMs() {
+      return parseInt(document.getElementById('delay').value)
+    }
     
     document.getElementById('slow-download').addEventListener('click', function (e) {
       e.preventDefault();
-      const delayMs = parseInt(document.getElementsByName('delay')[0].value);
-      setTimeout(downloadFile, delayMs);
+      setTimeout(downloadGeneratedFile, delayMs());
     })
+
+    document.getElementById('download-text').addEventListener('click', function (e) {
+      e.preventDefault();
+      setTimeout(() => downloadFile(e.target), delayMs());
+    })
+    
+    document.getElementById('download-pdf').addEventListener('click', function (e) {
+      e.preventDefault();
+      setTimeout(() => downloadFile(e.target), delayMs());
+    })
+
+    const searchParams = new URLSearchParams(window.location.search);
+    document.getElementById('delay').value = searchParams.get('delay') || 2000
   })()
 </script>
 </body>
