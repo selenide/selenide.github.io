@@ -1,13 +1,13 @@
 ---
 layout: page
 title :
-header : Cloud
+header : Clouds
 group: navigation
 cssClass: docs
 header-text: >
   <h4>Documentation</h4>
 
-  Cloud
+  Clouds
 ---
 {% include JB/setup %}
 
@@ -124,6 +124,9 @@ In theory, other cloud providers should integrate just as easily.
 
 What other providers have you tried? Pros, cons, pitfalls?
 Tell us, share the code. 
+
+And the most important, _was it worth it_?
+Tell us, what kind of problems does remote browser run solve, why was it worth sacrificing speed, convenience and some features?
 
 <br/>
 <br/>
