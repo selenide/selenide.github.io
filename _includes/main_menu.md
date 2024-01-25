@@ -19,8 +19,8 @@
 
   {% if page.show_news %}
     <div class="news">
-      <div class="news-line news-title">Released Selenide <a href="https://github.com/selenide/selenide/releases/tag/v7.0.3">7.0.3</a> and <a href="https://github.com/selenide/selenide/releases/tag/v7.0.4">7.0.4</a></div>
-      <div class="news-line news-link">oneOfTexts</div>
+      <div class="news-line news-title">Released Selenide <a href="https://github.com/selenide/selenide/releases/tag/v7.0.5">7.0.5</a></div>
+      <div class="news-line news-link">Updated Selenium</div>
     </div>
   {% endif %}
 
