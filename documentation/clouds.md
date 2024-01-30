@@ -60,7 +60,8 @@ Cons:
 <a name="browserstack"></a>
 ## BrowserStack
 
-A working example: [selenide-examples/selenide-browserstack](https://github.com/selenide-examples/selenide-browserstack).
+A working example: [selenide-examples/selenide-browserstack](https://github.com/selenide-examples/selenide-browserstack).  
+Website: [BrowserStack.com](https://www.browserstack.com/?utm_source=selenide&utm_medium=partnered)
 
 This is a working example of Selenide tests that run the browser on BrowserStack servers.
 As you can see, the settings there are minimal:
