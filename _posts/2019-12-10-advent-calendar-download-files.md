@@ -13,8 +13,8 @@ Today is December - and in this Selenide Advent calendar article we will take a 
 
 **UPD**  
 This article describes only 2 methods for downloading a file: [`HTTPGET`](#HTTPGET) and [`PROXY`](#PROXY).
-Later [we developed a third method `FOLDER`](/2020/07/08/selenide-5.13.0/#new-file-download-mode-folder).
-Probably you need this method - if your link doesn't have `href` attribute, and you cannot enable proxy for some reason.
+Later we added [the third method `FOLDER`](/2020/07/08/selenide-5.13.0/#new-file-download-mode-folder) and [the fourth method `CDP`](/2024/02/07/selenide-7.1.0/#download-files-with-cdp).
+Probably you need one of these methods - if your link doesn't have `href` attribute, and you cannot enable proxy for some reason.
 
 <br>
 
