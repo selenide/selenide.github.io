@@ -1,6 +1,7 @@
 <div class="left-menu">
   <div>Docs</div>
   <div>✓ <a href="/documentation.html">API</a></div>
+  <div>✓ <a href="/documentation/page-objects.html">Page Objects</a></div>
   <div>✓ <a href="/documentation/screenshots.html">Screenshots</a></div>
   <div>✓ <a href="/documentation/reports.html">Reports</a></div>
   <div>✓ <a href="/documentation/clouds.html">Clouds</a></div>
