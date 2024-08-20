@@ -75,11 +75,41 @@ public class GoogleResultsPage {
 }
 ```
 
+### What disadvantages?
+One of disadvantages of "classic" style is that it's not dynamic enough.
+
+Imagine you have an alphabet on the screen with 26 letters.
+Do you really want to declare **26 fields** in the page object class - all annotated with `@FindBy`?
+
+```java
+class AlphabetPage {
+  @Find(By.xpath("//*[@letter='A']"))
+  WebElement a;
+
+  @Find(By.xpath("//*[@letter='B']"))
+  WebElement b;
+  
+  // 24 more elements ...
+}
+```
+And what if user can switch between different languages, each of them has different number of letter?  
+Or wait, are you going to create 7164 different page objects (for every language)? :)  
+Ah yes, there is code generation, Lombok, annotation processing. Go on, let's make your CV swell.  
+You can even ask AI to write these hundreds of page objects...
+
+**Or do you prefer to have a short single method?**
+
+```java
+public void pickLetter(char letter) {
+  $(by("letter", letter)).click();
+}
+```
+
 ## Final OOP notice
 Let me remind you that the initial idea behind Page Objects was to encapsulate (read: *hide*) logic of
 working with page elements. Tests should not operate with page elements / locators / XPaths. Tests should use 
-methods of Page Object instead. So, if you even declare fields for page page elements, please, make them *private*!
+methods of Page Object instead. So, if you even declare fields for page elements, please, make them *private*!
 
 Let methods of Page Object be public and fields private.
 
-Otherwise OOP is just nonsense.
+Otherwise, OOP is just nonsense.
