@@ -16,6 +16,7 @@ header-text: >
 <br>
 
 #### [&gt; TestContainers](#testcontainers)  
+#### [&gt; LambdaTest](#lambdatest)
 #### [&gt; BrowserStack](#browserstack)  
 #### [&gt; Saucelabs](#saucelabs)  
 #### [&gt; Selenoid](#selenoid)   
@@ -56,6 +57,31 @@ Cons:
 2. Only those browsers are supported that are capable of running in Docker (Internet Explorer is definitely not, not sure about Safari)
 
 <br>
+
+<a name="lambdatest"></a>
+## LambdaTest
+
+A working example: [selenide-examples/selenide-lambdatest](https://github.com/selenide-examples/selenide-lambdatest).  
+Website: [LambdaTest.com](https://www.lambdatest.com/blog/selenium-testing-with-selenide-using-intellij-maven/?utm_source=selenide&utm_medium=partnered).
+
+This is a working example of Selenide tests that run the browser on LambdaTest servers.
+As you can see, the settings there are minimal:
+
+```java
+  Configuration.remote = "https://hub.lambdatest.com/wd/hub";
+  Configuration.browserCapabilities.setCapability("LT:Options", Map.of(
+    "user", "unclebob",
+    "accessKey", "0123456789001234567890"
+));
+```
+
+Pros:
+1. Allows running different browser versions
+
+Cons:
+1. Some Selenide features may not work (e.g. clipboard, proxy, download to folder)
+
+<br> 
 
 <a name="browserstack"></a>
 ## BrowserStack
