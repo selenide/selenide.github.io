@@ -1262,9 +1262,11 @@
     "link": "https://codeborne.com/ru/",
     "logo": "codeborne-logo-small.png",
     "logoWidth": "240px",
-    "description": "the only software company in Estonia that uses TDD and other XP practices in everyday work.    Creators of open-source libraries <a href=\"https://ru.selenide.org\">Selenide</a>, <a href=\"https://github.com/codeborne/mobileid\" target=\"_blank\">MobileID</a> and others.",
+    "description": "the only software company in Estonia that uses TDD and other XP practices in everyday work.    Creators of open-source libraries <a href=\"https://ru.selenide.org\">Selenide</a>, <a href=\"https://github.com/codeborne/pdf-test\" target=\"_blank\">pdf-test</a> and others.",
     "tags": [
       "estonia",
+      "europe",
+      "france",
       "it"
     ]
   }
