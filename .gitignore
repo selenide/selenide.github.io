@@ -1,5 +1,6 @@
 *.iml
 _site/*
+!_site/javadoc
 jekyll.log
 .jekyll-metadata
 

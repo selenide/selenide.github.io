@@ -4,7 +4,7 @@ SELENIDE_VERSION: "7.5.0"
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title/
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+keep_files: ["javadoc"]
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "Gemfile", "Gemfile.lock", "package-lock.json", "params.json", "*.iml", "*.sh"]
 
 # Themes are encouraged to use these universal variables
