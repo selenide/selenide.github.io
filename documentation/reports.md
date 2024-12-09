@@ -27,7 +27,7 @@ First of all, please think twice: probably you don't need any specific reports.
 Both Gradle and Maven already generate good enough test report which includes all the errors.  
 When a test fails, Selenide already generates a detailed error message 
 (including [screenshot](/documentation/screenshots.html) and html of a page). 
-Typically it's enough to understand why the test failed:
+Typically, it's enough to understand why the test failed:
 
 ```
 Element should be hidden {#gameWin}
@@ -133,6 +133,9 @@ You will need to
 
 See a sample project [Selenide+Allure](https://github.com/selenide-examples/selenide-allure-junit)
 
+NB! Method `SelenideLogger.addListener` should be called in the same thread as test itself.
+Some test frameworks might call `@BeforeAll` and `@Test` methods in different thread - in this case your listener will not get events from the test.
+In such cases you probably need to move the abovementioned initialization block to `@Before` or even `@Test` method.
 
 <br/>
 <br/>
