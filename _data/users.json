@@ -509,6 +509,18 @@
     ]
   },
   {
+    "name": "Central Bank of Russia",
+    "link": "https://cbr.ru/",
+    "logo": "logo-cbr.png",
+    "logoWidth": "120px",
+    "description": "central bank of russia",
+    "source": "https://rubrain.com/profile/L9DylW4",
+    "tags": [
+      "russia",
+      "finances"
+    ]
+  },
+  {
     "name": "Tinkoff Bank",
     "link": "https://www.tinkoff.ru/",
     "logo": "logo-tinkoff-bank.png",
