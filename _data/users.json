@@ -104,6 +104,17 @@
     ]
   },
   {
+    "name": "Corning",
+    "link": "https://www.corning.com/worldwide/en.html",
+    "logo": "logo-corning.png",
+    "logoWidth": "180px",
+    "description": "American multinational technology company. Glass, ceramics, advanced optics - primarily for industrial and scientific applications.",
+    "source": "https://app.theirstack.com/home?search-company=Corning",
+    "tags": [
+      "usa"
+    ]
+  },
+  {
     "name": "Capgemini",
     "link": "https://www.capgemini.com/",
     "logo": "logo-capgemini.png",
