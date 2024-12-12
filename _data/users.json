@@ -1255,6 +1255,19 @@
     ]
   },
   {
+    "name": "Deutsche Bank",
+    "link": "https://www.db.com",
+    "logo": "logo-deutsche-bank.png",
+    "logoWidth": "160px",
+    "description": "a German multinational investment bank and financial services company",
+    "source": "https://app.theirstack.com/home?search-company=Deutsche%20Bank",
+    "tags": [
+      "europe",
+      "germany",
+      "finances"
+    ]
+  },
+  {
     "name": "Bergmann Infotech",
     "link": "https://bergmann-infotech.de/en/homepage/",
     "logo": "logo-bergman-infotech.svg",
