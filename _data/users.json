@@ -1292,6 +1292,19 @@
     ]
   },
   {
+    "name": "STRABAG",
+    "link": "https://www.strabag.com/",
+    "logo": "logo-strabag.png",
+    "logoWidth": "160px",
+    "description": "an Austrian construction company, one of the largest construction companies in Europe.",
+    "source": "https://app.theirstack.com/home?search-company=STRABAG",
+    "tags": [
+      "austria",
+      "europe",
+      "building"
+    ]
+  },
+  {
     "name": "Soramitsu",
     "link": "https://soramitsu.co.jp/",
     "logo": "logo-soramitsu.svg",
