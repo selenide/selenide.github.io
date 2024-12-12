@@ -141,6 +141,17 @@
     ]
   },
   {
+    "name": "Wiley",
+    "link": "https://www.wiley.com/",
+    "logo": "logo-wiley.svg",
+    "logoWidth": "160px",
+    "description": "multinational publishing company that focuses on academic publishing and instructional materials. Books, journals and encyclopedias, training and educational materials for students.",
+    "source": "https://app.theirstack.com/home?search-company=Wiley",
+    "tags": [
+      "usa"
+    ]
+  },
+  {
     "name": "Grid Dynamics",
     "link": "https://www.griddynamics.com/",
     "logo": "logo-grid-dynamics.svg",
