@@ -1281,6 +1281,19 @@
     ]
   },
   {
+    "name": "Deutsche Telekom",
+    "link": "https://www.telekom.com/",
+    "logo": "logo-deutsche-telekom.jpeg",
+    "logoWidth": "120px",
+    "description": "German telecommunications company, the largest in Europe and fourth in the world.",
+    "source": "",
+    "tags": [
+      "europe",
+      "germany",
+      "telecom"
+    ]
+  },
+  {
     "name": "Bergmann Infotech",
     "link": "https://bergmann-infotech.de/en/homepage/",
     "logo": "logo-bergman-infotech.svg",
