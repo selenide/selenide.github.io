@@ -493,6 +493,19 @@
     ]
   },
   {
+    "name": "BetterMe",
+    "link": "https://betterme.world/",
+    "logo": "logo-better-me.png",
+    "logoWidth": "220px",
+    "description": "Health Coaching and Mental Health",
+    "source": "https://app.theirstack.com/home?search-company=BetterMe",
+    "tags": [
+      "ukraine",
+      "europe",
+      "healthcare"
+    ]
+  },
+  {
     "name": "River soft",
     "link": "https://river-soft.net/",
     "logo": "logo-river-soft.png",
@@ -1083,6 +1096,7 @@
     "logoWidth": "180px",
     "description": "a Swiss global financial services company, providing wealth management, asset management, and investment banking services worldwide.",
     "tags": [
+      "switzerland",
       "europe",
       "finances"
     ]
@@ -1250,6 +1264,8 @@
     "tags": [
       "it",
       "russia",
+      "switzerland",
+      "europe",
       "global"
     ]
   },
