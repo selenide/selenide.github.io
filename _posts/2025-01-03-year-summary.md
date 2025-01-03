@@ -116,6 +116,13 @@ But it is on them that Selenide rests!
 {: .after-list-right }
 &nbsp;
 
+#### Amuthan Sakthivel:
+
+{: .list-right }
+- Talk [Mutated Java Appium Client - Selenide Appium](https://www.youtube.com/watch?v=C8rUqOUhxIo&ab_channel=ConfEngine) at AppiumConf 2024
+
+{: .after-list-right }
+&nbsp;
 
 Reviewing pull requests, criticizing changes, describing bugs - this is a lot of work, actually!  
 This work is invisible, but important.
@@ -177,10 +184,11 @@ selenide.org
 <style>
   .blog_post_content h4 {
     float: left;
+    max-width: clamp(100px, 20vw, 200px);
   }
   .blog_post_content .list-right {
     float: right;
-    width: 29vw;
+    width: clamp(100px, 32vw, 300px);
   }
   .blog_post_content .after-list-right {
     clear: both;
