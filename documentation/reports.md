@@ -141,6 +141,6 @@ In such cases you probably need to move the abovementioned initialization block 
 <br/>
 
 P.S. But please, PLEASE don't take BDD for nice reports! BDD is not intended for reports. 
-BDD is a _development_ process. BDD will only create more problem for you if you only apply it technically, without changing the process. 
+BDD is a _development_ process. BDD will only create more problems for you if you only apply it technically, without changing the process. 
 
 <br/>
