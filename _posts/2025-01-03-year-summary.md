@@ -157,7 +157,7 @@ By the way, this year we found videos about Selenide [in Spanish](https://www.yo
 ## Tribes {#companies}
 
 This year I got around to adding a little to the list of companies using Selenide.  
-It was surprising that there is more companies from [America](/users.html#all),
+It was surprising that there is more companies from [America](/users.html#usa),
 [Europe](/users.html#europe) and
 [other word](/users.html#asia) than I assumed!
 
