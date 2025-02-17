@@ -1114,6 +1114,20 @@
     ]
   },
   {
+    "name": "Xceptance",
+    "link": "https://www.xceptance.com/en/products/",
+    "logo": "logo-xceptance.svg",
+    "logoWidth": "200px",
+    "description": "a software testing and quality assurance company; creators of Neodymium, a Selenide-based open-source test automation framework",
+    "source": "https://www.xceptance.com/en/products/neodymium/",
+    "tags": [
+      "europe",
+      "germany",
+      "usa",
+      "it"
+    ]
+  },
+  {
     "name": "Uptempo",
     "link": "https://www.uptempo.io/",
     "logo": "logo-uptempo.svg",
