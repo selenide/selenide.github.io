@@ -1555,6 +1555,19 @@
     ]
   },
   {
+    "name": "BigBank",
+    "link": "https://www.bigbank.ee",
+    "logo": "logo-bigbank.png",
+    "logoWidth": "220px",
+    "description": "A fully Estonian bank operating across nine European countries",
+    "source": "https://jobs.bigbank.eu/open-positions/quality-engineer-2",
+    "tags": [
+      "estonia",
+      "europe",
+      "finances"
+    ]
+  },
+  {
     "name": "Bank Citadele",
     "link": "https://www.citadele.lv/",
     "logo": "citadele-banka.png",
