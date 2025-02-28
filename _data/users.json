@@ -1616,6 +1616,16 @@
     ]
   },
   {
+    "name": "Ettevõtluskeskus",
+    "link": "https://www.ettevotluskeskus.ee/",
+    "logo": "logo-evk.jpg",
+    "logoWidth": "160px",
+    "description": "business consultations, training, funding advice, and networking opportunities to entrepreneurs and small businesses",
+    "tags": [
+      "estonia",
+      "education"
+    ]
+  },  {
     "name": "UBRR",
     "link": "https://www.ubrr.ru",
     "logo": "ubrr-logo.jpeg",
