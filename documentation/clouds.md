@@ -19,6 +19,7 @@ header-text: >
 #### [&gt; LambdaTest](#lambdatest)
 #### [&gt; BrowserStack](#browserstack)  
 #### [&gt; Saucelabs](#saucelabs)  
+#### [&gt; Moon](#moon)   
 #### [&gt; Selenoid](#selenoid)   
 #### [&gt; Other cloud providers](#other)  
 {: .blogpost-menu}
@@ -120,6 +121,27 @@ Pros:
 
 Cons:
 1. Some Selenide features may not work (e.g. clipboard, proxy, download to folder)
+
+<br>
+
+<a name="moon"></a>
+## Moon
+
+Like Selenium Grid, but in docker. And it's written in Go, so it's fast and uses little memory. 
+
+A working example [on GitHub](https://github.com/selenide/selenide/tree/main/modules/moon/src/test/java/it/moon)
+
+Pros:
+1. Directly supported by Selenide 
+
+    1.1. Is easily pluggable as a Selenide extension 'com.codeborne:selenide-moon:{{site.SELENIDE_VERSION}}'  
+    1.2. Supports some Selenide features (that may not work in other clouds): clipboard, downloading files.  
+
+2. Allows running different browser versions
+3. Can save video from running tests
+
+Cons:
+1. Only those browsers are supported that are capable of running in Docker (Internet Explorer is definitely not, not sure about Safari)
 
 <br>
 
