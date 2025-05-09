@@ -19,8 +19,8 @@
 
   {% if page.show_news %}
     <div class="news">
-      <div class="news-line news-title"><a href="/2025/04/19/selenide-7.9.0/">Released Selenide 7.9.0</a></div>
-      <div class="news-line news-link">Screenshots, again</div>
+      <div class="news-line news-title"><a href="/2025/05/08/selenide-7.9.2/">Released Selenide 7.9.2</a></div>
+      <div class="news-line news-link">The holiday release</div>
     </div>
   {% endif %}
 
