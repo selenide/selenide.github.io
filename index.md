@@ -113,7 +113,7 @@ show_news: true
   <h4>Many thanks to:</h4>
   <div id="sponsors">
     <div class="sponsor">
-      <a href="https://www.jetbrains.com/?from=selenide.org" target="_blank">
+      <a href="https://jb.gg/OpenSource?from=selenide.org" target="_blank">
         <img src="{{BASE_PATH}}/images/jetbrains.svg" height="140px" alt="JetBrains. Intellij IDEA - the best Java IDE on the Milky Way!"/>
       </a>
     </div>
