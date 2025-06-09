@@ -1053,6 +1053,19 @@
     ]
   },
   {
+    "name": "Firebird Tours",
+    "id": "firebird",
+    "link": "https://www.firebirdtours.com/",
+    "logo": "logo-firebird-tours.png",
+    "logoWidth": "200px",
+    "description": "a full-service travel company focused on the American market",
+    "source": "https://hirify.me/jobs/42423-middle-java-developer-qa-automation",
+    "tags": [
+      "usa",
+      "tourism"
+    ]
+  },
+  {
     "name": "Lean Solutions",
     "id": "lean",
     "link": "https://www.leangroup.com/",
