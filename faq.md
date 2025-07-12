@@ -14,7 +14,15 @@ header-text: Frequently Asked Questions
 
 > Why yet another Selenium wrapper?
 
-See answer [here](/documentation/selenide-vs-selenium.html)
+Briefly: shorter code, easier to read, no need to re-invent the wheels.
+
+And lots of features for testing.  
+And automated screenshots and reports.  
+And video recording.  
+And tests for mobile apps.  
+And much, much more...
+
+Find more detailed answer [here](/documentation/selenide-vs-selenium.html)
 
 ## Page Objects
 > Can I use Page Objects with Selenide?
@@ -48,17 +56,40 @@ public void setUp() {
 }
 ```
 
+Also, you can create file "selenide.properties" in classpath 
+(in a typical project, it means create file `src/test/resources/selenide.properties`):
+
+```java
+> cat src/test/resources/selenide.properties
+selenide.timeout=6000
+selenide.browser=edge
+selenide.remote=https://hub.lambdatest.com/wd/hub
+selenide.textCheck=FULL_TEXT
+```
+
+About browser settings - you don't need to always specify them globally.
+You can also specify them every time when opening a browser:
+```java
+Config config = new SelenideConfig().browser("firefox").browserSize("800x600");
+open("/one", config);
+```
+
+[Use carefully!](/2024/09/15/selenide-7.5.0/#new-configuration-for-every-browser)
+
+
+
 ## Browsers
 >Can I run Selenide tests with Internet Explorer? Headless browser?
 
 Yes.
 Selenide can run tests with any browsers that has webdriver binding. The most popular browsers are supported from the box
 (chrome, firefox, edge, ie, safari, opera).
-Some less popular are also supported with a little configuration (phantomjs, htmlunit).
+
+Some less popular are also supported with a little configuration (e.g. htmlunit).
 See [Wiki](https://github.com/selenide/selenide/wiki/How-Selenide-creates-WebDriver).
 
 
-Other browsers can be also used by passing webdriver class name.
+Other browsers can be also used by passing webdriver class name (or factory class name).
 
 <br/>
 E.g. to run tests with Firefox browser:
@@ -75,23 +106,43 @@ Go to [Wiki](https://github.com/selenide/selenide/wiki/How-Selenide-creates-WebD
 
 >Can I use Selenide with Selenium Grid?
 
-Yes, Selenide supports Selenium Grid. Just add property `-Dselenide.remote=http://localhost:4444/wd/hub` when running tests.
+Yes, Selenide supports Selenium Grid. Just add property when running tests:
+> -Dselenide.remote=https://your.grid.com:5678/wd/hub
+
+Most of the functions will work out-of-the-box.  
+But for some features (e.g. downloading files) you will need to add dependency `com.codeborne:selenide-grid`.
+
+See [selenide-grid plugin](/2024/02/27/selenide-7.2.0/#download-files-to-folder-in-selenium-grid)
+
 
 <br/>
 
 >Can I use Selenide with Selenoid?
 
-Yes, Selenide supports Selenoid. Just add property `-Dselenide.remote=http://localhost:4444/wd/hub` when running tests.  
-We also recommend using Selenide plugin [selenide-selenoid](https://github.com/selenide/selenide-selenoid).
+Yes, Selenide supports Selenoid. Just add property when running tests:
+> -Dselenide.remote=https://your.selenoid.com:5678/wd/hub
+
+Most of the functions will work out-of-the-box.  
+But for some features (e.g. downloading files) you will need to add dependency `com.codeborne:selenide-selenoid`.
+
+See [selenide-selenoid plugin](https://github.com/selenide/selenide/tree/main/modules/selenoid).
+
+
+>Can I use Selenide with Selenoid/Moon/BrowserStack/LambdaTest/TestContainers or other cloud providers?
+
+Yes. See [documentation](/documentation/clouds.html)
+
 
 <br/>
 
 >Can I use Selenide for testing mobile applications?
 
-Yes, Selenide supports testing of mobile applications using Appium. 
-1. We also recommend using Selenide plugin [selenide-appium](https://github.com/selenide/selenide-appium).
-2. You can find working examples [on github](https://github.com/selenide-examples/selenide-appium)
-3. You can watch a presentation about [using Selenide for mobile](https://www.youtube.com/watch?v=Y04rU7qV7Vg)
+Yes, Selenide supports testing of mobile applications using Appium.
+
+This is what you need to do:
+1. Add to your dependency Selenide plugin [selenide-appium](https://github.com/selenide/selenide/tree/main/modules/appium).
+2. Find working examples [on github](https://github.com/selenide-examples/selenide-appium)
+3. Watch a presentation about [using Selenide for mobile](https://www.youtube.com/watch?v=Y04rU7qV7Vg)
 
 
 ## Build scripts
@@ -99,7 +150,8 @@ Yes, Selenide supports testing of mobile applications using Appium.
 >Can I run Selenide tests on CI (continuous integration) server?
 
 Yes.
-Please look at [Wiki page](https://github.com/selenide/selenide/wiki/Build-script/) for examples of build script.
+Please look at [Wiki page](https://github.com/selenide/selenide/wiki/Build-script/) for examples of build script
+using Maven, Gradle or Ant.
 
 ## Screenshots
 
@@ -128,7 +180,12 @@ Sure. Source code of Selenide is published [at github](https://github.com/seleni
 
 > Can I modify Selenide?
 
-Sure! It's open-source. You can either create Pull Request or [Feature Request](https://github.com/selenide/selenide/issues).
+Sure! It's open-source. 
+You can either create
+* [Pull Request](https://github.com/selenide/selenide/pulls) or 
+* [Feature Request](https://github.com/selenide/selenide/issues).
+
+See [contributing guide](https://github.com/selenide/selenide/blob/main/CONTRIBUTING.md).
 
 ## License
 

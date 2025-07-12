@@ -81,6 +81,13 @@ When your test fail, Selenide will automatically take screenshot. You do not nee
 
 ## More benefits
 
+This is just a short summary. There is much more:
+* Tests for mobile apps
+* Work with remote webdrivers (Grid/Selenoid/Moon/BrowserStack/LambdaTest/...)
+* Downloading files
+* Video recording
+* etc.
+
 Look at this presentation to find out more Selenide benefits:
 
 <div class="wrapper-content center">
