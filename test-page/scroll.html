@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     .tall {
       width: 600px;
       height: 2000px;
@@ -30,11 +33,9 @@
     function initList() {
       const list = document.getElementById('list')
       for (let i = 0; i < 1000; i++) {
-        setTimeout(() => {
-          const el = document.createElement('li')
-          el.textContent = `item #${i}`
-          list.appendChild(el)
-        }, i * 5)
+        const el = document.createElement('li')
+        el.textContent = `item #${i}`
+        list.appendChild(el)
       }
     }
 
