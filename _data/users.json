@@ -1460,6 +1460,21 @@
     ]
   },
   {
+    "name": "Delasport",
+    "id": "delasport",
+    "link": "https://www.delasport.com/",
+    "logo": "logo-delasport.png",
+    "logoWidth": "180px",
+    "description": "sports betting, online casinos and PAM for the iGaming industry",
+    "source": "https://djinni.co/jobs/764172-senior-qa-automation-engineer-java/",
+    "tags": [
+      "ukraine",
+      "europe",
+      "gambling",
+      "sport"
+    ]
+  },
+  {
     "name": "SportsTG",
     "id": "sportstg",
     "link": "https://mygameday.app",
@@ -1467,7 +1482,8 @@
     "logoWidth": "150px",
     "description": "an Australian company, the leading provider of digital solutions to the sports industry.",
     "tags": [
-      "australia"
+      "australia",
+      "sport"
     ]
   },
   {
@@ -1540,7 +1556,8 @@
     "logoWidth": "150px",
     "description": "a global leader in understanding and leveraging the power of sports data",
     "tags": [
-      "europe"
+      "europe",
+      "sport"
     ]
   },
   {
@@ -1994,7 +2011,8 @@
     "description": "IT department of Russia's largest network selling sporting goods",
     "source": "https://career.habr.com/av0x",
     "tags": [
-      "russia"
+      "russia",
+      "sport"
     ]
   },
   {
