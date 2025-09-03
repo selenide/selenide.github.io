@@ -235,6 +235,20 @@
     ]
   },
   {
+    "name": "Oril",
+    "id": "oril",
+    "link": "https://oril.co",
+    "logo": "logo-oril.svg",
+    "logoWidth": "80px",
+    "description": "Custom software: Real Estate Listings, Property Management, Construction, Data Analytics and GreenTech",
+    "source": "https://oril.co/blog/ui-testing-with-selenide/",
+    "tags": [
+      "it",
+      "usa",
+      "ukraine"
+    ]
+  },
+  {
     "name": "Capgemini",
     "id": "capgemini",
     "link": "https://www.capgemini.com/",
