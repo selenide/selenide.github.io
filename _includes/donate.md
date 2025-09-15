@@ -6,10 +6,10 @@
       <a class="link" href="https://www.socialdrone.com.ua/en">
         🔥 Social Drone
       </a>
-      <a class="link" href="https://savelife.in.ua/en/donate/">
+      <a class="link" href="https://savelife.in.ua/en/donate-en/">
         🔥 Charity supporting the Ukrainian army
       </a>
-      <a class="link" href="https://crisisrelief.un.org/t/ukraine">
+      <a class="link" href="https://crisisrelief.un.org/en/t/ukraine">
         💛 UN’s Ukraine Humanitarian Fund
       </a>
     </div>
