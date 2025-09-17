@@ -891,6 +891,7 @@
     "description": "one of the largest ICT service providers within the Dutch central government",
     "source": "https://app.theirstack.com/home?search-company=DICTU",
     "tags": [
+      "government",
       "netherlands",
       "europe",
       "it"
@@ -1500,6 +1501,20 @@
     "tags": [
       "russia",
       "finances"
+    ]
+  },
+  {
+    "name": "Ministry of Social Affairs",
+    "id": "estonian-ministry-of-social-affairs",
+    "link": "https://www.sm.ee/en",
+    "logo": "sotsiaalministeerium.svg",
+    "logoWidth": "300px",
+    "description": "a government ministry of Estonia responsible for social policies of the country.",
+    "source": "https://www.tehik.ee/sites/default/files/2021-04/AV-IT-Profiil-280920-1316-38.pdf",
+    "tags": [
+      "government",
+      "estonia",
+      "europe"
     ]
   },
   {
@@ -2126,6 +2141,7 @@
     "description": "gosuslugi.ru (e-government systems, biometric identification platform, etc.)",
     "source": "https://career.habr.com/vacancies/1000100539",
     "tags": [
+      "government",
       "russia"
     ]
   },
