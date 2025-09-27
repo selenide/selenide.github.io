@@ -1,3 +1,6 @@
+<div class="left-menu-icon">
+  <img src="/images/burger-menu-left.svg" width="32" alt="Menu"/>
+</div>
 <div class="left-menu">
   <div>Docs</div>
   <div>✓ <a href="/documentation.html">API</a></div>
