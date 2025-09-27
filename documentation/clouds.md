@@ -45,7 +45,7 @@ Configuration.remote = "https://your-cloud-provider.com/wd/hub";
 <a name="selenium-grid"></a>
 ## Selenium Grid
 
-Written on Java by Selenium.
+Written in Java by the Selenium team.
 
 ### How to use:
 ```xml
