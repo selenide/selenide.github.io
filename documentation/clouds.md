@@ -15,6 +15,7 @@ header-text: >
 
 <br>
 
+#### [&gt; Selenium Grid](#selenium-grid)
 #### [&gt; TestContainers](#testcontainers)  
 #### [&gt; LambdaTest](#lambdatest)
 #### [&gt; BrowserStack](#browserstack)  
@@ -40,6 +41,29 @@ To run a browser remotely, you need to use setting `remote`:
 ```java
 Configuration.remote = "https://your-cloud-provider.com/wd/hub";
 ```
+
+<a name="selenium-grid"></a>
+## Selenium Grid
+
+Written on Java by Selenium.
+
+### How to use:
+```xml
+<dependency>
+  <groupId>com.codeborne</groupId>
+  <artifactId>selenide-grid</artifactId>
+  <version>{{site.SELENIDE_VERSION}}</version>
+</dependency>
+```
+
+### Pros
+* Works without docker. Supports all browsers (that have webdriver) of any versions.
+* Scalable: you can run multiple nodes on different OSs with browsers of different versions.
+* You can run it on your own servers and locally.
+
+### Cons
+* Does not support operations with clipboard
+
 
 <a name="testcontainers"></a>
 ## TestContainers
@@ -129,18 +153,25 @@ Cons:
 
 Like Selenium Grid, but in docker. And it's written in Go, so it's fast and uses little memory. 
 
-A working example [on GitHub](https://github.com/selenide/selenide/tree/main/modules/moon/src/test/java/it/moon)
+### How to use:
+```xml
+<dependency>
+  <groupId>com.codeborne</groupId>
+  <artifactId>selenide-moon</artifactId>
+  <version>{{site.SELENIDE_VERSION}}</version>
+</dependency>
+```
 
-Pros:
+* Sources: [on github](https://github.com/selenide/selenide/tree/main/modules/moon).
+* Working example: [on github](https://github.com/selenide/selenide/tree/main/modules/moon/src/test/java/it/moon)
+
+### Pros:
 1. Directly supported by Selenide 
+2. Supports some Selenide features (that may not work in other clouds): clipboard, downloading files.
+3. Allows running different browser versions
+4. Can save video from running tests
 
-    1.1. Is easily pluggable as a Selenide extension 'com.codeborne:selenide-moon:{{site.SELENIDE_VERSION}}'  
-    1.2. Supports some Selenide features (that may not work in other clouds): clipboard, downloading files.  
-
-2. Allows running different browser versions
-3. Can save video from running tests
-
-Cons:
+### Cons:
 1. Only those browsers are supported that are capable of running in Docker (Internet Explorer is definitely not, not sure about Safari)
 
 <br>
@@ -150,18 +181,26 @@ Cons:
 
 Like Selenium Grid, but in docker. And it's written in Go, so it's fast and uses little memory. 
 
-A working example [on GitHub](https://github.com/selenide/selenide/tree/main/modules/selenoid/src/test/java/it/selenoid)
+### How to use:
+```xml
+<dependency>
+  <groupId>com.codeborne</groupId>
+  <artifactId>selenide-selenoid</artifactId>
+  <version>{{site.SELENIDE_VERSION}}</version>
+</dependency>
+```
 
-Pros:
-1. Directly supported by Selenide 
+* Sources: [on github](https://github.com/selenide/selenide/tree/main/modules/selenoid).
+* Working example: [on github](https://github.com/selenide/selenide/tree/main/modules/selenoid/src/test/java/it/selenoid)
 
-    1.1. Is easily pluggable as a Selenide extension 'com.codeborne:selenide-selenoid:{{site.SELENIDE_VERSION}}'  
-    1.2. Supports some Selenide features (that may not work in other clouds): clipboard, downloading files.  
 
-2. Allows running different browser versions
-3. Can save video from running tests
+### Pros:
+1. Directly supported by Selenide
+2. Supports some Selenide features (that may not work in other clouds): clipboard, downloading files.
+3. Allows running different browser versions
+4. Can save video from running tests
 
-Cons:
+### Cons:
 1. Only those browsers are supported that are capable of running in Docker (Internet Explorer is definitely not, not sure about Safari)
 
 <br>
