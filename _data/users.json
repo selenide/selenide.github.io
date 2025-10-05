@@ -1166,6 +1166,20 @@
     ]
   },
   {
+    "name": "Iiko",
+    "id": "iiko",
+    "link": "https://iiko.ru/",
+    "logo": "logo-iiko.webp",
+    "logoWidth": "200px",
+    "description": "Restaurants automation software",
+    "source": "https://www.linkedin.com/in/yura-primyshev/",
+    "tags": [
+      "russia",
+      "food",
+      "it"
+    ]
+  },
+  {
     "name": "Perekrestok",
     "id": "perekrestok",
     "link": "https://career.habr.com/companies/perekrestok-ru",
