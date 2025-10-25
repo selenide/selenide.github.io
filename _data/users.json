@@ -924,6 +924,19 @@
     ]
   },
   {
+    "name": "Yandex",
+    "id": "yandex",
+    "link": "https://yandex.ru/",
+    "logo": "logo-yandex.svg",
+    "logoWidth": "100px",
+    "description": "russian multinational IT company: information search, navigation, e-commerce, entertainment and cloud technologies.",
+    "source": "https://www.linkedin.com/posts/activity-7377287901664923649-tOJG/",
+    "tags": [
+      "russia",
+      "it"
+    ]
+  },
+  {
     "name": "Qiwi",
     "id": "qiwi",
     "link": "https://qiwi.com/",
