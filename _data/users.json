@@ -1083,6 +1083,19 @@
     ]
   },
   {
+    "name": "Bank «Kuban Credit»",
+    "id": "bank-kuban-kredit",
+    "link": "https://kb.kk.bank/",
+    "logo": "logo-kuban-kredit.png",
+    "logoWidth": "160px",
+    "description": "One of the most active and growing banks in the Krasnodar region. Constantly implementing new computer technologies!",
+    "source": "https://www.linkedin.com/in/verakosheleva/",
+    "tags": [
+      "russia",
+      "finances"
+    ]
+  },
+  {
     "name": "Bank «Otkritie»",
     "id": "otkritie",
     "link": "https://www.open.ru/",
