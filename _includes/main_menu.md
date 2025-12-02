@@ -19,8 +19,8 @@
 
   {% if page.show_news %}
     <div class="news">
-      <div class="news-line news-title"><a href="/2025/10/29/selenide-{{site.SELENIDE_VERSION}}/">Released Selenide {{site.SELENIDE_VERSION}}</a></div>
-      <div class="news-line news-link">Stoptime</div>
+      <div class="news-line news-title"><a href="https://github.com/selenide/selenide/milestone/234?closed=1">Released Selenide {{site.SELENIDE_VERSION}}</a></div>
+      <div class="news-line news-link">Video recorder fixes</div>
     </div>
   {% endif %}
 
