@@ -26,9 +26,22 @@ As i described [in this video](https://www.youtube.com/watch?v=ibx8nVvt-Js) on D
 ### Why Selenide hasn't solved it already?
 
 A global solution could be like this: method `$.click()` waits for completion of any animations and movements before actually performing the click.
-Currently Selenide doesn't have such a solution. I guess it's impossible to make such waiting universal. 
+Currently, Selenide doesn't have such a solution. I guess it's impossible to make such waiting universal. 
 All projects are different, with different frameworks and designs. If you have an idea how to implement such a waiting - 
 feel free to drop me a notice. 
+
+> UPD Later we added methods to [click elements using JavaScript](/2020/09/26/selenide-5.15.0/#click-with-options):
+> ```java
+> $("#moving").click(usingJavaScript());
+> ```
+>
+> Or to [click disabled elements](/2024/02/07/selenide-7.1.0/#force-click):
+> ```java
+> $("#disabled").click(usingDefaultMethod().force());
+> ```
+>
+> They may help to click an element which is moving, resizing or even covered by another element.
+
 
 But what we can is to highlight the element that actually got the click. It will not solve the problem entirely,
 but at least it helps to localize the problem.
