@@ -10,7 +10,14 @@ tags: []
 
 Good night!
 
-In the yesterday post we tried to get browser logs with "goog:loggingPrefs" capability.  
+In the yesterday post, we tried to get browser logs with "goog:loggingPrefs" capability.  
+
+> UPD: Later we added a method that works in both Firefox and Chromium browsers:
+> [Collecting browser logs using DevTools/BiDi](/2025/10/29/selenide-7.12.0/#browser-logs-with-bidi)
+
+<br>
+<br>
+
 Now we will try to get browser network data with JavaScript.
 
 It's simple. We just need to call this JavaScript in the end of test:

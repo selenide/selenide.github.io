@@ -14,6 +14,12 @@ We continue our Selenide Advent Calendar.
 Today we will try to look into browser "developer tools".  
 It may be useful if you want to know what errors happened during test run, or what requests your AUT sent.   
 
+> UPD: Later we added a method that works in both Firefox and Chromium browsers:
+> [Collecting browser logs using DevTools/BiDi](/2025/10/29/selenide-7.12.0/#browser-logs-with-bidi)
+
+<br>
+<br>
+
 Chromedriver suggests the following receipt. 
 
 
