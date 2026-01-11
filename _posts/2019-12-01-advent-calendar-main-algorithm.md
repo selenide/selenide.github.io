@@ -25,11 +25,23 @@ Today topic is:
 # The Main Algorithm
 
 The main feature of Selenide, as many of you say, is _automated waiting_.  
-You don't need to copy-paste boilerplate code like `new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'COMPOSE')]")))` to wait for some event.
+To wait for some event, You don't need to copy-paste boilerplate code like this:
+
+```java
+new WebDriverWait(driver, 30)
+  .until(ExpectedConditions.visibilityOfElementLocated(
+          By.xpath("//div[contains(text(),'COMPOSE')]")));
+```
+
 You don't need to waste your time and effort to decide where a waiting is needed.
 You don't need to see a flaky tests and investigate where you should add one more `new WebDriverWait`. 
 
-With Selenide, everything is much more simple. Any line like `$(byText("COMPOSE")).shouldBe(visible)` **waits automatically** if needed. 
+With Selenide, everything is much more simple.
+Any line like this just **waits automatically** if needed:
+
+```java
+$(byText("COMPOSE")).shouldBe(visible);
+```
 
 ### Doesn't it slower my tests?
 
