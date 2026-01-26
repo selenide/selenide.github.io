@@ -83,7 +83,7 @@ When your test fail, Selenide will automatically take screenshot. You do not nee
 
 This is just a short summary. There is much more:
 * Tests for mobile apps
-* Work with remote webdrivers (Grid/Selenoid/Moon/BrowserStack/LambdaTest/...)
+* Work with remote webdrivers (Grid/Selenoid/Moon/BrowserStack/LambdaTest/TestMu AI/...)
 * Downloading files
 * Video recording
 * etc.

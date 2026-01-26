@@ -17,7 +17,7 @@ header-text: >
 
 #### [&gt; Selenium Grid](#selenium-grid)
 #### [&gt; TestContainers](#testcontainers)  
-#### [&gt; LambdaTest](#lambdatest)
+#### [&gt; TestMu AI (ex. LambdaTest)](#testmu-ai)
 #### [&gt; BrowserStack](#browserstack)  
 #### [&gt; Saucelabs](#saucelabs)  
 #### [&gt; Moon](#moon)   
@@ -83,13 +83,13 @@ Cons:
 
 <br>
 
-<a name="lambdatest"></a>
-## LambdaTest
+<a name="testmu-ai"></a>
+## TestMu AI (ex. LambdaTest)
 
 A working example: [selenide-examples/selenide-lambdatest](https://github.com/selenide-examples/selenide-lambdatest).  
-Website: [LambdaTest.com](https://www.lambdatest.com/blog/selenium-testing-with-selenide-using-intellij-maven/?utm_source=selenide&utm_medium=partnered).
+Website: [testmu.ai](https://www.testmu.ai/blog/selenium-testing-with-selenide-using-intellij-maven/?utm_source=selenide&utm_medium=partnered).
 
-This is a working example of Selenide tests that run the browser on LambdaTest servers.
+This is a working example of Selenide tests that run the browser on TestMu AI (ex. LambdaTest) servers.
 As you can see, the settings there are minimal:
 
 ```java

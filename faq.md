@@ -128,7 +128,7 @@ But for some features (e.g. downloading files) you will need to add dependency `
 See [selenide-selenoid plugin](https://github.com/selenide/selenide/tree/main/modules/selenoid).
 
 
->Can I use Selenide with Selenoid/Moon/BrowserStack/LambdaTest/TestContainers or other cloud providers?
+>Can I use Selenide with Selenoid/Moon/BrowserStack/LambdaTest/TestMu AI/TestContainers or other cloud providers?
 
 Yes. See [documentation](/documentation/clouds.html)
 
