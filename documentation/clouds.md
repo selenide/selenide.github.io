@@ -138,13 +138,15 @@ Cons:
 
 Saucelabs company also allows running browsers and mobile apps on their servers. 
 
-[An example](https://github.com/markwinspear/selenide-test-2015) (this is quite old, but we hope to update it soon).
+A working example: [selenide-examples/selenide-saucelabs](https://github.com/selenide-examples/selenide-saucelabs).  
+Website: [saucelabs.com](https://saucelabs.com/)
+
 
 Pros:
 1. Allows running different browser versions
 
 Cons:
-1. Some Selenide features may not work (e.g. clipboard, proxy, download to folder)
+1. Some Selenide features may not work (e.g. clipboard, proxy)
 
 <br>
 
