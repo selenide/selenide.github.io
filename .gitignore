@@ -1,6 +1,4 @@
 # Hugo build output
-public/*
-!public/javadoc
 public-en/
 public-ru/
 resources/_gen/

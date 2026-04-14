@@ -1,3 +1,4 @@
 baseURL = "https://selenide.org"
 defaultContentLanguage = "en"
 disableLanguages = ["ru"]
+publishDir = "public-en"
