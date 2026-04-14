@@ -1,15 +1,14 @@
-*.iml
-_site/*
-!_site/javadoc
-jekyll.log
-.jekyll-metadata
+# Hugo build output
+public/*
+!public/javadoc
+resources/_gen/
 
+# OS files
 Thumbs.db
 .DS_Store
 
-!.gitkeep
+# Hugo lock file
+.hugo_build.lock
 
-.rbenv-version
-.rvmrc
-
+# Claude Code
 /.claude/settings.local.json
