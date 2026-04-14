@@ -2,7 +2,7 @@ name: Deploy Hugo site to Pages
 
 on:
   push:
-    branches: ["master", "design"]
+    branches: ["master", "multilingual"]
   workflow_dispatch:
 
 permissions:
@@ -19,7 +19,7 @@ defaults:
     shell: bash
 
 jobs:
-  build:
+  build-en:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Hugo
@@ -32,13 +32,16 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Build with Hugo
+      - name: Build EN site
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
           TZ: America/New_York
         run: |
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --minify \
+            --config hugo.toml,hugo-en.toml \
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --destination public
           # Preserve /rss URL (without .xml extension)
           cp public/rss.xml public/rss
       - name: Upload artifact
@@ -46,13 +49,43 @@ jobs:
         with:
           path: ./public
 
-  deploy:
+  deploy-en:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
+    needs: build-en
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  build-and-deploy-ru:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.160.1'
+          extended: true
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Build RU site
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: production
+          TZ: America/New_York
+        run: |
+          hugo --minify \
+            --config hugo.toml,hugo-ru.toml \
+            --destination public-ru
+          # Preserve /rss URL (without .xml extension)
+          cp public-ru/rss.xml public-ru/rss
+      - name: Deploy to ru.selenide.org
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.RU_SELENIDE_ORG_DEPLOY_TOKEN }}
+          external_repository: selenide/selenide-ru
+          publish_branch: gh-pages
+          publish_dir: ./public-ru
+          cname: ru.selenide.org

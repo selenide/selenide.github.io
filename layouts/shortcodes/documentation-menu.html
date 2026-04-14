@@ -2,23 +2,33 @@
   <img src="/images/burger-menu-left.svg" width="32" alt="Menu"/>
 </div>
 <div class="left-menu">
-  <div>Docs</div>
-  <div>✓ <a href="/documentation.html">API</a></div>
-  <div>✓ <a href="/documentation/page-objects.html">Page Objects</a></div>
-  <div>✓ <a href="/documentation/screenshots.html">Screenshots</a></div>
-  <div>✓ <a href="/documentation/reports.html">Reports</a></div>
-  <div>✓ <a href="/documentation/clouds.html">Clouds</a></div>
-  <div>✓ <a href="/documentation/selenide-vs-selenium.html">Selenide vs Selenium</a></div>
+  <div>{{ T "docs_menu_docs" }}</div>
+  <div>✓ <a href="/documentation.html">{{ T "docs_menu_api" }}</a></div>
+  <div>✓ <a href="/documentation/page-objects.html">{{ T "docs_menu_page_objects" }}</a></div>
+  <div>✓ <a href="/documentation/screenshots.html">{{ T "docs_menu_screenshots" }}</a></div>
+  <div>✓ <a href="/documentation/reports.html">{{ T "docs_menu_reports" }}</a></div>
+  <div>✓ <a href="/documentation/clouds.html">{{ T "docs_menu_clouds" }}</a></div>
+  <div>✓ <a href="/documentation/selenide-vs-selenium.html">{{ T "docs_menu_selenide_vs_selenium" }}</a></div>
 
   <br/>
-  <div>Resources</div>
+  <div>{{ T "docs_menu_resources" }}</div>
   <div>✓ <a href="https://prezi.com/d18jggopjyaj/selenide-shorten-your-code/" target="_blank" class="external-link">Shorten your code!</a></div>
   <div>✓ <a href="https://www.methodsandtools.com/tools/selenide.php" target="_blank" class="external-link">Methods & Tools</a></div>
+  {{ if eq .Site.Language.Lang "ru" }}
+    <div>✓ <a href="https://habrahabr.ru/post/143269/" target="_blank" class="external-link">Хабр</a></div>
+  {{ end }}
 
   <br/>
-  <div>Video</div>
-  <div>✓ <a class="video" href="https://vimeo.com/107647158">UI test in 10 minutes</a></div>
-  <div>✓ <a class="video" href="https://www.youtube.com/watch?v=6LW4h5y6Iw4">Selenide by Glen Smith</a></div>
-  <div>✓ <a class="video" href="https://www.youtube.com/watch?v=5qiuRoUcICs&t=2882s&ab_channel=trendigtechnologyservicesGmbH">Selenide UI tests in java</a></div>
-  <div>✓ <a class="video" href="https://www.youtube.com/watch?v=18J2_4a4Cl4&ab_channel=Jfokus">Flaky tests</a></div>
+  <div>{{ T "docs_menu_video" }}</div>
+  {{ if eq .Site.Language.Lang "ru" }}
+    <div>✓ <a class="video" href="https://vimeo.com/106867878">UI тест за 10 минут</a></div>
+    <div>✓ <a class="video" href="https://www.youtube.com/watch?v=MTHhflyh8Ck">ConfeT Q&A 2013</a></div>
+    <div>✓ <a target="_blank" href="https://seleniumcamp.com/archive/selenium-camp-2013/materials/tdd-with-selenide/">SeleniumCamp 2013</a></div>
+    <div>✓ <a target="_blank" href="https://www.youtube.com/watch?v=zOiSo1hYjF8">Flaky tests</a></div>
+  {{ else }}
+    <div>✓ <a class="video" href="https://vimeo.com/107647158">UI test in 10 minutes</a></div>
+    <div>✓ <a class="video" href="https://www.youtube.com/watch?v=6LW4h5y6Iw4">Selenide by Glen Smith</a></div>
+    <div>✓ <a class="video" href="https://www.youtube.com/watch?v=5qiuRoUcICs&t=2882s&ab_channel=trendigtechnologyservicesGmbH">Selenide UI tests in java</a></div>
+    <div>✓ <a class="video" href="https://www.youtube.com/watch?v=18J2_4a4Cl4&ab_channel=Jfokus">Flaky tests</a></div>
+  {{ end }}
 </div>

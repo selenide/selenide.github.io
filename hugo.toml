@@ -1,23 +1,18 @@
 baseURL = "https://selenide.org"
-languageCode = "en"
 title = "Selenide"
+defaultContentLanguage = "en"
 
-# Build future-dated posts (matching Jekyll --future flag)
 buildFuture = true
 
-# Disable unused built-in pages
 disableKinds = ["taxonomy", "term"]
 
-# Allow raw HTML in Markdown content
 [markup.goldmark.renderer]
   unsafe = true
 
-# Use CSS classes for syntax highlighting (not inline styles)
 [markup.highlight]
   noClasses = false
 
 [params]
-  tagline = "Concise UI tests in Java"
   selenideVersion = "7.16.0"
   seleniumChangelog = "https://raw.githubusercontent.com/SeleniumHQ/selenium/master/java/CHANGELOG"
   googleAnalyticsId = "UA-39031927-1"
@@ -28,11 +23,25 @@ disableKinds = ["taxonomy", "term"]
   github = "asolntsev"
   twitter = "selenide"
 
-# Blog post permalinks match old Jekyll URLs: /YYYY/MM/DD/title/
+[languages]
+  [languages.en]
+    contentDir = "content/en"
+    languageCode = "en"
+    languageName = "English"
+    weight = 1
+    [languages.en.params]
+      tagline = "Concise UI tests in Java"
+  [languages.ru]
+    contentDir = "content/ru"
+    languageCode = "ru"
+    languageName = "Русский"
+    weight = 2
+    [languages.ru.params]
+      tagline = "Лаконичные и стабильные UI тесты на Java"
+
 [permalinks]
   blog = "/:year/:month/:day/:slug/"
 
-# Built-in RSS feed
 [outputFormats.RSS]
   mediaType = "application/rss+xml"
   baseName = "rss"
@@ -42,7 +51,6 @@ disableKinds = ["taxonomy", "term"]
   home = ["HTML", "RSS"]
   section = ["HTML"]
 
-# Local dev server: redirect /rss to /rss.xml
 [[server.redirects]]
   from = "/rss"
   to = "/rss.xml"

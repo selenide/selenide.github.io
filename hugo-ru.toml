@@ -1,0 +1,3 @@
+baseURL = "https://ru.selenide.org"
+defaultContentLanguage = "ru"
+disableLanguages = ["en"]
