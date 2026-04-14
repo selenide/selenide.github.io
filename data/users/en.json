@@ -2506,6 +2506,19 @@
     ]
   },
   {
+    "name": "Europlan",
+    "id": "europlan",
+    "link": "https://www.linkedin.com/company/europlan/",
+    "logo": "logo-europlan.jpeg",
+    "logoWidth": "80px",
+    "description": "Number 1 automotive leasing company in Russia",
+    "source": "https://www.linkedin.com/in/daniil-samsonov-906560382/",
+    "tags": [
+      "russia",
+      "finances"
+    ]
+  },
+  {
     "name": "Tieto Eesti AS",
     "id": "tieto",
     "link": "https://www.tietoevry.com/ee",
