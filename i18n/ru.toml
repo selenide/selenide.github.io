@@ -1,0 +1,260 @@
+# Main menu
+[menu_quick_start]
+other = "С чего начать?"
+
+[menu_docs]
+other = "Док"
+
+[menu_faq]
+other = "ЧАВО"
+
+[menu_blog]
+other = "Блог"
+
+[menu_javadoc]
+other = "Javadoc"
+
+[menu_users]
+other = "Пользователи"
+
+[menu_quotes]
+other = "Отзывы"
+
+[menu_thanks]
+other = "Мы говорим спасибо"
+
+[news_released]
+other = "Вышла Selenide"
+
+[news_mcp]
+other = "Selenide MCP server"
+
+# Donate
+[donate_title]
+other = "Селенид поддерживает Украину"
+
+[donate_social_drone_url]
+other = "https://www.socialdrone.com.ua/"
+
+[donate_social_drone]
+other = "Social Drone"
+
+[donate_charity]
+other = "Фонд поддержки украинской армии"
+
+[donate_un_fund]
+other = "Гуманитарный фонд ООН"
+
+# Quicklinks
+[quicklink_view_on]
+other = "View on"
+
+[quicklink_search_in]
+other = "Search in"
+
+[quicklink_read_our]
+other = "Read our"
+
+[quicklink_blog]
+other = "Blog"
+
+[quicklink_follow_at]
+other = "Follow at"
+
+[quicklink_subscribe_to]
+other = "Subscribe to"
+
+# 404
+[err_page_not_found]
+other = "Страница не найдена"
+
+# Homepage
+[home_what_is_title]
+other = "Что такое Selenide?"
+
+[home_what_is_subtitle]
+other = "Selenide - это фреймворк для автоматизированного тестирования веб-приложений на основе <a href=\"https://docs.seleniumhq.org/projects/webdriver/\" target=\"_blank\">Selenium WebDriver</a>, дающий следующие преимущества:"
+
+[home_concise_api]
+other = "Изящный API"
+
+[home_stable_tests]
+other = "Стабильные тесты"
+
+[home_powerful_selectors]
+other = "Мощные селекторы"
+
+[home_simple_config]
+other = "Простая конфигурация"
+
+[home_what_is_desc1]
+other = "Вам больше не нужно заботиться о том, как закрыть браузер, обработать таймауты и StaleElement Exceptions или искать соответствующую строку в логах, отлаживая свои тесты."
+
+[home_what_is_desc2]
+other = "Просто сконцентрируйтесь на бизнес-логике и позвольте Selenide сделать все остальное!"
+
+[home_quick_start_title]
+other = "С чего начать?"
+
+[home_quick_start_subtitle]
+other = "Начать использовать Selenide невероятно просто."
+
+[home_quick_start_desc1_pre]
+other = "Просто добавьте"
+
+[home_quick_start_desc1_post]
+other = "в ваш проект. И начинайте писать тесты!"
+
+[home_quick_start_desc2]
+other = ""
+
+[home_docs_title]
+other = "Документация"
+
+[home_docs_subtitle_1]
+other = "Плохой софт"
+
+[home_docs_subtitle_1b]
+other = "не имеет"
+
+[home_docs_subtitle_1c]
+other = "документации."
+
+[home_docs_subtitle_2]
+other = "Отличный софт"
+
+[home_docs_subtitle_2b]
+other = "не нуждается"
+
+[home_docs_subtitle_2c]
+other = "в документации."
+
+[home_docs_desc1]
+other = "Мы с гордостью заявляем, что Selenide настолько прост, что вам не нужно читать тонны документации, чтобы начать с ним работать."
+
+[home_docs_desc2]
+other = "Вся работа с Selenide состоит всего из трёх простых вещей."
+
+[home_contacts_title]
+other = "Контакты"
+
+[home_contacts_subtitle]
+other = "Ты хочешь поговорить об этом?"
+
+[home_contacts_desc]
+other = "Где можно задать вопрос или обсудить любой вопрос насчёт Selenide на русском языке:"
+
+[home_googlegroup_url]
+other = "mailto:selenide-ru@googlegroups.com"
+
+[home_googlegroup]
+other = "Гуглогруппа"
+
+[home_gitter_url]
+other = "https://gitter.im/codeborne/selenide-ru"
+
+[home_telegram_url]
+other = "https://t.me/selenide_ru"
+
+[home_testimonials_title]
+other = "Отзывы"
+
+[home_testimonials_quote]
+other = '"Selenide - мощный инструмент для написания функциональных тестов. Рекомендую."'
+
+[home_testimonials_author_role]
+other = "Инженер LiveRebel в ZeroTurnaround"
+
+[home_thanks_title]
+other = "Большое спасибо:"
+
+[home_jetbrains_alt]
+other = "JetBrains. Intellij IDEA - лучшая IDE для Java на Млечном Пути!"
+
+[home_browser_testing_via]
+other = "Browser testing via"
+
+# Users page
+[users_tell_us_title]
+other = "Сообщи о себе!"
+
+[users_share_experience]
+other = "Поделись с нами опытом!"
+
+[users_want_logo_pre]
+other = "Хотите увидеть здесь и свой логотип?"
+
+[users_email_us]
+other = "Напишите нам!"
+
+[users_really_want]
+other = "Нам чертовски интересно узнать про вас: что пробовали, что получилось, какие встретили проблемы."
+
+[users_ask_feedback]
+other = "Задай свои вопросы или оставь отзыв!"
+
+[users_ask]
+other = "Спроси у"
+
+[users_people]
+other = "людей"
+
+[users_read]
+other = "Читай"
+
+[users_ggroup]
+other = "ГГруппу"
+
+[users_ggroup_url]
+other = "https://groups.google.com/forum/?fromgroups#!forum/selenide-ru"
+
+[users_ggroup_title]
+other = "Архив гуглогруппы selenide-ru"
+
+[users_email]
+other = "Напиши"
+
+[users_me]
+other = "мне"
+
+[users_write_to]
+other = "Пиши в"
+
+[users_twitter]
+other = "твиттер"
+
+# Documentation menu
+[docs_menu_docs]
+other = "Доки"
+
+[docs_menu_api]
+other = "API"
+
+[docs_menu_page_objects]
+other = "Page Objects"
+
+[docs_menu_screenshots]
+other = "Скриншоты"
+
+[docs_menu_reports]
+other = "Отчёты"
+
+[docs_menu_clouds]
+other = "Облака"
+
+[docs_menu_selenide_vs_selenium]
+other = "Selenide vs Selenium"
+
+[docs_menu_resources]
+other = "Ресурсы"
+
+[docs_menu_video]
+other = "Видео"
+
+# Meta
+[meta_keywords]
+other = "Selenide, Selenium, WebDriver, Test automation, ATDD, concise UI tests, Селенид, Селениум, вебдрайвер, автоматизация тестирования, автотесты, ТДД, АТДД, лаконичные тесты"
+
+# Footer
+[footer_maintained_by]
+other = "The project is maintained by"

@@ -8,19 +8,22 @@
   </div>
 
   <div class="main-menu-pages">
-    <a href="/quick-start.html">Quick start</a>
-    <a href="/documentation.html">Docs</a>
-    <a href="/faq.html">FAQ</a>
-    <a href="/blog.html">Blog</a>
-    <a href="/javadoc.html">Javadoc</a>
-    <a href="/users.html">Users</a>
-    <a href="/quotes.html">Quotes</a>
+    <a href="/quick-start.html">{{ T "menu_quick_start" }}</a>
+    <a href="/documentation.html">{{ T "menu_docs" }}</a>
+    <a href="/faq.html">{{ T "menu_faq" }}</a>
+    <a href="/blog.html">{{ T "menu_blog" }}</a>
+    <a href="/javadoc.html">{{ T "menu_javadoc" }}</a>
+    <a href="/users.html">{{ T "menu_users" }}</a>
+    <a href="/quotes.html">{{ T "menu_quotes" }}</a>
+    {{ if eq .Site.Language.Lang "ru" }}
+      <a style="display:none;" href="/thanks.html">{{ T "menu_thanks" }}</a>
+    {{ end }}
   </div>
 
   {{ if .Params.show_news }}
     <div class="news">
-      <div class="news-line news-title"><a href="/2026/04/10/selenide-7.16.0/">Released Selenide {{ .Site.Params.selenideVersion }}</a></div>
-      <div class="news-line news-link">Selenide MCP server</div>
+      <div class="news-line news-title"><a href="/2026/04/10/selenide-7.16.0/">{{ T "news_released" }} {{ .Site.Params.selenideVersion }}</a></div>
+      <div class="news-line news-link">{{ T "news_mcp" }}</div>
     </div>
   {{ end }}
 

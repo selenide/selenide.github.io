@@ -1,1 +1,1 @@
-hugo server --buildFuture --port 4001
+hugo server --config hugo.toml,hugo-en.toml --buildFuture --port 4001

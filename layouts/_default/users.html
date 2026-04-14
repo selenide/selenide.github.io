@@ -24,7 +24,7 @@
 
   <section>
 
-    {{ range hugo.Data.users }}
+    {{ range index hugo.Data.users .Site.Language.Lang }}
       {{ if ne .name "" }}
         <div id="{{ .id }}" class="user hidden {{ range .tags }} {{ . }}{{ end }}">
           <div class="row">
@@ -54,18 +54,18 @@
 
 <div class="short howto">
   <div class="wrapper-color-content">
-    <h3>Tell us about yourself!</h3>
-    <h4>Share your experience with others!</h4>
+    <h3>{{ T "users_tell_us_title" }}</h3>
+    <h4>{{ T "users_share_experience" }}</h4>
   </div>
 </div>
 
 <div class="wrapper-content center">
   <section>
     <br/>
-    <div>Want to see your logo on this page? <a href="mailto:andrei.solntsev@gmail.com">Email us!</a></div>
-    <div>We really want to know more about you: tell what you tried, what succeeded, what failed.</div>
+    <div>{{ T "users_want_logo_pre" }} <a href="mailto:andrei.solntsev@gmail.com">{{ T "users_email_us" }}</a></div>
+    <div>{{ T "users_really_want" }}</div>
     <br/>
-    <div>Ask questions or give a feedback!</div>
+    <div>{{ T "users_ask_feedback" }}</div>
   </section>
 </div>
 
@@ -74,22 +74,22 @@
     <ul class="gray-boxes">
       <li>
         <a href="mailto:selenide@googlegroups.com" target="_blank">
-          <span class="ql"><h3>Ask</h3> <strong><h4>people</h4></strong></span>
+          <span class="ql"><h3>{{ T "users_ask" }}</h3> <strong><h4>{{ T "users_people" }}</h4></strong></span>
         </a>
       </li>
       <li>
-        <a href="https://groups.google.com/forum/?fromgroups#!forum/selenide" target="_blank" title="Selenide googlegroup archive">
-          <span class="ql"><h3>Read</h3> <strong><h4>GGroup</h4></strong></span>
+        <a href="{{ T "users_ggroup_url" }}" target="_blank" title="{{ T "users_ggroup_title" }}">
+          <span class="ql"><h3>{{ T "users_read" }}</h3> <strong><h4>{{ T "users_ggroup" }}</h4></strong></span>
         </a>
       </li>
       <li>
         <a href="mailto:andrei.solntsev@gmail.com" target="_blank">
-          <span class="ql"><h3>Email</h3> <strong><h4>me</h4></strong></span>
+          <span class="ql"><h3>{{ T "users_email" }}</h3> <strong><h4>{{ T "users_me" }}</h4></strong></span>
         </a>
       </li>
       <li>
         <a href="https://twitter.com/selenide" target="_blank" title="Twitter #selenide">
-          <span class="ql"><h3>Write to</h3> <h4>twitter</h4></span>
+          <span class="ql"><h3>{{ T "users_write_to" }}</h3> <h4>{{ T "users_twitter" }}</h4></span>
         </a>
       </li>
     </ul>
