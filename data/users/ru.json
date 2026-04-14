@@ -1501,6 +1501,19 @@
     ]
   },
   {
+    "name": "PROS, Inc.",
+    "id": "pros",
+    "link": "https://www.linkedin.com/company/pros/",
+    "logo": "logo-pros.jpeg",
+    "logoWidth": "100px",
+    "description": "Компания, занимающаяся туристическими технологиями и предоставляющая авиакомпаниям возможности розничной торговли и управления предложениями на основе искусственного интеллекта. Хьюстон, Техас.",
+    "source": "https://www.linkedin.com/in/jean-paul-montout/details/experience/",
+    "tags": [
+      "usa",
+      "tourism"
+    ]
+  },
+  {
     "name": "Lean Solutions",
     "id": "lean",
     "link": "https://www.leangroup.com/",
