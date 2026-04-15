@@ -20,13 +20,13 @@
     {{ end }}
   </div>
 
-  <button type="button" class="donate_restore" id="donate_restore_btn" aria-label="{{ T "donate_title" }}" title="{{ T "donate_title" }}">🇺🇦</button>
-
   {{ if .Params.show_news }}
     <div class="news">
       <div class="news-line news-title"><a href="/2026/04/10/selenide-7.16.0/">{{ T "news_released" }} {{ .Site.Params.selenideVersion }}</a></div>
       <div class="news-line news-link">{{ T "news_mcp" }}</div>
     </div>
   {{ end }}
+
+  <button type="button" class="donate_restore" id="donate_restore_btn" aria-label="{{ T "donate_title" }}" title="{{ T "donate_title" }}">🇺🇦</button>
 
 </div>
