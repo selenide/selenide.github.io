@@ -18,10 +18,12 @@
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/rss.xml" />
 
-  <script src="/assets/themes/ingmar/js/scale.fix.js"></script>
+  {{ $scaleFix := resources.Get "themes/ingmar/js/scale.fix.js" | fingerprint }}
+  {{ $magnificPopup := resources.Get "themes/ingmar/js/jquery.magnific-popup.min.js" | fingerprint }}
+  <script src="{{ $scaleFix.RelPermalink }}"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.1/jquery-ui.min.js"></script>
-  <script src="/assets/themes/ingmar/js/jquery.magnific-popup.min.js"></script>
+  <script src="{{ $magnificPopup.RelPermalink }}"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -60,6 +62,7 @@
     </div>
   </div>
 
-  <script src="/assets/themes/ingmar/js/selenide.org.js?003"></script>
+  {{ $selenideJs := resources.Get "themes/ingmar/js/selenide.org.js" | fingerprint }}
+  <script src="{{ $selenideJs.RelPermalink }}"></script>
 </body>
 </html>

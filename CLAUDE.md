@@ -110,7 +110,8 @@ url: /page-name.html
 - Release posts should be added in BOTH `content/en/blog/` and `content/ru/blog/`
 - Images go in `static/images/` — use year-based subdirectories
 - When releasing a new Selenide version: update `params.selenideVersion` in `hugo.toml`, create release blog posts in both languages
-- JavaScript lives in `static/assets/themes/ingmar/js/selenide.org.js` (single IIFE). Add new logic as a function and call it from the init block at the bottom. Avoid inline `<script>` tags in `layouts/` — keep partials markup-only. Bump the `?NNN` cache buster on the `<script src>` in `layouts/_default/baseof.html` when you change this file.
+- JavaScript lives in `assets/themes/ingmar/js/selenide.org.js` (single IIFE). Add new logic as a function and call it from the init block at the bottom. Avoid inline `<script>` tags in `layouts/` — keep partials markup-only.
+- Local CSS and JS are served via Hugo Pipes with content-hash fingerprinting (`resources.Get ... | fingerprint`) in `layouts/_default/baseof.html`. Put new CSS/JS files under `assets/` (not `static/`) and reference them the same way — no manual cache busters.
 
 ## Deployment
 
