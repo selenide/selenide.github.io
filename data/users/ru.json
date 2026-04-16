@@ -160,6 +160,19 @@
     ]
   },
   {
+    "name": "Coherent Corp.",
+    "id": "coherent",
+    "link": "https://www.coherent.com/",
+    "logo": "logo-coherent.png",
+    "logoWidth": "150px",
+    "description": "Производство полупроводников / Саксонбург, Пенсильвания",
+    "source": "https://app.theirstack.com/workspace/30667/companies/MgnH8Jwg2ceRtoSsYyABdg%3D%3D",
+    "tags": [
+      "usa",
+      "manufacturing"
+    ]
+  },
+  {
     "name": "PocketBook",
     "id": "pocketbook",
     "link": "",
@@ -2741,6 +2754,7 @@
     "tags": [
       "europe",
       "poland",
+      "manufacturing",
       "resources"
     ]
   },
