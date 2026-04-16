@@ -348,6 +348,19 @@
     ]
   },
   {
+    "name": "SoftTeco",
+    "id": "softteco",
+    "link": "https://softteco.com/",
+    "logo": "logo-softteco.png",
+    "logoWidth": "200px",
+    "description": "Custom Software Development founded in 2008. Customers in USA, Europe and Canada.",
+    "source": "https://www.linkedin.com/in/artur-burov/",
+    "tags": [
+      "ukraine",
+      "it"
+    ]
+  },
+  {
     "name": "DataArt",
     "id": "data-art",
     "link": "https://www.dataart.com/",
