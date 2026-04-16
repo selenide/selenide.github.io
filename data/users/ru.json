@@ -2255,6 +2255,20 @@
     ]
   },
   {
+    "name": "Shimi",
+    "id": "shimi",
+    "link": "https://www.linkedin.com/company/shimico/",
+    "logo": "logo-shimico.jpeg",
+    "logoWidth": "100px",
+    "description": "Ведущая B2B-площадка для химической продукции на Ближнем Востоке / Тегеран, Иран",
+    "source": "https://app.theirstack.com/workspace/30667/companies/22d7QQLYQXVPCI%2BTW0tqVw%3D%3D",
+    "tags": [
+      "asia",
+      "iran",
+      "chemistry"
+    ]
+  },
+  {
     "name": "Contour Software",
     "id": "contour-software",
     "link": "https://www.contour-software.com",
