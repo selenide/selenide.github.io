@@ -160,6 +160,22 @@
     ]
   },
   {
+    "name": "PocketBook",
+    "id": "pocketbook",
+    "link": "",
+    "logo": "logo-pocketbook.png",
+    "logoWidth": "250px",
+    "description": "Бытовая электроника: электронные книги, цифровые устройства для чтения, технология E Ink («электронная бумага»). Один из крупнейших в мире брендов, специализирующихся на электронных книгах, конкурирующий с устройствами от Amazon и Kobo.",
+    "source": "https://djinni.co/jobs/802458-automation-qa-engineer-middle-middle/",
+    "tags": [
+      "ukraine",
+      "switzerland",
+      "europe",
+      "manufacturing",
+      "electronics"
+    ]
+  },
+  {
     "name": "OpenText",
     "id": "opentext",
     "link": "https://www.opentext.com/",

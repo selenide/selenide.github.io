@@ -160,6 +160,22 @@
     ]
   },
   {
+    "name": "PocketBook",
+    "id": "pocketbook",
+    "link": "",
+    "logo": "logo-pocketbook.png",
+    "logoWidth": "250px",
+    "description": "consumer electronics: e-readers, digital reading devices, E Ink “electronic paper” technology. One of the largest dedicated e-reader brands worldwide, competing with devices from Amazon and Kobo.",
+    "source": "https://djinni.co/jobs/802458-automation-qa-engineer-middle-middle/",
+    "tags": [
+      "ukraine",
+      "switzerland",
+      "europe",
+      "manufacturing",
+      "electronics"
+    ]
+  },
+  {
     "name": "OpenText",
     "id": "opentext",
     "link": "https://www.opentext.com/",
