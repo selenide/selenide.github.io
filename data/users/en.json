@@ -781,6 +781,20 @@
     ]
   },
   {
+    "name": "Docaposte Maroc",
+    "id": "docaposte",
+    "link": "https://www.linkedin.com/company/docaposte-maroc/",
+    "logo": "logo-docaposte.jpeg",
+    "logoWidth": "200px",
+    "description": "IT and business process outsourcing company / Casablanca, Morocco",
+    "source": "https://app.theirstack.com/workspace/30667/companies/4Ona1R22VdCqaOWzQHmLTg%3D%3D",
+    "tags": [
+      "africa",
+      "marocco",
+      "it"
+    ]
+  },
+  {
     "name": "CGI",
     "id": "cgi",
     "link": "https://www.cgi.com/",
