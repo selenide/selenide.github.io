@@ -2731,6 +2731,20 @@
     ]
   },
   {
+    "name": "Roltec",
+    "id": "roltec",
+    "link": "https://roltec.pl/en/",
+    "logo": "logo-roltec.jpeg",
+    "logoWidth": "130px",
+    "description": "Производство полупроводников на основе возобновляемой энергии",
+    "source": "https://app.theirstack.com/workspace/30667/companies/NafiNZbSgRoppGq5SRzv0Q%3D%3D",
+    "tags": [
+      "europe",
+      "poland",
+      "resources"
+    ]
+  },
+  {
     "name": "Eesti Energia",
     "id": "eesti-energia",
     "link": "https://www.energia.ee/ru/avaleht",
