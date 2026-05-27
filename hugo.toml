@@ -13,7 +13,7 @@ disableKinds = ["taxonomy", "term"]
   noClasses = false
 
 [params]
-  selenideVersion = "7.16.0"
+  selenideVersion = "7.16.2"
   seleniumChangelog = "https://raw.githubusercontent.com/SeleniumHQ/selenium/master/java/CHANGELOG"
   googleAnalyticsId = "UA-39031927-1"
 

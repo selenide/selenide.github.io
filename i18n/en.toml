@@ -29,6 +29,9 @@ other = "Released Selenide"
 [news_mcp]
 other = "Selenide MCP server"
 
+[news_mcp_params]
+other = "Paraneters for Selenide MCP server"
+
 # Donate
 [donate_title]
 other = "Selenide Supports Ukraine"
