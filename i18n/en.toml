@@ -29,8 +29,8 @@ other = "Released Selenide"
 [news_mcp]
 other = "Selenide MCP server"
 
-[news_mcp_params]
-other = "Paraneters for Selenide MCP server"
+[news_latest_release_title]
+other = "TODO 7.17.0"
 
 # Donate
 [donate_title]
