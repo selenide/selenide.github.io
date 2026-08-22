@@ -26,11 +26,8 @@ other = "Мы говорим спасибо"
 [news_released]
 other = "Вышла Selenide"
 
-[news_mcp]
-other = "Selenide MCP server"
-
 [news_latest_release_title]
-other = "Ролевые игры"
+other = "Я твой браузер в терминале вертел!"
 
 # Donate
 [donate_title]

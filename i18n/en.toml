@@ -26,11 +26,8 @@ other = "Many thanks"
 [news_released]
 other = "Released Selenide"
 
-[news_mcp]
-other = "Selenide MCP server"
-
 [news_latest_release_title]
-other = "Role play"
+other = "Selenide CLI"
 
 # Donate
 [donate_title]
