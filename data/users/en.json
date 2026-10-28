@@ -2602,6 +2602,19 @@
     ]
   },
   {
+    "name": "Bank Uralsib",
+    "id": "uralsib",
+    "link": "https://www.team.uralsib.ru/",
+    "logo": "logo-uralsib.png",
+    "logoWidth": "120px",
+    "description": "One of Russia’s largest universal banks with a nationwide reach",
+    "source": "https://taylor.kz/jobs/qa-inzener-at-bank-uralsib",
+    "tags": [
+      "russia",
+      "finances"
+    ]
+  },
+  {
     "name": "Outlines Tech",
     "id": "outlines",
     "link": "https://outlines.tech/",

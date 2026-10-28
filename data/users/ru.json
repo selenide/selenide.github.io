@@ -2604,6 +2604,19 @@
     ]
   },
   {
+    "name": "Банк Уралсиб",
+    "id": "uralsib",
+    "link": "https://www.team.uralsib.ru/",
+    "logo": "logo-uralsib.png",
+    "logoWidth": "120px",
+    "description": "Один из крупнейших российских универсальных банков федерального уровня",
+    "source": "https://taylor.kz/jobs/qa-inzener-at-bank-uralsib",
+    "tags": [
+      "russia",
+      "finances"
+    ]
+  },
+  {
     "name": "Outlines Tech",
     "id": "outlines",
     "link": "https://outlines.tech/",
