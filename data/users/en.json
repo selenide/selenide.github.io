@@ -2400,6 +2400,20 @@
     ]
   },
   {
+    "name": "Exadel",
+    "id": "exadel",
+    "link": "https://exadel.com/",
+    "logo": "logo-exadel.svg",
+    "logoWidth": "130px",
+    "description": "Global software engineering and AI consulting company, author of the open-source Exadel Toolbox for Adobe Experience Manager",
+    "source": "https://github.com/exadel-inc/etoolbox-authoring-kit",
+    "tags": [
+      "usa",
+      "global",
+      "it"
+    ]
+  },
+  {
     "name": "MaxBill",
     "id": "maxbill",
     "link": "https://maxbill.com/",
