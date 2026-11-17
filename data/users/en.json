@@ -2400,6 +2400,20 @@
     ]
   },
   {
+    "name": "eXo Platform",
+    "id": "exo-platform",
+    "link": "https://www.exoplatform.com/",
+    "logo": "logo-exoplatform.svg",
+    "logoWidth": "100px",
+    "description": "Open-source digital workplace platform: intranet, collaboration and knowledge management",
+    "source": "https://github.com/exoplatform/platform-ui-automation-test",
+    "tags": [
+      "france",
+      "europe",
+      "it"
+    ]
+  },
+  {
     "name": "Exadel",
     "id": "exadel",
     "link": "https://exadel.com/",

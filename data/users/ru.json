@@ -2401,6 +2401,20 @@
     ]
   },
   {
+    "name": "eXo Platform",
+    "id": "exo-platform",
+    "link": "https://www.exoplatform.com/",
+    "logo": "logo-exoplatform.svg",
+    "logoWidth": "100px",
+    "description": "open-source платформа цифрового рабочего пространства: интранет, совместная работа и управление знаниями",
+    "source": "https://github.com/exoplatform/platform-ui-automation-test",
+    "tags": [
+      "france",
+      "europe",
+      "it"
+    ]
+  },
+  {
     "name": "Exadel",
     "id": "exadel",
     "link": "https://exadel.com/",
