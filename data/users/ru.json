@@ -2401,6 +2401,20 @@
     ]
   },
   {
+    "name": "Vlife",
+    "id": "vlife",
+    "link": "https://vlife.kz",
+    "logo": "logo-vlife.svg",
+    "logoWidth": "100px",
+    "description": "казахстанское приложение лояльности и платежей: баллы и привилегии за привычные покупки",
+    "source": "https://www.linkedin.com/in/danil-gudebski/",
+    "tags": [
+      "kazakhstan",
+      "asia",
+      "it"
+    ]
+  },
+  {
     "name": "Alatau City Bank (ex. Jusan Bank)",
     "id": "alatau-city-bank",
     "link": "https://alataucitybank.kz",
