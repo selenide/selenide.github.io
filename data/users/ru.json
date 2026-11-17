@@ -2401,6 +2401,20 @@
     ]
   },
   {
+    "name": "Testbirds",
+    "id": "testbirds",
+    "link": "https://www.testbirds.com/",
+    "logo": "logo-testbirds.svg",
+    "logoWidth": "150px",
+    "description": "немецкая компания краудтестинга и тестирования ПО, входит в группу UNGUESS",
+    "source": "https://www.mynewsdesk.com/testbirds/blog_posts/a-complete-selenium-tech-stack-manage-it-with-open-source-84850",
+    "tags": [
+      "germany",
+      "europe",
+      "it"
+    ]
+  },
+  {
     "name": "eXo Platform",
     "id": "exo-platform",
     "link": "https://www.exoplatform.com/",

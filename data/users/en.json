@@ -2400,6 +2400,20 @@
     ]
   },
   {
+    "name": "Testbirds",
+    "id": "testbirds",
+    "link": "https://www.testbirds.com/",
+    "logo": "logo-testbirds.svg",
+    "logoWidth": "150px",
+    "description": "German crowdtesting and software testing company, part of the UNGUESS group",
+    "source": "https://www.mynewsdesk.com/testbirds/blog_posts/a-complete-selenium-tech-stack-manage-it-with-open-source-84850",
+    "tags": [
+      "germany",
+      "europe",
+      "it"
+    ]
+  },
+  {
     "name": "eXo Platform",
     "id": "exo-platform",
     "link": "https://www.exoplatform.com/",
