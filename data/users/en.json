@@ -2400,6 +2400,20 @@
     ]
   },
   {
+    "name": "Alatau City Bank (ex. Jusan Bank)",
+    "id": "alatau-city-bank",
+    "link": "https://alataucitybank.kz",
+    "logo": "logo-alatau-city-bank.webp",
+    "logoWidth": "180px",
+    "description": "one of Kazakhstan's major commercial banks",
+    "source": "https://www.linkedin.com/in/danil-gudebski/",
+    "tags": [
+      "kazakhstan",
+      "asia",
+      "finances"
+    ]
+  },
+  {
     "name": "Bereke bank",
     "id": "bereke-bank",
     "link": "https://berekebank.kz/kz",
